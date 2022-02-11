@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Wishlist - African Books</title>
+    <meta name="keywords" content="African Books">
+    <meta name="description" content="African Books">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="African Books">
+    <meta name="application-name" content="African Books">
+    <meta name="theme-color" content="#ffffff">  
+	<link rel="manifest" href="africanbooksmanifest.json">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/vendor/line-awesome/line-awesome/line-awesome/css/line-awesome.min.css">
+    <!-- Plugins CSS File -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/plugins/jquery.countdown.css">
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/skin-demo-4.css">
+    <link rel="stylesheet" href="assets/css/demo-4.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/fonts/InriaSerif/inria-serif-font.css">
+	<!-- Splash Screen -->
+	<link href="assets/images/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+	<link href="assets/images/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+	<link href="assets/images/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
+	<link href="assets/images/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
+	<link href="assets/images/splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+	<link href="assets/images/splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
+	<link href="assets/images/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+	<link href="assets/images/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+	<link href="assets/images/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+	<link href="assets/images/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="header header-intro-clearance header-4">
+            <div class="header-middle">
+                <div class="container">
+                    <div class="header-left">
+                        <button class="mobile-menu-toggler">
+                            <span class="sr-only">Toggle mobile menu</span>
+                            <i class="icon-bars"></i>
+                        </button>
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/logo.png" alt="African Books Logo" class="img-fluid" width="197" height="45">
+                        </a>
+                    </div><!-- End .header-left -->
+                    <div class="header-center">
+                        <div class="header-search header-search-extended header-search-visible d-none d-lg-block">
+                            <a href="#" class="search-toggle" role="button"><i class="icon-search"></i></a>
+                            <form action="#" method="get">
+                                <div class="header-search-wrapper search-wrapper-wide">
+                                    <label for="q" class="sr-only">Search</label>
+                                    <button class="btn btn-primary" type="submit"><i class="icon-search"></i></button>
+                                    <input type="search" class="form-control" name="q" id="q" placeholder="Search book by title, author, publisher" required>
+                                </div><!-- End .header-search-wrapper -->
+                            </form>
+                        </div><!-- End .header-search -->
+                    </div>
+                    <div class="header-right">
+                        <div class="wishlist">
+                            <a href="wishlist.html" title="Wishlist">
+                                <div class="icon">
+                                    <i class="icon-heart-o"></i>
+                                    <span class="wishlist-count badge">2</span>
+                                </div>
+                                <p>Wishlist</p>
+                            </a>
+                        </div><!-- End .wishlist-dropdown -->
+                        <div class="dropdown cart-dropdown">
+                            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+                                <div class="icon">
+                                    <i class="icon-shopping-cart"></i>
+                                    <span class="cart-count">2</span>
+                                </div>
+                                <p>Cart</p>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <div class="dropdown-cart-products">
+                                    <div class="product">
+                                        <div class="product-cart-details">
+                                            <h4 class="product-title">
+                                                <a href="#" class="js-booktitle">The Fault in Our Stars</a>
+                                            </h4>
+											<h4 class="product-cat">
+                                                <a href="#" class="js-bookauthor" style="text-transform:uppercase">John Green</a>
+                                            </h4>
+                                            <span class="cart-product-info">
+                                                <span class="cart-product-qty">1</span>
+                                                x <span class="js-bookprice">$110</span>
+                                            </span>
+                                        </div><!-- End .product-cart-details -->
+                                        <figure class="product-image-container">
+                                            <a href="#" class="product-image">
+                                                <img src="assets/images/books/the-fault-in-our-stars-john-green.jpg" alt="image">
+                                            </a>
+                                        </figure>
+                                        <a href="#" class="btn-remove js-removefromcart" title="Remove Product"><i class="icon-close"></i></a>
+                                    </div><!-- End .product -->
+                                    <div class="product">
+                                        <div class="product-cart-details">
+                                            <h4 class="product-title">
+                                                <a href="#" class="js-booktitle">The Long Take</a>
+                                            </h4>
+											<h4 class="product-cat">
+                                                <a href="#" class="js-bookauthor" style="text-transform:uppercase">Robin Robertson</a>
+                                            </h4>
+                                            <span class="cart-product-info">
+                                                <span class="cart-product-qty">1</span>
+                                                x <span class="js-bookprice">$180</span>
+                                            </span>
+                                        </div><!-- End .product-cart-details -->
+                                        <figure class="product-image-container">
+                                            <a href="#" class="product-image">
+                                                <img src="assets/images/books/the-long-take-robin-robertson.jpg" alt="image">
+                                            </a>
+                                        </figure>
+                                        <a href="#" class="btn-remove js-removefromcart" title="Remove Product"><i class="icon-close"></i></a>
+                                    </div><!-- End .product -->
+                                </div><!-- End .cart-product -->
+                                <div class="dropdown-cart-total">
+                                    <span>Total</span>
+
+                                    <span class="cart-total-price">$290</span>
+                                </div><!-- End .dropdown-cart-total -->
+                                <div class="dropdown-cart-action">
+                                    <a href="cart.html" class="btn btn-primary">View Cart</a>
+                                    <a href="checkout.html" class="btn btn-outline-primary-2"><span>Checkout</span><i class="icon-long-arrow-right"></i></a>
+                                </div><!-- End .dropdown-cart-total -->
+                            </div><!-- End .dropdown-menu -->
+                        </div><!-- End .cart-dropdown -->
+                    </div><!-- End .header-right -->
+                </div><!-- End .container -->
+            </div><!-- End .header-middle -->
+
+            <div class="header-bottom sticky-header">
+                <div class="container">
+                    <div class="header-left">
+                        <a href="index.html">
+                            <img src="assets/images/logo-icon.png" alt="#" style="margin-left:-10px" class="img-fluid" width="83" height="65">
+                        </a>
+                        <div class="dropdown category-dropdown">
+                            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static" title="Browse Categories">
+                                Browse Categories <i class="icon-angle-down"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <nav class="side-nav">
+                                    <ul class="menu-vertical sf-arrows">
+                                        <li><a href="christian.html">Christian Non-Fiction</a></li>
+                                        <li><a href="nonfiction.html">African Non-Fiction</a></li>
+                                        <li><a href="fiction.html">Popular Fiction</a></li>
+                                        <li><a href="regional.html">Regional Authors</a></li>
+                                    </ul><!-- End .menu-vertical -->
+                                </nav><!-- End .side-nav -->
+                            </div><!-- End .dropdown-menu -->
+                        </div><!-- End .category-dropdown -->
+                    </div><!-- End .header-left -->
+					
+                    <div class="header-center">
+                        <nav class="main-nav">
+                            <ul class="menu sf-arrows">
+							    <li>
+                                    <a href="christian.html" class="sf-with-ul">Christian</i></a>
+									<div class="megamenu megamenu-md">
+                                        <div class="row no-gutters">
+                                            <div class="col-lg-12">
+                                                <div class="menu-col">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <ul>
+                                                                <li class="mb-1">Christian Living</li>
+                                                                <li class="mb-1">Christian Classics</li>
+                                                                <li class="mb-1">Bibles</li>
+                                                                <li class="mb-1">Bible Study & Devotionals</li>
+                                                                <li class="mb-1">Ministry & Evangelism</li>
+                                                            </ul>
+                                                        </div><!-- End .col-lg-6 -->
+                                                        <div class="col-lg-6">
+                                                            <ul>
+                                                                <li class="mb-1">Church History & Biography</li>
+                                                                <li class="mb-1">Christian Education</li>
+                                                                <li class="mb-1">Christian Curriculum</li>
+                                                                <li class="mb-1">Children</li>
+                                                                <li class="mb-1">Young Adults</li>
+															</ul>
+                                                        </div><!-- End .col-lg-6 -->
+                                                    </div><!-- End .row -->
+                                                </div><!-- End .menu-col -->
+                                            </div><!-- End .col-md-8 -->
+                                        </div><!-- End .row -->
+                                    </div><!-- End .megamenu megamenu-md -->
+                                </li>
+                                <li>
+                                    <a href="nonfiction.html" class="sf-with-ul">Non-fiction</a>
+									<div class="megamenu megamenu-md">
+                                        <div class="row no-gutters">
+                                            <div class="col-lg-12">
+                                                <div class="menu-col">
+                                                    <div class="row">													     
+                                                        <div class="col-lg-6">
+                                                            <ul>
+                                                                <li class="mb-1">African History</li>
+                                                                <li class="mb-1">African Biographies & Memoirs</li>
+                                                                <li class="mb-1">African Classics</li>
+                                                                <li class="mb-1">African Art & Poetry</li>
+                                                                <li class="mb-1">African Proverbs & Parables</li>
+                                                                <li class="mb-1">African Life </li>
+                                                                <li class="mb-1">African Music & Dance</li>
+                                                                <li class="mb-1">African Culture & Tradition</li>
+                                                                <li class="mb-1">Hobbies & Crafts</li>
+                                                                <li class="mb-1">Home & Graden</li>
+                                                                <li class="mb-1">Farming</li>
+                                                                <li class="mb-1">Planning & Development</li>
+                                                                <li class="mb-1">Business</li>
+                                                                <li class="mb-1">Graphics & Comics</li>
+                                                                <li class="mb-1">Education</li>
+                                                            </ul>
+                                                        </div><!-- End .col-lg-6 -->
+                                                        <div class="col-lg-6">
+                                                            <ul>
+                                                                <li class="mb-1">Reference</li>
+                                                                <li class="mb-1">Religion</li>
+                                                                <li class="mb-1">Health & Fitness</li>
+                                                                <li class="mb-1">Language</li>
+                                                                <li class="mb-1">Food & Cooking</li>
+                                                                <li class="mb-1">Science & Politics</li>
+                                                                <li class="mb-1">Herbs & Medicine</li>
+                                                                <li class="mb-1">Parenting & Family</li>
+                                                                <li class="mb-1">Sports</li>
+                                                                <li class="mb-1">Science & Technology</li>
+                                                                <li class="mb-1">Law</li>
+                                                                <li class="mb-1">Travel</li>
+                                                                <li class="mb-1">Children</li>
+                                                                <li class="mb-1">Young Adults</li>
+															</ul>
+                                                        </div><!-- End .col-lg-6 -->
+                                                    </div><!-- End .row -->
+                                                </div><!-- End .menu-col -->
+                                            </div><!-- End .col-md-8 -->
+                                        </div><!-- End .row -->
+                                    </div><!-- End .megamenu megamenu-md -->
+                                </li>	
+                                <li>
+                                    <a href="fiction.html" class="sf-with-ul">Fiction</a>
+									<div class="megamenu megamenu-md">
+                                        <div class="row no-gutters">
+                                            <div class="col-lg-12">
+                                                <div class="menu-col">
+                                                    <div class="row">													     
+                                                        <div class="col-lg-6">
+                                                            <ul>
+                                                                <li class="mb-1">Christian Fiction</li>
+                                                                <li class="mb-1">African Fiction & Novels</li>
+                                                                <li class="mb-1">Historical Fiction</li>
+                                                                <li class="mb-1">Literary Fiction</li>
+                                                                <li class="mb-1">Science Fiction</li>
+                                                                <li class="mb-1">Children's Fiction</li>
+                                                                <li class="mb-1">Young Adults</li>
+                                                                <li class="mb-1">Action / Adventure</li>
+                                                            </ul>
+                                                        </div><!-- End .col-lg-6 -->
+                                                        <div class="col-lg-6">
+                                                            <ul>
+                                                                <li class="mb-1">Short Stories & Fables</li>
+                                                                <li class="mb-1">Inspirational Fiction</li>
+                                                                <li class="mb-1">Fantasy & Folktales</li>
+                                                                <li class="mb-1">Dramas & Screenplays</li>
+                                                                <li class="mb-1">Poetry</li>
+                                                                <li class="mb-1">Romance</li>
+                                                                <li class="mb-1">Suspense / Thriller</li>
+                                                                <li class="mb-1">Mystery / Crime</li>
+															</ul>
+                                                        </div><!-- End .col-lg-6 -->
+                                                    </div><!-- End .row -->
+                                                </div><!-- End .menu-col -->
+                                            </div><!-- End .col-md-8 -->
+                                        </div><!-- End .row -->
+                                    </div><!-- End .megamenu megamenu-md -->
+                                </li>
+                                <li>
+                                    <a href="regional.html" class="sf-with-ul">Regional</a>
+									<div class="megamenu megamenu-md">
+                                        <div class="row no-gutters">
+                                            <div class="col-lg-12">
+                                                <div class="menu-col">
+                                                    <div class="row">													     
+                                                        <div class="col-lg-6">
+                                                            <ul>
+                                                                <li class="mb-1">North-African</li>
+                                                                <li class="mb-1">Central-African</li>
+                                                                <li class="mb-1">East-African</li>
+                                                                <li class="mb-1">West-African</li>
+                                                                <li class="mb-1">South-African</li>
+                                                            </ul>
+                                                        </div><!-- End .col-lg-6 -->
+                                                        <div class="col-lg-6">
+                                                            <ul>
+                                                                <li class="mb-1">African Diaspora</li>
+                                                                <li class="mb-1">African American</li>
+                                                                <li class="mb-1">Afro-European</li>
+                                                                <li class="mb-1">Expats Living in Africa</li>
+															</ul>
+                                                        </div><!-- End .col-lg-6 -->
+                                                    </div><!-- End .row -->
+                                                </div><!-- End .menu-col -->
+                                            </div><!-- End .col-md-8 -->
+                                        </div><!-- End .row -->
+                                    </div><!-- End .megamenu megamenu-md -->
+                                </li>								
+                                <li>
+									<a href="#">Sell My Book</a>
+									<ul>
+                                        <li><a href="../authors/index.html">Sell as Author</a></li>
+                                        <li><a href="../publishers/index.html">Sell as Publisher</a></li>
+                                    </ul>									
+								</li>														
+                            </ul><!-- End .menu -->
+                        </nav><!-- End .main-nav -->
+                    </div><!-- End .header-center -->
+
+                    <div class="header-right">
+                        <nav class="main-nav">
+                            <ul class="menu sf-arrows">
+							    <li>
+                                    <a href="signin.html" class="sf-with-ul">Sign-in</a>
+                                </li>
+								<li>
+                                    <a href="register.html" class="sf-with-ul">Register</a>
+                                </li>
+                                <li style="display: none">
+                                    <a href="#" class="sf-with-ul" style="text-transform: none">
+                                        <img src="assets/images/users/user-1.jpg" alt="image" class="user-img-radious-style img-fluid" style="display: inline">&nbsp;
+                                        <span>Yvonne Kusiima&nbsp;<i class="fa fa-caret-down"></i></span>
+                                    </a>
+                                    <ul>
+                                        <li><a href="#" class="font-weight-bold">HELLO READER</a></li>
+                                        <div class="dropdown-divider"></div>
+                                        <li><a href="profile.html"><i class="fa fa-user"></i>&nbsp;Profile</a></li>
+                                        <li><a href="wishlist.html"><i class="fa fa-heart"></i>&nbsp;Wishlist</a></li>
+                                        <li><a href="cart.html"><i class="fa fa-shopping-cart"></i>&nbsp;Cart</a></li>
+                                        <li><a href="orders.html"><i class="fa fa-shopping-bag"></i>&nbsp;Purchases</a></li>
+                                        <li><a href="settings.html"><i class="fa fa-cog"></i>&nbsp;Settings</a></li>
+                                        <div class="dropdown-divider"></div>
+                                        <li><a href="logout.html" class="text-danger"><i class="fa fa-sign-out-alt"></i>&nbsp;Logout</a></li>
+                                    </ul>
+                                </li>
+                            </ul><!-- End .menu -->
+                        </nav><!-- End .main-nav -->
+                    </div>
+                </div><!-- End .container -->
+            </div><!-- End .header-bottom -->
+        </header><!-- End .header -->
+
+        <main class="main">
+        	<div class="page-header text-center" style="background-image: url(assets/images/page-header-bg.jpg)">
+        		<div class="container">
+        			<h1 class="page-title">Wishlist<span>africanbooks.com</span></h1>
+        		</div><!-- End .container -->
+        	</div><!-- End .page-header -->
+			<br>
+            <div class="page-content">
+            	<div class="container">
+					<table class="table table-wishlist table-mobile">
+						<thead>
+							<tr>
+								<th>Item</th>
+								<th>Price</th>
+								<th></th>
+								<th></th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="product-col">
+									<div class="product">
+										<figure class="product-media">
+											<a href="#">
+												<img src="assets/images/books/the-fault-in-our-stars-john-green.jpg" alt="image">
+											</a>
+										</figure>
+										<h3 class="product-title">
+											<a href="#" class="js-booktitle">The Fault in Our Stars</a>
+											<div class="product-cat"><a href="#" class="js-bookauthor" style="text-transform:uppercase">John Green</a></div>
+										</h3><!-- End .product-title -->
+									</div><!-- End .product -->
+								</td>
+								<td class="price-col js-bookprice">$110</td>
+								<td class="action-col">
+									<button class="btn btn-block btn-outline-primary-2 js-addtocart"><i class="icon-cart-plus"></i>Add to Cart</button>
+								</td>
+								<td class="remove-col"><button class="btn-remove js-removefromwishlist"><i class="icon-close"></i></button></td>
+							</tr>
+							<tr>
+								<td class="product-col">
+									<div class="product">
+										<figure class="product-media">
+											<a href="#">
+												<img src="assets/images/books/the-long-take-robin-robertson.jpg" alt="image">
+											</a>
+										</figure>
+
+										<h3 class="product-title">
+											<a href="#" class="js-booktitle">The Long Take</a><br>
+											<div class="product-cat"><a href="#" class="js-bookauthor" style="text-transform:uppercase">Robin Robertson</a></div>
+										</h3><!-- End .product-title -->
+									</div><!-- End .product -->
+								</td>
+								<td class="price-col js-bookprice">$180</td>
+								<td class="action-col">
+									<button class="btn btn-block btn-outline-primary-2 js-addtocart"><i class="icon-cart-plus"></i>Add to Cart</button>
+								</td>
+								<td class="remove-col"><button class="btn-remove js-removefromwishlist"><i class="icon-close"></i></button></td>
+							</tr>
+						</tbody>
+					</table><!-- End .table table-wishlist -->
+	            	<div class="wishlist-share">
+	            		<div class="social-icons social-icons-sm mb-2">
+	            			<label class="social-label">Share on:</label>
+	    					<a href="#" class="social-icon" title="Facebook" target="_blank"><i class="icon-facebook-f"></i></a>
+	    					<a href="#" class="social-icon" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>
+	    					<a href="#" class="social-icon" title="Instagram" target="_blank"><i class="icon-instagram"></i></a>
+	    					<a href="#" class="social-icon" title="Youtube" target="_blank"><i class="icon-youtube"></i></a>
+	    					<a href="#" class="social-icon" title="Pinterest" target="_blank"><i class="icon-pinterest"></i></a>
+	    				</div><!-- End .soial-icons -->
+	            	</div><!-- End .wishlist-share -->
+            	</div><!-- End .container -->
+            </div><!-- End .page-content -->
+        </main><!-- End .main -->
+
+        <footer class="footer">
+            <div class="cta bg-image bg-dark pt-4 pb-5 mb-0" style="background-image: url(assets/images/subscribe-bg.jpg);">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-10 col-md-8 col-lg-6">
+                            <div class="cta-heading text-center">
+                                <h3 class="cta-title text-white">Get The Latest News</h3><!-- End .cta-title -->
+                                <p class="cta-desc text-white">Subscribe and receive the latest news and offers</p><!-- End .cta-desc -->
+                            </div><!-- End .text-center -->
+
+                            <form action="#">
+                                <div class="input-group input-group-round">
+                                    <input type="email" class="form-control form-control-white" placeholder="Enter your email address" aria-label="Email Adress" required>
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary" type="submit"><span>Subscribe</span><i class="icon-long-arrow-right"></i></button>
+                                    </div><!-- .End .input-group-append -->
+                                </div><!-- .End .input-group -->
+                            </form>
+                        </div><!-- End .col-sm-10 col-md-8 col-lg-6 -->
+                    </div><!-- End .row -->
+                </div><!-- End .container -->
+            </div><!-- End .cta -->
+
+            <div class="footer-middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="widget widget-about">
+                                <img src="assets/images/logo.png" class="footer-logo" alt="image" width="197" height="45">
+                                <p><b>africanbooks.com</b> exists to provide you with amazing and interesting books for a great reading experience.</p>
+
+                                <div class="widget-call">
+                                    <i class="icon-phone"></i>
+                                    <a href="tel:+256 123 456 789">+256 123 456 789</a>
+                                </div><!-- End .widget-call -->
+                            </div><!-- End .widget about-widget -->
+                        </div><!-- End .col-sm-6 col-lg-3 -->
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="widget">
+                                <h4 class="widget-title">Useful Links</h4><!-- End .widget-title -->
+
+                                <ul class="widget-list">
+                                    <li><a href="about.html">About africanbooks.com</a></li>
+                                    <li><a href="#">Our Services</a></li>
+                                    <li><a href="#">How to shop on africanbooks.com</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="contact.html">Contact africanbooks.com</a></li>
+                                </ul><!-- End .widget-list -->
+                            </div><!-- End .widget -->
+                        </div><!-- End .col-sm-6 col-lg-3 -->
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="widget">
+                                <h4 class="widget-title">Customer Service</h4><!-- End .widget-title -->
+
+                                <ul class="widget-list">
+                                    <li><a href="#">Payment Methods</a></li>
+                                    <li><a href="#">How to read</a></li>
+                                    <li><a href="#">24/7 Support</a></li>
+                                    <li><a href="#">Terms and Conditions</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul><!-- End .widget-list -->
+                            </div><!-- End .widget -->
+                        </div><!-- End .col-sm-6 col-lg-3 -->
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="widget">
+                                <h4 class="widget-title">My Account</h4><!-- End .widget-title -->
+
+                                <ul class="widget-list">
+                                    <li><a href="signin.html">Sign-in</a></li>
+                                    <li><a href="register.html">Register</a></li>
+                                    <li><a href="cart.html">View Cart</a></li>
+                                    <li><a href="wishlist.html">My Wishlist</a></li>                                   
+                                    <li><a href="#">Help</a></li>
+                                </ul><!-- End .widget-list -->
+                            </div><!-- End .widget -->
+                        </div><!-- End .col-sm-6 col-lg-3 -->
+                    </div><!-- End .row -->
+                </div><!-- End .container -->
+            </div><!-- End .footer-middle -->
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <p class="footer-copyright">
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> <a href="https://www.africanbooks.com/" class="text-primary font-weight-bold">africanbooks.com</a>
+                    </p><!-- End .footer-copyright -->
+                    <figure class="footer-payments">
+                        <img src="assets/images/payments.png" alt="Payment methods" width="272" height="20">
+                    </figure><!-- End .footer-payments -->
+                </div><!-- End .container -->
+            </div><!-- End .footer-bottom -->
+        </footer><!-- End .footer -->
+    </div><!-- End .page-wrapper -->
+    <button id="scroll-top" title="Back to Top"><i class="icon-arrow-up"></i></button>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay"></div><!-- End .mobile-menu-overlay -->
+
+    <div class="mobile-menu-container mobile-menu-light">
+        <div class="mobile-menu-wrapper">
+            <span class="mobile-menu-close"><i class="icon-close"></i></span>
+
+            <form action="#" method="get" class="mobile-search">
+                <label for="mobile-search" class="sr-only">Search</label>
+                <input type="search" class="form-control" name="mobile-search" id="mobile-search" placeholder="Search..." required>
+                <button class="btn btn-primary" type="submit"><i class="icon-search"></i></button>
+            </form>
+
+            <ul class="nav nav-pills-mobile nav-border-anim" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="mobile-menu-link" data-toggle="tab" href="#mobile-menu-tab" role="tab" aria-controls="mobile-menu-tab" aria-selected="true">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="mobile-cats-link" data-toggle="tab" href="#mobile-cats-tab" role="tab" aria-controls="mobile-cats-tab" aria-selected="false">Categories</a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="mobile-menu-tab" role="tabpanel" aria-labelledby="mobile-menu-link">
+                    <nav class="mobile-nav">
+                        <ul class="mobile-menu">
+                            <li>
+                                <a href="christian.html">Christian</a>
+                            </li>
+							<li>
+                                <a href="non-fiction.html" class="sf-with-ul">Non-fiction</a>
+                            </li>
+                            <li>
+                                <a href="fiction.html" class="sf-with-ul">Fiction</a>
+                            </li>
+                            <li>
+                                <a href="regional.html" class="sf-with-ul">Regional</a>
+                            </li>
+                            <li>
+                                <a href="#" class="sf-with-ul">Sell My Book</a>
+								<ul>
+								    <li><a href="register.html">Sell as Author</a></li>
+								    <li><a href="signin.html">Sell as Publisher</a></li>
+								</ul>
+                            </li>
+							<li>
+                                <a href="signin.html" class="sf-with-ul">Sign-in</a>
+                            </li>
+							<li>
+                                <a href="register.html" class="sf-with-ul">Register</a>
+                            </li>
+                            <li style="display: none">
+                                <a href="#" class="sf-with-ul" style="text-transform: none">
+                                    <img src="assets/images/users/user-1.jpg" alt="image" class="user-img-radious-style img-fluid" style="display: inline">&nbsp;
+                                    <span>Yvonne Kusiima</span>
+                                </a>
+                                <ul>
+								    <li><a href="#" class="font-weight-bold">HELLO READER</a></li>
+                                    <div class="dropdown-divider"></div>
+                                    <li><a href="profile.html"><i class="fa fa-user"></i>&nbsp;Profile</a></li>
+                                    <li><a href="wishlist.html"><i class="fa fa-heart"></i>&nbsp;Wishlist</a></li>
+                                    <li><a href="cart.html"><i class="fa fa-shopping-cart"></i>&nbsp;Cart</a></li>
+                                    <li><a href="orders.html"><i class="fa fa-shopping-bag"></i>&nbsp;Purchases</a></li>
+                                    <li><a href="settings.html"><i class="fa fa-cog"></i>&nbsp;Settings</a></li>
+                                    <div class="dropdown-divider"></div>
+                                    <li><a href="logout.html" class="text-danger"><i class="fa fa-sign-out-alt"></i>&nbsp;Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav><!-- End .mobile-nav -->
+                </div><!-- .End .tab-pane -->
+                <div class="tab-pane fade" id="mobile-cats-tab" role="tabpanel" aria-labelledby="mobile-cats-link">
+                    <nav class="mobile-cats-nav">
+                        <ul class="mobile-cats-menu">
+                            <li><a href="christian.html">Christian Non-fiction</a></li>
+                            <li><a href="nonfiction.html">African Non-fiction</a></li>
+                            <li><a href="fiction.html">Popular Fiction</a></li>
+                            <li><a href="regional.html">Regional Authors</a></li>
+                        </ul><!-- End .mobile-cats-menu -->
+                    </nav><!-- End .mobile-cats-nav -->
+                </div><!-- .End .tab-pane -->
+            </div><!-- End .tab-content -->
+            <div class="social-icons">
+                <a href="http://www.facebook.com/AfricanBooksOnline/" class="social-icon" target="_blank" title="Facebook"><i class="icon-facebook-f"></i></a>
+                <a href="http://www.instagram.com/africanbooksonline/" class="social-icon" target="_blank" title="Instagram"><i class="icon-instagram"></i></a>
+                <a href="http://www.pinterest.com/AfricanBooksOnline/" class="social-icon" target="_blank" title="Pinterest"><i class="icon-pinterest"></i></a>
+            </div><!-- End .social-icons -->
+        </div><!-- End .mobile-menu-wrapper -->
+    </div><!-- End .mobile-menu-container -->
+	
+    <!-- Plugins JS File -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.hoverIntent.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/superfish.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/bootstrap-input-spinner.js"></script>
+    <script src="assets/js/jquery.plugin.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/demo-4.js"></script>
+	<!-- Sweet Alert -->
+    <script src="assets/vendor/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script>
+        $('.js-removefromwishlist').each(function () {
+            var booktitle = $(this).parent().parent().parent().find('.js-booktitle').html();
+            var bookprice = $(this).parent().parent().parent().find('.js-bookprice').html();
+            var bookauthor = $(this).parent().parent().parent().find('.js-bookauthor').html();
+            $(this).on('click', function () {
+                Swal.fire({
+                    icon: 'success',
+                    html: booktitle + '<br>' + bookauthor + '<br>' + bookprice + '<br> removed from wishlist.'
+                })
+            });
+        });
+
+        $('.js-addtocart').each(function () {
+            var booktitle = $(this).parent().parent().parent().find('.js-booktitle').html();
+            var bookprice = $(this).parent().parent().parent().find('.js-bookprice').html();
+            var bookauthor = $(this).parent().parent().parent().find('.js-bookauthor').html();
+            $(this).on('click', function () {
+                Swal.fire({
+                    icon: 'success',
+                    html: booktitle + '<br>' + bookauthor + '<br>' + bookprice + '<br> is added to cart.'
+                })
+            });
+        });
+		
+		$('.js-removefromcart').each(function () {
+            var booktitle = $(this).parent().parent().parent().find('.js-booktitle').html();
+            var bookprice = $(this).parent().parent().parent().find('.js-bookprice').html();
+            var bookauthor = $(this).parent().parent().parent().find('.js-bookauthor').html();
+            $(this).on('click', function () {
+                Swal.fire({
+                    icon: 'success',
+                    html: booktitle + '<br>' + bookauthor + '<br>' + bookprice + '<br> removed from cart.'
+                })
+            });
+        });
+    </script>
+</body>
+
+</html>
