@@ -7188,7 +7188,10 @@ p {
     line-height: 1.25;
     letter-spacing: -.01em;
     color: #333333;
-    margin-bottom: .2rem
+    margin-bottom: .2rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis
 }
 
     .product-title a {
@@ -7358,7 +7361,8 @@ p {
     left: 0;
     white-space: nowrap;
     overflow: hidden;
-    color: #d2232a
+    color: #fb8200;
+
 }
 
 .ratings-primary .ratings-val {
