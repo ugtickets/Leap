@@ -5,320 +5,791 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Profile - African Books Authors</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-title" content="African Books Authors">
-    <meta name="application-name" content="African Books Authors">
+    <meta name="apple-mobile-web-app-title" content="African Books Publishers">
+    <meta name="application-name" content="African Books Publishers">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="assets/vendors/iconfonts/font-awesome/css/all.min.css">
-    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
-    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.addons.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="assets/images/favicon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-    <link rel="manifest" href="africanbooksadminmanifest.json">
-    <link href="assets/images/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-    <link href="assets/images/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-    <link href="assets/images/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
-    <link href="assets/images/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
-    <link href="assets/images/splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-    <link href="assets/images/splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
-    <link href="assets/images/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-    <link href="assets/images/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-    <link href="assets/images/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-    <link href="assets/images/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="assets/modules/summernote/summernote-bs4.css">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/css/components.min.css">
+    <link rel="icon" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="manifest" href="africanbooksmanifest.json">
+    <link href="assets/img/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="assets/img/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="assets/img/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
+    <link href="assets/img/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
+    <link href="assets/img/splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="assets/img/splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
+    <link href="assets/img/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="assets/img/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="assets/img/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="assets/img/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
 </head>
-<body>
-    <div class="container-scroller">
-        <!-- partial:partials/_navbar -->
-        <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row default-layout-navbar">
-            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-                <a class="navbar-brand brand-logo" href="dashboard.html"><img src="assets/images/logo.png" alt="logo" /></a>
-                <a class="navbar-brand brand-logo-mini" href="dashboard.html"><img src="assets/images/logo-icon.png" alt="logo" /></a>
-            </div>
-            <div class="navbar-menu-wrapper d-flex align-items-stretch">
-                <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
-                    <span class="fas fa-bars"></span>
-                </button>
-                <ul class="navbar-nav">
-                    <li class="nav-item nav-search d-none d-md-flex">
-                        <div class="nav-link">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                        <i class="fas fa-search"></i>
-                                    </span>
-                                </div>
-                                <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+
+<body class="layout-4">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <div id="app">
+        <div class="main-wrapper main-wrapper-1">
+            <div class="navbar-bg"></div>
+
+            <!-- Start app top navbar -->
+            <nav class="navbar navbar-expand-lg main-navbar">
+                <form class="form-inline mr-auto">
+                    <ul class="navbar-nav mr-3">
+                        <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+                        <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
+                    </ul>
+                    <div class="search-element">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" data-width="250">
+                        <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+                        <div class="search-backdrop"></div>
+                        <div class="search-result">
+                            <div class="search-header">Histories</div>
+                            <div class="search-item">
+                                <a href="#">Payment History</a>
+                                <a href="#" class="search-close"><i class="fas fa-times"></i></a>
+                            </div>
+                            <div class="search-item">
+                                <a href="#">Bookshelf</a>
+                                <a href="#" class="search-close"><i class="fas fa-times"></i></a>
                             </div>
                         </div>
-                    </li>
-                </ul>
-                <ul class="navbar-nav navbar-nav-right">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
-                            <i class="fas fa-bell mx-0"></i>
-                            <span class="count">2</span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
-                            <a class="dropdown-item">
-                                <p class="mb-0 font-weight-normal float-left">
-                                    You have 2 new notifications
-                                </p>
-                                <span class="badge badge-pill badge-warning float-right">View all</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item preview-item">
-                                <div class="preview-thumbnail">
-                                    <div class="preview-icon bg-danger">
-                                        <i class="fas fa-exclamation-circle mx-0"></i>
+                    </div>
+                </form>
+                <ul class="navbar-nav navbar-right">
+                    <li class="dropdown dropdown-list-toggle">
+                        <a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg beep"><i class="far fa-bell"></i></a>
+                        <div class="dropdown-menu dropdown-list dropdown-menu-right">
+                            <div class="dropdown-header">
+                                Notifications
+                                <div class="float-right">
+                                    <a href="#">Mark All As Read</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-list-content dropdown-list-icons">
+                                <a href="#" class="dropdown-item dropdown-item-unread">
+                                    <div class="dropdown-item-icon bg-primary text-white">
+                                        <i class="fas fa-code"></i>
                                     </div>
-                                </div>
-                                <div class="preview-item-content">
-                                    <h6 class="preview-subject font-weight-medium">Application Error</h6>
-                                    <p class="font-weight-light small-text">
-                                        Just now
-                                    </p>
-                                </div>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item preview-item">
-                                <div class="preview-thumbnail">
-                                    <div class="preview-icon bg-warning">
-                                        <i class="fas fa-wrench mx-0"></i>
+                                    <div class="dropdown-item-desc">
+                                        Template update is available now!
+                                        <div class="time text-primary">2 Min Ago</div>
                                     </div>
-                                </div>
-                                <div class="preview-item-content">
-                                    <h6 class="preview-subject font-weight-medium">Settings</h6>
-                                    <p class="font-weight-light small-text">
-                                        Private message
-                                    </p>
-                                </div>
-                            </a>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <div class="dropdown-item-icon bg-info text-white">
+                                        <i class="far fa-user"></i>
+                                    </div>
+                                    <div class="dropdown-item-desc">
+                                        <b>You</b> and <b>Dedik Sugiharto</b> are now friends
+                                        <div class="time">10 Hours Ago</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <div class="dropdown-item-icon bg-success text-white">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <div class="dropdown-item-desc">
+                                        <b>Kusnaedi</b> has moved task <b>Fix bug header</b> to <b>Done</b>
+                                        <div class="time">12 Hours Ago</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <div class="dropdown-item-icon bg-danger text-white">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                    </div>
+                                    <div class="dropdown-item-desc">
+                                        Low disk space. Let's clean it!
+                                        <div class="time">17 Hours Ago</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <div class="dropdown-item-icon bg-info text-white">
+                                        <i class="fas fa-bell"></i>
+                                    </div>
+                                    <div class="dropdown-item-desc">
+                                        Welcome to CodiePie template!
+                                        <div class="time">Yesterday</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dropdown-footer text-center">
+                                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+                            </div>
                         </div>
                     </li>
-                    <li class="nav-item nav-profile dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-                            <img src="assets/images/users/user-1.jpg" alt="profile" />
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                            <img alt="image" src="assets/img/users/user-1.jpg" class="rounded-circle mr-1">
+                            <div class="d-sm-none d-lg-inline-block">Yvonne Kusiima</div>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-                            <a href="profile.html" class="dropdown-item">
-                                <i class="fa fa-user text-primary"></i>
-                                Profile
-                            </a>
-                            <a href="activitylog.html" class="dropdown-item">
-                                <i class="fa fa-list text-primary"></i>
-                                Activity Log
-                            </a>
-                            <a href="#" class="dropdown-item">
-                                <i class="fas fa-cog text-primary"></i>
-                                Settings
-                            </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="dropdown-title">Hello Author</div>
+                            <a href="profile.html" class="dropdown-item has-icon"><i class="far fa-user"></i> Profile</a>
+                            <a href="activitylog.html" class="dropdown-item has-icon"><i class="fas fa-list"></i> Activity Log</a>
+                            <a href="settings.html" class="dropdown-item has-icon"><i class="fas fa-cog"></i> Settings</a>
                             <div class="dropdown-divider"></div>
-                            <a href="logout.html" class="dropdown-item">
-                                <i class="fas fa-power-off text-primary"></i>
-                                Logout
-                            </a>
+                            <a href="#" class="dropdown-item has-icon text-danger"><i class="fas fa-sign-out-alt"></i> Logout</a>
                         </div>
-                    </li>
-                </ul>
-                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
-                    <span class="fas fa-bars"></span> <span class="font-weight-bold">MENU</span>
-                </button>
-            </div>
-        </nav>
-        <!-- partial -->
-        <div class="container-fluid page-body-wrapper">
-            <!-- partial:partials/_sidebar -->
-            <nav class="sidebar sidebar-offcanvas" id="sidebar">
-                <ul class="nav">
-                    <li class="nav-item nav-profile">
-                        <div class="nav-link">
-                            <div class="profile-image">
-                                <img src="assets/images/users/user-1.jpg" alt="image" />
-                            </div>
-                            <div class="profile-name">
-                                <p class="name">
-                                    Yvonne Kusiima
-                                </p>
-                                <p class="designation">
-                                    AUTHOR
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="dashboard.html">
-                            <i class="fa fa-home menu-icon"></i>
-                            <span class="menu-title">Dashboard</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="account.html">
-                            <i class="fa fa-user menu-icon"></i>
-                            <span class="menu-title">My Account</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="activitylog.html">
-                            <i class="fa fa-list menu-icon"></i>
-                            <span class="menu-title">Activity Log</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" href="#bookshelf" aria-expanded="false" aria-controls="bookshelf">
-                            <i class="fa fa-book menu-icon"></i>
-                            <span class="menu-title">Bookshelf</span>
-                            <i class="menu-arrow"></i>
-                        </a>
-                        <div class="collapse" id="bookshelf">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="addbook.html">Add Book</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="books.html">View Books</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="booksales.html">Book Sales</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="booksales.html">Ratings & Comments</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" href="#payments" aria-expanded="false" aria-controls="payments">
-                            <i class="fa fa-money-bill menu-icon"></i>
-                            <span class="menu-title">Payments</span>
-                            <i class="menu-arrow"></i>
-                        </a>
-                        <div class="collapse" id="payments">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="paymentinformation.html">Payment Information</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="trackpayments.html">Track Payments</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="settings.html">
-                            <i class="fas fa-cog menu-icon"></i>
-                            <span class="menu-title">Settings</span>
-                        </a>
                     </li>
                 </ul>
             </nav>
-            <!-- partial -->
-            <div class="main-panel">
-                <div class="content-wrapper">
-                    <div class="card" style="font-weight: 500">
-                        <div class="card-body">
-                            <h4 class="card-title font-weight-bold">PROFILE</h4>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="row">
-                                        <div class="col-lg-4">
-                                            <div class="form-group">
-                                                <img src="assets/images/users/user-1.jpg" alt="image" class="user-img-radious-style img-fluid">
+
+            <!-- Start main left sidebar menu -->
+            <div class="main-sidebar sidebar-style-2">
+                <aside id="sidebar-wrapper">
+                    <div class="sidebar-brand">
+                        <a href="dashboard.html"><img src="assets/img/logo.png" alt="logo" class="img-fluid" width="197" height="45" /></a>
+                    </div>
+                    <div class="sidebar-brand sidebar-brand-sm">
+                        <a href="dashboard.html"><img src="assets/img/logo-icon.png" alt="logo" class="img-fluid"></a>
+                    </div>
+					<div class="mb-3"></div>
+                    <ul class="sidebar-menu">
+					    <li class="font-weight-bold">
+                            <a href="dashboard.html">
+						        <img src="assets/img/users/user-1.jpg" class="user-img-radious-style">&nbsp;
+							    <span>Yvonne Kusiima</span>
+						    </a>
+                        </li>
+                        <li class="menu-header">Authors Dashboard</li>
+                        <li><a class="nav-link" href="dashboard.html"><i class="fas fa-home"></i> <span>Dashboard</span></a></li>
+                        <li><a class="nav-link" href="myaccount.html"><i class="fas fa-user"></i> <span>My Account</span></a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-book"></i> <span>Bookshelf</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="addbook.html">Add Book</a></li>
+                                <li><a class="nav-link" href="viewbooks.html">View Books</a></li>
+                                <li><a class="nav-link" href="booksales.html">Book Sales</a></li>
+                                <li><a class="nav-link" href="reviews.html">Book Reviews</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-money-bill"></i> <span>Payments</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="paymentinformation.html">Payment Information</a></li>
+                                <li><a class="nav-link" href="payments.html">Track Payments</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav-link" href="settings.html"><i class="fas fa-cog"></i> <span>Settings</span></a></li>
+                    </ul>
+                    <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
+                        <a href="#" class="btn btn-primary btn-lg btn-block btn-icon-split"><i class="fas fa-rocket"></i> Documentation</a>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Start app main Content -->
+            <div class="main-content">
+                <section class="section">
+                    <div class="section-header">
+                        <h1>Profile</h1>
+                    </div>
+                    <div class="section-body">
+                        <h2 class="section-title">Hi, Yvonne</h2>
+                        <p class="section-lead">Find information about yourself on this page.</p>
+
+                        <div class="row mt-sm-4">
+                            <div class="col-12 col-md-12 col-lg-5">
+                                <div class="card profile-widget">
+                                    <div class="profile-widget-header">
+                                        <img alt="image" src="assets/img/users/user-1.jpg" class="rounded-circle profile-widget-picture">
+                                        <div class="profile-widget-items">
+                                            <div class="profile-widget-item">
+                                                <div class="profile-widget-item-label">Books</div>
+                                                <div class="profile-widget-item-value">187</div>
                                             </div>
-											<div class="form-group">
-                                                <label>Ratings:</label><br>
-                                                <label>
-                                                    <i class="fa fa-star text-primary"></i>
-                                                    <i class="fa fa-star text-primary"></i>
-                                                    <i class="fa fa-star text-primary"></i>
-                                                    <i class="fa fa-star text-primary"></i>
-                                                    4
-                                                </label>
+                                            <div class="profile-widget-item">
+                                                <div class="profile-widget-item-label">Sales</div>
+                                                <div class="profile-widget-item-value">347</div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-8">
-                                            <div class="form-group row">
-                                                <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                    <label>First Name:</label><br>
-                                                    <label>Yvonne Kusiima</label>
-                                                </div>
-                                                <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                    <label>Last Name:</label><br>
-                                                    <label>Ngabirano</label>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                    <label>Email Address:</label><br>
-                                                    <label>yvonnekusiima@gmail.com</label>
-                                                </div>
-												<div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                    <label>Date of Birth:</label><br>
-                                                    <label>12-May-1985</label>
-                                                </div>
-                                            </div>
-											<div class="form-group row">
-											    <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                    <label>Country:</label><br>
-                                                    <label>Uganda</label>
-                                                </div>
-                                                <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                    <label>Phone Number:</label><br>
-                                                    <label>0771167290</label>
-                                                </div>
-                                            </div>
-											<div class="form-group row">
-											    <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                    <label>Main Writing Language:</label><br>
-                                                    <label>English</label>
-                                                </div>
-                                                <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                    <label>Main Writing Genre:</label><br>
-                                                    <label>Mystery</label>
-                                                </div>
-                                            </div>
-											<div class="form-group row">
-											    <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                    <label>Bookshelf:</label><br>
-                                                    <label>10 books</label>
-                                                </div>
-                                                <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                    <label>Date Time Created:</label><br>
-                                                    <label>2020-02-01 14:53</label>
-                                                </div>
-                                            </div>
-											<div class="form-group row">
-											    <div class="form-group col mb-3 mb-sm-0">
-                                                    <label>Description:</label><br>
-                                                    <label>I am Ugandan author who is passionate about writing</label>
-                                                </div>
-                                            </div>
-											<div class="form-group">
-                                                <a href="editprofile.html" class="btn btn-primary btn-block">
-                                                    EDIT PROFILE
-                                                </a>
+                                            <div class="profile-widget-item">
+                                                <div class="profile-widget-item-label">Reviews</div>
+                                                <div class="profile-widget-item-value">21K</div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="profile-widget-description">
+                                        <div class="profile-widget-name">Yvonne Kusiima <div class="text-muted d-inline font-weight-normal"><div class="slash"></div> Author</div></div>
+                                        <div class="mb-4"></div>
+										<div class="row">
+                                            <div class="form-group col-md-6 col-12">
+                                                <label>Email Address</label><br>
+												<label>yvonnekusiima00@gmail.com</label>
+                                            </div>
+											<div class="form-group col-md-6 col-12">
+                                                <label>Phone Number</label><br>
+												<label>0771167290</label>
+                                            </div>
+                                        </div>
+										<div class="row">
+                                            <div class="form-group col-md-6 col-12">
+                                                <label>Date of Birth</label><br>
+												<label>07-03-2000</label>
+                                            </div>
+											<div class="form-group col-md-6 col-12">
+                                                <label>Country</label><br>
+												<label>Uganda</label>
+                                            </div>
+                                        </div>
+										<div class="row">
+                                            <div class="form-group col-md-6 col-12">
+                                                <label>Main Writing Language</label><br>
+												<label>English</label>
+                                            </div>
+											<div class="form-group col-md-6 col-12">
+                                                <label>Main Writing Genre</label><br>
+												<label>Mystery</label>
+                                            </div>
+                                        </div>
+										<div class="row">
+                                            <div class="form-group col col-12">
+                                                <label>Description</label><br>
+												<label>I am a Ugandan author who is passionate about writing</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-md-6 col-12">
+                                                <label>Ratings</label><br>
+												<label>
+                                                    <i class="fa fa-star text-primary"></i>
+                                                    <i class="fa fa-star text-primary"></i>
+                                                    <i class="fa fa-star text-primary"></i>
+                                                    <i class="fa fa-star-half text-primary"></i>
+                                                </label>
+												<label>3.5</label>
+                                            </div>
+											<div class="form-group col-md-6 col-12">
+                                                <label>Date Time Joined</label><br>
+												<label>2022-03-01 14:53</label>
+                                            </div>
+                                        </div>										
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-7">
+                                <div class="card">
+                                    <form method="post" class="needs-validation" novalidate="">
+                                        <div class="card-header">
+                                            <h4>Edit Profile</h4>
+                                        </div>
+                                        <div class="card-body">
+										    <div class="row">
+                                                <div class="form-group col col-12">
+                                                    <label>Profile Picture</label><br>
+												    <input type="file" class="form-control" name="profilepicture" id="image-preview">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group col-md-6 col-12">
+                                                    <label>First Name</label>
+                                                    <input type="text" class="form-control" name="firstname" value="Yvonne" required>
+                                                </div>
+                                                <div class="form-group col-md-6 col-12">
+                                                    <label>Last Name</label>
+                                                    <input type="text" class="form-control" name="lastname" value="Kusiima" required>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group col-md-6 col-12">
+                                                    <label>Email Address</label>&nbsp;<i class="fa fa-info-circle" title="Go to settings to change email address"></i>
+                                                    <input type="email" class="form-control" name="emailaddress" value="yvonnekusiima00@gmail.com" readonly>
+                                                </div>
+                                                <div class="form-group col-md-6 col-12">
+                                                    <label>Phone Number</label>
+                                                    <input type="tel" class="form-control" name="phonenumber" value="0771167290">
+                                                </div>
+                                            </div>
+											<div class="row">
+                                                <div class="form-group col-md-6 col-12">
+                                                    <label>Date of Birth</label>
+                                                    <input type="date" class="form-control" name="dateofbirth" value="07-Mar-2000" required>
+                                                </div>
+                                                <div class="form-group col-md-6 col-12">
+                                                    <label>Country</label>
+                                                    <select class="form-control" name="country">
+                                                        <option value="Uganda">Uganda</option>
+                                                        <option value="Afganistan">Afghanistan</option>
+                                                        <option value="Albania">Albania</option>
+                                                        <option value="Algeria">Algeria</option>
+                                                        <option value="American Samoa">American Samoa</option>
+                                                        <option value="Andorra">Andorra</option>
+                                                        <option value="Angola">Angola</option>
+                                                        <option value="Anguilla">Anguilla</option>
+                                                        <option value="Antigua & Barbuda">Antigua & Barbuda</option>
+                                                        <option value="Argentina">Argentina</option>
+                                                        <option value="Armenia">Armenia</option>
+                                                        <option value="Aruba">Aruba</option>
+                                                        <option value="Australia">Australia</option>
+                                                        <option value="Austria">Austria</option>
+                                                        <option value="Azerbaijan">Azerbaijan</option>
+                                                        <option value="Bahamas">Bahamas</option>
+                                                        <option value="Bahrain">Bahrain</option>
+                                                        <option value="Bangladesh">Bangladesh</option>
+                                                        <option value="Barbados">Barbados</option>
+                                                        <option value="Belarus">Belarus</option>
+                                                        <option value="Belgium">Belgium</option>
+                                                        <option value="Belize">Belize</option>
+                                                        <option value="Benin">Benin</option>
+                                                        <option value="Bermuda">Bermuda</option>
+                                                        <option value="Bhutan">Bhutan</option>
+                                                        <option value="Bolivia">Bolivia</option>
+                                                        <option value="Bonaire">Bonaire</option>
+                                                        <option value="Bosnia & Herzegovina">Bosnia & Herzegovina</option>
+                                                        <option value="Botswana">Botswana</option>
+                                                        <option value="Brazil">Brazil</option>
+                                                        <option value="British Indian Ocean Ter">British Indian Ocean Ter</option>
+                                                        <option value="Brunei">Brunei</option>
+                                                        <option value="Bulgaria">Bulgaria</option>
+                                                        <option value="Burkina Faso">Burkina Faso</option>
+                                                        <option value="Burundi">Burundi</option>
+                                                        <option value="Cambodia">Cambodia</option>
+                                                        <option value="Cameroon">Cameroon</option>
+                                                        <option value="Canada">Canada</option>
+                                                        <option value="Canary Islands">Canary Islands</option>
+                                                        <option value="Cape Verde">Cape Verde</option>
+                                                        <option value="Cayman Islands">Cayman Islands</option>
+                                                        <option value="Central African Republic">Central African Republic</option>
+                                                        <option value="Chad">Chad</option>
+                                                        <option value="Channel Islands">Channel Islands</option>
+                                                        <option value="Chile">Chile</option>
+                                                        <option value="China">China</option>
+                                                        <option value="Christmas Island">Christmas Island</option>
+                                                        <option value="Cocos Island">Cocos Island</option>
+                                                        <option value="Colombia">Colombia</option>
+                                                        <option value="Comoros">Comoros</option>
+                                                        <option value="Congo">Congo</option>
+                                                        <option value="Cook Islands">Cook Islands</option>
+                                                        <option value="Costa Rica">Costa Rica</option>
+                                                        <option value="Cote DIvoire">Cote DIvoire</option>
+                                                        <option value="Croatia">Croatia</option>
+                                                        <option value="Cuba">Cuba</option>
+                                                        <option value="Curaco">Curacao</option>
+                                                        <option value="Cyprus">Cyprus</option>
+                                                        <option value="Czech Republic">Czech Republic</option>
+                                                        <option value="Denmark">Denmark</option>
+                                                        <option value="Djibouti">Djibouti</option>
+                                                        <option value="Dominica">Dominica</option>
+                                                        <option value="Dominican Republic">Dominican Republic</option>
+                                                        <option value="East Timor">East Timor</option>
+                                                        <option value="Ecuador">Ecuador</option>
+                                                        <option value="Egypt">Egypt</option>
+                                                        <option value="El Salvador">El Salvador</option>
+                                                        <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                                        <option value="Eritrea">Eritrea</option>
+                                                        <option value="Estonia">Estonia</option>
+                                                        <option value="Ethiopia">Ethiopia</option>
+                                                        <option value="Falkland Islands">Falkland Islands</option>
+                                                        <option value="Faroe Islands">Faroe Islands</option>
+                                                        <option value="Fiji">Fiji</option>
+                                                        <option value="Finland">Finland</option>
+                                                        <option value="France">France</option>
+                                                        <option value="French Guiana">French Guiana</option>
+                                                        <option value="French Polynesia">French Polynesia</option>
+                                                        <option value="French Southern Ter">French Southern Ter</option>
+                                                        <option value="Gabon">Gabon</option>
+                                                        <option value="Gambia">Gambia</option>
+                                                        <option value="Georgia">Georgia</option>
+                                                        <option value="Germany">Germany</option>
+                                                        <option value="Ghana">Ghana</option>
+                                                        <option value="Gibraltar">Gibraltar</option>
+                                                        <option value="Great Britain">Great Britain</option>
+                                                        <option value="Greece">Greece</option>
+                                                        <option value="Greenland">Greenland</option>
+                                                        <option value="Grenada">Grenada</option>
+                                                        <option value="Guadeloupe">Guadeloupe</option>
+                                                        <option value="Guam">Guam</option>
+                                                        <option value="Guatemala">Guatemala</option>
+                                                        <option value="Guinea">Guinea</option>
+                                                        <option value="Guyana">Guyana</option>
+                                                        <option value="Haiti">Haiti</option>
+                                                        <option value="Hawaii">Hawaii</option>
+                                                        <option value="Honduras">Honduras</option>
+                                                        <option value="Hong Kong">Hong Kong</option>
+                                                        <option value="Hungary">Hungary</option>
+                                                        <option value="Iceland">Iceland</option>
+                                                        <option value="Indonesia">Indonesia</option>
+                                                        <option value="India">India</option>
+                                                        <option value="Iran">Iran</option>
+                                                        <option value="Iraq">Iraq</option>
+                                                        <option value="Ireland">Ireland</option>
+                                                        <option value="Isle of Man">Isle of Man</option>
+                                                        <option value="Israel">Israel</option>
+                                                        <option value="Italy">Italy</option>
+                                                        <option value="Jamaica">Jamaica</option>
+                                                        <option value="Japan">Japan</option>
+                                                        <option value="Jordan">Jordan</option>
+                                                        <option value="Kazakhstan">Kazakhstan</option>
+                                                        <option value="Kenya">Kenya</option>
+                                                        <option value="Kiribati">Kiribati</option>
+                                                        <option value="Korea North">Korea North</option>
+                                                        <option value="Korea Sout">Korea South</option>
+                                                        <option value="Kuwait">Kuwait</option>
+                                                        <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                                        <option value="Laos">Laos</option>
+                                                        <option value="Latvia">Latvia</option>
+                                                        <option value="Lebanon">Lebanon</option>
+                                                        <option value="Lesotho">Lesotho</option>
+                                                        <option value="Liberia">Liberia</option>
+                                                        <option value="Libya">Libya</option>
+                                                        <option value="Liechtenstein">Liechtenstein</option>
+                                                        <option value="Lithuania">Lithuania</option>
+                                                        <option value="Luxembourg">Luxembourg</option>
+                                                        <option value="Macau">Macau</option>
+                                                        <option value="Macedonia">Macedonia</option>
+                                                        <option value="Madagascar">Madagascar</option>
+                                                        <option value="Malaysia">Malaysia</option>
+                                                        <option value="Malawi">Malawi</option>
+                                                        <option value="Maldives">Maldives</option>
+                                                        <option value="Mali">Mali</option>
+                                                        <option value="Malta">Malta</option>
+                                                        <option value="Marshall Islands">Marshall Islands</option>
+                                                        <option value="Martinique">Martinique</option>
+                                                        <option value="Mauritania">Mauritania</option>
+                                                        <option value="Mauritius">Mauritius</option>
+                                                        <option value="Mayotte">Mayotte</option>
+                                                        <option value="Mexico">Mexico</option>
+                                                        <option value="Midway Islands">Midway Islands</option>
+                                                        <option value="Moldova">Moldova</option>
+                                                        <option value="Monaco">Monaco</option>
+                                                        <option value="Mongolia">Mongolia</option>
+                                                        <option value="Montserrat">Montserrat</option>
+                                                        <option value="Morocco">Morocco</option>
+                                                        <option value="Mozambique">Mozambique</option>
+                                                        <option value="Myanmar">Myanmar</option>
+                                                        <option value="Nambia">Nambia</option>
+                                                        <option value="Nauru">Nauru</option>
+                                                        <option value="Nepal">Nepal</option>
+                                                        <option value="Netherland Antilles">Netherland Antilles</option>
+                                                        <option value="Netherlands">Netherlands (Holland, Europe)</option>
+                                                        <option value="Nevis">Nevis</option>
+                                                        <option value="New Caledonia">New Caledonia</option>
+                                                        <option value="New Zealand">New Zealand</option>
+                                                        <option value="Nicaragua">Nicaragua</option>
+                                                        <option value="Niger">Niger</option>
+                                                        <option value="Nigeria">Nigeria</option>
+                                                        <option value="Niue">Niue</option>
+                                                        <option value="Norfolk Island">Norfolk Island</option>
+                                                        <option value="Norway">Norway</option>
+                                                        <option value="Oman">Oman</option>
+                                                        <option value="Pakistan">Pakistan</option>
+                                                        <option value="Palau Island">Palau Island</option>
+                                                        <option value="Palestine">Palestine</option>
+                                                        <option value="Panama">Panama</option>
+                                                        <option value="Papua New Guinea">Papua New Guinea</option>
+                                                        <option value="Paraguay">Paraguay</option>
+                                                        <option value="Peru">Peru</option>
+                                                        <option value="Phillipines">Philippines</option>
+                                                        <option value="Pitcairn Island">Pitcairn Island</option>
+                                                        <option value="Poland">Poland</option>
+                                                        <option value="Portugal">Portugal</option>
+                                                        <option value="Puerto Rico">Puerto Rico</option>
+                                                        <option value="Qatar">Qatar</option>
+                                                        <option value="Republic of Montenegro">Republic of Montenegro</option>
+                                                        <option value="Republic of Serbia">Republic of Serbia</option>
+                                                        <option value="Reunion">Reunion</option>
+                                                        <option value="Romania">Romania</option>
+                                                        <option value="Russia">Russia</option>
+                                                        <option value="Rwanda">Rwanda</option>
+                                                        <option value="St Barthelemy">St Barthelemy</option>
+                                                        <option value="St Eustatius">St Eustatius</option>
+                                                        <option value="St Helena">St Helena</option>
+                                                        <option value="St Kitts-Nevis">St Kitts-Nevis</option>
+                                                        <option value="St Lucia">St Lucia</option>
+                                                        <option value="St Maarten">St Maarten</option>
+                                                        <option value="St Pierre & Miquelon">St Pierre & Miquelon</option>
+                                                        <option value="St Vincent & Grenadines">St Vincent & Grenadines</option>
+                                                        <option value="Saipan">Saipan</option>
+                                                        <option value="Samoa">Samoa</option>
+                                                        <option value="Samoa American">Samoa American</option>
+                                                        <option value="San Marino">San Marino</option>
+                                                        <option value="Sao Tome & Principe">Sao Tome & Principe</option>
+                                                        <option value="Saudi Arabia">Saudi Arabia</option>
+                                                        <option value="Senegal">Senegal</option>
+                                                        <option value="Seychelles">Seychelles</option>
+                                                        <option value="Sierra Leone">Sierra Leone</option>
+                                                        <option value="Singapore">Singapore</option>
+                                                        <option value="Slovakia">Slovakia</option>
+                                                        <option value="Slovenia">Slovenia</option>
+                                                        <option value="Solomon Islands">Solomon Islands</option>
+                                                        <option value="Somalia">Somalia</option>
+                                                        <option value="South Africa">South Africa</option>
+                                                        <option value="Spain">Spain</option>
+                                                        <option value="Sri Lanka">Sri Lanka</option>
+                                                        <option value="Sudan">Sudan</option>
+                                                        <option value="Suriname">Suriname</option>
+                                                        <option value="Swaziland">Swaziland</option>
+                                                        <option value="Sweden">Sweden</option>
+                                                        <option value="Switzerland">Switzerland</option>
+                                                        <option value="Syria">Syria</option>
+                                                        <option value="Tahiti">Tahiti</option>
+                                                        <option value="Taiwan">Taiwan</option>
+                                                        <option value="Tajikistan">Tajikistan</option>
+                                                        <option value="Tanzania">Tanzania</option>
+                                                        <option value="Thailand">Thailand</option>
+                                                        <option value="Togo">Togo</option>
+                                                        <option value="Tokelau">Tokelau</option>
+                                                        <option value="Tonga">Tonga</option>
+                                                        <option value="Trinidad & Tobago">Trinidad & Tobago</option>
+                                                        <option value="Tunisia">Tunisia</option>
+                                                        <option value="Turkey">Turkey</option>
+                                                        <option value="Turkmenistan">Turkmenistan</option>
+                                                        <option value="Turks & Caicos Is">Turks & Caicos Is</option>
+                                                        <option value="Tuvalu">Tuvalu</option>
+                                                        <option value="Uganda">Uganda</option>
+                                                        <option value="United Kingdom">United Kingdom</option>
+                                                        <option value="Ukraine">Ukraine</option>
+                                                        <option value="United Arab Erimates">United Arab Emirates</option>
+                                                        <option value="United States of America">United States of America</option>
+                                                        <option value="Uraguay">Uruguay</option>
+                                                        <option value="Uzbekistan">Uzbekistan</option>
+                                                        <option value="Vanuatu">Vanuatu</option>
+                                                        <option value="Vatican City State">Vatican City State</option>
+                                                        <option value="Venezuela">Venezuela</option>
+                                                        <option value="Vietnam">Vietnam</option>
+                                                        <option value="Virgin Islands (Brit)">Virgin Islands (Brit)</option>
+                                                        <option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
+                                                        <option value="Wake Island">Wake Island</option>
+                                                        <option value="Wallis & Futana Is">Wallis & Futana Is</option>
+                                                        <option value="Yemen">Yemen</option>
+                                                        <option value="Zaire">Zaire</option>
+                                                        <option value="Zambia">Zambia</option>
+                                                        <option value="Zimbabwe">Zimbabwe</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+											<div class="row">
+                                                <div class="form-group col-md-6 col-12">
+                                                    <label>Main Writing Language</label>
+                                                    <select class="form-control" name="mainlanguage">
+                                                        <option value="English">English</option>
+                                                        <option value="Afrikaans">Afrikaans</option>
+                                                        <option value="Ahmaric">Ahmaric</option>
+                                                        <option value="Albanian">Albanian</option>
+                                                        <option value="Arabic">Arabic</option>
+                                                        <option value="Armenian">Armenian</option>
+                                                        <option value="Basque">Basque</option>
+                                                        <option value="Bengali">Bengali</option>
+                                                        <option value="Berber">Berber</option>
+                                                        <option value="Bulgarian">Bulgarian</option>
+                                                        <option value="Catalan">Catalan</option>
+                                                        <option value="Cambodian">Cambodian</option>
+                                                        <option value="Chinese (Mandarin)">Chinese (Mandarin)</option>
+                                                        <option value="Croatian">Croatian</option>
+                                                        <option value="Czech">Czech</option>
+                                                        <option value="Danish">Danish</option>
+                                                        <option value="Dutch">Dutch</option>
+                                                        <option value="English">English</option>
+                                                        <option value="Estonian">Estonian</option>
+                                                        <option value="Fiji">Fiji</option>
+                                                        <option value="Finnish">Finnish</option>
+                                                        <option value="French">French</option>
+                                                        <option value="Georgian">Georgian</option>
+                                                        <option value="German">German</option>
+                                                        <option value="Greek">Greek</option>
+                                                        <option value="Gujarati">Gujarati</option>
+                                                        <option value="Hausa">Hausa</option>
+                                                        <option value="Hebrew">Hebrew</option>
+                                                        <option value="Hindi">Hindi</option>
+                                                        <option value="Hungarian">Hungarian</option>
+                                                        <option value="Icelandic">Icelandic</option>
+                                                        <option value="Igbo">Igbo</option>
+                                                        <option value="Ikinyarwanda">Ikinyarwanda</option>
+                                                        <option value="Indonesian">Indonesian</option>
+                                                        <option value="Irish">Irish</option>
+                                                        <option value="Italian">Italian</option>
+                                                        <option value="Japanese">Japanese</option>
+                                                        <option value="Javanese">Javanese</option>
+                                                        <option value="Korean">Korean</option>
+                                                        <option value="Latin">Latin</option>
+                                                        <option value="Latvian">Latvian</option>
+                                                        <option value="Lithuanian">Lithuanian</option>
+                                                        <option value="Luganda">Luganda</option>
+                                                        <option value="Luo">Luo</option>
+                                                        <option value="Lusoga">Lusoga</option>
+                                                        <option value="Macedonian">Macedonian</option>
+                                                        <option value="Malay">Malay</option>
+                                                        <option value="Malayalam">Malayalam</option>
+                                                        <option value="Maltese">Maltese</option>
+                                                        <option value="Maori">Maori</option>
+                                                        <option value="Marathi">Marathi</option>
+                                                        <option value="Mongolian">Mongolian</option>
+                                                        <option value="Nepali">Nepali</option>
+                                                        <option value="Norwegian">Norwegian</option>
+                                                        <option value="Oromo">Oromo</option>
+                                                        <option value="Persian">Persian</option>
+                                                        <option value="Polish">Polish</option>
+                                                        <option value="Portuguese">Portuguese</option>
+                                                        <option value="Punjabi">Punjabi</option>
+                                                        <option value="Quechua">Quechua</option>
+                                                        <option value="Romanian">Romanian</option>
+                                                        <option value="Rukiga">Rukiga</option>
+                                                        <option value="Runyankore">Runyankore</option>
+                                                        <option value="Russian">Russian</option>
+                                                        <option value="Samoan">Samoan</option>
+                                                        <option value="Serbian">Serbian</option>
+                                                        <option value="Shona">Shona</option>
+                                                        <option value="Slovak">Slovak</option>
+                                                        <option value="Slovenian">Slovenian</option>
+                                                        <option value="Somali">Somali</option>
+                                                        <option value="Spanish">Spanish</option>
+                                                        <option value="Swahili">Swahili</option>
+                                                        <option value="Swedish ">Swedish </option>
+                                                        <option value="Tamil">Tamil</option>
+                                                        <option value="Tatar">Tatar</option>
+                                                        <option value="Telugu">Telugu</option>
+                                                        <option value="Thai">Thai</option>
+                                                        <option value="Tibetan">Tibetan</option>
+                                                        <option value="Tonga">Tonga</option>
+                                                        <option value="Turkish">Turkish</option>
+                                                        <option value="Ukrainian">Ukrainian</option>
+                                                        <option value="Urdu">Urdu</option>
+                                                        <option value="Uzbek">Uzbek</option>
+                                                        <option value="Vietnamese">Vietnamese</option>
+                                                        <option value="Welsh">Welsh</option>
+                                                        <option value="Xhosa">Xhosa</option>
+                                                        <option value="Yoruba">Yoruba</option>
+                                                        <option value="Zulu">Zulu</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-md-6 col-12">
+                                                    <label>Main Writing Genre</label>
+                                                    <select class="form-control" name="maingenre">
+                                                        <option value="Mystery">Mystery</option>
+                                                        <optgroup label="Christian Non-fiction:">
+                                                            <option value="Christian Living">Christian Living</option>
+                                                            <option value="Christian Classics">Christian Classics</option>
+                                                            <option value="Bibles">Bibles</option>
+                                                            <option value="Bible Study & Devotionals">Bible Study & Devotionals</option>
+                                                            <option value="Ministry & Evangelism">Ministry & Evangelism</option>
+                                                            <option value="Church History & Biography">Church History & Biography</option>
+                                                            <option value="Christian Education">Christian Education</option>
+                                                            <option value="Christian Curriculum">Christian Curriculum</option>
+                                                            <option value="Children - Christian Non-fiction">Children</option>
+                                                            <option value="Young Adults - Christian Non-fiction">Young Adults</option>
+                                                        </optgroup>
+                                                        <optgroup label="African Non-fiction:">
+                                                            <option value="African History">African History</option>
+                                                            <option value="African Biographies & Memoirs">African Biographies & Memoirs</option>
+                                                            <option value="African Classics">African Classics</option>
+                                                            <option value="African Art & Poetry">African Art & Poetry</option>
+                                                            <option value="African Proverbs & Parables">African Proverbs & Parables</option>
+                                                            <option value="African Life">African Life</option>
+                                                            <option value="African Music & Dance">African Music & Dance</option>
+                                                            <option value="African Culture & Tradtion">African Culture & Tradition</option>
+                                                            <option value="Hobbies & Crafts">Hobbies & Crafts</option>
+                                                            <option value="Home & Garden">Home & Garden</option>
+                                                            <option value="Farming">Farming</option>
+                                                            <option value="Planning & Development">Planning & Development</option>
+                                                            <option value="Business">Business</option>
+                                                            <option value="Graphics & Comics">Graphics & Comics</option>
+                                                            <option value="Education">Education</option>
+                                                            <option value="Reference">Reference</option>
+                                                            <option value="Religion">Religion</option>
+                                                            <option value="Health & Fitness">Health & Fitness</option>
+                                                            <option value="Language">Language</option>
+                                                            <option value="Food & Cooking">Food & Cooking</option>
+                                                            <option value="Science & Politics">Science & Politics</option>
+                                                            <option value="Herbs & Medicine">Herbs & Medicine</option>
+                                                            <option value="Parenting & Family">Parenting & Family</option>
+                                                            <option value="Sports">Sports</option>
+                                                            <option value="Science & Technology">Science & Technology</option>
+                                                            <option value="Law">Law</option>
+                                                            <option value="Travel">Travel</option>
+                                                            <option value="Children - African Non-fiction">Children</option>
+                                                            <option value="Young Adults - African Non-fiction">Young Adults</option>
+                                                        </optgroup>
+                                                        <optgroup label="Popular Fiction:">
+                                                            <option value="Christian Fiction">Christian Fiction</option>
+                                                            <option value="African Fiction & Novels">African Fiction & Novels</option>
+                                                            <option value="Historical Fiction">Historical Fiction</option>
+                                                            <option value="Literary Fiction">Literary Fiction</option>
+                                                            <option value="Science Fiction">Science Fiction</option>
+                                                            <option value="Children's Fiction">Children's Fiction</option>
+                                                            <option value="Young Adults - Popular Fiction">Young Adults</option>
+                                                            <option value="Action & Adventure">Action & Adventure</option>
+                                                            <option value="Short Stories & Fables">Short Stories & Fables</option>
+                                                            <option value="Inspirational Fiction">Inspirational Fiction</option>
+                                                            <option value="Fantasy & Folktales">Fantasy & Folktales</option>
+                                                            <option value="Dramas & Screenplays">Dramas & Screenplays</option>
+                                                            <option value="Poetry">Poetry</option>
+                                                            <option value="Romance">Romance</option>
+                                                            <option value="Suspense & Thriller">Suspense & Thriller</option>
+                                                            <option value="Mystery & Crime">Mystery & Crime</option>
+                                                        </optgroup>
+                                                        <optgroup label="Regional Authors:">
+                                                            <option value="North-African">North-African</option>
+                                                            <option value="Central-African">Central-African</option>
+                                                            <option value="East-African">East-African</option>
+                                                            <option value="West-African">West-African</option>
+                                                            <option value="South-African">South-African</option>
+                                                            <option value="African Diaspora">African Diaspora</option>
+                                                            <option value="African-American">African-American</option>
+                                                            <option value="Afro-European">Afro-European</option>
+                                                            <option value="Expats Living in Africa">Expats Living in Africa</option>
+                                                        </optgroup>
+                                                    </select>
+                                                </div>
+                                            </div>
+											<div class="row">
+                                                <div class="form-group col col-12">
+                                                    <label>Description</label>
+                                                    <input type="text" class="form-control" name="description" value="I am a Ugandan author who is passionate about writing">
+                                                </div>
+                                            </div>
+											<div class="row">
+                                                <div class="form-group col-md-6 col-12">
+                                                    <label>Bookshelf</label>
+                                                    <input type="text" class="form-control" name="books" value="10 books" readonly>
+                                                </div>
+                                                <div class="form-group col-md-6 col-12">
+                                                    <label>Date Time Joined</label>
+                                                    <input type="text" class="form-control" name="datetimejoined" value="2022-03-01 14:53" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer text-right">
+                                            <button class="btn btn-primary">Save Changes</button>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- content-wrapper ends -->
-                <!-- partial:partials/_footer.html -->
-                <footer class="footer">
-                    <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                        <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">
-                            Copyright &copy;
-                            <script>document.write(new Date().getFullYear());</script> <a href="https://www.africanbooks.com/" class="text-primary font-weight-bold">africanbooks.com</a>
-                        </span>
-                    </div>
-                </footer>
-                <!-- partial -->
+                </section>
             </div>
-            <!-- main-panel ends -->
+
+            <!-- Start app Footer part -->
+            <!-- <footer class="main-footer">
+                <div class="footer-left">
+                    Copyright &copy;  <a href="afriacnbooks.com">AfricanBooks.com</a>
+                </div>
+                <div class="footer-right">
+
+                </div>
+            </footer> -->
+			
         </div>
-        <!-- page-body-wrapper ends -->
     </div>
-    <!-- container-scroller -->
 
-    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
-    <script src="assets/vendors/js/vendor.bundle.addons.js"></script>
-    <script src="assets/js/off-canvas.js"></script>
-    <script src="assets/js/hoverable-collapse.js"></script>
-    <script src="assets/js/misc.js"></script>
-    <script src="assets/js/settings.js"></script>
-    <script src="assets/js/todolist.js"></script>
-    <script src="assets/js/dashboard.js"></script>
-
+    <!-- General JS Scripts -->
+    <script src="assets/bundles/lib.vendor.bundle.js"></script>
+    <script src="assets/js/CodiePie.js"></script>
+    <!-- JS Libraies -->
+    <script src="assets/modules/summernote/summernote-bs4.js"></script>
+    <!-- Template JS File -->
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/custom.js"></script>
+	
 </body>
 
 </html>

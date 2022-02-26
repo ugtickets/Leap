@@ -3,85 +3,428 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Login - African Books Publishers</title>
+    <title>Log-in - African Books Publishers</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="African Books Publishers">
     <meta name="application-name" content="African Books Publishers">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="assets/vendors/iconfonts/font-awesome/css/all.min.css">
-    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
-    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.addons.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/vendor/line-awesome/css/line-awesome.min.css">
+    <!-- Plugins CSS File -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/plugins/jquery.countdown.css">
+    <!-- Main CSS File -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="assets/images/favicon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-    <link rel="manifest" href="africanbooksadminmanifest.json">
-    <link href="assets/images/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-    <link href="assets/images/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-    <link href="assets/images/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
-    <link href="assets/images/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
-    <link href="assets/images/splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-    <link href="assets/images/splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
-    <link href="assets/images/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-    <link href="assets/images/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-    <link href="assets/images/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-    <link href="assets/images/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link rel="stylesheet" href="assets/css/skin-demo-4.css">
+    <link rel="stylesheet" href="assets/css/demo-4.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="manifest" href="africanbooksmanifest.json">
+    <link href="assets/img/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="assets/img/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="assets/img/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
+    <link href="assets/img/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
+    <link href="assets/img/splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="assets/img/splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
+    <link href="assets/img/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="assets/img/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="assets/img/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="assets/img/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
 </head>
 
 <body>
-    <div class="container-scroller">
-        <div class="container-fluid page-body-wrapper full-page-wrapper">
-            <div class="content-wrapper d-flex align-items-center auth" style="background-image:url('assets/landingpage/img/bg-image.jpg'); background-size:cover; box-shadow: inset 0 0 0 1000px rgba(0,0,0, 0.7);">
-                <div class="row w-100">
-                    <div class="col-lg-4 mx-auto">
-                        <div class="auth-form-light text-left p-5" style="font-weight:500">
-                            <div class="brand-logo text-center">
-                                <img src="assets/images/logo.png" alt="image" width="237" height="54">
-                            </div>
-                            <form method="post" action="#" class="pt-3">
-                                <div class="form-group">
-                                    <label>Email Address *</label>
-                                    <input type="email" class="form-control" name="emailaddress">
-                                </div>
-                                <div class="form-group">
-                                    <label>Password *</label>
-                                    <input type="password" class="form-control" name="password">
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-primary btn-block" tabindex="4">
-                                        LOGIN
-                                    </button>
-                                </div>
-                                <div class="my-2 d-flex justify-content-between align-items-center">
-                                    <div class="form-check">
-                                        <label class="form-check-label text-muted">
-                                            <input type="checkbox" class="form-check-input">
-                                            Keep me signed in
-                                        </label>
-                                    </div>
-                                    <a href="#" class="auth-link text-primary">Forgot password?</a>
-                                </div>
-                                <div class="text-center mt-4">
-                                    Don't have an account? <a href="signup.html" class="text-primary">Create one</a>
-                                </div>
+    <div class="page-wrapper">
+        <header class="header header-intro-clearance header-4">
+            <div class="header-middle">
+                <div class="container">
+                    <div class="header-left">
+                        <button class="mobile-menu-toggler">
+                            <span class="sr-only">Toggle mobile menu</span>
+                            <i class="icon-bars"></i>
+                        </button>
+                        <a href="index.html" class="logo">
+                            <img src="assets/img/logo.png" alt="African Books Logo" class="img-fluid" width="197" height="45">
+                        </a>
+                    </div><!-- End .header-left -->
+                    <div class="header-center">
+                        <div class="header-search header-search-extended header-search-visible d-none d-lg-block">
+                            <a href="#" class="search-toggle" role="button"><i class="icon-search"></i></a>
+                            <form action="#" method="get">
+                                <div class="header-search-wrapper search-wrapper-wide">
+                                    <label for="q" class="sr-only">Search</label>
+                                    <button class="btn btn-primary" type="submit"><i class="icon-search"></i></button>
+                                    <input type="search" class="form-control" name="q" id="q" placeholder="Search authors site" required>
+                                </div><!-- End .header-search-wrapper -->
                             </form>
-                        </div>
+                        </div><!-- End .header-search -->
                     </div>
-                </div>
-            </div>
-            <!-- content-wrapper ends -->
-        </div>
-        <!-- page-body-wrapper ends -->
-    </div>
-    <!-- container-scroller -->
+                    <div class="header-right">
+                        <a href="#faq" class="font-weight-bold"><i class="fa fa-question-circle"></i>&nbsp;FAQ</a>
+                    </div><!-- End .header-right -->
+                </div><!-- End .container -->
+            </div><!-- End .header-middle -->
 
-    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
-    <script src="assets/vendors/js/vendor.bundle.addons.js"></script>
-    <script src="assets/js/off-canvas.js"></script>
-    <script src="assets/js/hoverable-collapse.js"></script>
-    <script src="assets/js/misc.js"></script>
-    <script src="assets/js/settings.js"></script>
-    <script src="assets/js/todolist.js"></script>
-    <script src="assets/js/dashboard.js"></script>
+            <div class="header-bottom sticky-header">
+                <div class="container">
+                    <div class="header-left">
+                        <a href="index.html">
+                            <img src="assets/img/logo-icon.png" alt="#" style="margin-left:-10px" class="img-fluid" width="83" height="65">
+                        </a>
+                        <div class="dropdown category-dropdown">
+                            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static" title="Browse Categories">
+                                More Info <i class="icon-angle-down"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <nav class="side-nav">
+                                    <ul class="menu-vertical sf-arrows">
+                                        <li><a href="index.html#about">About AfricanBooks.com</a></li>
+                                        <li><a href="index.html#contact">Contact AfricanBooks.com</a></li>
+                                        <li><a href="index.html#faq">Frequently Asked Questions</a></li>
+										<li><a href="index.html#contentguidelines">Content Guidelines</a></li>
+                                        <li><a href="termsandconditions.html">Terms & Conditions</a></li>
+                                        <li><a href="privacypolicy.html">Privacy Policy</a></li>                                        
+                                    </ul><!-- End .menu-vertical -->
+                                </nav><!-- End .side-nav -->
+                            </div><!-- End .dropdown-menu -->
+                        </div><!-- End .category-dropdown -->
+                    </div><!-- End .header-left -->
+
+                    <div class="header-center">
+                        <nav class="main-nav">
+                            <ul class="menu sf-arrows">
+                                <li>
+                                    <a href="#">Open Account</a>
+                                    <ul>
+                                        <li><a href="#">Account Types</a></li>
+                                        <li><a href="#">Creating an account</a></li>
+                                        <li><a href="#">Managing your account</a></li>
+                                        <li><a href="#">The Author's Bookshelf</a></li>
+                                        <li><a href="#">Creating a public profile</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="publishyourbook.html" class="sf-with-ul">Publish Your Book</a>
+                                    <div class="megamenu megamenu-md">
+                                        <div class="row no-gutters">
+                                            <div class="col-lg-12">
+                                                <div class="menu-col">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <ul>
+                                                                <li><a href="#">Creating a book sample</a></li>
+                                                                <li><a href="#">Formatting your eBooks</a></li>
+                                                                <li><a href="#">Formatting your Audiobooks</a></li>
+                                                                <li><a href="#">Book cover requirements</a></li>
+                                                                <li><a href="#">Updating book details</a></li>
+                                                            </ul>
+                                                        </div><!-- End .col-lg-6 -->
+                                                        <div class="col-lg-6">
+                                                            <ul>
+                                                                <li><a href="#">Updated manuscripts</a></li>
+                                                                <li><a href="#">Updating your cover</a></li>
+                                                                <li><a href="#">Multi-edition books</a></li>
+                                                                <li><a href="#">Unpublishing & deleting books</a></li>
+                                                                <li><a href="#">Keywords & Genres</a></li>
+                                                            </ul>
+                                                        </div><!-- End .col-lg-6 -->
+                                                    </div><!-- End .row -->
+                                                </div><!-- End .menu-col -->
+                                            </div><!-- End .col-md-8 -->
+                                        </div><!-- End .row -->
+                                    </div><!-- End .megamenu megamenu-md -->
+                                </li>
+                                <li>
+                                    <a href="#">Get Paid</a>
+                                    <ul>
+                                        <li><a href="#">Pricing Your Book</a></li>
+                                        <li><a href="#">Promoting Your Book</a></li>
+                                        <li><a href="#">Sales Reports</a></li>
+                                        <li><a href="#">Royalties</a></li>
+                                        <li><a href="#">Banking</a></li>
+                                        <li><a href="#">Taxes</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="publishyourbook.html" class="sf-with-ul">Be Informed</a>
+                                    <div class="megamenu megamenu-md">
+                                        <div class="row no-gutters">
+                                            <div class="col-lg-12">
+                                                <div class="menu-col">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <ul>
+                                                                <li><a href="#">Publishing Terms and Conditions</a></li>
+                                                                <li><a href="#">Book Content Guidelines</a></li>
+                                                                <li><a href="#">Pricing Policy</a></li>
+                                                                <li><a href="#">Community Guidelines</a></li>
+                                                                <li><a href="#">User Agreement</a></li>
+                                                            </ul>
+                                                        </div><!-- End .col-lg-6 -->
+                                                        <div class="col-lg-6">
+                                                            <ul>
+                                                                <li><a href="#">Publishing Guidelines</a></li>
+                                                                <li><a href="#">Author / Publishing Agreements</a></li>
+                                                                <li><a href="#">Anti-Plagarism</a></li>
+                                                                <li><a href="#">Copyright Protection</a></li>
+                                                                <li><a href="#">Intellectual Property Rights</a></li>
+                                                            </ul>
+                                                        </div><!-- End .col-lg-6 -->
+                                                    </div><!-- End .row -->
+                                                </div><!-- End .menu-col -->
+                                            </div><!-- End .col-md-8 -->
+                                        </div><!-- End .row -->
+                                    </div><!-- End .megamenu megamenu-md -->
+                                </li>
+                            </ul><!-- End .menu -->
+                        </nav><!-- End .main-nav -->
+                    </div>
+
+
+                    <div class="header-right">
+                        <nav class="main-nav">
+                            <ul class="menu sf-arrows">
+                                <li>
+                                    <a href="login.html" class="sf-with-ul">Log-in</a>
+                                </li>
+                                <li>
+                                    <a href="signup.html" class="sf-with-ul">Sign-up</a>
+                                </li>
+                                <li style="display: none">
+                                    <a href="#" class="sf-with-ul" style="text-transform: none">
+                                        <img src="assets/images/users/user-1.jpg" alt="image" class="user-img-radious-style img-fluid" style="display: inline">&nbsp;
+                                        <span>Yvonne Kusiima&nbsp;<i class="fa fa-caret-down"></i></span>
+                                    </a>
+                                    <ul>
+                                        <li><a href="#" class="font-weight-bold">HELLO AUTHOR</a></li>
+                                        <div class="dropdown-divider"></div>
+                                        <li><a href="dashboard.html"><i class="fa fa-user"></i>&nbsp;Dashboard</a></li>
+                                        <div class="dropdown-divider"></div>
+                                        <li><a href="logout.html" class="text-danger"><i class="fa fa-sign-out-alt"></i>&nbsp;Logout</a></li>
+                                    </ul>
+                                </li>
+                            </ul><!-- End .menu -->
+                        </nav><!-- End .main-nav -->
+                    </div>
+                </div><!-- End .container -->
+            </div><!-- End .header-bottom -->
+        </header><!-- End .header -->
+		
+        <main class="main">
+		    <div class="login-page bg-image pt-8 pb-8 pt-md-12 pb-md-12 pt-lg-17 pb-lg-17" style="background-image: url(assets/img/login-bg.png); background-blend-mode: multiply">               
+				<div class="container">
+                    <div class="form-box">
+                        <div class="form-tab">
+                            <form action="#" method="post">
+                                <div class="form-group row justify-content-center">
+                                    <img src="assets/img/logo.png" class="footer-logo" alt="image" width="197" height="45"><br>
+                                </div><!-- End .form-group -->	
+								
+                                <div class="form-group row justify-content-center">
+                                    <h4 class="font-weight-bold">Sign in</h4>
+                                </div><!-- End .form-group -->			
+								
+                                <div class="form-group">
+                                    <label for="emailaddress">Email Address *</label>
+                                    <input type="email" class="form-control" id="emailaddress" name="emailaddress" required>
+                                </div><!-- End .form-group -->
+
+                                <div class="form-group">
+                                    <label for="password">Password *</label><a href="resetpassword.html" class="forgot-link float-right">Forgot Your Password?</a>
+                                    <input type="password" class="form-control" id="password" name="password" required>
+                                </div><!-- End .form-group -->
+								
+								<br>
+								
+								<div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-block">
+                                        <span class="font-weight-bold">LOGIN</span>
+                                        <i class="icon-long-arrow-right"></i>
+                                    </button>
+                                </div><!-- End .form-group -->
+								
+                                <div class="form-footer">                                  
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="signin-remember">
+                                        <label class="custom-control-label" for="signin-remember">Remember Me</label>
+                                    </div><!-- End .custom-checkbox -->                                  
+                                </div><!-- End .form-footer -->
+                            </form>
+                        </div><!-- End .form-tab -->
+                    </div><!-- End .form-box -->
+                </div><!-- End .container -->
+			</div><!-- End .login-page section-bg -->
+        </main><!-- End .main -->   
+
+	<footer class="footer">
+            <div class="footer-middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="widget widget-about">
+                                <img src="assets/img/logo.png" class="footer-logo" alt="image" width="197" height="45">
+
+                                <div class="social-icons">
+                                    <a href="http://www.facebook.com/AfricanBooksOnline/" class="social-icon" target="_blank" title="Facebook"><i class="icon-facebook-f"></i></a>
+                                    <a href="http://www.instagram.com/africanbooksonline/" class="social-icon" target="_blank" title="Instagram"><i class="icon-instagram"></i></a>
+                                    <a href="http://www.pinterest.com/AfricanBooksOnline/" class="social-icon" target="_blank" title="Pinterest"><i class="icon-pinterest"></i></a>
+                                </div><!-- End .social-icons -->
+
+                                <div>
+                                    <p class="footer-copyright">
+                                        Copyright &copy;
+                                        <script>document.write(new Date().getFullYear());</script> <a href="https://www.africanbooks.com/" class="text-primary font-weight-bold">AfricanBooks.com</a>
+                                    </p><!-- End .footer-copyright -->
+                                </div>
+
+                            </div><!-- End .widget about-widget -->
+                        </div><!-- End .col-sm-6 col-lg-3 -->
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="widget">
+                                <h4 class="widget-title">Useful Links</h4><!-- End .widget-title -->
+
+                                <ul class="widget-list">
+                                    <li><a href="#about">About AfricanBooks.com</a></li>
+                                    <li><a href="#contact">Contact AfricanBooks.com</a></li>
+                                    <li><a href="faq.html">Frequently Asked Questions</a></li>
+                                </ul><!-- End .widget-list -->
+                            </div><!-- End .widget -->
+                        </div><!-- End .col-sm-6 col-lg-3 -->
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="widget">
+                                <h4 class="widget-title">Customer Service</h4><!-- End .widget-title -->
+
+                                <ul class="widget-list">
+                                    <li><a href="#">Royalty Plans</a></li>
+                                    <li><a href="#">Terms and Conditions</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul><!-- End .widget-list -->
+                            </div><!-- End .widget -->
+                        </div><!-- End .col-sm-6 col-lg-3 -->
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="widget">
+                                <h4 class="widget-title">Help</h4><!-- End .widget-title -->
+
+                                <ul class="widget-list">
+                                    <li><a href="#">How to publish</a></li>
+                                    <li><a href="mailto:info@africanbooks.com"><i class="icon-envelope"></i>&nbsp;info@africanbooks.com</a></li>
+                                    <li><a href="tel:+256 123 456 789"><i class="icon-phone"></i>&nbsp;+256 123 456 789</a></li>
+                                </ul><!-- End .widget-list -->
+                            </div><!-- End .widget -->
+                        </div><!-- End .col-sm-6 col-lg-3 -->
+                    </div><!-- End .row -->
+                </div><!-- End .container -->
+            </div><!-- End .footer-middle -->
+
+        </footer><!-- End .footer -->
+    </div><!-- End .page-wrapper -->
+    <button id="scroll-top" title="Back to Top"><i class="icon-arrow-up"></i></button>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay"></div><!-- End .mobile-menu-overlay -->
+
+    <div class="mobile-menu-container mobile-menu-light">
+        <div class="mobile-menu-wrapper">
+            <span class="mobile-menu-close"><i class="icon-close"></i></span>
+
+            <form action="#" method="get" class="mobile-search">
+                <label for="mobile-search" class="sr-only">Search</label>
+                <input type="search" class="form-control" name="mobile-search" id="mobile-search" placeholder="Search..." required>
+                <button class="btn btn-primary" type="submit"><i class="icon-search"></i></button>
+            </form>
+
+            <ul class="nav nav-pills-mobile nav-border-anim" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="mobile-menu-link" data-toggle="tab" href="#mobile-menu-tab" role="tab" aria-controls="mobile-menu-tab" aria-selected="true">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="mobile-cats-link" data-toggle="tab" href="#mobile-cats-tab" role="tab" aria-controls="mobile-cats-tab" aria-selected="false">More Info</a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="mobile-menu-tab" role="tabpanel" aria-labelledby="mobile-menu-link">
+                    <nav class="mobile-nav">
+                        <ul class="mobile-menu">
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="sf-with-ul">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#howtopublish" class="sf-with-ul">How to Publish</a>
+                            </li>
+                            <li>
+                                <a href="#faq" class="sf-with-ul">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#termsandconditions" class="sf-with-ul">Terms and Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#privacypolicy" class="sf-with-ul">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="login.html" class="sf-with-ul">Log-in</a>
+                            </li>
+                            <li>
+                                <a href="signup.html" class="sf-with-ul">Sign-up</a>
+                            </li>
+                            <li style="display: none">
+                                <a href="#" class="sf-with-ul" style="text-transform: none">
+                                    <img src="assets/images/users/user-1.jpg" alt="image" class="user-img-radious-style img-fluid" style="display: inline">&nbsp;
+                                    <span>Yvonne Kusiima</span>
+                                </a>
+                                <ul>
+                                    <li><a href="#" class="font-weight-bold">HELLO AUTHOR</a></li>
+                                    <div class="dropdown-divider"></div>
+                                    <li><a href="dashboard.html"><i class="fa fa-user"></i>&nbsp;Dashboard</a></li>
+                                    <div class="dropdown-divider"></div>
+                                    <li><a href="logout.html" class="text-danger"><i class="fa fa-sign-out-alt"></i>&nbsp;Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav><!-- End .mobile-nav -->
+                </div><!-- .End .tab-pane -->
+                <div class="tab-pane fade" id="mobile-cats-tab" role="tabpanel" aria-labelledby="mobile-cats-link">
+                    <nav class="mobile-cats-nav">
+                        <ul class="mobile-cats-menu">
+                            <li><a href="index.html#about">About AfricanBooks.com</a></li>
+                            <li><a href="index.html#contact">Contact AfricanBooks.com</a></li>
+                            <li><a href="index.html#faq">Frequently Asked Questions</a></li>
+							<li><a href="index.html#contentguidelines">Content Guidelines</a></li>
+                            <li><a href="termsandconditions.html">Terms & Conditions</a></li>
+                            <li><a href="privacypolicy.html">Privacy Policy</a></li>                           
+                        </ul><!-- End .mobile-cats-menu -->
+                    </nav><!-- End .mobile-cats-nav -->
+                </div><!-- .End .tab-pane -->
+            </div><!-- End .tab-content -->
+            <div class="social-icons">
+                <a href="http://www.facebook.com/AfricanBooksOnline/" class="social-icon" target="_blank" title="Facebook"><i class="icon-facebook-f"></i></a>
+                <a href="http://www.instagram.com/africanbooksonline/" class="social-icon" target="_blank" title="Instagram"><i class="icon-instagram"></i></a>
+                <a href="http://www.pinterest.com/AfricanBooksOnline/" class="social-icon" target="_blank" title="Pinterest"><i class="icon-pinterest"></i></a>
+            </div><!-- End .social-icons -->
+        </div><!-- End .mobile-menu-wrapper -->
+    </div><!-- End .mobile-menu-container -->
+    <!-- Plugins JS File -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.hoverIntent.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/superfish.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/bootstrap-input-spinner.js"></script>
+    <script src="assets/js/jquery.plugin.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/demo-4.js"></script>
 
 </body>
 

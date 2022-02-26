@@ -5,258 +5,262 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Activity Log - African Books Authors</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-title" content="African Books Authors">
-    <meta name="application-name" content="African Books Authors">
+    <meta name="apple-mobile-web-app-title" content="African Books Publishers">
+    <meta name="application-name" content="African Books Publishers">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="assets/vendors/iconfonts/font-awesome/css/all.min.css">
-    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
-    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.addons.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="assets/images/favicon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-    <link rel="manifest" href="africanbooksadminmanifest.json">
-    <link href="assets/images/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-    <link href="assets/images/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-    <link href="assets/images/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
-    <link href="assets/images/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
-    <link href="assets/images/splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-    <link href="assets/images/splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
-    <link href="assets/images/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-    <link href="assets/images/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-    <link href="assets/images/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-    <link href="assets/images/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="assets/modules/summernote/summernote-bs4.css">
+    <link rel="stylesheet" href="assets/modules/datatables/datatables.min.css">
+    <link rel="stylesheet" href="assets/modules/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="assets/modules/datatables/Select-1.2.4/css/select.bootstrap4.min.css">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/css/components.min.css">
+    <link rel="icon" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="manifest" href="africanbooksmanifest.json">
+    <link href="assets/img/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="assets/img/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="assets/img/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
+    <link href="assets/img/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
+    <link href="assets/img/splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="assets/img/splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
+    <link href="assets/img/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="assets/img/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="assets/img/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="assets/img/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
 </head>
-<body>
-    <div class="container-scroller">
-        <!-- partial:partials/_navbar -->
-        <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row default-layout-navbar">
-            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-                <a class="navbar-brand brand-logo" href="dashboard.html"><img src="assets/images/logo.png" alt="logo" /></a>
-                <a class="navbar-brand brand-logo-mini" href="dashboard.html"><img src="assets/images/logo-icon.png" alt="logo" /></a>
-            </div>
-            <div class="navbar-menu-wrapper d-flex align-items-stretch">
-                <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
-                    <span class="fas fa-bars"></span>
-                </button>
-                <ul class="navbar-nav">
-                    <li class="nav-item nav-search d-none d-md-flex">
-                        <div class="nav-link">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                        <i class="fas fa-search"></i>
-                                    </span>
-                                </div>
-                                <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+
+<body class="layout-4">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <div id="app">
+        <div class="main-wrapper main-wrapper-1">
+            <div class="navbar-bg"></div>
+
+            <!-- Start app top navbar -->
+            <nav class="navbar navbar-expand-lg main-navbar">
+                <form class="form-inline mr-auto">
+                    <ul class="navbar-nav mr-3">
+                        <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+                        <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
+                    </ul>
+                    <div class="search-element">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" data-width="250">
+                        <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+                        <div class="search-backdrop"></div>
+                        <div class="search-result">
+                            <div class="search-header">Histories</div>
+                            <div class="search-item">
+                                <a href="#">Payment History</a>
+                                <a href="#" class="search-close"><i class="fas fa-times"></i></a>
+                            </div>
+                            <div class="search-item">
+                                <a href="#">Bookshelf</a>
+                                <a href="#" class="search-close"><i class="fas fa-times"></i></a>
                             </div>
                         </div>
-                    </li>
-                </ul>
-                <ul class="navbar-nav navbar-nav-right">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
-                            <i class="fas fa-bell mx-0"></i>
-                            <span class="count">2</span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
-                            <a class="dropdown-item">
-                                <p class="mb-0 font-weight-normal float-left">
-                                    You have 2 new notifications
-                                </p>
-                                <span class="badge badge-pill badge-warning float-right">View all</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item preview-item">
-                                <div class="preview-thumbnail">
-                                    <div class="preview-icon bg-danger">
-                                        <i class="fas fa-exclamation-circle mx-0"></i>
+                    </div>
+                </form>
+                <ul class="navbar-nav navbar-right">
+                    <li class="dropdown dropdown-list-toggle">
+                        <a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg beep"><i class="far fa-bell"></i></a>
+                        <div class="dropdown-menu dropdown-list dropdown-menu-right">
+                            <div class="dropdown-header">
+                                Notifications
+                                <div class="float-right">
+                                    <a href="#">Mark All As Read</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-list-content dropdown-list-icons">
+                                <a href="#" class="dropdown-item dropdown-item-unread">
+                                    <div class="dropdown-item-icon bg-primary text-white">
+                                        <i class="fas fa-code"></i>
                                     </div>
-                                </div>
-                                <div class="preview-item-content">
-                                    <h6 class="preview-subject font-weight-medium">Application Error</h6>
-                                    <p class="font-weight-light small-text">
-                                        Just now
-                                    </p>
-                                </div>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item preview-item">
-                                <div class="preview-thumbnail">
-                                    <div class="preview-icon bg-warning">
-                                        <i class="fas fa-wrench mx-0"></i>
+                                    <div class="dropdown-item-desc">
+                                        Template update is available now!
+                                        <div class="time text-primary">2 Min Ago</div>
                                     </div>
-                                </div>
-                                <div class="preview-item-content">
-                                    <h6 class="preview-subject font-weight-medium">Settings</h6>
-                                    <p class="font-weight-light small-text">
-                                        Private message
-                                    </p>
-                                </div>
-                            </a>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <div class="dropdown-item-icon bg-info text-white">
+                                        <i class="far fa-user"></i>
+                                    </div>
+                                    <div class="dropdown-item-desc">
+                                        <b>You</b> and <b>Dedik Sugiharto</b> are now friends
+                                        <div class="time">10 Hours Ago</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <div class="dropdown-item-icon bg-success text-white">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <div class="dropdown-item-desc">
+                                        <b>Kusnaedi</b> has moved task <b>Fix bug header</b> to <b>Done</b>
+                                        <div class="time">12 Hours Ago</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <div class="dropdown-item-icon bg-danger text-white">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                    </div>
+                                    <div class="dropdown-item-desc">
+                                        Low disk space. Let's clean it!
+                                        <div class="time">17 Hours Ago</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <div class="dropdown-item-icon bg-info text-white">
+                                        <i class="fas fa-bell"></i>
+                                    </div>
+                                    <div class="dropdown-item-desc">
+                                        Welcome to CodiePie template!
+                                        <div class="time">Yesterday</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dropdown-footer text-center">
+                                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+                            </div>
                         </div>
                     </li>
-                    <li class="nav-item nav-profile dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-                            <img src="assets/images/users/user-1.jpg" alt="profile" />
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                            <img alt="image" src="assets/img/users/user-1.jpg" class="rounded-circle mr-1">
+                            <div class="d-sm-none d-lg-inline-block">Yvonne Kusiima</div>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-                            <a href="profile.html" class="dropdown-item">
-                                <i class="fa fa-user text-primary"></i>
-                                Profile
-                            </a>
-                            <a href="activitylog.html" class="dropdown-item">
-                                <i class="fa fa-list text-primary"></i>
-                                Activity Log
-                            </a>
-                            <a href="#" class="dropdown-item">
-                                <i class="fas fa-cog text-primary"></i>
-                                Settings
-                            </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="dropdown-title">Hello Author</div>
+                            <a href="profile.html" class="dropdown-item has-icon"><i class="far fa-user"></i> Profile</a>
+                            <a href="activitylog.html" class="dropdown-item has-icon"><i class="fas fa-list"></i> Activity Log</a>
+                            <a href="settings.html" class="dropdown-item has-icon"><i class="fas fa-cog"></i> Settings</a>
                             <div class="dropdown-divider"></div>
-                            <a href="logout.html" class="dropdown-item">
-                                <i class="fas fa-power-off text-primary"></i>
-                                Logout
-                            </a>
+                            <a href="#" class="dropdown-item has-icon text-danger"><i class="fas fa-sign-out-alt"></i> Logout</a>
                         </div>
-                    </li>
-                </ul>
-                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
-                    <span class="fas fa-bars"></span> <span class="font-weight-bold">MENU</span>
-                </button>
-            </div>
-        </nav>
-        <!-- partial -->
-        <div class="container-fluid page-body-wrapper">
-            <!-- partial:partials/_sidebar -->
-            <nav class="sidebar sidebar-offcanvas" id="sidebar">
-                <ul class="nav">
-                    <li class="nav-item nav-profile">
-                        <div class="nav-link">
-                            <div class="profile-image">
-                                <img src="assets/images/users/user-1.jpg" alt="image" />
-                            </div>
-                            <div class="profile-name">
-                                <p class="name">
-                                    Yvonne Kusiima
-                                </p>
-                                <p class="designation">
-                                    AUTHOR
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="dashboard.html">
-                            <i class="fa fa-home menu-icon"></i>
-                            <span class="menu-title">Dashboard</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="account.html">
-                            <i class="fa fa-user menu-icon"></i>
-                            <span class="menu-title">My Account</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="activitylog.html">
-                            <i class="fa fa-list menu-icon"></i>
-                            <span class="menu-title">Activity Log</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" href="#bookshelf" aria-expanded="false" aria-controls="bookshelf">
-                            <i class="fa fa-book menu-icon"></i>
-                            <span class="menu-title">Bookshelf</span>
-                            <i class="menu-arrow"></i>
-                        </a>
-                        <div class="collapse" id="bookshelf">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="addbook.html">Add Book</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="books.html">View Books</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="booksales.html">Book Sales</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="booksales.html">Ratings & Comments</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" href="#payments" aria-expanded="false" aria-controls="payments">
-                            <i class="fa fa-money-bill menu-icon"></i>
-                            <span class="menu-title">Payments</span>
-                            <i class="menu-arrow"></i>
-                        </a>
-                        <div class="collapse" id="payments">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="paymentinformation.html">Payment Information</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="trackpayments.html">Track Payments</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="settings.html">
-                            <i class="fas fa-cog menu-icon"></i>
-                            <span class="menu-title">Settings</span>
-                        </a>
                     </li>
                 </ul>
             </nav>
-            <!-- partial -->
-            <div class="main-panel">
-                <div class="content-wrapper">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title font-weight-bold">ACTIVITY LOG</h4>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="table-responsive">
-                                        <table id="data-table" class="table table-bordered text-center">
-                                            <thead>
-                                                <tr>
-                                                    <th>EmailAddress</th>
-                                                    <th>DateTimestamp</th>
-                                                    <th>Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>yvonnekusiima@gmail.com</td>
-                                                    <td>2020-02-02 13:45</td>
-                                                    <td>Logged in</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+
+            <!-- Start main left sidebar menu -->
+            <div class="main-sidebar sidebar-style-2">
+                <aside id="sidebar-wrapper">
+                    <div class="sidebar-brand">
+                        <a href="dashboard.html"><img src="assets/img/logo.png" alt="logo" class="img-fluid" width="197" height="45" /></a>
+                    </div>
+                    <div class="sidebar-brand sidebar-brand-sm">
+                        <a href="dashboard.html"><img src="assets/img/logo-icon.png" alt="logo" class="img-fluid"></a>
+                    </div>
+                    <div class="mb-3"></div>
+                    <ul class="sidebar-menu">
+                        <li class="font-weight-bold">
+                            <a href="dashboard.html">
+                                <img src="assets/img/users/user-1.jpg" class="user-img-radious-style">&nbsp;
+                                <span>Yvonne Kusiima</span>
+                            </a>
+                        </li>
+                        <li class="menu-header">Authors Dashboard</li>
+                        <li><a class="nav-link" href="dashboard.html"><i class="fas fa-home"></i> <span>Dashboard</span></a></li>
+                        <li><a class="nav-link" href="myaccount.html"><i class="fas fa-user"></i> <span>My Account</span></a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-book"></i> <span>Bookshelf</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="addbook.html">Add Book</a></li>
+                                <li><a class="nav-link" href="viewbooks.html">View Books</a></li>
+                                <li><a class="nav-link" href="booksales.html">Book Sales</a></li>
+                                <li><a class="nav-link" href="reviews.html">Book Reviews</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-money-bill"></i> <span>Payments</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="paymentinformation.html">Payment Information</a></li>
+                                <li><a class="nav-link" href="payments.html">Track Payments</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav-link" href="settings.html"><i class="fas fa-cog"></i> <span>Settings</span></a></li>
+                    </ul>
+                    <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
+                        <a href="#" class="btn btn-primary btn-lg btn-block btn-icon-split"><i class="fas fa-rocket"></i> Documentation</a>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Start app main Content -->
+            <div class="main-content">
+                <section class="section">
+                    <div class="section-header">
+                        <h1>Activity Log</h1>
+                    </div>
+                    <div class="section-body">
+                        <h2 class="section-title">Hi, Yvonne</h2>
+                        <p class="section-lead">Find all your activity logged here.</p>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>My Activity Log</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table table-striped v_center" id="table-1">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Email Address</th>
+                                                        <th>DateTimestamp</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>yvonnekusiima00@gmail.com</td>
+                                                        <td>2020-01-02 14:53</td>
+                                                        <td>Logged in</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- content-wrapper ends -->
-                <!-- partial:partials/_footer.html -->
-                <footer class="footer">
-                    <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                        <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">
-                            Copyright &copy;
-                            <script>document.write(new Date().getFullYear());</script> <a href="https://www.africanbooks.com/" class="text-primary font-weight-bold">africanbooks.com</a>
-                        </span>
-                    </div>
-                </footer>
-                <!-- partial -->
+                </section>
             </div>
-            <!-- main-panel ends -->
-        </div>
-        <!-- page-body-wrapper ends -->
-    </div>
-    <!-- container-scroller -->
 
-    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
-    <script src="assets/vendors/js/vendor.bundle.addons.js"></script>
-    <script src="assets/js/off-canvas.js"></script>
-    <script src="assets/js/hoverable-collapse.js"></script>
-    <script src="assets/js/misc.js"></script>
-    <script src="assets/js/settings.js"></script>
-    <script src="assets/js/todolist.js"></script>
-    <script src="assets/js/dashboard.js"></script>
-    <script src="assets/js/data-table.js"></script>
+            <!-- Start app Footer part -->
+            <!-- <footer class="main-footer">
+                <div class="footer-left">
+                    Copyright &copy;  <a href="afriacnbooks.com">AfricanBooks.com</a>
+                </div>
+                <div class="footer-right">
+
+                </div>
+            </footer> -->
+
+        </div>
+    </div>
+
+    <!-- General JS Scripts -->
+    <script src="assets/bundles/lib.vendor.bundle.js"></script>
+    <script src="assets/js/CodiePie.js"></script>
+    <!-- JS Libraies -->
+    <script src="assets/modules/summernote/summernote-bs4.js"></script>
+    <script src="assets/modules/datatables/datatables.min.js"></script>
+    <script src="assets/modules/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/modules/datatables/Select-1.2.4/js/dataTables.select.min.js"></script>
+    <script src="assets/modules/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Page Specific JS File -->
+    <script src="assets/js/page/modules-datatables.js"></script>
+    <!-- Template JS File -->
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/custom.js"></script>
 
 </body>
 
