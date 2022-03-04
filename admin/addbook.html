@@ -494,22 +494,6 @@
                                                 </select>
                                             </div>
                                             <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                <label>Additional Contributors</label>
-                                                <input name="additionalcontributors" type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                <label>Book Edition</label>
-                                                <input name="bookedition" type="text" class="form-control">
-                                            </div>
-                                            <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                <label>Book Series</label>
-                                                <input name="bookseries" type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                 <label>Book Genre *</label>
                                                 <select class="form-control" name="bookgenre" required>
                                                     <option>Select</option>
@@ -587,9 +571,31 @@
                                                     </optgroup>
                                                 </select>
                                             </div>
+                                        </div>
+                                        <div class="form-group row">
                                             <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                <label>Book Price *</label>
-                                                <input name="bookprice" type="text" class="form-control" required>
+                                                <label>Book Edition</label>
+                                                <input name="bookedition" type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                <label>Book Series</label>
+                                                <input name="bookseries" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                <label>Royalty Plan</label>
+												<select class="form-control" name="royaltyplan">
+												    <option>Select</option>
+												    <option value="70and65plan">70% and 65%  - $2 to $4.15</option>
+												    <option value="55nd51plan">55% and 51%  - $4.16 to 5.49</option>
+												    <option value="45and42plan">45% and 42%  - $5.50 to $6</option>
+												    <option value="35and33plan">35% and 33%  - $0.99 to $200</option>
+												</select>
+                                            </div>
+                                            <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                <label>Book Price *</label>&nbsp;<i class="fa fa-info-circle" title="The book price is determined by the royalty plan"></i>
+                                                <input name="bookprice" type="text" class="form-control" required readonly>
                                             </div>
                                         </div>
                                         <div class="form-group row">
