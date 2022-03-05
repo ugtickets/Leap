@@ -8660,7 +8660,7 @@ p {
     display: block;
     position: relative;
     margin-bottom: 2rem;
-    background-color: #ccc
+    background-image: url(../images/offers/offers-bg.jpg);
 }
 
     .banner > a {

@@ -373,15 +373,20 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-12">
-                                    <form method="post" class="row">
+                                    <div class="row">
                                         <div class="col-lg-4">
                                             <div class="form-group">
-                                                <img src="assets/images/users/user-1.jpg" alt="image" class="" style="border-radius:50%" width="300" height="300">
+                                                <img src="assets/images/users/user-1.jpg" alt="image" width="300" height="300">
                                             </div>
-											<div class="form-group">
-                                                <label>Profile Picture:</label>
-                                                <input type="file" class="form-control" name="profilepicture"><br>
-                                            </div>
+											<form method="post" action="#" class="form-group">
+												<label>Profile Picture</label>
+                                                <div class="input-group mb-3">													   
+                                                    <input type="file" class="form-control" name="profilepicture">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-primary" type="submit">Upload</button>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                         <div class="col-lg-8">
                                             <div class="form-group row">
@@ -414,13 +419,13 @@
                                                     <input type="text" class="form-control" name="datetimecreated" value="2022-03-01 14:53" readonly>
                                                 </div>
                                             </div>
-											<div class="form-group">
-                                                <button type="submit" class="btn btn-primary " tabindex="4">
+											<div class="form-group float-right">
+                                                <button type="submit" class="btn btn-primary" tabindex="4">
                                                     SAVE CHANGES
                                                 </button>
                                             </div>
                                         </div>
-                                    </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>

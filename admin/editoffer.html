@@ -219,16 +219,21 @@
                                     <div class="card-header">
                                         <h4 class="font-weight-bold">EDIT OFFER</h4>
                                     </div>
-                                      <div class="card-body">
+                                    <div class="card-body">
 									    <div class="row">
                                             <div class="col-lg-4">
 											    <div class="form-group">
-                                                    <img src="assets/img/offers/seven-days-in-june-tia-williams.jpg" alt="image">
+                                                    <img src="assets/img/offers/seven-days-in-june-tia-williams.jpg" alt="image" style="display: inline">
 												</div>
-												<div class="form-group">
+												<form method="post" action="#" class="form-group">
 												    <label>Offer Image:</label>
-												    <input type="file" class="form-control" name="offerimage"><br>
-												</div>
+                                                    <div class="input-group mb-3">													   
+                                                        <input type="file" class="form-control" name="offerimage">
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-primary" type="submit">Upload</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
                                             </div>
                                             <div class="col-lg-8">
 											    <div class="form-group">
@@ -241,7 +246,7 @@
                                                 </div>
 												<div class="form-group">
                                                     <label>Offer Details *</label>
-                                                    <input type="text" class="form-control" name="offerdetails" value="Save $10 on Seven Days in June by Tia Williams">
+													<textarea class="form-control" name="offerdetails">Save $10 on Seven Days in June by Tia Williams</textarea>
                                                 </div>
 												<div class="form-group">
                                                     <label>Date Time Added *</label>
