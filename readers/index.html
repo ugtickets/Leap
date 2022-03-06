@@ -555,8 +555,10 @@
             </div><!-- End .container -->
 
             <div class="mb-3"></div><!-- End .mb-5 -->
-
-            <form method="post" id="newarrivals">
+			
+			<!-- New Arrivals -->
+			
+            <div id="newarrivals">
                 <div class="container new-arrivals">
                     <div class="heading heading-flex mb-3">
                         <div class="heading-left">
@@ -1697,7 +1699,7 @@
                         </div><!-- .End .tab-pane -->
                     </div><!-- End .tab-content -->
                 </div><!-- End .container -->
-            </form>
+            </div>
 
             <div class="mb-6"></div><!-- End .mb-6 -->
 
@@ -1718,32 +1720,95 @@
             </div><!-- End .container -->
 
             <div class="mb-4"></div><!-- End .mb-4 -->
-
+			
+			<!-- Trending Books -->
+			
             <div class="bg-light pt-5 pb-6">
                 <div class="container trending-products">
                     <div class="heading heading-flex mb-3">
                         <div class="heading-left">
                             <h2 class="title" style="font-family: Inria Serif">Trending Books</h2><!-- End .title -->
-                        </div><!-- End .heading-left -->
-
-                        <div class="heading-right">
-                            <ul class="nav nav-pills nav-border-anim justify-content-center" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="trending-top-link" data-toggle="tab" href="#trending-top-tab" role="tab" aria-controls="trending-top-tab" aria-selected="true">Top Rated</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="trending-best-link" data-toggle="tab" href="#trending-best-tab" role="tab" aria-controls="trending-best-tab" aria-selected="false">Best Selling</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="trending-sale-link" data-toggle="tab" href="#trending-sale-tab" role="tab" aria-controls="trending-sale-tab" aria-selected="false">On Sale</a>
-                                </li>
-                            </ul>
-                        </div><!-- End .heading-right -->
+                        </div><!-- End .heading-left -->                      
                     </div><!-- End .heading -->
 
-                    <div class="row">
-                        <div class="col-xl-5col d-none d-xl-block just-action-icons-sm">
-                            <div class="banner">
+                    <div class="tab-content tab-content-carousel just-action-icons-sm">
+                        <div class="tab-pane p-0 fade show active">
+                            <div class="owl-carousel owl-full carousel-equal-height carousel-with-shadow" data-toggle="owl"
+                                 data-owl-options='{
+                                "nav": true,
+                                "dots": true,
+                                "margin": 20,
+                                "loop": false,
+                                "responsive": {
+                                    "0": {
+                                        "items":2
+                                    },
+                                    "480": {
+                                        "items":2
+                                    },
+                                    "768": {
+                                        "items":3
+                                    },
+                                    "992": {
+                                        "items":4
+                                    },
+                                    "1200": {
+                                        "items":5
+                                    }
+                                }
+                            }'>
+                                <div class="product product-2">
+                                    <figure class="product-media">
+                                        <a href="#">
+                                            <img src="assets/images/books/the-fault-in-our-stars-john-green.jpg" alt="image" class="product-image">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="#" class="btn-product btn-cart js-addtocart" title="Add to cart"><span>cart</span></a>
+                                            <a href="#" class="btn-product btn-wishlist js-addtowishlist" title="Add to wishlist"><span>wishlist</span></a>
+                                        </div><!-- End .product-action -->
+                                    </figure><!-- End .product-media -->
+                                    <div class="product-body">
+                                        <div class="product-cat">
+                                            <a href="#" style="text-transform:uppercase" class="js-bookauthor">John Green</a>
+                                        </div><!-- End .product-cat -->
+                                        <h3 class="product-title"><a href="bookinfo.html" class="js-booktitle" title="The Fault in Our Stars">The Fault in Our Stars</a></h3><!-- End .product-title -->
+                                        <div class="product-price js-bookprice">
+                                            $110
+                                        </div><!-- End .product-price -->
+                                        <div class="ratings-container">
+                                            <div class="ratings">
+                                                <div class="ratings-val" style="width:70%;"></div><!-- End .ratings-val -->
+                                            </div><!-- End .ratings -->
+                                        </div><!-- End .rating-container -->
+                                    </div><!-- End .product-body -->
+                                </div><!-- End .product -->
+
+                                <div class="product product-2">
+                                    <figure class="product-media">
+                                        <a href="#">
+                                            <img src="assets/images/books/ghost-story-peter-straub.jpg" alt="image" class="product-image">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="#" class="btn-product btn-cart js-addtocart" title="Add to cart"><span>cart</span></a>
+                                            <a href="#" class="btn-product btn-wishlist js-addtowishlist" title="Add to wishlist"><span>wishlist</span></a>
+                                        </div><!-- End .product-action -->
+                                    </figure><!-- End .product-media -->
+                                    <div class="product-body">
+                                        <div class="product-cat">
+                                            <a href="#" style="text-transform:uppercase" class="js-bookauthor">Peter Straub</a>
+                                        </div><!-- End .product-cat -->
+                                        <h3 class="product-title"><a href="#" class="js-booktitle" title="Ghost Story">Ghost Story</a></h3><!-- End .product-title -->
+                                        <div class="product-price js-bookprice">
+                                            $140
+                                        </div><!-- End .product-price -->
+                                        <div class="ratings-container">
+                                            <div class="ratings">
+                                                <div class="ratings-val" style="width:70%;"></div><!-- End .ratings-val -->
+                                            </div><!-- End .ratings -->
+                                        </div><!-- End .rating-container -->
+                                    </div><!-- End .product-body -->
+                                </div><!-- End .product -->
+
                                 <div class="product product-2">
                                     <figure class="product-media">
                                         <a href="#">
@@ -1769,569 +1834,101 @@
                                         </div><!-- End .rating-container -->
                                     </div><!-- End .product-body -->
                                 </div><!-- End .product -->
-                            </div><!-- End .banner -->
-                        </div><!-- End .col-xl-5col -->
 
-                        <div class="col-xl-4-5col">
-                            <div class="tab-content tab-content-carousel just-action-icons-sm">
-                                <div class="tab-pane p-0 fade show active" id="trending-top-tab" role="tabpanel" aria-labelledby="trending-top-link">
-                                    <div class="owl-carousel owl-full carousel-equal-height carousel-with-shadow" data-toggle="owl"
-                                         data-owl-options='{
-                                            "nav": true,
-                                            "dots": false,
-                                            "margin": 20,
-                                            "loop": false,
-                                            "responsive": {
-                                                "0": {
-                                                    "items":2
-                                                },
-                                                "480": {
-                                                    "items":2
-                                                },
-                                                "768": {
-                                                    "items":3
-                                                },
-                                                "992": {
-                                                    "items":4
-                                                }
-                                            }
-                                        }'>
-                                        <div class="product product-2">
-                                            <figure class="product-media">
-                                                <a href="#">
-                                                    <img src="assets/images/books/the-fault-in-our-stars-john-green.jpg" alt="image" class="product-image">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-product btn-cart js-addtocart" title="Add to cart"><span>cart</span></a>
-                                                    <a href="#" class="btn-product btn-wishlist js-addtowishlist" title="Add to wishlist"><span>wishlist</span></a>
-                                                </div><!-- End .product-action -->
-                                            </figure><!-- End .product-media -->
-                                            <div class="product-body">
-                                                <div class="product-cat">
-                                                    <a href="#" style="text-transform:uppercase" class="js-bookauthor">John Green</a>
-                                                </div><!-- End .product-cat -->
-                                                <h3 class="product-title"><a href="bookinfo.html" class="js-booktitle" title="The Fault in Our Stars">The Fault in Our Stars</a></h3><!-- End .product-title -->
-                                                <div class="product-price js-bookprice">
-                                                    $110
-                                                </div><!-- End .product-price -->
-                                                <div class="ratings-container">
-                                                    <div class="ratings">
-                                                        <div class="ratings-val" style="width:70%;"></div><!-- End .ratings-val -->
-                                                    </div><!-- End .ratings -->
-                                                </div><!-- End .rating-container -->
-                                            </div><!-- End .product-body -->
-                                        </div><!-- End .product -->
+                                <div class="product product-2">
+                                    <figure class="product-media">
+                                        <a href="#">
+                                            <img src="assets/images/books/seven-days-in-june-tia-williams.jpg" alt="image" class="product-image">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="#" class="btn-product btn-cart js-addtocart" title="Add to cart"><span>cart</span></a>
+                                            <a href="#" class="btn-product btn-wishlist js-addtowishlist" title="Add to wishlist"><span>wishlist</span></a>
+                                        </div><!-- End .product-action -->
+                                    </figure><!-- End .product-media -->
+                                    <div class="product-body">
+                                        <div class="product-cat">
+                                            <a href="#" style="text-transform:uppercase" class="js-bookauthor">Tia Williams</a>
+                                        </div><!-- End .product-cat -->
+                                        <h3 class="product-title"><a href="#" class="js-booktitle" title="Seven Days in June">Seven Days in June </a></h3><!-- End .product-title -->
+                                        <div class="product-price js-bookprice">
+                                            $152
+                                        </div><!-- End .product-price -->
+                                        <div class="ratings-container">
+                                            <div class="ratings">
+                                                <div class="ratings-val" style="width:70%;"></div><!-- End .ratings-val -->
+                                            </div><!-- End .ratings -->
+                                        </div><!-- End .rating-container -->
+                                    </div><!-- End .product-body -->
+                                </div><!-- End .product -->
 
-                                        <div class="product product-2">
-                                            <figure class="product-media">
-                                                <a href="#">
-                                                    <img src="assets/images/books/ghost-story-peter-straub.jpg" alt="image" class="product-image">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-product btn-cart js-addtocart" title="Add to cart"><span>cart</span></a>
-                                                    <a href="#" class="btn-product btn-wishlist js-addtowishlist" title="Add to wishlist"><span>wishlist</span></a>
-                                                </div><!-- End .product-action -->
-                                            </figure><!-- End .product-media -->
-                                            <div class="product-body">
-                                                <div class="product-cat">
-                                                    <a href="#" style="text-transform:uppercase" class="js-bookauthor">Peter Straub</a>
-                                                </div><!-- End .product-cat -->
-                                                <h3 class="product-title"><a href="#" class="js-booktitle" title="Ghost Story">Ghost Story</a></h3><!-- End .product-title -->
-                                                <div class="product-price js-bookprice">
-                                                    $140
-                                                </div><!-- End .product-price -->
-                                                <div class="ratings-container">
-                                                    <div class="ratings">
-                                                        <div class="ratings-val" style="width:70%;"></div><!-- End .ratings-val -->
-                                                    </div><!-- End .ratings -->
-                                                </div><!-- End .rating-container -->
-                                            </div><!-- End .product-body -->
-                                        </div><!-- End .product -->
+                                <div class="product product-2">
+                                    <figure class="product-media">
+                                        <a href="#">
+                                            <img src="assets/images/books/are-you-afraid-of-the-dark-sidney-sheldon.jpg" alt="image" class="product-image">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="#" class="btn-product btn-cart js-addtocart" title="Add to cart"><span>cart</span></a>
+                                            <a href="#" class="btn-product btn-wishlist js-addtowishlist" title="Add to wishlist"><span>wishlist</span></a>
+                                        </div><!-- End .product-action -->
+                                    </figure><!-- End .product-media -->
+                                    <div class="product-body">
+                                        <div class="product-cat">
+                                            <a href="#" style="text-transform:uppercase" class="js-bookauthor">Sidney Sheldon</a>
+                                        </div><!-- End .product-cat -->
+                                        <h3 class="product-title"><a href="#" class="js-booktitle" title="Are You Afraid of the Dark">Are You Afraid of the Dark</a></h3><!-- End .product-title -->
+                                        <div class="product-price js-bookprice">
+                                            $145
+                                        </div><!-- End .product-price -->
+                                        <div class="ratings-container">
+                                            <div class="ratings">
+                                                <div class="ratings-val" style="width:70%;"></div><!-- End .ratings-val -->
+                                            </div><!-- End .ratings -->
+                                        </div><!-- End .rating-container -->
+                                    </div><!-- End .product-body -->
+                                </div><!-- End .product -->
 
-                                        <div class="product product-2">
-                                            <figure class="product-media">
-                                                <a href="#">
-                                                    <img src="assets/images/books/city-of-ashes-cassandra-clare.jpg" alt="image" class="product-image">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-product btn-cart js-addtocart" title="Add to cart"><span>cart</span></a>
-                                                    <a href="#" class="btn-product btn-wishlist js-addtowishlist" title="Add to wishlist"><span>wishlist</span></a>
-                                                </div><!-- End .product-action -->
-                                            </figure><!-- End .product-media -->
-                                            <div class="product-body">
-                                                <div class="product-cat">
-                                                    <a href="#" style="text-transform:uppercase" class="js-bookauthor">Cassandra Clare</a>
-                                                </div><!-- End .product-cat -->
-                                                <h3 class="product-title"><a href="#" class="js-booktitle" title="The Mortal Instruments: City of Ashes">The Mortal Instruments: City of Ashes</a></h3><!-- End .product-title -->
-                                                <div class="product-price js-bookprice">
-                                                    $170
-                                                </div><!-- End .product-price -->
-                                                <div class="ratings-container">
-                                                    <div class="ratings">
-                                                        <div class="ratings-val" style="width:70%;"></div><!-- End .ratings-val -->
-                                                    </div><!-- End .ratings -->
-                                                </div><!-- End .rating-container -->
-                                            </div><!-- End .product-body -->
-                                        </div><!-- End .product -->
+                                <div class="product product-2">
+                                    <figure class="product-media">
+                                        <a href="#">
+                                            <img src="assets/images/books/the-long-take-robin-robertson.jpg" alt="image" class="product-image">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="#" class="btn-product btn-cart js-addtocart" title="Add to cart"><span>cart</span></a>
+                                            <a href="#" class="btn-product btn-wishlist js-addtowishlist" title="Add to wishlist"><span>wishlist</span></a>
+                                        </div><!-- End .product-action -->
+                                    </figure><!-- End .product-media -->
+                                    <div class="product-body">
+                                        <div class="product-cat">
+                                            <a href="#" style="text-transform:uppercase" class="js-bookauthor">Robin Robertson</a>
+                                        </div><!-- End .product-cat -->
+                                        <h3 class="product-title"><a href="#" class="js-booktitle" title="The Long Take">The Long Take</a></h3><!-- End .product-title -->
+                                        <div class="product-price js-bookprice">
+                                            $180
+                                        </div><!-- End .product-price -->
+                                        <div class="ratings-container">
+                                            <div class="ratings">
+                                                <div class="ratings-val" style="width:70%;"></div><!-- End .ratings-val -->
+                                            </div><!-- End .ratings -->
+                                        </div><!-- End .rating-container -->
+                                    </div><!-- End .product-body -->
+                                </div><!-- End .product -->
 
-                                        <div class="product product-2">
-                                            <figure class="product-media">
-                                                <a href="#">
-                                                    <img src="assets/images/books/seven-days-in-june-tia-williams.jpg" alt="image" class="product-image">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-product btn-cart js-addtocart" title="Add to cart"><span>cart</span></a>
-                                                    <a href="#" class="btn-product btn-wishlist js-addtowishlist" title="Add to wishlist"><span>wishlist</span></a>
-                                                </div><!-- End .product-action -->
-                                            </figure><!-- End .product-media -->
-                                            <div class="product-body">
-                                                <div class="product-cat">
-                                                    <a href="#" style="text-transform:uppercase" class="js-bookauthor">Tia Williams</a>
-                                                </div><!-- End .product-cat -->
-                                                <h3 class="product-title"><a href="#" class="js-booktitle" title="Seven Days in June">Seven Days in June </a></h3><!-- End .product-title -->
-                                                <div class="product-price js-bookprice">
-                                                    $152
-                                                </div><!-- End .product-price -->
-                                                <div class="ratings-container">
-                                                    <div class="ratings">
-                                                        <div class="ratings-val" style="width:70%;"></div><!-- End .ratings-val -->
-                                                    </div><!-- End .ratings -->
-                                                </div><!-- End .rating-container -->
-                                            </div><!-- End .product-body -->
-                                        </div><!-- End .product -->
-
-                                        <div class="product product-2">
-                                            <figure class="product-media">
-                                                <a href="#">
-                                                    <img src="assets/images/books/are-you-afraid-of-the-dark-sidney-sheldon.jpg" alt="image" class="product-image">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-product btn-cart js-addtocart" title="Add to cart"><span>cart</span></a>
-                                                    <a href="#" class="btn-product btn-wishlist js-addtowishlist" title="Add to wishlist"><span>wishlist</span></a>
-                                                </div><!-- End .product-action -->
-                                            </figure><!-- End .product-media -->
-                                            <div class="product-body">
-                                                <div class="product-cat">
-                                                    <a href="#" style="text-transform:uppercase" class="js-bookauthor">Sidney Sheldon</a>
-                                                </div><!-- End .product-cat -->
-                                                <h3 class="product-title"><a href="#" class="js-booktitle" title="Are You Afraid of the Dark">Are You Afraid of the Dark</a></h3><!-- End .product-title -->
-                                                <div class="product-price js-bookprice">
-                                                    $145
-                                                </div><!-- End .product-price -->
-                                                <div class="ratings-container">
-                                                    <div class="ratings">
-                                                        <div class="ratings-val" style="width:70%;"></div><!-- End .ratings-val -->
-                                                    </div><!-- End .ratings -->
-                                                </div><!-- End .rating-container -->
-                                            </div><!-- End .product-body -->
-                                        </div><!-- End .product -->
-
-                                        <div class="product product-2">
-                                            <figure class="product-media">
-                                                <a href="#">
-                                                    <img src="assets/images/books/the-long-take-robin-robertson.jpg" alt="image" class="product-image">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-product btn-cart js-addtocart" title="Add to cart"><span>cart</span></a>
-                                                    <a href="#" class="btn-product btn-wishlist js-addtowishlist" title="Add to wishlist"><span>wishlist</span></a>
-                                                </div><!-- End .product-action -->
-                                            </figure><!-- End .product-media -->
-                                            <div class="product-body">
-                                                <div class="product-cat">
-                                                    <a href="#" style="text-transform:uppercase" class="js-bookauthor">Robin Robertson</a>
-                                                </div><!-- End .product-cat -->
-                                                <h3 class="product-title"><a href="#" class="js-booktitle" title="The Long Take">The Long Take</a></h3><!-- End .product-title -->
-                                                <div class="product-price js-bookprice">
-                                                    $180
-                                                </div><!-- End .product-price -->
-                                                <div class="ratings-container">
-                                                    <div class="ratings">
-                                                        <div class="ratings-val" style="width:70%;"></div><!-- End .ratings-val -->
-                                                    </div><!-- End .ratings -->
-                                                </div><!-- End .rating-container -->
-                                            </div><!-- End .product-body -->
-                                        </div><!-- End .product -->
-
-                                    </div><!-- End .owl-carousel -->
-                                </div><!-- .End .tab-pane -->
-                                <!-- Best selling tab -->
-                                <div class="tab-pane p-0 fade" id="trending-best-tab" role="tabpanel" aria-labelledby="trending-best-link">
-                                    <div class="owl-carousel owl-full carousel-equal-height carousel-with-shadow" data-toggle="owl"
-                                         data-owl-options='{
-                                            "nav": true,
-                                            "dots": false,
-                                            "margin": 20,
-                                            "loop": false,
-                                            "responsive": {
-                                                "0": {
-                                                    "items":2
-                                                },
-                                                "480": {
-                                                    "items":2
-                                                },
-                                                "768": {
-                                                    "items":3
-                                                },
-                                                "992": {
-                                                    "items":4
-                                                }
-                                            }
-                                        }'>
-                                        <div class="product product-2">
-                                            <figure class="product-media">
-                                                <a href="#">
-                                                    <img src="assets/images/books/the-fault-in-our-stars-john-green.jpg" alt="image" class="product-image">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-product btn-cart js-addtocart" title="Add to cart"><span>cart</span></a>
-                                                    <a href="#" class="btn-product btn-wishlist js-addtowishlist" title="Add to wishlist"><span>wishlist</span></a>
-                                                </div><!-- End .product-action -->
-                                            </figure><!-- End .product-media -->
-                                            <div class="product-body">
-                                                <div class="product-cat">
-                                                    <a href="#" style="text-transform:uppercase" class="js-bookauthor">John Green</a>
-                                                </div><!-- End .product-cat -->
-                                                <h3 class="product-title"><a href="bookinfo.html" class="js-booktitle" title="The Fault in Our Stars">The Fault in Our Stars</a></h3><!-- End .product-title -->
-                                                <div class="product-price js-bookprice">
-                                                    $110
-                                                </div><!-- End .product-price -->
-                                                <div class="ratings-container">
-                                                    <div class="ratings">
-                                                        <div class="ratings-val" style="width:70%;"></div><!-- End .ratings-val -->
-                                                    </div><!-- End .ratings -->
-                                                </div><!-- End .rating-container -->
-                                            </div><!-- End .product-body -->
-                                        </div><!-- End .product -->
-
-                                        <div class="product product-2">
-                                            <figure class="product-media">
-                                                <a href="#">
-                                                    <img src="assets/images/books/ghost-story-peter-straub.jpg" alt="image" class="product-image">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-product btn-cart js-addtocart" title="Add to cart"><span>cart</span></a>
-                                                    <a href="#" class="btn-product btn-wishlist js-addtowishlist" title="Add to wishlist"><span>wishlist</span></a>
-                                                </div><!-- End .product-action -->
-                                            </figure><!-- End .product-media -->
-                                            <div class="product-body">
-                                                <div class="product-cat">
-                                                    <a href="#" style="text-transform:uppercase" class="js-bookauthor">Peter Straub</a>
-                                                </div><!-- End .product-cat -->
-                                                <h3 class="product-title"><a href="#" class="js-booktitle" title="Ghost Story">Ghost Story</a></h3><!-- End .product-title -->
-                                                <div class="product-price js-bookprice">
-                                                    $140
-                                                </div><!-- End .product-price -->
-                                                <div class="ratings-container">
-                                                    <div class="ratings">
-                                                        <div class="ratings-val" style="width:70%;"></div><!-- End .ratings-val -->
-                                                    </div><!-- End .ratings -->
-                                                </div><!-- End .rating-container -->
-                                            </div><!-- End .product-body -->
-                                        </div><!-- End .product -->
-
-                                        <div class="product product-2">
-                                            <figure class="product-media">
-                                                <a href="#">
-                                                    <img src="assets/images/books/city-of-ashes-cassandra-clare.jpg" alt="image" class="product-image">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-product btn-cart js-addtocart" title="Add to cart"><span>cart</span></a>
-                                                    <a href="#" class="btn-product btn-wishlist js-addtowishlist" title="Add to wishlist"><span>wishlist</span></a>
-                                                </div><!-- End .product-action -->
-                                            </figure><!-- End .product-media -->
-                                            <div class="product-body">
-                                                <div class="product-cat">
-                                                    <a href="#" style="text-transform:uppercase" class="js-bookauthor">Cassandra Clare</a>
-                                                </div><!-- End .product-cat -->
-                                                <h3 class="product-title"><a href="#" class="js-booktitle" title="The Mortal Instruments: City of Ashes">The Mortal Instruments: City of Ashes</a></h3><!-- End .product-title -->
-                                                <div class="product-price js-bookprice">
-                                                    $170
-                                                </div><!-- End .product-price -->
-                                                <div class="ratings-container">
-                                                    <div class="ratings">
-                                                        <div class="ratings-val" style="width:70%;"></div><!-- End .ratings-val -->
-                                                    </div><!-- End .ratings -->
-                                                </div><!-- End .rating-container -->
-                                            </div><!-- End .product-body -->
-                                        </div><!-- End .product -->
-
-                                        <div class="product product-2">
-                                            <figure class="product-media">
-                                                <a href="#">
-                                                    <img src="assets/images/books/seven-days-in-june-tia-williams.jpg" alt="image" class="product-image">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-product btn-cart js-addtocart" title="Add to cart"><span>cart</span></a>
-                                                    <a href="#" class="btn-product btn-wishlist js-addtowishlist" title="Add to wishlist"><span>wishlist</span></a>
-                                                </div><!-- End .product-action -->
-                                            </figure><!-- End .product-media -->
-                                            <div class="product-body">
-                                                <div class="product-cat">
-                                                    <a href="#" style="text-transform:uppercase" class="js-bookauthor">Tia Williams</a>
-                                                </div><!-- End .product-cat -->
-                                                <h3 class="product-title"><a href="#" class="js-booktitle" title="Seven Days in June">Seven Days in June </a></h3><!-- End .product-title -->
-                                                <div class="product-price js-bookprice">
-                                                    $152
-                                                </div><!-- End .product-price -->
-                                                <div class="ratings-container">
-                                                    <div class="ratings">
-                                                        <div class="ratings-val" style="width:70%;"></div><!-- End .ratings-val -->
-                                                    </div><!-- End .ratings -->
-                                                </div><!-- End .rating-container -->
-                                            </div><!-- End .product-body -->
-                                        </div><!-- End .product -->
-
-                                        <div class="product product-2">
-                                            <figure class="product-media">
-                                                <a href="#">
-                                                    <img src="assets/images/books/are-you-afraid-of-the-dark-sidney-sheldon.jpg" alt="image" class="product-image">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-product btn-cart js-addtocart" title="Add to cart"><span>cart</span></a>
-                                                    <a href="#" class="btn-product btn-wishlist js-addtowishlist" title="Add to wishlist"><span>wishlist</span></a>
-                                                </div><!-- End .product-action -->
-                                            </figure><!-- End .product-media -->
-                                            <div class="product-body">
-                                                <div class="product-cat">
-                                                    <a href="#" style="text-transform:uppercase" class="js-bookauthor">Sidney Sheldon</a>
-                                                </div><!-- End .product-cat -->
-                                                <h3 class="product-title"><a href="#" class="js-booktitle" title="Are You Afraid of the Dark">Are You Afraid of the Dark</a></h3><!-- End .product-title -->
-                                                <div class="product-price js-bookprice">
-                                                    $145
-                                                </div><!-- End .product-price -->
-                                                <div class="ratings-container">
-                                                    <div class="ratings">
-                                                        <div class="ratings-val" style="width:70%;"></div><!-- End .ratings-val -->
-                                                    </div><!-- End .ratings -->
-                                                </div><!-- End .rating-container -->
-                                            </div><!-- End .product-body -->
-                                        </div><!-- End .product -->
-
-                                        <div class="product product-2">
-                                            <figure class="product-media">
-                                                <a href="#">
-                                                    <img src="assets/images/books/the-long-take-robin-robertson.jpg" alt="image" class="product-image">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-product btn-cart js-addtocart" title="Add to cart"><span>cart</span></a>
-                                                    <a href="#" class="btn-product btn-wishlist js-addtowishlist" title="Add to wishlist"><span>wishlist</span></a>
-                                                </div><!-- End .product-action -->
-                                            </figure><!-- End .product-media -->
-                                            <div class="product-body">
-                                                <div class="product-cat">
-                                                    <a href="#" style="text-transform:uppercase" class="js-bookauthor">Robin Robertson</a>
-                                                </div><!-- End .product-cat -->
-                                                <h3 class="product-title"><a href="#" class="js-booktitle" title="The Long Take">The Long Take</a></h3><!-- End .product-title -->
-                                                <div class="product-price js-bookprice">
-                                                    $180
-                                                </div><!-- End .product-price -->
-                                                <div class="ratings-container">
-                                                    <div class="ratings">
-                                                        <div class="ratings-val" style="width:70%;"></div><!-- End .ratings-val -->
-                                                    </div><!-- End .ratings -->
-                                                </div><!-- End .rating-container -->
-                                            </div><!-- End .product-body -->
-                                        </div><!-- End .product -->
-                                    </div><!-- End .owl-carousel -->
-                                </div><!-- .End .tab-pane -->
-                                <!-- On sale tab -->
-                                <div class="tab-pane p-0 fade" id="trending-sale-tab" role="tabpanel" aria-labelledby="trending-sale-link">
-                                    <div class="owl-carousel owl-full carousel-equal-height carousel-with-shadow" data-toggle="owl"
-                                         data-owl-options='{
-                                            "nav": true,
-                                            "dots": false,
-                                            "margin": 20,
-                                            "loop": false,
-                                            "responsive": {
-                                                "0": {
-                                                    "items":2
-                                                },
-                                                "480": {
-                                                    "items":2
-                                                },
-                                                "768": {
-                                                    "items":3
-                                                },
-                                                "992": {
-                                                    "items":4
-                                                }
-                                            }
-                                        }'>
-                                        <div class="product product-2">
-                                            <figure class="product-media">
-                                                <a href="#">
-                                                    <img src="assets/images/books/the-fault-in-our-stars-john-green.jpg" alt="image" class="product-image">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-product btn-cart js-addtocart" title="Add to cart"><span>cart</span></a>
-                                                    <a href="#" class="btn-product btn-wishlist js-addtowishlist" title="Add to wishlist"><span>wishlist</span></a>
-                                                </div><!-- End .product-action -->
-                                            </figure><!-- End .product-media -->
-                                            <div class="product-body">
-                                                <div class="product-cat">
-                                                    <a href="#" style="text-transform:uppercase" class="js-bookauthor">John Green</a>
-                                                </div><!-- End .product-cat -->
-                                                <h3 class="product-title"><a href="bookinfo.html" class="js-booktitle" title="The Fault in Our Stars">The Fault in Our Stars</a></h3><!-- End .product-title -->
-                                                <div class="product-price js-bookprice">
-                                                    $110
-                                                </div><!-- End .product-price -->
-                                                <div class="ratings-container">
-                                                    <div class="ratings">
-                                                        <div class="ratings-val" style="width:70%;"></div><!-- End .ratings-val -->
-                                                    </div><!-- End .ratings -->
-                                                </div><!-- End .rating-container -->
-                                            </div><!-- End .product-body -->
-                                        </div><!-- End .product -->
-
-                                        <div class="product product-2">
-                                            <figure class="product-media">
-                                                <a href="#">
-                                                    <img src="assets/images/books/ghost-story-peter-straub.jpg" alt="image" class="product-image">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-product btn-cart js-addtocart" title="Add to cart"><span>cart</span></a>
-                                                    <a href="#" class="btn-product btn-wishlist js-addtowishlist" title="Add to wishlist"><span>wishlist</span></a>
-                                                </div><!-- End .product-action -->
-                                            </figure><!-- End .product-media -->
-                                            <div class="product-body">
-                                                <div class="product-cat">
-                                                    <a href="#" style="text-transform:uppercase" class="js-bookauthor">Peter Straub</a>
-                                                </div><!-- End .product-cat -->
-                                                <h3 class="product-title"><a href="#" class="js-booktitle" title="Ghost Story">Ghost Story</a></h3><!-- End .product-title -->
-                                                <div class="product-price js-bookprice">
-                                                    $140
-                                                </div><!-- End .product-price -->
-                                                <div class="ratings-container">
-                                                    <div class="ratings">
-                                                        <div class="ratings-val" style="width:70%;"></div><!-- End .ratings-val -->
-                                                    </div><!-- End .ratings -->
-                                                </div><!-- End .rating-container -->
-                                            </div><!-- End .product-body -->
-                                        </div><!-- End .product -->
-
-                                        <div class="product product-2">
-                                            <figure class="product-media">
-                                                <a href="#">
-                                                    <img src="assets/images/books/city-of-ashes-cassandra-clare.jpg" alt="image" class="product-image">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-product btn-cart js-addtocart" title="Add to cart"><span>cart</span></a>
-                                                    <a href="#" class="btn-product btn-wishlist js-addtowishlist" title="Add to wishlist"><span>wishlist</span></a>
-                                                </div><!-- End .product-action -->
-                                            </figure><!-- End .product-media -->
-                                            <div class="product-body">
-                                                <div class="product-cat">
-                                                    <a href="#" style="text-transform:uppercase" class="js-bookauthor">Cassandra Clare</a>
-                                                </div><!-- End .product-cat -->
-                                                <h3 class="product-title"><a href="#" class="js-booktitle" title="The Mortal Instruments: City of Ashes">The Mortal Instruments: City of Ashes</a></h3><!-- End .product-title -->
-                                                <div class="product-price js-bookprice">
-                                                    $170
-                                                </div><!-- End .product-price -->
-                                                <div class="ratings-container">
-                                                    <div class="ratings">
-                                                        <div class="ratings-val" style="width:70%;"></div><!-- End .ratings-val -->
-                                                    </div><!-- End .ratings -->
-                                                </div><!-- End .rating-container -->
-                                            </div><!-- End .product-body -->
-                                        </div><!-- End .product -->
-
-                                        <div class="product product-2">
-                                            <figure class="product-media">
-                                                <a href="#">
-                                                    <img src="assets/images/books/seven-days-in-june-tia-williams.jpg" alt="image" class="product-image">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-product btn-cart js-addtocart" title="Add to cart"><span>cart</span></a>
-                                                    <a href="#" class="btn-product btn-wishlist js-addtowishlist" title="Add to wishlist"><span>wishlist</span></a>
-                                                </div><!-- End .product-action -->
-                                            </figure><!-- End .product-media -->
-                                            <div class="product-body">
-                                                <div class="product-cat">
-                                                    <a href="#" style="text-transform:uppercase" class="js-bookauthor">Tia Williams</a>
-                                                </div><!-- End .product-cat -->
-                                                <h3 class="product-title"><a href="#" class="js-booktitle" title="Seven Days in June">Seven Days in June </a></h3><!-- End .product-title -->
-                                                <div class="product-price js-bookprice">
-                                                    $152
-                                                </div><!-- End .product-price -->
-                                                <div class="ratings-container">
-                                                    <div class="ratings">
-                                                        <div class="ratings-val" style="width:70%;"></div><!-- End .ratings-val -->
-                                                    </div><!-- End .ratings -->
-                                                </div><!-- End .rating-container -->
-                                            </div><!-- End .product-body -->
-                                        </div><!-- End .product -->
-
-                                        <div class="product product-2">
-                                            <figure class="product-media">
-                                                <a href="#">
-                                                    <img src="assets/images/books/are-you-afraid-of-the-dark-sidney-sheldon.jpg" alt="image" class="product-image">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-product btn-cart js-addtocart" title="Add to cart"><span>cart</span></a>
-                                                    <a href="#" class="btn-product btn-wishlist js-addtowishlist" title="Add to wishlist"><span>wishlist</span></a>
-                                                </div><!-- End .product-action -->
-                                            </figure><!-- End .product-media -->
-                                            <div class="product-body">
-                                                <div class="product-cat">
-                                                    <a href="#" style="text-transform:uppercase" class="js-bookauthor">Sidney Sheldon</a>
-                                                </div><!-- End .product-cat -->
-                                                <h3 class="product-title"><a href="#" class="js-booktitle" title="Are You Afraid of the Dark">Are You Afraid of the Dark</a></h3><!-- End .product-title -->
-                                                <div class="product-price js-bookprice">
-                                                    $145
-                                                </div><!-- End .product-price -->
-                                                <div class="ratings-container">
-                                                    <div class="ratings">
-                                                        <div class="ratings-val" style="width:70%;"></div><!-- End .ratings-val -->
-                                                    </div><!-- End .ratings -->
-                                                </div><!-- End .rating-container -->
-                                            </div><!-- End .product-body -->
-                                        </div><!-- End .product -->
-
-                                        <div class="product product-2">
-                                            <figure class="product-media">
-                                                <a href="#">
-                                                    <img src="assets/images/books/the-long-take-robin-robertson.jpg" alt="image" class="product-image">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-product btn-cart js-addtocart" title="Add to cart"><span>cart</span></a>
-                                                    <a href="#" class="btn-product btn-wishlist js-addtowishlist" title="Add to wishlist"><span>wishlist</span></a>
-                                                </div><!-- End .product-action -->
-                                            </figure><!-- End .product-media -->
-                                            <div class="product-body">
-                                                <div class="product-cat">
-                                                    <a href="#" style="text-transform:uppercase" class="js-bookauthor">Robin Robertson</a>
-                                                </div><!-- End .product-cat -->
-                                                <h3 class="product-title"><a href="#" class="js-booktitle" title="The Long Take">The Long Take</a></h3><!-- End .product-title -->
-                                                <div class="product-price js-bookprice">
-                                                    $180
-                                                </div><!-- End .product-price -->
-                                                <div class="ratings-container">
-                                                    <div class="ratings">
-                                                        <div class="ratings-val" style="width:70%;"></div><!-- End .ratings-val -->
-                                                    </div><!-- End .ratings -->
-                                                </div><!-- End .rating-container -->
-                                            </div><!-- End .product-body -->
-                                        </div><!-- End .product -->
-
-                                    </div><!-- End .owl-carousel -->
-                                </div><!-- .End .tab-pane -->
-                            </div><!-- End .tab-content -->
-                        </div><!-- End .col-xl-4-5col -->
-                    </div><!-- End .row -->
+                            </div><!-- End .owl-carousel -->
+                        </div><!-- .End .tab-pane -->
+						
+                    </div><!-- End .tab-content -->
                 </div><!-- End .container -->
             </div><!-- End .bg-light pt-5 pb-6 -->
 
             <div class="mb-5"></div><!-- End .mb-5 -->
-
+			
+			<!-- Recommendations -->
+			
             <div class="container for-you">
                 <div class="heading heading-flex mb-3">
                     <div class="heading-left">
-                        <h2 class="title" style="font-family: Inria Serif">Recommendations For You</h2><!-- End .title -->
+                        <h2 class="title" style="font-family: Inria Serif">Recommendations</h2><!-- End .title -->
                     </div><!-- End .heading-left -->
-
-                    <div class="heading-right">
-                        <a href="#" class="title-link">View All Recommendations <i class="icon-long-arrow-right"></i></a>
-                    </div><!-- End .heading-right -->
                 </div><!-- End .heading -->
 
                 <div class="products">
@@ -2604,7 +2201,7 @@
                                 </span>
 
                                 <div class="icon-box-content">
-                                    <h3 class="icon-box-title">Get 20% Off 1 Book</h3><!-- End .icon-box-title -->
+                                    <h3 class="icon-box-title">Get 10% Off 1 Book</h3><!-- End .icon-box-title -->
                                     <p>when you sign up</p>
                                 </div><!-- End .icon-box-content -->
                             </div><!-- End .icon-box -->
