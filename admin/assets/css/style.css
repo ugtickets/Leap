@@ -6090,9 +6090,10 @@ body.sidebar-gone .main-sidebar {
         background-color: #fff;
         left: 65px;
         top: 10px;
-        width: 200px;
+        width: 300px;
         display: none;
-        box-shadow: 0 0 30px rgba(0,0,0,0.1)
+        box-shadow: 0 0 30px rgba(0,0,0,0.1);
+		padding-bottom: 10px;
     }
 
         .sidebar-mini .main-sidebar .sidebar-menu > li ul.dropdown-menu li > a:focus, .sidebar-mini .main-sidebar .sidebar-menu > li ul.dropdown-menu li.active > a, .sidebar-mini .main-sidebar .sidebar-menu > li ul.dropdown-menu li.active > a:hover {

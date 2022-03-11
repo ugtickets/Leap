@@ -234,6 +234,15 @@
                                                         </div>
                                                     </div>
                                                 </form>
+												<form method="post" action="#" class="form-group">
+                                                    <label>Book Upload:</label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="file" class="form-control" name="bookupload">
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-primary" type="submit">Upload</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
                                             </div>
                                             <div class="col-lg-8">
                                                 <div class="form-group row">
@@ -260,7 +269,7 @@
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                         <label>Author Country *</label>
                                                         <select class="form-control" name="country" required>
-                                                            <option>United States of America</option>
+                                                            <option value="United States of America">United States of America</option>
                                                             <option value="Afganistan">Afghanistan</option>
                                                             <option value="Albania">Albania</option>
                                                             <option value="Algeria">Algeria</option>
@@ -591,18 +600,18 @@
                                                 <div class="form-group row">
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                         <label>Book Edition</label>
-                                                        <input type="text" class="form-control" name="bookedition">
+                                                        <input type="text" class="form-control" name="bookedition" value="">
                                                     </div>
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                         <label>Book Series</label>
-                                                        <input type="text" class="form-control" name="bookseries">
+                                                        <input type="text" class="form-control" name="bookseries" value="">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                         <label>Royalty Plan</label>
                                                         <select class="form-control" name="royaltyplan" required>
-                                                            <option>Select</option>
+                                                            <option value="35and33plan">35% and 33%  - $0.99 to $200</option>
                                                             <option value="70and65plan">70% and 65%  - $2 to $4.15</option>
                                                             <option value="55nd51plan">55% and 51%  - $4.16 to 5.49</option>
                                                             <option value="45and42plan">45% and 42%  - $5.50 to $6</option>
@@ -615,14 +624,14 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                        <label>Book Upload *</label>
-                                                        <input type="file" class="form-control" name="bookupload">
+												    <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                        <label>Book Earning</label>
+                                                        <input type="text" class="form-control" name="bookearning" value="$45" readonly>
                                                     </div>
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                        <label>Date Time Added</label>
-                                                        <input type="text" class="form-control" name="datetimeadded" value="2022-02-01 14:53" readonly>
-                                                    </div>
+                                                        <label>Book ID</label>
+                                                        <input type="text" class="form-control" name="bookid" value="AB385" readonly>
+                                                    </div>                                                   
                                                 </div>
                                                 <div class="form-group row">
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
@@ -737,14 +746,14 @@
                                                         <input type="text" class="form-control" name="bookisbn" value="978-3-16-148410-0" required>
                                                     </div>
                                                 </div>
-                                                <div class="form-group row">
-                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                        <label>Book ID</label>
-                                                        <input type="text" class="form-control" name="bookid" value="AB385" readonly>
-                                                    </div>
-                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                <div class="form-group row">                                                   
+													<div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                         <label>Added By</label>
                                                         <input type="text" class="form-control" name="addedby" value="userid" readonly>
+                                                    </div>
+													<div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                        <label>Date Time Added</label>
+                                                        <input type="text" class="form-control" name="datetimeadded" value="2022-02-01 14:53" readonly>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
