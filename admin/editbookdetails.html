@@ -182,7 +182,7 @@
                                 <li><a class="nav-link" href="books.html">View Books</a></li>
                             </ul>
                         </li>
-						<li class="dropdown">
+                        <li class="dropdown">
                             <a href="#" class="menu-toggle nav-link has-dropdown"><i class="fa fa-gift"></i><span>Offers</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="addoffer.html">Add Offer</a></li>
@@ -203,7 +203,7 @@
                                 <li><a class="nav-link" href="publishersactivitylog.html">Publishers Activity Log</a></li>
                             </ul>
                         </li>
-						<li class="dropdown">
+                        <li class="dropdown">
                             <a href="subscribers.html" class="nav-link"><i class="fa fa-users"></i><span>Subscribers</span></a>
                         </li>
                     </ul>
@@ -220,42 +220,47 @@
                                         <h4 class="font-weight-bold">EDIT BOOK DETAILS</h4>
                                     </div>
                                     <div class="card-body">
-                                        <form method="post" action="#" class="row">
+                                        <div class="row">
                                             <div class="col-lg-4">
                                                 <div class="form-group">
                                                     <img src="assets/img/books/seven-days-in-june-tia-williams.jpg" alt="image" class="img-fluid">
                                                 </div>
-                                                <div class="form-group">
+                                                <form method="post" action="#" class="form-group">
                                                     <label>Book Cover:</label>
-                                                    <input type="file" class="form-control" name="bookcover">
-                                                </div>
+                                                    <div class="input-group mb-3">
+                                                        <input type="file" class="form-control" name="bookcover">
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-primary" type="submit">Upload</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
                                             </div>
                                             <div class="col-lg-8">
                                                 <div class="form-group row">
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                         <label>Book Title *</label>
-                                                        <input name="booktitle" type="text" class="form-control" value="Seven Days in June">
+                                                        <input type="text" class="form-control" name="booktitle" value="Seven Days in June">
                                                     </div>
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                         <label>Book Subtitle</label>
-                                                        <input name="booksubtitle" type="text" class="form-control" value="">
+                                                        <input type="text" class="form-control" name="booksubtitle" value="">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                         <label>Author First Name *</label>
-                                                        <input name="authorfirstname" type="text" class="form-control" value="Tia">
+                                                        <input type="text" class="form-control" name="authorfirstname" value="Tia">
                                                     </div>
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                         <label>Author Last Name *</label>
-                                                        <input name="authorlastname" type="text" class="form-control" value="Williams">
+                                                        <input type="text" class="form-control" name="authorlastname" value="Williams">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                         <label>Author Country *</label>
-                                                        <select class="form-control" name="country">
-                                                            <option>Select</option>
+                                                        <select class="form-control" name="country" required>
+                                                            <option>United States of America</option>
                                                             <option value="Afganistan">Afghanistan</option>
                                                             <option value="Albania">Albania</option>
                                                             <option value="Algeria">Algeria</option>
@@ -505,25 +510,9 @@
                                                         </select>
                                                     </div>
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                        <label>Additional Contributors</label>
-                                                        <input name="additionalcontributors" type="text" class="form-control" value="">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                        <label>Book Edition</label>
-                                                        <input name="bookedition" type="text" class="form-control">
-                                                    </div>
-                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                        <label>Book Series</label>
-                                                        <input name="bookseries" type="text" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                         <label>Book Genre *</label>
-                                                        <select class="form-control" name="bookgenre">
-                                                            <option>Select</option>
+                                                        <select class="form-control" name="bookgenre" required>
+                                                            <option value="Romance">Romance</option>
                                                             <optgroup label="Christian Non-fiction:">
                                                                 <option value="Christian Living">Christian Living</option>
                                                                 <option value="Christian Classics">Christian Classics</option>
@@ -598,34 +587,56 @@
                                                             </optgroup>
                                                         </select>
                                                     </div>
+                                                </div>
+                                                <div class="form-group row">
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                        <label>Book Price *</label>
-                                                        <input name="bookprice" type="text" class="form-control" value="$152">
+                                                        <label>Book Edition</label>
+                                                        <input type="text" class="form-control" name="bookedition">
+                                                    </div>
+                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                        <label>Book Series</label>
+                                                        <input type="text" class="form-control" name="bookseries">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                        <label>Royalty Plan</label>
+                                                        <select class="form-control" name="royaltyplan" required>
+                                                            <option>Select</option>
+                                                            <option value="70and65plan">70% and 65%  - $2 to $4.15</option>
+                                                            <option value="55nd51plan">55% and 51%  - $4.16 to 5.49</option>
+                                                            <option value="45and42plan">45% and 42%  - $5.50 to $6</option>
+                                                            <option value="35and33plan">35% and 33%  - $0.99 to $200</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                        <label>Book Price *</label>&nbsp;<i class="fa fa-info-circle" title="The book price is determined by the royalty plan"></i>
+                                                        <input type="text" class="form-control" name="bookprice" readonly>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                         <label>Book Upload *</label>
-                                                        <input name="bookupload" type="file" class="form-control">
+                                                        <input type="file" class="form-control" name="bookupload">
                                                     </div>
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                        <label>Date Time Uploaded</label>
-                                                        <input name="datetimeuploaded" type="text" class="form-control" value="2022-02-01 14:53" readonly>
+                                                        <label>Date Time Added</label>
+                                                        <input type="text" class="form-control" name="datetimeadded" value="2022-02-01 14:53" readonly>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                         <label>Book Format *</label>
-                                                        <select class="form-control" name="bookformat">
-                                                            <option>Select</option>
+                                                        <select class="form-control" name="bookformat" required>
+                                                            <option value="Ebook">Ebook</option>
                                                             <option value="Ebook">Ebook</option>
                                                             <option value="Audiobook">Audiobook</option>
                                                         </select>
                                                     </div>
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                         <label>Book Language *</label>
-                                                        <select class="form-control" name="booklanguage">
-                                                            <option>Select</option>
+                                                        <select class="form-control" name="booklanguage" required>
+                                                            <option value="English">English</option>
                                                             <option value="Afrikaans">Afrikaans</option>
                                                             <option value="Ahmaric">Ahmaric</option>
                                                             <option value="Albanian">Albanian</option>
@@ -719,37 +730,44 @@
                                                 <div class="form-group row">
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                         <label>Book Keywords *</label>
-                                                        <input name="bookkeywords" type="text" class="form-control" value="seven days in june">
+                                                        <input type="text" class="form-control" name="bookkeywords" value="seven days in june" required>
                                                     </div>
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                         <label>Book ISBN *</label>
-                                                        <input name="bookisbn" type="text" class="form-control" value="ISBN 9723580183401">
+                                                        <input type="text" class="form-control" name="bookisbn" value="978-3-16-148410-0" required>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                         <label>Book ID</label>
-                                                        <input name="bookid" type="text" class="form-control" value="AB385" readonly>
+                                                        <input type="text" class="form-control" name="bookid" value="AB385" readonly>
                                                     </div>
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                        <label>Uploaded By</label>
-                                                        <input name="uploadedby" type="text" class="form-control" value="userid" readonly>
+                                                        <label>Added By</label>
+                                                        <input type="text" class="form-control" name="addedby" value="userid" readonly>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <div class="form-group col mb-3 mb-sm-0">
-                                                        <label>Book Summary *</label>
-                                                        <textarea name="booksummary" class="form-control">Seven Days in June is about......</textarea>
+                                                        <label>Book Synposis *</label>
+                                                        <textarea class="form-control" name="booksynopsis" required>Shane Hall is a reclusive, enigmatic, award-winning literary author who, to everyone's surprise, shows up in New York. When Shane and Eva meet unexpectedly at a literary event, sparks fly, raising not only their past buried traumas, but the eyebrows of New York's Black literati.</textarea>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <div class="form-group col mb-3 mb-sm-0">
                                                         <label>Publishing Rights *</label><br>
-                                                        <input type="checkbox" value="I own the copyright and hold the necessary publishing rights">&nbsp;I own the copyright and hold the necessary publishing rights
-                                                        <br>
-                                                        <input type="checkbox" value="This is a public domain work">&nbsp;This is a public domain work
-                                                        <br>
-                                                        <input type="checkbox" value="I am the publisher of the work and have a legally binding agreement with the owner of the copyright to publish this work">&nbsp;I am the publisher of the work and have a legally binding agreement with the owner of the copyright to publish this work
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="publishingrights" id="choice1" value="I own the copyright and hold the necessary publishing rights" required>
+                                                            <label class="form-check-label" for="choice1">I own the copyright and hold the necessary publishing rights</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="publishingrights" id="choice2" value="This is a public domain work" required>
+                                                            <label class="form-check-label" for="choice2">This is a public domain work</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="publishingrights" id="choice3" value="I am the publisher of the work and have a legally binding agreement with the owner of the copyright to publish this work" required>
+                                                            <label class="form-check-label" for="choice3">I am the publisher of the work and have a legally binding agreement with the owner of the copyright to publish this work</label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
@@ -758,7 +776,7 @@
                                                     </button>
                                                 </div>
                                             </div>
-                                        </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
