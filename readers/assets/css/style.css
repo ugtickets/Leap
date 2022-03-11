@@ -19062,10 +19062,15 @@ button:focus {
     content: '\f7e3'
 }
 
-.user-img-radious-style {
+.user-img-radious-style-sm {
 	border-radius: 50%;
 	width: 30px;
 	height: 30px;
+}
+
+.user-img-radious-style-lg {
+    border-radius: 50%;
+    box-shadow: 4px 3px 6px 0 rgba(0,0,0,0.2)
 }
 
 .section_padding {
