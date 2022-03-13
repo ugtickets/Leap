@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="assets/css/plugins/jquery.countdown.css">
     <!-- Main CSS File -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/ratings.css">
     <link rel="stylesheet" href="assets/css/skin-demo-4.css">
     <link rel="stylesheet" href="assets/css/demo-4.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
@@ -158,7 +159,7 @@
                                         <li><a href="howtoshop.html">How to shop</a></li>
                                         <li><a href="termsandconditions.html">Terms & Conditions</a></li>
                                         <li><a href="privacypolicy.html">Privacy Policy</a></li>
-										<li><a href="contentguidelines.html">Content Guidelines</a></li>
+                                        <li><a href="contentguidelines.html">Content Guidelines</a></li>
                                     </ul><!-- End .menu-vertical -->
                                 </nav><!-- End .side-nav -->
                             </div><!-- End .dropdown-menu -->
@@ -447,20 +448,23 @@
                     <div class="product-details-tab">
                         <ul class="nav nav-pills justify-content-center" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="product-desc-link" data-toggle="tab" href="#product-desc-tab" role="tab" aria-controls="product-desc-tab" aria-selected="true">Synopsis</a>
+                                <a class="nav-link active" id="synopsis-link" data-toggle="tab" href="#synopsis-tab" role="tab" aria-controls="synopsis-tab" aria-selected="true">Synopsis</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="product-review-link" data-toggle="tab" href="#product-review-tab" role="tab" aria-controls="product-review-tab" aria-selected="false">Reviews</a>
+                                <a class="nav-link" id="review-link" data-toggle="tab" href="#review-tab" role="tab" aria-controls="review-tab" aria-selected="false">Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="write-review-link" data-toggle="tab" href="#write-review-tab" role="tab" aria-controls="write-review-tab" aria-selected="false">Write a Review</a>
                             </li>
                         </ul>
                         <div class="tab-content">
-                            <div class="tab-pane fade show active" id="product-desc-tab" role="tabpanel" aria-labelledby="product-desc-link">
+                            <div class="tab-pane fade show active" id="synopsis-tab" role="tabpanel" aria-labelledby="synopsis-link">
                                 <div class="product-desc-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. </p>                                    
-								</div><!-- End .product-desc-content -->
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. </p>
+                                </div><!-- End .product-desc-content -->
                             </div><!-- .End .tab-pane -->
 
-                            <div class="tab-pane fade" id="product-review-tab" role="tabpanel" aria-labelledby="product-review-link">
+                            <div class="tab-pane fade" id="review-tab" role="tabpanel" aria-labelledby="review-link">
                                 <div class="reviews">
                                     <h3>Reviews</h3>
                                     <div class="review">
@@ -516,6 +520,81 @@
                                     </div><!-- End .review -->
                                 </div><!-- End .reviews -->
                             </div><!-- .End .tab-pane -->
+
+                            <div class="tab-pane fade" id="write-review-tab" role="tabpanel" aria-labelledby="write-review-link">
+                                <div class="reviews">
+                                    <h3>Write a Review</h3>
+                                    <div class="review">
+                                        <div class="row no-gutters">
+                                            <div class="col">
+                                                <input type="text" class="form-control" name="reviewtitle" placeholder="Title">
+
+                                                <div class="review-content">
+                                                    <textarea class="form-control" name="review" placeholder="Write your review"></textarea>
+                                                </div><!-- End .review-content -->
+
+                                                <div class="review-action">
+                                                    <label>Tap star to rate:</label>&nbsp;
+                                                    <div class="star-source">
+                                                        <svg>
+                                                            <linearGradient x1="50%" y1="5.41294643%" x2="87.5527344%" y2="65.4921875%" id="grad">
+                                                                <stop stop-color="#fb8200" offset="0%"></stop>
+                                                                <stop stop-color="#fb8200" offset="60%"></stop>
+                                                                <stop stop-color="#fb8200" offset="100%"></stop>
+                                                            </linearGradient>
+                                                            <symbol id="star" viewBox="153 89 106 108">
+                                                                <polygon id="star-shape" stroke="url(#grad)" stroke-width="5" fill="currentColor" points="206 162.5 176.610737 185.45085 189.356511 150.407797 158.447174 129.54915 195.713758 130.842203 206 95 216.286242 130.842203 253.552826 129.54915 222.643489 150.407797 235.389263 185.45085"></polygon>
+                                                            </symbol>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="star-container">
+                                                        <input type="radio" name="star" id="five">
+                                                        <label for="five">
+                                                            <svg class="star">
+                                                                <use xlink:href="#star" />
+                                                            </svg>
+                                                        </label>
+                                                        <input type="radio" name="star" id="four">
+                                                        <label for="four">
+                                                            <svg class="star">
+                                                                <use xlink:href="#star" />
+                                                            </svg>
+                                                        </label>
+                                                        <input type="radio" name="star" id="three">
+                                                        <label for="three">
+                                                            <svg class="star">
+                                                                <use xlink:href="#star" />
+                                                            </svg>
+                                                        </label>
+                                                        <input type="radio" name="star" id="two">
+                                                        <label for="two">
+                                                            <svg class="star">
+                                                                <use xlink:href="#star" />
+                                                            </svg>
+                                                        </label>
+                                                        <input type="radio" name="star" id="one">
+                                                        <label for="one">
+                                                            <svg class="star">
+                                                                <use xlink:href="#star" />
+                                                            </svg>
+                                                        </label>
+                                                    </div>
+                                                </div><!-- End .review-action -->
+												
+												<br><br>
+												
+                                                <div class="form-group float-right">
+                                                    <button type="submit" class="btn btn-primary" tabindex="4">
+                                                        SUBMIT
+                                                    </button>
+                                                </div>
+                                            </div><!-- End .col-auto -->
+                                        </div><!-- End .row -->
+                                    </div><!-- End .review -->
+
+                                </div><!-- End .reviews -->
+                            </div><!-- .End .tab-pane -->
+
                         </div><!-- End .tab-content -->
                     </div><!-- End .product-details-tab -->
 
@@ -704,8 +783,8 @@
                 </div><!-- End .container -->
             </div><!-- End .page-content -->
         </main><!-- End .main -->
-		
-		<div class="cta bg-image bg-dark pt-4 pb-5 mb-0" style="background-image: url(assets/images/subscribe-bg.jpg); box-shadow: inset 0 0 0 1000px rgba(0,0,0, 0.7);">
+
+        <div class="cta bg-image bg-dark pt-4 pb-5 mb-0" style="background-image: url(assets/images/subscribe-bg.jpg); box-shadow: inset 0 0 0 1000px rgba(0,0,0, 0.7);">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-sm-10 col-md-8 col-lg-6">
@@ -955,7 +1034,7 @@
                             <li><a href="howtoshop.html">How to shop</a></li>
                             <li><a href="termsandconditions.html">Terms & Conditions</a></li>
                             <li><a href="privacypolicy.html">Privacy Policy</a></li>
-							<li><a href="contentguidelines.html">Content Guidelines</a></li>
+                            <li><a href="contentguidelines.html">Content Guidelines</a></li>
                         </ul><!-- End .mobile-cats-menu -->
                     </nav><!-- End .mobile-cats-nav -->
                 </div><!-- .End .tab-pane -->
@@ -967,7 +1046,6 @@
             </div><!-- End .social-icons -->
         </div><!-- End .mobile-menu-wrapper -->
     </div><!-- End .mobile-menu-container -->
-		
     <!-- Plugins JS File -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
