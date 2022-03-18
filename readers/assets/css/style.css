@@ -6431,7 +6431,6 @@ p {
     font-size: 1.4rem;
     line-height: 1.5;
     letter-spacing: -.01em;
-    min-width: 170px;
     border-radius: 0;
     white-space: normal;
     transition: all 0.3s
