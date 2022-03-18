@@ -13398,13 +13398,13 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 .rated-star {
 	color: #fb8200;
 	display: inline-block;
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1;
 }
 
 .unrated-star {
 	color: #cccccc;
 	display: inline-block;
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1;
 }
