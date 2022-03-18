@@ -68,7 +68,7 @@ input[name="star"]:checked + label {
 
 @keyframes starred {
   from {
-    color: #600040;
+    color: #fb8200;
   }
   to {
     color: #fb8200;
