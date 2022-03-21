@@ -1,5 +1,12 @@
 ﻿@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900");
 
+html {
+    font-size: 62.5%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-size-adjust: 100%
+}
+
 ::selection {
     color: #fff;
     background-color: #d2232a
