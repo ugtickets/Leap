@@ -870,27 +870,27 @@ tr:first-child > td > .fc-day-grid-event {
     user-select: none;
     -webkit-user-select: none;
     outline: none;
-    background-color: #aa94ca;
-    border-color: #9b81c1
+    background-color: #fdfdff;
+    border-color: #e4e6fc
 }
 
 .select2-dropdown {
-    border-color: #9b81c1 !important
+    border-color: #e4e6fc !important
 }
 
 .select2-container.select2-container--open .select2-selection--multiple {
-    background-color: #ab95cb;
-    border-color: #6e4e9e
+    background-color: #fefeff;
+    border-color: #95a0f4
 }
 
 .select2-container.select2-container--focus .select2-selection--multiple, .select2-container.select2-container--focus .select2-selection--single {
-    background-color: #ab95cb;
-    border-color: #6e4e9e
+    background-color: #fefeff;
+    border-color: #95a0f4
 }
 
 .select2-container.select2-container--open .select2-selection--single {
-    background-color: #ab95cb;
-    border-color: #6e4e9e
+    background-color: #fefeff;
+    border-color: #95a0f4
 }
 
 .select2-results__option {
@@ -943,8 +943,8 @@ tr:first-child > td > .fc-day-grid-event {
 }
 
 .selectric {
-    background-color: #aa94ca;
-    border-color: #9b81c1;
+    background-color: #fdfdff;
+    border-color: #e4e6fc;
     min-height: 42px;
     border-radius: 3px;
     padding-left: 10px;
@@ -952,13 +952,13 @@ tr:first-child > td > .fc-day-grid-event {
 }
 
     .selectric:hover {
-        background-color: #aa94ca;
-        border-color: #9b81c1
+        background-color: #fdfdff;
+        border-color: #e4e6fc
     }
 
     .selectric:focus {
-        background-color: #ab95cb;
-        border-color: #6e4e9e
+        background-color: #fefeff;
+        border-color: #95a0f4
     }
 
     .selectric .label {

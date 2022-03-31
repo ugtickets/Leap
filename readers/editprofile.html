@@ -345,8 +345,8 @@
                                     <ul>
                                         <li><a href="#"><small class="font-weight-bold">HELLO READER</small></a></li>
                                         <div class="dropdown-divider"></div>
-                                        <li><a href="profile.html"><i class="fa fa-user"></i>&nbsp;Profile</a></li> 
-										<li><a href="activitylog.html"><i class="fa fa-list"></i>&nbsp;Activity Log</a></li>
+                                        <li><a href="profile.html"><i class="fa fa-user"></i>&nbsp;Profile</a></li>
+                                        <li><a href="activitylog.html"><i class="fa fa-list"></i>&nbsp;Activity Log</a></li>
                                         <li><a href="wishlist.html"><i class="fa fa-heart"></i>&nbsp;Wishlist</a></li>
                                         <li><a href="cart.html"><i class="fa fa-shopping-cart"></i>&nbsp;Cart</a></li>
                                         <li><a href="books.html"><i class="fa fa-shopping-bag"></i>&nbsp;Purchases</a></li>
@@ -371,61 +371,96 @@
             <div class="mb-4"></div>
             <div class="page-content">
                 <div class="container">
-                    <div class="border rounded-0 shadow-sm" style="background-color: #ffffff; margin: 5px;">
-                        <div style="height: 50px"></div>
-                        <div>
-                            <img class="rounded-circle" src="assets/images/users/user-1.jpg" width="200" style="padding: 2px;">
+                    <div class="row gutters-sm">
+                        <div class="col-md-4 mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex flex-column align-items-center text-center">
+                                        <img src="assets/images/users/user-1.jpg" alt="image" class="rounded-circle" width="150">
+                                    </div>
+                                    <div class="mt-3 text-center">
+                                        <h4>Yvonne Kusiima Ngabirano</h4>
+                                        <p class="text-muted font-size-sm">yvonnekusiima00@gmail.com</p>
+                                        <b class="text-primary mb-1">AfricanBooks.com</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4"></div>
+                            <div class="card">
+                                <div class="card-body p-5">
+                                    <form method="post" action="#" class="form-group">
+                                        <h6 class="mb-1">Profile Picture</h6>
+                                        <div class="input-group mb-3">
+                                            <input type="file" class="form-control" name="profilepicture">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-primary" type="submit">Upload</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
-                        <div class="mb-1"></div>
-                        <div class="text-center" style="height: 80px;">
-                            <h5>Yvonne Kusiima</h5>
-                            <p style="font-size: 12px;">yvonnekusiima00@gmail.com</p>
-                        </div>
-                        <div class="row justify-content-center p-5">
-                            <form method="post" action="#" class="form-group">
-                                <label>Profile Picture</label>
-                                <div class="input-group mb-3">
-                                    <input type="file" class="form-control" name="profilepicture">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-primary" type="submit">Upload</button>
+                        <div class="col-md-8">
+                            <div class="card mb-3">
+                                <div class="card-body p-5">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <h6 class="mb-1">First Name</h6>
+                                        </div>
+                                        <div class="col-sm-9 text-secondary">
+                                            <input type="text" class="form-control" name="firstname" value="Yvonne Kusiima">
+                                        </div>
                                     </div>
-                                </div>
-                            </form>
-                            <div class="col-lg-8">
-                                <div class="form-group row">
-                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                        <label>First Name:</label><br>
-                                        <input type="text" class="form-control" name="firstname" value="Yvonne">
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <h6 class="mb-1">Last Name</h6>
+                                        </div>
+                                        <div class="col-sm-9 text-secondary">
+                                            <input type="text" class="form-control" name="lastname" value="Ngabirano">
+                                        </div>
                                     </div>
-                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                        <label>Last Name:</label><br>
-                                        <input type="text" class="form-control" name="lastname" value="Kusiima">
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <h6 class="mb-1">Phone Number</h6>
+                                        </div>
+                                        <div class="col-sm-9 text-secondary">
+                                            <input type="text" class="form-control" name="phonenumber" value="0771167290">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                        <label>Email Address:</label>&nbsp;<i class="fa fa-info-circle" title="Go to settings to change email address"></i><br>
-                                        <input type="text" class="form-control" name="emailaddress" value="yvonnekusiima00@gmail.com" readonly>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <h6 class="mb-1">Date of Birth</h6>
+                                        </div>
+                                        <div class="col-sm-9 text-secondary">
+                                            <input type="text" class="form-control" name="dateofbirth" value="2000-03-07">
+                                        </div>
                                     </div>
-                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                        <label>Date of Birth:</label><br>
-                                        <input type="text" class="form-control" name="dateofbirth" value="2000-03-07">
+									<hr>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <h6 class="mb-1">Country</h6>
+                                        </div>
+                                        <div class="col-sm-9 text-secondary">
+                                            <input type="text" class="form-control" name="country" value="Uganda">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                        <label>Phone Number:</label><br>
-                                        <input type="text" class="form-control" name="phonenumber" value="0771167290">
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm-9">
+                                            <h6><i class="fa fa-info-circle"></i>&nbsp;To change your email address, go to <a href="settings.html"><b>SETTINGS</b></a>.</h6>
+                                        </div>
                                     </div>
-                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                        <label>Date Time Created:</label><br>
-                                        <input type="text" class="form-control" name="datetimecreated" value="2022-03-01 14:53" readonly>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <button type="submit" class="btn btn-primary" tabindex="4">
+                                                SAVE CHANGES
+                                            </button>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group text-center">
-                                    <button type="submit" class="btn btn-primary" tabindex="4">
-                                        SAVE CHANGES
-                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -664,8 +699,8 @@
                                 <ul>
                                     <li><a href="#"><small class="font-weight-bold">HELLO READER</small></a></li>
                                     <div class="dropdown-divider"></div>
-                                    <li><a href="profile.html"><i class="fa fa-user"></i>&nbsp;Profile</a></li> 
-									<li><a href="activitylog.html"><i class="fa fa-list"></i>&nbsp;Activity Log</a></li>
+                                    <li><a href="profile.html"><i class="fa fa-user"></i>&nbsp;Profile</a></li>
+                                    <li><a href="activitylog.html"><i class="fa fa-list"></i>&nbsp;Activity Log</a></li>
                                     <li><a href="wishlist.html"><i class="fa fa-heart"></i>&nbsp;Wishlist</a></li>
                                     <li><a href="cart.html"><i class="fa fa-shopping-cart"></i>&nbsp;Cart</a></li>
                                     <li><a href="books.html"><i class="fa fa-shopping-bag"></i>&nbsp;Purchases</a></li>

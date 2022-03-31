@@ -11,6 +11,8 @@
     <!-- General CSS Files -->
     <link rel="stylesheet" href="assets/css/app.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+	<link rel="stylesheet" href="assets/bundles/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="assets/bundles/jquery-selectric/selectric.css">
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/components.css">
@@ -192,6 +194,7 @@
                         <li class="dropdown active">
                             <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="users"></i><span>Authors</span></a>
                             <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="addauthor.html">Add Author</a></li>
                                 <li><a class="nav-link" href="authors.html">View Authors</a></li>
                                 <li><a class="nav-link" href="authorsactivitylog.html">Authors Activity Log</a></li>
                             </ul>
@@ -223,15 +226,20 @@
                                         <h4 class="font-weight-bold">EDIT AUTHOR DETAILS</h4>
                                     </div>
                                     <div class="card-body">
-                                        <form method="post" action="#" class="row">
+                                        <div class="row">
                                             <div class="col-lg-4">
                                                 <div class="form-group">
                                                     <img src="assets/img/authors/author-1.jpg" alt="image" class="user-img-radious-style img-fluid" width="218" height="218">
                                                 </div>
-                                                <div class="form-group">
+                                                <form method="post" action="#" class="form-group">
                                                     <label>Profile Picture:</label>
-                                                    <input type="file" class="form-control" name="profilepicture"><br>
-                                                </div>
+                                                    <div class="input-group mb-3">
+                                                        <input type="file" class="form-control" name="profilepicture">
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-primary" type="submit">Upload</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
                                                 <div class="form-group">
                                                     <label>Ratings:</label><br>
                                                     <label>
@@ -243,7 +251,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-8">
+                                            <form class="col-lg-8">
                                                 <div class="form-group row">
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                         <label>First Name: *</label>
@@ -267,7 +275,7 @@
                                                 <div class="form-group row">
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                         <label>Country: *</label>
-                                                        <select class="form-control" name="country">
+                                                        <select class="form-control selectric" name="country">
                                                             <option>Select</option>
                                                             <option value="Afganistan">Afghanistan</option>
                                                             <option value="Albania">Albania</option>
@@ -525,7 +533,7 @@
                                                 <div class="form-group row">
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                         <label>Main Writing Language: *</label><br>
-                                                        <select class="form-control" name="mainlanguage">
+                                                        <select class="form-control selectric" name="mainwritinglanguage">
                                                             <option>Select</option>
                                                             <option value="Afrikaans">Afrikaans</option>
                                                             <option value="Ahmaric">Ahmaric</option>
@@ -618,7 +626,7 @@
                                                     </div>
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                         <label>Main Writing Genre: *</label><br>
-                                                        <select class="form-control" name="maingenre">
+                                                        <select class="form-control selectric" name="mainwritinggenre">
                                                             <option>Select</option>
                                                             <optgroup label="Christian Non-fiction:">
                                                                 <option value="Christian Living">Christian Living</option>
@@ -697,12 +705,22 @@
                                                 </div>
                                                 <div class="form-group row">
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                        <label>Bookshelf: *</label><br>
-                                                        <input type="text" class="form-control" name="books" value="10 books" readonly>
+                                                        <label>Added By: *</label><br>
+                                                        <input type="text" class="form-control" name="addedby" value="Yvonne00" readonly>
                                                     </div>
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                         <label>Date Time Created: *</label><br>
                                                         <input type="text" class="form-control" name="datetimecreated" value="2020-02-01 14:53" readonly>
+                                                    </div>
+                                                </div>
+												<div class="form-group row">
+                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                        <label>Bank Account Number *</label>
+                                                        <input type="text" class="form-control" name="bankaccountnumber" value="10056576765" required>
+                                                    </div>
+                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                        <label>Bank Account Name *</label>
+                                                        <input type="text" class="form-control" name="bankaccountname" value="YVONNE KUSIIMA" required>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
@@ -716,8 +734,8 @@
                                                         SAVE CHANGES
                                                     </button>
                                                 </div>
-                                            </div>
-                                        </form>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -831,6 +849,8 @@
     <script src="assets/js/app.min.js"></script>
     <!-- JS Libraies -->
     <script src="assets/bundles/jquery-ui/jquery-ui.min.js"></script>
+	<script src="assets/bundles/select2/dist/js/select2.full.min.js"></script>
+    <script src="assets/bundles/jquery-selectric/jquery.selectric.min.js"></script>
     <!-- Template JS File -->
     <script src="assets/js/scripts.js"></script>
     <!-- Custom JS File -->

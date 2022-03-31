@@ -56,7 +56,7 @@
                                 <div class="header-search-wrapper search-wrapper-wide">
                                     <label for="q" class="sr-only">Search</label>
                                     <button class="btn btn-primary" type="submit"><i class="icon-search"></i></button>
-                                    <input type="search" class="form-control" name="q" id="q" placeholder="Search authors site" required>
+                                    <input type="search" class="form-control" name="q" id="q" placeholder="Search publishers site" required>
                                 </div><!-- End .header-search-wrapper -->
                             </form>
                         </div><!-- End .header-search -->
@@ -215,44 +215,38 @@
         <main class="main">
 		    <div class="login-page bg-image pt-8 pb-8 pt-md-12 pb-md-12 pt-lg-17 pb-lg-17" style="background-image: url(assets/img/login-bg.png); background-blend-mode: multiply">               
 				<div class="container">
-                    <div class="form-box">
-                        <div class="form-tab">
+                    <div class="card col-lg-5" style="margin: auto">
+                        <div class="card-body p-5">
                             <form action="#" method="post">
                                 <div class="form-group row justify-content-center">
-                                    <img src="assets/img/logo.png" class="footer-logo" alt="image" width="197" height="45"><br>
-                                </div><!-- End .form-group -->	
-								
-                                <div class="form-group row justify-content-center">
-                                    <h4 class="font-weight-bold">Sign in</h4>
-                                </div><!-- End .form-group -->			
-								
+                                    <img src="assets/img/logo-icon.png" class="footer-logo" alt="image" width="50" height="39">&nbsp;<h4 class="font-weight-bold">SIGN IN</h4>
+                                </div><!-- End .form-group -->
                                 <div class="form-group">
-                                    <label for="emailaddress">Email Address *</label>
-                                    <input type="email" class="form-control" id="emailaddress" name="emailaddress" required>
+                                    <label for="emailaddress" class="h6">Email Address *</label>
+                                    <input type="text" class="form-control" id="emailaddress" name="emailaddress" required>
                                 </div><!-- End .form-group -->
 
                                 <div class="form-group">
-                                    <label for="password">Password *</label><a href="resetpassword.html" class="forgot-link float-right">Forgot Your Password?</a>
+                                    <label for="password" class="h6">Password *</label><a href="resetpassword.html" class="float-right text-primary">Forgot Your Password?</a>
                                     <input type="password" class="form-control" id="password" name="password" required>
                                 </div><!-- End .form-group -->
-								
-								<div class="form-footer">
-                                    <div class="custom-control custom-checkbox">
+
+                                <div class="form-footer">
+								    <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="signin-remember">
                                         <label class="custom-control-label" for="signin-remember">Remember Me</label>
-                                    </div><!-- End .custom-checkbox -->
+                                    </div><!-- End .custom-checkbox -->                                  
                                 </div><!-- End .form-footer -->
 								
 								<div class="form-group">
-                                    <button type="submit" class="btn btn-primary btn-block">
-                                        <span class="font-weight-bold">LOGIN</span>
+								    <button type="submit" class="btn btn-outline-primary-2 btn-block">
+                                        <span>LOG IN</span>
                                         <i class="icon-long-arrow-right"></i>
                                     </button>
-                                </div><!-- End .form-group -->
-								
+								</div>
                             </form>
-                        </div><!-- End .form-tab -->
-                    </div><!-- End .form-box -->
+                        </div>
+                    </div>
                 </div><!-- End .container -->
 			</div><!-- End .login-page section-bg -->
         </main><!-- End .main -->   
