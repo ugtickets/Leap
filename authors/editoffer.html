@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Reviews - African Books Authors</title>
+    <title>Edit Offer - African Books Authors</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="African Books Publishers">
     <meta name="application-name" content="African Books Publishers">
@@ -13,9 +13,6 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
     <!-- CSS Libraries -->
     <link rel="stylesheet" href="assets/modules/summernote/summernote-bs4.css">
-    <link rel="stylesheet" href="assets/modules/datatables/datatables.min.css">
-    <link rel="stylesheet" href="assets/modules/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="assets/modules/datatables/Select-1.2.4/css/select.bootstrap4.min.css">
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style.min.css">
     <link rel="stylesheet" href="assets/css/components.min.css">
@@ -167,16 +164,16 @@
                         <li class="menu-header">Authors Dashboard</li>
                         <li><a class="nav-link" href="dashboard.html"><i class="fas fa-home"></i> <span>Dashboard</span></a></li>
                         <li><a class="nav-link" href="myaccount.html"><i class="fas fa-user"></i> <span>My Account</span></a></li>
-                        <li class="dropdown active">
+                        <li class="dropdown">
                             <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-book"></i> <span>Bookshelf</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="addbook.html">Add Book</a></li>
                                 <li><a class="nav-link" href="books.html">View Books</a></li>
                                 <li><a class="nav-link" href="booksales.html">Book Sales</a></li>
-                                <li><a class="nav-link" href="reviews.html">Book Reviews</a></li>
+                                <li><a class="nav-link" href="bookreviews.html">Book Reviews</a></li>
                             </ul>
                         </li>
-						<li class="dropdown">
+                        <li class="dropdown active">
                             <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-gift"></i> <span>Offers</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="addoffer.html">Add Offer</a></li>
@@ -202,84 +199,60 @@
             <div class="main-content">
                 <section class="section">
                     <div class="section-header">
-                        <h1>Book Reviews</h1>
+                        <h1>Edit Offer</h1>
                     </div>
-                    <div class="section-body">
-                        <h2 class="section-title">Hi, Yvonne</h2>
-                        <p class="section-lead">Find all the comments about your books here.</p>
-
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <ul class="list-unstyled list-unstyled-border list-unstyled-noborder">
-                                            <li class="media">
-                                                <img alt="image" class="mr-3 rounded-circle" width="70" src="assets/img/users/user-1.jpg">
-                                                <div class="media-body">
-                                                    <div class="media-title mb-1">Yvonne Kusiima</div>
-                                                    <div class="text-time">
-                                                        2020-02-01 14:53&nbsp;&nbsp;
-                                                        <label>
-                                                            <i class="icon-star rated-star"></i>
-                                                            <i class="icon-star rated-star"></i>
-                                                            <i class="icon-star rated-star"></i>
-                                                            <i class="icon-star unrated-star"></i>
-                                                            <i class="icon-star unrated-star"></i>
-                                                        </label>
-                                                    </div>
-                                                    <div class="text-time text-primary">SEVEN DAYS IN JUNE - TIA WILLIAMS</div>
-                                                    <div class="media-description text-muted">
-                                                        <label class="media-title">Amazing book:</label>&nbsp;Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <img src="assets/img/books/seven-days-in-june-tia-williams.jpg" alt="image" style="display: inline">
+                                            </div>
+                                            <form method="post" action="#" class="form-group">
+                                                <label>Offer Image:</label>
+                                                <div class="input-group mb-3">
+                                                    <input type="file" class="form-control" name="offerimage">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-primary" type="submit">Upload</button>
                                                     </div>
                                                 </div>
-                                            </li>
-                                            <li class="media">
-                                                <img alt="image" class="mr-3 rounded-circle" width="70" src="assets/img/users/user-1.jpg">
-                                                <div class="media-body">
-                                                    <div class="media-title mb-1">Yvonne Kusiima</div>
-                                                    <div class="text-time">
-                                                        2020-02-01 14:53&nbsp;&nbsp;
-                                                        <label>
-                                                            <i class="icon-star rated-star"></i>
-                                                            <i class="icon-star rated-star"></i>
-                                                            <i class="icon-star rated-star"></i>
-                                                            <i class="icon-star unrated-star"></i>
-                                                            <i class="icon-star unrated-star"></i>
-                                                        </label>
-                                                    </div>
-                                                    <div class="text-time text-primary">SEVEN DAYS IN JUNE - TIA WILLIAMS</div>
-                                                    <div class="media-description text-muted">
-                                                        <label class="media-title">Amazing book:</label>&nbsp;Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="media">
-                                                <img alt="image" class="mr-3 rounded-circle" width="70" src="assets/img/users/user-1.jpg">
-                                                <div class="media-body">
-                                                    <div class="media-title mb-1">Yvonne Kusiima</div>
-                                                    <div class="text-time">
-                                                        2020-02-01 14:53&nbsp;&nbsp;
-                                                        <label>
-                                                            <i class="icon-star rated-star"></i>
-                                                            <i class="icon-star rated-star"></i>
-                                                            <i class="icon-star rated-star"></i>
-                                                            <i class="icon-star unrated-star"></i>
-                                                            <i class="icon-star unrated-star"></i>
-                                                        </label>
-                                                    </div>
-                                                    <div class="text-time text-primary">SEVEN DAYS IN JUNE - TIA WILLIAMS</div>
-                                                    <div class="media-description text-muted">
-                                                        <label class="media-title">Amazing book:</label>&nbsp;Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                            </form>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="form-group">
+                                                <label>Offer Title *</label>
+                                                <input type="text" class="form-control" name="offertitle" value="June Offer">
+                                            </div>
+                                            <div class="form-group row">
+										        <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                    <label>Start Date  *</label>
+                                                    <input type="date" class="form-control" name="startdate" value="">
+											    </div>
+											    <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                    <label>End Date  *</label>
+                                                    <input type="date" class="form-control" name="enddate" value="">
+											    </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Offer Details *</label>
+                                                <textarea class="form-control" name="offerdetails">Save $10 on Seven Days in June by Tia Williams</textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Date Time Added *</label>
+                                                <input type="text" class="form-control" name="datetimeadded" value="2022-03-01 14:53" readonly>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Added By *</label>
+                                                <input type="text" class="form-control" name="addedby" value="Yvonne00" readonly>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
+                                                    SAVE CHANGES
+                                                </button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -306,12 +279,8 @@
     <script src="assets/js/CodiePie.js"></script>
     <!-- JS Libraies -->
     <script src="assets/modules/summernote/summernote-bs4.js"></script>
-    <script src="assets/modules/datatables/datatables.min.js"></script>
-    <script src="assets/modules/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
-    <script src="assets/modules/datatables/Select-1.2.4/js/dataTables.select.min.js"></script>
-    <script src="assets/modules/jquery-ui/jquery-ui.min.js"></script>
     <!-- Page Specific JS File -->
-    <script src="assets/js/page/modules-datatables.js"></script>
+    <script src="assets/js/page/index-0.js"></script>
     <!-- Template JS File -->
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/custom.js"></script>

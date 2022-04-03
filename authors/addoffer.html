@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Book Sales - African Books Authors</title>
+    <title>Add Offer - African Books Authors</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="African Books Publishers">
     <meta name="application-name" content="African Books Publishers">
@@ -164,7 +164,7 @@
                         <li class="menu-header">Authors Dashboard</li>
                         <li><a class="nav-link" href="dashboard.html"><i class="fas fa-home"></i> <span>Dashboard</span></a></li>
                         <li><a class="nav-link" href="myaccount.html"><i class="fas fa-user"></i> <span>My Account</span></a></li>
-                        <li class="dropdown active">
+                        <li class="dropdown">
                             <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-book"></i> <span>Bookshelf</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="addbook.html">Add Book</a></li>
@@ -173,7 +173,7 @@
                                 <li><a class="nav-link" href="bookreviews.html">Book Reviews</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown">
+                        <li class="dropdown active">
                             <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-gift"></i> <span>Offers</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="addoffer.html">Add Offer</a></li>
@@ -199,48 +199,40 @@
             <div class="main-content">
                 <section class="section">
                     <div class="section-header">
-                        <h1>Book Sales</h1>
+                        <h1>Add Offer</h1>
                     </div>
-
-                    <div class="section-body">
-                        <h2 class="section-title">Hi, Yvonne</h2>
-                        <p class="section-lead">Find all your book sales here.</p>
-
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h4>Book Sales</h4>
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-6">
+                            <div class="card">
+                                <form method="post" action="#" class="card-body">
+                                    <div class="form-group">
+                                        <label>Offer Title *</label>
+                                        <input type="text" class="form-control" name="offertitle">
                                     </div>
-                                    <div class="card-body">
-                                        <div class="table-responsive">
-                                            <table class="table table-striped v_center" id="table-1">
-                                                <thead>
-                                                    <tr>
-                                                        <th>BookTitle</th>
-                                                        <th>BookPrice</th>
-														<th>DateTimestamp</th>
-                                                        <th>BookEarning</th>                                                        
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Seven Days in June</td>
-                                                        <td>$52</td>
-														<td>2020-03-12</td>
-                                                        <td>$14</td>                                                        
-                                                    </tr>
-                                                </tbody>
-                                                <tfoot class="bg-secondary text-white">
-                                                    <tr>
-                                                        <th colspan="3">TOTAL EARNING :</th>
-                                                        <td class="font-weight-bold">$200</td>
-                                                    </tr>
-                                                </tfoot>
-                                            </table>
+                                    <div class="form-group row">
+                                        <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                            <label>Start Date  *</label>
+                                            <input type="date" class="form-control" name="startdate">
+                                        </div>
+                                        <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                            <label>End Date  *</label>
+                                            <input type="date" class="form-control" name="enddate">
                                         </div>
                                     </div>
-                                </div>
+                                    <div class="form-group">
+                                        <label>Offer Details *</label>
+                                        <textarea class="form-control" name="offerdetails"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Offer Image *</label>
+                                        <input type="file" class="form-control" name="offerimage">
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
+                                            ADD OFFER
+                                        </button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
