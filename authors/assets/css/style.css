@@ -19094,3 +19094,15 @@ button:focus {
     padding: 70px 0px;
   }
 }
+
+.tc-point {
+	content: ' ';
+    border-radius: 5px;
+    height: 4px;
+    width: 13px;
+    background-color: #d2232a;
+    display: inline;
+    float: left;
+    margin-top: 10px;
+    margin-right: 8px
+}
