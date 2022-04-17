@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>View Users - African Books Admin</title>
+    <title>Error Reports - African Books Admin</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-title" content="African Books Admin">
     <meta name="application-name" content="African Books Admin">
@@ -104,7 +104,7 @@
                         <li class="dropdown">
                             <a href="adduser.html" class="nav-link"><i class="fa fa-user-plus"></i><span>Add User</span></a>
                         </li>
-                        <li class="dropdown active">
+                        <li class="dropdown">
                             <a href="users.html" class="nav-link"><i class="fa fa-users"></i><span>View Users</span></a>
                         </li>
                         <li class="dropdown">
@@ -117,7 +117,7 @@
                                 <li><a class="nav-link" href="notifications.html">View Notifications</a></li>
                             </ul>
                         </li>
-						<li class="dropdown">
+						<li class="dropdown active">
                             <a href="errorreports.html" class="nav-link"><i class="fa fa-bug"></i><span>Error Reports</span></a>
                         </li>
                     </ul>
@@ -131,31 +131,29 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h4 class="font-weight-bold">USERS</h4>
+                                        <h4 class="font-weight-bold">ERROR REPORTS</h4>
                                     </div>
                                     <div class="card-body">
                                         <div class="table-responsive">
                                             <table class="table table-striped text-center" id="table-1">
                                                 <thead>
                                                     <tr>
-                                                        <th>UserID</th>
-                                                        <th>EmailAddress</th>
-                                                        <th>FirstName</th>
-                                                        <th>LastName</th>
-                                                        <th>DateTimeAdded</th>
-                                                        <th>Edit</th>
-                                                        <th>Delete</th>
+                                                        <th>ErrorMessage</th>
+                                                        <th>Role</th>
+                                                        <th>ErrorDescription</th>
+                                                        <th>DateTimeReported</th>
+                                                        <th>Status</th>
+                                                        <th>Solved</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td>Yvonne</td>
-                                                        <td>yvonne@gmail.com</td>
-                                                        <td>Yvonne Kusiima</td>
-                                                        <td>Ngabirano</td>
+                                                        <td>Undefined offset 1</td>
+                                                        <td>Reader</td>
+                                                        <td>Whenever I click on an author it shows the error message undefined offset 1</td>
                                                         <td>2020-02-01 14:53</td>
-                                                        <td><a href="edituserdetails.html" class="btn btn-primary btn-block">Edit</a></td>
-                                                        <td><a href="#" class="btn btn-primary btn-block">Delete</a></td>
+                                                        <td></td>
+                                                        <td><a href="#" class="btn btn-primary btn-block">Solved</a></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
