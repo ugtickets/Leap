@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>User Profile - African Books Admin</title>
+    <title>Book Sales - African Books Admin</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-title" content="African Books Admin">
     <meta name="application-name" content="African Books Admin">
     <meta name="theme-color" content="#ffffff">  
+	<link rel="stylesheet" href="assets/bundles/datatables/datatables.min.css">
+    <link rel="stylesheet" href="assets/bundles/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
     <!-- General CSS Files -->
     <link rel="stylesheet" href="assets/css/app.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
@@ -175,7 +177,7 @@
                                 <li><a class="nav-link" href="useraccountsactivitylog.html">User Accounts Activity Log</a></li>
                             </ul>
                         </li>
-						<li class="dropdown">
+						<li class="dropdown active">
                             <a href="#" class="menu-toggle nav-link has-dropdown"><i class="fa fa-book"></i><span>Bookshelf</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="addbook.html">Add Book</a></li>
@@ -208,14 +210,14 @@
                         </li>
                         <li class="dropdown">
                             <a href="subscribers.html" class="nav-link"><i class="fa fa-users"></i><span>Subscribers</span></a>
-                        </li>
+                        </li>	
                         <li class="dropdown">
                             <a href="reviews.html" class="nav-link"><i class="fa fa-star"></i><span>Reviews</span></a>
-                        </li>						
+                        </li>					
                     </ul>
                 </aside>
             </div>
-            <!-- Main Content -->
+			<!-- Main Content -->
             <div class="main-content">
                 <section class="section">
                     <div class="section-body">
@@ -223,37 +225,30 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h4 class="font-weight-bold">USER PROFILE</h4>
+                                        <h4 class="font-weight-bold">BOOK SALES</h4>
                                     </div>
                                     <div class="card-body">
-									    <div class="row">
-                                            <div class="col-lg-4">
-                                                <div class="form-group">
-												    <i class="fa fa-user fa-9x text-primary"></i>
-												</div>
-                                            </div>
-                                            <div class="col-lg-8">
-											    <div class="form-group row">
-                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
-											            <label>First Name:</label><br>
-														<label>Yvonne Kusiima</label>
-													</div>
-													<div class="form-group col-sm-6 mb-3 mb-sm-0">
-											            <label>Last Name:</label><br>
-														<label>Ngabirano</label>
-													</div>													
-												</div>
-                                                <div class="form-group row">
-												    <div class="form-group col-sm-6 mb-3 mb-sm-0">
-												        <label>User ID:</label><br>
-														<label>Yvonne00</label>
-												    </div>
-                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                        <label>Email Address:</label><br>
-														<label>yvonne@gmail.com</label>
-													</div>
-												</div>													
-                                            </div>											
+                                        <div class="table-responsive">
+                                            <table class="table table-striped text-center" id="table-1">
+                                                <thead>
+                                                    <tr>
+                                                        <th>BookTitle</th>
+                                                        <th>BookAuthor</th>
+                                                        <th>BookPrice</th>
+                                                        <th>BookEarning</th>
+                                                        <th>DateTimestamp</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+													    <td>Seven Days in June</td>
+													    <td>Tia Williams</td>
+                                                        <td>$5</td>
+														<td>$2.72</td>
+                                                        <td>2020-02-01 14:53</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
@@ -365,9 +360,14 @@
         </div>
     </div>
     
-	<script src="assets/js/app.min.js"></script>
+	<!-- General JS Scripts -->
+    <script src="assets/js/app.min.js"></script>
     <!-- JS Libraies -->
+    <script src="assets/bundles/datatables/datatables.min.js"></script>
+    <script src="assets/bundles/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
     <script src="assets/bundles/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Page Specific JS File -->
+    <script src="assets/js/page/datatables.js"></script>
     <!-- Template JS File -->
     <script src="assets/js/scripts.js"></script>
     <!-- Custom JS File -->
