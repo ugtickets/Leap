@@ -3,23 +3,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Dashboard - African Books Publishers</title>
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-title" content="African Books Publishers">
+    <title>Reviews - African Books Publishers</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="African Books Publishers">
     <meta name="application-name" content="African Books Publishers">
-    <meta name="theme-color" content="#ffffff">  
+    <meta name="theme-color" content="#ffffff">
     <!-- General CSS Files -->
     <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
     <!-- CSS Libraries -->
     <link rel="stylesheet" href="assets/modules/summernote/summernote-bs4.css">
+    <link rel="stylesheet" href="assets/modules/datatables/datatables.min.css">
+    <link rel="stylesheet" href="assets/modules/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="assets/modules/datatables/Select-1.2.4/css/select.bootstrap4.min.css">
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style.min.css">
     <link rel="stylesheet" href="assets/css/components.min.css">
-	<link rel="icon" href="assets/img/favicon.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-	<link rel="manifest" href="africanbooksmanifest.json">
-	<link href="assets/img/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link rel="icon" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="manifest" href="africanbooksmanifest.json">
+    <link href="assets/img/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
     <link href="assets/img/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
     <link href="assets/img/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
     <link href="assets/img/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
@@ -58,14 +61,14 @@
                                 <a href="#">Payment History</a>
                                 <a href="#" class="search-close"><i class="fas fa-times"></i></a>
                             </div>
-							<div class="search-item">
+                            <div class="search-item">
                                 <a href="#">Bookshelf</a>
                                 <a href="#" class="search-close"><i class="fas fa-times"></i></a>
                             </div>
                         </div>
                     </div>
                 </form>
-                <ul class="navbar-nav navbar-right">                   
+                <ul class="navbar-nav navbar-right">
                     <li class="dropdown dropdown-list-toggle">
                         <a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg beep"><i class="far fa-bell"></i></a>
                         <div class="dropdown-menu dropdown-list dropdown-menu-right">
@@ -133,7 +136,7 @@
                             <div class="d-sm-none d-lg-inline-block">Yvonne Publishers</div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <div class="dropdown-title">Hello Publihser</div>
+                            <div class="dropdown-title">Hello Publisher</div>
                             <a href="profile.html" class="dropdown-item has-icon"><i class="far fa-user"></i> Profile</a>
                             <a href="activitylog.html" class="dropdown-item has-icon"><i class="fas fa-list"></i> Activity Log</a>
                             <a href="settings.html" class="dropdown-item has-icon"><i class="fas fa-file"></i> Manual</a>
@@ -153,17 +156,17 @@
                     <div class="sidebar-brand sidebar-brand-sm">
                         <a href="dashboard.html"><img src="assets/img/logo-icon.png" alt="logo" class="img-fluid" width="40" height="31"></a>
                     </div>
-					<div class="mb-3"></div>
+                    <div class="mb-3"></div>
                     <ul class="sidebar-menu">
-					    <li class="font-weight-bold">
+                        <li class="font-weight-bold">
                             <a href="dashboard.html">
-						        <img src="assets/img/users/user-1.jpg" class="user-img-radious-style">&nbsp;
-							    <span>Yvonne Publishers</span>
-						    </a>
+                                <img src="assets/img/users/user-1.jpg" class="user-img-radious-style">&nbsp;
+                                <span>Yvonne Publishers</span>
+                            </a>
                         </li>
                         <li class="menu-header">Publishers Dashboard</li>
-						<li class="active"><a class="nav-link" href="dashboard.html"><i class="fas fa-home"></i> <span>Dashboard</span></a></li>
-						<li><a class="nav-link" href="myaccount.html"><i class="fas fa-user"></i> <span>My Account</span></a></li>
+                        <li><a class="nav-link" href="dashboard.html"><i class="fas fa-home"></i> <span>Dashboard</span></a></li>
+                        <li><a class="nav-link" href="myaccount.html"><i class="fas fa-user"></i> <span>My Account</span></a></li>
                         <li class="dropdown">
                             <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-book"></i> <span>Bookshelf</span></a>
                             <ul class="dropdown-menu">
@@ -207,65 +210,84 @@
             <div class="main-content">
                 <section class="section">
                     <div class="section-header">
-                        <h1>Dashboard</h1>
+                        <h1>Book Reviews</h1>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                            <div class="card card-statistic-1">
-                                <div class="card-icon bg-primary">
-                                    <i class="fas fa-book"></i>
-                                </div>
-                                <div class="card-wrap">
-                                    <div class="card-header">
-                                        <h4>BOOKS</h4>
-                                    </div>
+                    <div class="section-body">
+                        <h2 class="section-title">Hi, Yvonne Publishers</h2>
+                        <p class="section-lead">Find all the comments about your books here.</p>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
                                     <div class="card-body">
-                                        10
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                            <div class="card card-statistic-1">
-                                <div class="card-icon bg-primary">
-                                    <i class="fas fa-chart-line"></i>
-                                </div>
-                                <div class="card-wrap">
-                                    <div class="card-header">
-                                        <h4>SALES</h4>
-                                    </div>
-                                    <div class="card-body">
-                                        42
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                            <div class="card card-statistic-1">
-                                <div class="card-icon bg-primary">
-                                    <i class="fas fa-comments"></i>
-                                </div>
-                                <div class="card-wrap">
-                                    <div class="card-header">
-                                        <h4>COMMENTS</h4>
-                                    </div>
-                                    <div class="card-body">
-                                        1,201
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                            <div class="card card-statistic-1">
-                                <div class="card-icon bg-primary">
-                                    <i class="fas fa-users"></i>
-                                </div>
-                                <div class="card-wrap">
-                                    <div class="card-header">
-                                        <h4>AUTHORS</h4>
-                                    </div>
-                                    <div class="card-body">
-                                        3
+                                        <ul class="list-unstyled list-unstyled-border list-unstyled-noborder">
+                                            <li class="media">
+                                                <img alt="image" class="mr-3 rounded-circle" width="70" src="assets/img/users/user-1.jpg">
+                                                <div class="media-body">
+                                                    <div class="media-title mb-1">Yvonne Kusiima</div>
+                                                    <div class="text-time">
+                                                        2020-02-01 14:53&nbsp;&nbsp;
+                                                        <label>
+                                                            <i class="icon-star rated-star"></i>
+                                                            <i class="icon-star rated-star"></i>
+                                                            <i class="icon-star rated-star"></i>
+                                                            <i class="icon-star unrated-star"></i>
+                                                            <i class="icon-star unrated-star"></i>
+                                                        </label>
+                                                    </div>
+                                                    <div class="text-time text-primary">SEVEN DAYS IN JUNE - TIA WILLIAMS</div>
+                                                    <div class="media-description text-muted">
+                                                        <label class="media-title">Amazing book:</label>&nbsp;Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="media">
+                                                <img alt="image" class="mr-3 rounded-circle" width="70" src="assets/img/users/user-1.jpg">
+                                                <div class="media-body">
+                                                    <div class="media-title mb-1">Yvonne Kusiima</div>
+                                                    <div class="text-time">
+                                                        2020-02-01 14:53&nbsp;&nbsp;
+                                                        <label>
+                                                            <i class="icon-star rated-star"></i>
+                                                            <i class="icon-star rated-star"></i>
+                                                            <i class="icon-star rated-star"></i>
+                                                            <i class="icon-star unrated-star"></i>
+                                                            <i class="icon-star unrated-star"></i>
+                                                        </label>
+                                                    </div>
+                                                    <div class="text-time text-primary">SEVEN DAYS IN JUNE - TIA WILLIAMS</div>
+                                                    <div class="media-description text-muted">
+                                                        <label class="media-title">Amazing book:</label>&nbsp;Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="media">
+                                                <img alt="image" class="mr-3 rounded-circle" width="70" src="assets/img/users/user-1.jpg">
+                                                <div class="media-body">
+                                                    <div class="media-title mb-1">Yvonne Kusiima</div>
+                                                    <div class="text-time">
+                                                        2020-02-01 14:53&nbsp;&nbsp;
+                                                        <label>
+                                                            <i class="icon-star rated-star"></i>
+                                                            <i class="icon-star rated-star"></i>
+                                                            <i class="icon-star rated-star"></i>
+                                                            <i class="icon-star unrated-star"></i>
+                                                            <i class="icon-star unrated-star"></i>
+                                                        </label>
+                                                    </div>
+                                                    <div class="text-time text-primary">SEVEN DAYS IN JUNE - TIA WILLIAMS</div>
+                                                    <div class="media-description text-muted">
+                                                        <label class="media-title">Amazing book:</label>&nbsp;Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -283,7 +305,7 @@
 
                 </div>
             </footer> -->
-			
+
         </div>
     </div>
 
@@ -292,12 +314,16 @@
     <script src="assets/js/CodiePie.js"></script>
     <!-- JS Libraies -->
     <script src="assets/modules/summernote/summernote-bs4.js"></script>
+    <script src="assets/modules/datatables/datatables.min.js"></script>
+    <script src="assets/modules/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/modules/datatables/Select-1.2.4/js/dataTables.select.min.js"></script>
+    <script src="assets/modules/jquery-ui/jquery-ui.min.js"></script>
     <!-- Page Specific JS File -->
-    <script src="assets/js/page/index-0.js"></script>
+    <script src="assets/js/page/modules-datatables.js"></script>
     <!-- Template JS File -->
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/custom.js"></script>
-	
+
 </body>
 
 </html>
