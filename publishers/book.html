@@ -703,6 +703,40 @@
 
                 </div>
             </footer> -->
+			
+			<!-- unpublish request modal -->
+            <div class="modal fade" id="unpublishrequest_modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="unpublishrequest_label" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h6>Put in a request to unpublish your book, give a reason for unpublishing and specify a period if wish for the book to be published again.</h6>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+						    <div class="form-group">
+                                <label>Reason to unpublish *</label>
+                                <textarea class="form-control" name="unpublishreason"></textarea>
+                            </div>
+                            <div class="form-group row">
+                                <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                    <label>Start Date </label>
+                                    <input type="date" class="form-control" name="startdate">
+                                </div>
+                                <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                    <label>End Date </label>
+                                    <input type="date" class="form-control" name="enddate">
+                                </div>
+                            </div>                           
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                            <a class="btn btn-primary" href="#">Submit Request</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
