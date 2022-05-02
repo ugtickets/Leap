@@ -324,6 +324,26 @@
                                                 <label>978-3-16-148410-0</label>
                                             </div>
                                         </div>
+                                        <div class="form-group row">
+                                            <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                <label>Book Editor:</label><br>
+                                                <label></label>
+                                            </div>
+                                            <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                <label>Book Illustrator:</label><br>
+                                                <label></label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                <label>Book Publisher:</label><br>
+                                                <label></label>
+                                            </div>
+                                            <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                <label>Co-Author:</label><br>
+                                                <label></label>
+                                            </div>
+                                        </div>
                                         <div class="row">
                                             <div class="form-group col-md-6 col-12">
                                                 <label>Added By:</label><br>
@@ -414,7 +434,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="row">
-												    <div class="form-group col-md-6 col-12">
+                                                    <div class="form-group col-md-6 col-12">
                                                         <label>Book Genre *</label>
                                                         <select class="form-control selectric" name="bookgenre" required>
                                                             <option value="Romance">Romance</option>
@@ -492,7 +512,7 @@
                                                             </optgroup>
                                                         </select>
                                                     </div>
-												    <div class="form-group col-md-3 col-12">
+                                                    <div class="form-group col-md-3 col-12">
                                                         <label>Book Edition</label>
                                                         <input type="text" class="form-control" name="bookedition" value="">
                                                     </div>
@@ -650,6 +670,26 @@
                                                         <input type="text" class="form-control" name="bookisbn" value="978-3-16-148410-0" required>
                                                     </div>
                                                 </div>
+												<div class="row">
+                                                    <div class="form-group col-md-6 col-12">
+                                                        <label>Book Editor</label>
+                                                        <input type="text" class="form-control" name="bookeditor">
+                                                    </div>
+                                                    <div class="form-group col-md-6 col-12">
+                                                        <label>Book Illustrator</label>
+                                                        <input type="text" class="form-control" name="bookillustrator">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="form-group col-md-6 col-12">
+                                                        <label>Book Publisher</label>
+                                                        <input type="text" class="form-control" name="bookpublisher">
+                                                    </div>
+                                                    <div class="form-group col-md-6 col-12">
+                                                        <label>Co-Author</label>
+                                                        <input type="text" class="form-control" name="coauthor">
+                                                    </div>
+                                                </div>
                                                 <div class="row">
                                                     <div class="form-group col col-12">
                                                         <label>Book Synposis *</label>
@@ -695,7 +735,6 @@
 
                 </div>
             </footer> -->
-			
             <!-- unpublish request modal -->
             <div class="modal fade" id="unpublishrequest_modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="unpublishrequest_label" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
@@ -707,7 +746,7 @@
                             </button>
                         </div>
                         <div class="modal-body">
-						    <div class="form-group">
+                            <div class="form-group">
                                 <label>Reason to unpublish *</label>
                                 <textarea class="form-control" name="unpublishreason"></textarea>
                             </div>
@@ -720,7 +759,7 @@
                                     <label>End Date </label>
                                     <input type="date" class="form-control" name="enddate">
                                 </div>
-                            </div>                           
+                            </div>
                         </div>
                         <div class="modal-footer">
                             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
@@ -734,8 +773,8 @@
     </div>
 
     <!-- General JS Scripts -->
-	<script src="assets/js/jquery-3.6.0.min.js"></script>
-	<script src="assets/js/bookearning.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bookearning.js"></script>
     <script src="assets/bundles/lib.vendor.bundle.js"></script>
     <script src="assets/js/CodiePie.js"></script>
     <script src="assets/modules/select2/dist/js/select2.full.min.js"></script>
