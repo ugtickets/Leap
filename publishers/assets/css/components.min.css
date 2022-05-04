@@ -880,17 +880,17 @@ tr:first-child > td > .fc-day-grid-event {
 
 .select2-container.select2-container--open .select2-selection--multiple {
     background-color: #fefeff;
-    border-color: #95a0f4
+    border-color: #d2232a
 }
 
 .select2-container.select2-container--focus .select2-selection--multiple, .select2-container.select2-container--focus .select2-selection--single {
     background-color: #fefeff;
-    border-color: #95a0f4
+    border-color: #d2232a
 }
 
 .select2-container.select2-container--open .select2-selection--single {
     background-color: #fefeff;
-    border-color: #95a0f4
+    border-color: #d2232a
 }
 
 .select2-results__option {
@@ -958,7 +958,7 @@ tr:first-child > td > .fc-day-grid-event {
 
     .selectric:focus {
         background-color: #fefeff;
-        border-color: #95a0f4
+        border-color: #d2232a
     }
 
     .selectric .label {

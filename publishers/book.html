@@ -264,18 +264,8 @@
                                         </div>
                                         <div class="row">
                                             <div class="form-group col-md-6 col-12">
-                                                <label>Author First Name:</label><br>
-                                                <label>Tia</label>
-                                            </div>
-                                            <div class="form-group col-md-6 col-12">
-                                                <label>Author Last Name:</label><br>
-                                                <label>Williams</label>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="form-group col-md-6 col-12">
-                                                <label>Author Country:</label><br>
-                                                <label>Uganda</label>
+                                                <label>Book Author:</label><br>
+                                                <label>Tia Williams</label>
                                             </div>
                                             <div class="form-group col-md-6 col-12">
                                                 <label>Book Genre:</label><br>
@@ -443,8 +433,14 @@
                                                 </div>
                                                 <div class="row">
 												    <div class="form-group col-md-6 col-12">
+                                                        <label>Book Author *</label>
+                                                        <select class="form-control select2" name="bookgenre" required>
+                                                            <option value="Tia Williams">Tia Williams</option>
+														</select>
+                                                    </div>
+												    <div class="form-group col-md-6 col-12">
                                                         <label>Book Genre *</label>
-                                                        <select class="form-control selectric" name="bookgenre" required>
+                                                        <select class="form-control select2" name="bookgenre" required>
                                                             <option value="Romance">Romance</option>
                                                             <optgroup label="Christian Non-fiction:">
                                                                 <option value="Christian Living">Christian Living</option>
@@ -519,16 +515,18 @@
                                                                 <option value="Expats Living in Africa">Expats Living in Africa</option>
                                                             </optgroup>
                                                         </select>
-                                                    </div>
-												    <div class="form-group col-md-3 col-12">
+                                                    </div>												    
+                                                </div>
+												<div class="row">
+												    <div class="form-group col-md-6 col-12">
                                                         <label>Book Edition</label>
                                                         <input type="text" class="form-control" name="bookedition" value="">
                                                     </div>
-                                                    <div class="form-group col-md-3 col-12">
+                                                    <div class="form-group col-md-6 col-12">
                                                         <label>Book Series</label>
                                                         <input type="text" class="form-control" name="bookseries" value="">
                                                     </div>
-                                                </div>
+												</div>
                                                 <div class="row">
                                                     <div class="form-group col-md-6 col-12">
                                                         <label>Royalty Plan</label>
@@ -576,7 +574,7 @@
                                                     </div>
                                                     <div class="form-group col-md-6 col-12">
                                                         <label>Book Language *</label>
-                                                        <select class="form-control selectric" name="booklanguage" required>
+                                                        <select class="form-control select2" name="booklanguage" required>
                                                             <option value="English">English</option>
                                                             <option value="Afrikaans">Afrikaans</option>
                                                             <option value="Ahmaric">Ahmaric</option>

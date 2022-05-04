@@ -2595,7 +2595,7 @@ p, ul:not(.list-unstyled), ol {
 
     .form-control:focus, .input-group-text:focus, .custom-select:focus, .custom-file-label:focus {
         background-color: #fefeff;
-        border-color: #95a0f4
+        border-color: #d2232a
     }
 
     .input-group-text, select.form-control:not([size]):not([multiple]), .form-control:not(.form-control-sm):not(.form-control-lg) {
@@ -3400,7 +3400,7 @@ textarea.form-control {
 
     .card.card-hero .card-header {
         padding: 40px;
-        background-image: linear-gradient(to bottom, #d2232a, #95a0f4);
+        background-image: linear-gradient(to bottom, #d2232a, #a61c21);
         color: #fff;
         overflow: hidden;
         height: auto;
