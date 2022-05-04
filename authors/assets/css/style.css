@@ -100,10 +100,11 @@ img {
 }
 
 .bg-image {
-    background-color: #d2232a;
+    /* background-color: #d2232a; */
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0, 0.8);
 }
 
 .bg-overlay {
