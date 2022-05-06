@@ -221,12 +221,12 @@
                                 <div class="form-group row justify-content-center">
                                     <img src="assets/img/logo-icon.png" class="footer-logo" alt="image" width="50" height="39">&nbsp;<h4 class="font-weight-bold">AUTHOR SIGN UP</h4>
                                 </div><!-- End .form-group -->
-								
-								<hr>
-								<div class="mb-4"></div>
-								
-								<h4 class="card-title font-weight-bold">ACCOUNT DETAILS</h4><br>
-								
+
+                                <hr>
+                                <div class="mb-4"></div>
+
+                                <h4 class="card-title font-weight-bold">ACCOUNT DETAILS</h4><br>
+
                                 <div class="form-group row">
                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                         <label for="firstname" class="h6">First Name *</label>
@@ -236,9 +236,9 @@
                                         <label for="lastname" class="h6">Last Name *</label>
                                         <input type="text" class="form-control" id="lastname" name="lastname" required>
                                     </div><!-- End .form-group -->
-                                </div><!-- End .form-group row -->                                
-								
-								<div class="form-group row">
+                                </div><!-- End .form-group row -->
+
+                                <div class="form-group row">
                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                         <label for="phonenumber" class="h6">Phone Number *</label>
                                         <input type="text" class="form-control" id="phonenumber" name="phonenumber" placeholder="+256 123 456 789" required>
@@ -248,31 +248,46 @@
                                         <input type="date" class="form-control" id="dateofbirth" name="dateofbirth" required>
                                     </div><!-- End .form-group -->
                                 </div><!-- End .form-group row -->
-								
-								<div class="form-group row">
+
+                                <div class="form-group row">
                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                         <label for="emailaddress" class="h6">Email Address *</label>
                                         <input type="email" class="form-control" id="emailaddress" name="emailaddress" required>
                                     </div><!-- End .form-group -->
-									<div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                         <label for="password" class="h6">Password *</label>
                                         <input type="password" class="form-control" id="password" name="password" required>
                                     </div><!-- End .form-group -->
                                 </div><!-- End .form-group row -->
-								
-								<hr>
-						        <div class="mb-4"></div>		
-								
-								<h4 class="card-title font-weight-bold">PROFILE DETAILS</h4><br>
-								
-								<div class="form-group row">
+
+                                <hr>
+                                <div class="mb-4"></div>
+
+                                <h4 class="card-title font-weight-bold">PROFILE DETAILS</h4><br>
+
+                                <div class="form-group row">
                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                         <label for="profilepicture" class="h6">Profile Picture *</label>
                                         <input type="file" class="form-control" id="profilepicture" name="profilepicture" required>
-                                    </div><!-- End .form-group -->                                    
+                                    </div><!-- End .form-group -->
+                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                        <label for="region" class="h6">Region</label>
+                                        <select class="form-control selectric" name="region">
+                                            <option>Select</option>
+                                            <option value="North-African">North-African</option>
+                                            <option value="Central-African">Central-African</option>
+                                            <option value="East-African">East-African</option>
+                                            <option value="West-African">West-African</option>
+                                            <option value="South-African">South-African</option>
+                                            <option value="African Diaspora">African Diaspora</option>
+                                            <option value="African-American">African-American</option>
+                                            <option value="Afro-European">Afro-European</option>
+                                            <option value="Expats Living in Africa">Expats Living in Africa</option>
+                                        </select>
+                                    </div><!-- End .form-group -->  
                                 </div><!-- End .form-group row -->
-								
-								<div class="form-group row">
+
+                                <div class="form-group row">
                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                         <label for="mainwritinglanguage" class="h6">Main Writing Language *</label>
                                         <select class="form-control" name="mainwritinglanguage">
@@ -431,21 +446,10 @@
                                                 <option value="Suspense & Thriller">Suspense & Thriller</option>
                                                 <option value="Mystery & Crime">Mystery & Crime</option>
                                             </optgroup>
-                                            <optgroup label="Regional Authors:">
-                                                <option value="North-African">North-African</option>
-                                                <option value="Central-African">Central-African</option>
-                                                <option value="East-African">East-African</option>
-                                                <option value="West-African">West-African</option>
-                                                <option value="South-African">South-African</option>
-                                                <option value="African Diaspora">African Diaspora</option>
-                                                <option value="African-American">African-American</option>
-                                                <option value="Afro-European">Afro-European</option>
-                                                <option value="Expats Living in Africa">Expats Living in Africa</option>
-                                            </optgroup>
                                         </select>
                                     </div><!-- End .form-group -->
                                 </div><!-- End .form-group row -->
-								
+
                                 <div class="form-group row">
                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                         <label for="country" class="h6">Country *</label>
@@ -698,37 +702,20 @@
                                             <option value="Zambia">Zambia</option>
                                             <option value="Zimbabwe">Zimbabwe</option>
                                         </select>
-                                    </div><!-- End .form-group -->       
+                                    </div><!-- End .form-group -->
                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                         <label for="authorwebsite" class="h6">Author Website</label>
                                         <input type="text" class="form-control" id="authorwebsite" name="authorwebsite">
-                                    </div><!-- End .form-group --> 									
-                                </div><!-- End .form-group row -->                                
-								
-								<div class="form-group row">
-								    <div class="form-group col mb-3 mb-sm-0">
-                                        <label for="description" class="h6">Description *</label>
-                                        <textarea class="form-control" id="description" name="description" placeholder="Something about yourself" required></textarea>
-									</div>
-                                </div><!-- End .form-group -->
-								
-								<hr>
-						        <div class="mb-4"></div>
-								
-                                <h4 class="card-title font-weight-bold">PAYMENT DETAILS</h4><br>
-								
-                                <div class="form-group row">
-                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                        <label for="bankaccountnumber" class="h6">Bank Account Number *</label>
-                                        <input type="text" class="form-control" id="bankaccountnumber" name="bankaccountnumber" required>
-                                    </div><!-- End .form-group -->
-
-                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                        <label for="password" class="h6">Bank Account Name *</label>
-                                        <input type="text" class="form-control" id="bankaccountname" name="bankaccountname" required>
                                     </div><!-- End .form-group -->
                                 </div><!-- End .form-group row -->
-		
+
+                                <div class="form-group row">
+                                    <div class="form-group col mb-3 mb-sm-0">
+                                        <label for="description" class="h6">Description *</label>
+                                        <textarea class="form-control" id="description" name="description" placeholder="Something about yourself" required></textarea>
+                                    </div>
+                                </div><!-- End .form-group -->
+
                                 <div class="form-footer">
                                     <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="termsandconditions" required>

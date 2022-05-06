@@ -11,7 +11,7 @@
     <!-- General CSS Files -->
     <link rel="stylesheet" href="assets/css/app.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
-	<link rel="stylesheet" href="assets/bundles/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="assets/bundles/select2/dist/css/select2.min.css">
     <link rel="stylesheet" href="assets/bundles/jquery-selectric/selectric.css">
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -186,7 +186,7 @@
                                 <li><a class="nav-link" href="unpublishrequests.html">Unpublish Requests</a></li>
                             </ul>
                         </li>
-						<li class="dropdown">
+                        <li class="dropdown">
                             <a href="#" class="menu-toggle nav-link has-dropdown"><i class="fa fa-gift"></i><span>Offers</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="addoffer.html">Add Offer</a></li>
@@ -208,10 +208,10 @@
                                 <li><a class="nav-link" href="publishersactivitylog.html">Publishers Activity Log</a></li>
                             </ul>
                         </li>
-						<li class="dropdown">
+                        <li class="dropdown">
                             <a href="subscribers.html" class="nav-link"><i class="fa fa-users"></i><span>Subscribers</span></a>
                         </li>
-						<li class="dropdown">
+                        <li class="dropdown">
                             <a href="reviews.html" class="nav-link"><i class="fa fa-star"></i><span>Reviews</span></a>
                         </li>
                     </ul>
@@ -238,7 +238,7 @@
                                                 <input type="text" class="form-control" name="lastname" required>
                                             </div>
                                         </div>
-										<div class="form-group row">
+                                        <div class="form-group row">
                                             <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                 <label>Email Address *</label>
                                                 <input type="text" class="form-control" name="emailaddress" required>
@@ -506,8 +506,8 @@
                                                 <input type="date" class="form-control" name="dateofbirth" required>
                                             </div>
                                         </div>
-										<div class="form-group row">										    
-											<div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                        <div class="form-group row">
+                                            <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                 <label>Main Writing Language *</label>
                                                 <select class="form-control select2" name="mainwritinglanguage" required style="width:100%">
                                                     <option>Select</option>
@@ -600,7 +600,7 @@
                                                     <option value="Zulu">Zulu</option>
                                                 </select>
                                             </div>
-											<div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                            <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                 <label>Main Writing Genre *</label>
                                                 <select class="form-control select2" name="mainwritinggenre" required style="width:100%">
                                                     <option>Select</option>
@@ -665,20 +665,9 @@
                                                         <option value="Suspense & Thriller">Suspense & Thriller</option>
                                                         <option value="Mystery & Crime">Mystery & Crime</option>
                                                     </optgroup>
-                                                    <optgroup label="Regional Authors:">
-                                                        <option value="North-African">North-African</option>
-                                                        <option value="Central-African">Central-African</option>
-                                                        <option value="East-African">East-African</option>
-                                                        <option value="West-African">West-African</option>
-                                                        <option value="South-African">South-African</option>
-                                                        <option value="African Diaspora">African Diaspora</option>
-                                                        <option value="African-American">African-American</option>
-                                                        <option value="Afro-European">Afro-European</option>
-                                                        <option value="Expats Living in Africa">Expats Living in Africa</option>
-                                                    </optgroup>
                                                 </select>
                                             </div>
-										</div>       
+                                        </div>
                                         <div class="form-group row">
                                             <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                 <label>Profile Picture *</label>
@@ -688,8 +677,8 @@
                                                 <label>Publishing Agreement *</label>
                                                 <input type="file" class="form-control" name="publishingagreement" required>
                                             </div>
-                                        </div>		
-										<div class="form-group row">
+                                        </div>
+                                        <div class="form-group row">
                                             <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                 <label>Bank Account Number *</label>
                                                 <input type="text" class="form-control" name="bankaccountnumber" required>
@@ -698,19 +687,34 @@
                                                 <label>Bank Account Name *</label>
                                                 <input type="text" class="form-control" name="bankaccountname" required>
                                             </div>
-                                        </div>	
+                                        </div>
                                         <div class="form-group row">
                                             <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                 <label>Author Website </label>
-                                                <input type="text" class="form-control" name="authorwebsite" required>
+                                                <input type="text" class="form-control" name="authorwebsite">
                                             </div>
-                                        </div>												
+                                            <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                <label>Region </label>
+                                                <select class="form-control selectric" name="region">
+                                                    <option>Select</option>
+                                                    <option value="North-African">North-African</option>
+                                                    <option value="Central-African">Central-African</option>
+                                                    <option value="East-African">East-African</option>
+                                                    <option value="West-African">West-African</option>
+                                                    <option value="South-African">South-African</option>
+                                                    <option value="African Diaspora">African Diaspora</option>
+                                                    <option value="African-American">African-American</option>
+                                                    <option value="Afro-European">Afro-European</option>
+                                                    <option value="Expats Living in Africa">Expats Living in Africa</option>
+                                                </select>
+                                            </div>
+                                        </div>
                                         <div class="form-group row">
                                             <div class="form-group col mb-3 mb-sm-0">
                                                 <label>Description *</label>
                                                 <textarea class="form-control" name="description" required></textarea>
                                             </div>
-                                        </div>										
+                                        </div>
                                         <div class="form-group">
                                             <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
                                                 ADD AUTHOR
@@ -827,11 +831,11 @@
     </div>
 
     <script src="assets/js/jquery-3.6.0.min.js"></script>
-	<script src="assets/js/bookearning.js"></script>
-	<script src="assets/js/app.min.js"></script>
+    <script src="assets/js/bookearning.js"></script>
+    <script src="assets/js/app.min.js"></script>
     <!-- JS Libraies -->
     <script src="assets/bundles/jquery-ui/jquery-ui.min.js"></script>
-	<script src="assets/bundles/select2/dist/js/select2.full.min.js"></script>
+    <script src="assets/bundles/select2/dist/js/select2.full.min.js"></script>
     <script src="assets/bundles/jquery-selectric/jquery.selectric.min.js"></script>
     <!-- Template JS File -->
     <script src="assets/js/scripts.js"></script>
