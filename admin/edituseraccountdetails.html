@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
 	<link rel="stylesheet" href="assets/bundles/select2/dist/css/select2.min.css">
     <link rel="stylesheet" href="assets/bundles/jquery-selectric/selectric.css">
+	<link rel="stylesheet" href="assets/bundles/int-tel-input/css/intlTelInput.css">
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/components.css">
@@ -253,7 +254,7 @@
                                                 </div>										
                                                 <div class="form-group">
                                                     <label>Phone Number *</label>
-                                                    <input type="text" class="form-control" name="phonenumber" value="0771167290">
+                                                    <input type="text" class="form-control" id="phone" name="phonenumber" value="+256771167290">
                                                 </div>
 												<div class="form-group">
                                                     <label>Date of Birth *</label>
@@ -383,6 +384,13 @@
 	<script src="assets/js/app.min.js"></script>
     <!-- JS Libraies -->
     <script src="assets/bundles/jquery-ui/jquery-ui.min.js"></script>
+	<script src="assets/bundles/int-tel-input/js/intlTelInput.js"></script>
+	<script>
+        var phonenumber = document.querySelector("#phone");
+        window.intlTelInput(phonenumber, {
+            utilsScript: "assets/bundles/int-tel-input/js/utils.js",
+        });
+    </script>
     <!-- Template JS File -->
     <script src="assets/js/scripts.js"></script>
     <!-- Custom JS File -->

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
     <link rel="stylesheet" href="assets/modules/select2/dist/css/select2.min.css">
     <link rel="stylesheet" href="assets/modules/jquery-selectric/selectric.css">
+	<link rel="stylesheet" href="assets/bundles/int-tel-input/css/intlTelInput.css">
     <!-- CSS Libraries -->
     <link rel="stylesheet" href="assets/modules/summernote/summernote-bs4.css">
     <!-- Template CSS -->
@@ -368,7 +369,7 @@
                                                 <div class="row">
                                                     <div class="form-group col-md-6 col-12">
                                                         <label>Phone Number</label>
-                                                        <input type="text" class="form-control" name="phonenumber" value="0771167290">
+                                                        <input type="text" class="form-control" id="phone" name="phonenumber" value="+256771167290">
                                                     </div>
                                                     <div class="form-group col-md-6 col-12">
                                                         <label>Country</label>
@@ -865,6 +866,13 @@
     <script src="assets/modules/jquery-selectric/jquery.selectric.min.js"></script>
     <!-- JS Libraies -->
     <script src="assets/modules/summernote/summernote-bs4.js"></script>
+	<script src="assets/bundles/int-tel-input/js/intlTelInput.js"></script>
+	<script>
+        var phonenumber = document.querySelector("#phone");
+        window.intlTelInput(phonenumber, {
+            utilsScript: "assets/bundles/int-tel-input/js/utils.js",
+        });
+    </script>
     <!-- Template JS File -->
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/custom.js"></script>
