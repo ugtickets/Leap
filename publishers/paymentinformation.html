@@ -3,15 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Payment Information - African Books Authors</title>
+    <title>Payment Information - African Books Publishers</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="African Books Authors">
-    <meta name="application-name" content="African Books Authors">
+    <meta name="apple-mobile-web-app-title" content="African Books Publishers">
+    <meta name="application-name" content="African Books Publishers">
     <meta name="theme-color" content="#ffffff">
     <!-- General CSS Files -->
     <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
-    <link rel="stylesheet" href="assets/modules/select2/dist/css/select2.min.css">
+	<link rel="stylesheet" href="assets/modules/select2/dist/css/select2.min.css">
     <link rel="stylesheet" href="assets/modules/jquery-selectric/selectric.css">
     <!-- CSS Libraries -->
     <link rel="stylesheet" href="assets/modules/summernote/summernote-bs4.css">
@@ -132,13 +132,13 @@
                     <li class="dropdown">
                         <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
                             <img alt="image" src="assets/img/users/user-1.jpg" class="rounded-circle mr-1">
-                            <div class="d-sm-none d-lg-inline-block">Yvonne Kusiima</div>
+                            <div class="d-sm-none d-lg-inline-block">Yvonne Publishers</div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <div class="dropdown-title">Hello Author</div>
+                            <div class="dropdown-title">Hello Publisher</div>
                             <a href="profile.html" class="dropdown-item has-icon"><i class="far fa-user"></i> Profile</a>
                             <a href="activitylog.html" class="dropdown-item has-icon"><i class="fas fa-list"></i> Activity Log</a>
-                            <a href="manual.html" class="dropdown-item has-icon"><i class="fas fa-file"></i> Manual</a>
+                            <a href="settings.html" class="dropdown-item has-icon"><i class="fas fa-file"></i> Manual</a>
                             <div class="dropdown-divider"></div>
                             <a href="#" class="dropdown-item has-icon text-danger"><i class="fas fa-sign-out-alt"></i> Logout</a>
                         </div>
@@ -160,10 +160,10 @@
                         <li class="font-weight-bold">
                             <a href="dashboard.html">
                                 <img src="assets/img/users/user-1.jpg" class="user-img-radious-style">&nbsp;
-                                <span>Yvonne Kusiima</span>
+                                <span>Yvonne Publishers</span>
                             </a>
                         </li>
-                        <li class="menu-header">Authors Dashboard</li>
+                        <li class="menu-header">Publishers Dashboard</li>
                         <li><a class="nav-link" href="dashboard.html"><i class="fas fa-home"></i> <span>Dashboard</span></a></li>
                         <li><a class="nav-link" href="myaccount.html"><i class="fas fa-user"></i> <span>My Account</span></a></li>
                         <li class="dropdown">
@@ -181,15 +181,23 @@
                                 <li><a class="nav-link" href="addoffer.html">Add Offer</a></li>
                                 <li><a class="nav-link" href="offers.html">View Offers</a></li>
                             </ul>
-                        </li>
-                        <li class="dropdown active">
+                        </li>						
+						<li class="dropdown active">
                             <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-money-bill"></i> <span>Payments</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="paymentinformation.html">Payment Information</a></li>
                                 <li><a class="nav-link" href="payments.html">Track Payments</a></li>
                             </ul>
                         </li>
-                        <li><a class="nav-link" href="manual.html"><i class="fas fa-file"></i> <span>Manual</span></a></li>
+						<li class="dropdown">
+                            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-users"></i> <span>Authors</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="addauthor.html">Add Author</a></li>
+                                <li><a class="nav-link" href="authors.html">View Authors</a></li>
+                                <li><a class="nav-link" href="authorsactivitylog.html">Authors Activity Log</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav-link" href="settings.html"><i class="fas fa-file"></i> <span>Manual</span></a></li>
                     </ul>
                     <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
                         <a href="index.html" class="btn btn-primary btn-lg btn-block btn-icon-split"><i class="fas fa-rocket"></i> Go to website</a>
@@ -205,7 +213,7 @@
                     </div>
 
                     <div class="section-body">
-                        <h2 class="section-title">Hi, Yvonne</h2>
+                        <h2 class="section-title">Hi, Yvonne Publishers</h2>
                         <p class="section-lead">Handle your payment information from here.</p>
 
                         <div class="row">
@@ -547,7 +555,7 @@
                                             </div>
                                             <div class="form-group col-md-6 col-12">
                                                 <label>Account Name</label><br>
-                                                <label>Yvonne Kusiima</label>
+                                                <label>Yvonne Publishers</label>
                                             </div>
                                         </div>
                                         <div>
@@ -850,7 +858,7 @@
                                                 </div>
                                                 <div class="form-group col-md-6 col-12">
                                                     <label>Account Name</label><br>
-                                                    <input type="text" class="form-control" name="accountname" value="Yvonne Kusiima" required>
+                                                    <input type="text" class="form-control" name="accountname" value="Yvonne Publishers" required>
                                                 </div>
                                             </div>
                                             <div class="text-right">
@@ -904,18 +912,17 @@
 
                 </div>
             </footer> -->
+
         </div>
     </div>
 
     <!-- General JS Scripts -->
     <script src="assets/bundles/lib.vendor.bundle.js"></script>
     <script src="assets/js/CodiePie.js"></script>
+	<script src="assets/modules/select2/dist/js/select2.full.min.js"></script>
+    <script src="assets/modules/jquery-selectric/jquery.selectric.min.js"></script>
     <!-- JS Libraies -->
     <script src="assets/modules/summernote/summernote-bs4.js"></script>
-    <script src="assets/modules/select2/dist/js/select2.full.min.js"></script>
-    <script src="assets/modules/jquery-selectric/jquery.selectric.min.js"></script>
-    <!-- Page Specific JS File -->
-    <script src="assets/js/page/index-0.js"></script>
     <!-- Template JS File -->
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/custom.js"></script>
