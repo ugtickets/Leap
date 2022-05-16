@@ -7,14 +7,14 @@
     font-family: icon51c1;
     src: url(../fonts/icon51c1.eot?15781584);
     src: url(../fonts/icon51c1.eot?15781584#iefix) format('embedded-opentype'),url(../fonts/icon51c1.woff2?15781584) format('woff2'),url(../fonts/icon51c1.woff?15781584) format('woff'),url(../fonts/icon51c1.ttf?15781584) format('truetype'),url(../fonts/icon51c1.svg?15781584#icon) format('svg');
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal
 }
 
 [class*=" icon-"]:before, [class^=icon-]:before {
     font-family: icon51c1;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     speak: none;
     display: inline-block;
     text-decoration: inherit;
@@ -174,7 +174,7 @@ body {
 }
 
 .fw-400 {
-    font-weight: 400
+    font-weight: 500
 }
 
 img {
@@ -480,7 +480,7 @@ section.banner {
 
     section.banner h5 {
         color: #ccc;
-        font-weight: 400
+        font-weight: 500
     }
 
     section.banner .btn {
@@ -498,7 +498,7 @@ section.banner {
 
 .demos h5 {
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 500;
     margin: 1.2rem 0 2rem
 }
 
@@ -578,7 +578,7 @@ section.banner {
     .section-elements .img-box h5 {
         text-transform: uppercase;
         font-size: 1.3rem;
-        font-weight: 400;
+        font-weight: 500;
         color: #666;
         margin: 0;
         text-align: center;

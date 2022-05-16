@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Add Book - African Books Admin</title>
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="African Books Admin">
-    <meta name="application-name" content="African Books Admin">
-    <meta name="theme-color" content="#ffffff">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Add Your Book - African Books Publishers</title>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="African Books Publishers">
+    <meta name="application-name" content="African Books Publishers">
+    <meta name="theme-color" content="#ffffff">  
     <!-- General CSS Files -->
-    <link rel="stylesheet" href="assets/css/app.min.css">
+    <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
-    <link rel="stylesheet" href="assets/bundles/select2/dist/css/select2.min.css">
-    <link rel="stylesheet" href="assets/bundles/jquery-selectric/selectric.css">
+	<link rel="stylesheet" href="assets/modules/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="assets/modules/jquery-selectric/selectric.css">
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="assets/modules/summernote/summernote-bs4.css">
     <!-- Template CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/components.css">
-    <!-- Custom style CSS -->
-    <link rel="stylesheet" href="assets/css/custom.css">
-    <link rel="icon" href="assets/img/favicon.png">
-    <link rel="manifest" href="africanbooksadminmanifest.json">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-    <link href="assets/img/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/css/components.min.css">
+	<link rel="icon" href="assets/img/favicon.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+	<link rel="manifest" href="africanbooksmanifest.json">
+	<link href="assets/img/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
     <link href="assets/img/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
     <link href="assets/img/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
     <link href="assets/img/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
@@ -33,43 +33,44 @@
     <link href="assets/img/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
 </head>
 
-<body>
-    <div class="loader"></div>
+<body class="layout-4">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
     <div id="app">
         <div class="main-wrapper main-wrapper-1">
             <div class="navbar-bg"></div>
-            <nav class="navbar navbar-expand-lg main-navbar sticky">
-                <div class="form-inline mr-auto">
+
+            <!-- Start app top navbar -->
+            <nav class="navbar navbar-expand-lg main-navbar">
+                <form class="form-inline mr-auto">
                     <ul class="navbar-nav mr-3">
-                        <li>
-                            <a href="#" data-toggle="sidebar" class="nav-link nav-link-lg collapse-btn"> <i data-feather="align-justify"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link nav-link-lg fullscreen-btn">
-                                <i data-feather="maximize"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <form class="form-inline mr-auto">
-                                <div class="search-element">
-                                    <input class="form-control" type="search" placeholder="Search" aria-label="Search" data-width="200">
-                                    <button class="btn" type="submit">
-                                        <i class="fas fa-search"></i>
-                                    </button>
-                                </div>
-                            </form>
-                        </li>
+                        <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+                        <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
                     </ul>
-                </div>
-                <ul class="navbar-nav navbar-right">
+                    <div class="search-element">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" data-width="250">
+                        <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+                        <div class="search-backdrop"></div>
+                        <div class="search-result">
+                            <div class="search-header">Histories</div>
+                            <div class="search-item">
+                                <a href="#">Payment History</a>
+                                <a href="#" class="search-close"><i class="fas fa-times"></i></a>
+                            </div>
+							<div class="search-item">
+                                <a href="#">Bookshelf</a>
+                                <a href="#" class="search-close"><i class="fas fa-times"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <ul class="navbar-nav navbar-right">                   
                     <li class="dropdown dropdown-list-toggle">
-                        <a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg">
-                            <i data-feather="bell" class="bell"></i>
-                            <span class="badge headerBadge2">
-                                4
-                            </span>
-                        </a>
-                        <div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
+                        <a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg beep"><i class="far fa-bell"></i></a>
+                        <div class="dropdown-menu dropdown-list dropdown-menu-right">
                             <div class="dropdown-header">
                                 Notifications
                                 <div class="float-right">
@@ -78,46 +79,49 @@
                             </div>
                             <div class="dropdown-list-content dropdown-list-icons">
                                 <a href="#" class="dropdown-item dropdown-item-unread">
-                                    <span class="dropdown-item-icon bg-primary text-white">
+                                    <div class="dropdown-item-icon bg-primary text-white">
                                         <i class="fas fa-code"></i>
-                                    </span>
-                                    <span class="dropdown-item-desc">
-                                        Book update is available now!
-                                        <span class="time">
-                                            2 Min Ago
-                                        </span>
-                                    </span>
+                                    </div>
+                                    <div class="dropdown-item-desc">
+                                        Template update is available now!
+                                        <div class="time text-primary">2 Min Ago</div>
+                                    </div>
                                 </a>
                                 <a href="#" class="dropdown-item">
-                                    <span class="dropdown-item-icon bg-info text-white">
+                                    <div class="dropdown-item-icon bg-info text-white">
                                         <i class="far fa-user"></i>
-                                    </span>
-                                    <span class="dropdown-item-desc">
-                                        Error has been fixed
-                                        <span class="time">
-                                            10 Hours Ago
-                                        </span>
-                                    </span>
+                                    </div>
+                                    <div class="dropdown-item-desc">
+                                        <b>You</b> and <b>Dedik Sugiharto</b> are now friends
+                                        <div class="time">10 Hours Ago</div>
+                                    </div>
                                 </a>
                                 <a href="#" class="dropdown-item">
-                                    <span class="dropdown-item-icon bg-success text-white">
+                                    <div class="dropdown-item-icon bg-success text-white">
                                         <i class="fas fa-check"></i>
-                                    </span>
-                                    <span class="dropdown-item-desc">
-                                        Dashboard has been updated
-                                        <span class="time">
-                                            12 Hours Ago
-                                        </span>
-                                    </span>
+                                    </div>
+                                    <div class="dropdown-item-desc">
+                                        <b>Kusnaedi</b> has moved task <b>Fix bug header</b> to <b>Done</b>
+                                        <div class="time">12 Hours Ago</div>
+                                    </div>
                                 </a>
                                 <a href="#" class="dropdown-item">
-                                    <span class="dropdown-item-icon bg-danger text-white">
+                                    <div class="dropdown-item-icon bg-danger text-white">
                                         <i class="fas fa-exclamation-triangle"></i>
-                                    </span>
-                                    <span class="dropdown-item-desc">
-                                        Low disk space. Delete some items
-                                        <span class="time">17 Hours Ago</span>
-                                    </span>
+                                    </div>
+                                    <div class="dropdown-item-desc">
+                                        Low disk space. Let's clean it!
+                                        <div class="time">17 Hours Ago</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <div class="dropdown-item-icon bg-info text-white">
+                                        <i class="fas fa-bell"></i>
+                                    </div>
+                                    <div class="dropdown-item-desc">
+                                        Welcome to CodiePie template!
+                                        <div class="time">Yesterday</div>
+                                    </div>
                                 </a>
                             </div>
                             <div class="dropdown-footer text-center">
@@ -126,75 +130,68 @@
                         </div>
                     </li>
                     <li class="dropdown">
-                        <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg text-primary">
-                            <i class="fa fa-user"></i>&nbsp;userid <span class="d-sm-none d-lg-inline-block"></span>
+                        <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                            <img alt="image" src="assets/img/users/user-1.jpg" class="rounded-circle mr-1">
+                            <div class="d-sm-none d-lg-inline-block">Yvonne Publishers</div>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right pullDown">
-                            <div class="dropdown-title">Hello User</div>
-                            <a href="profile.html" class="dropdown-item has-icon">
-                                <i class="far fa-user"></i>
-                                Profile
-                            </a>
-                            <a href="useractivitylog.html" class="dropdown-item has-icon">
-                                <i class="fa fa-list"></i>
-                                Activity Log
-                            </a>
-                            <a href="userchangepassword.html" class="dropdown-item has-icon">
-                                <i class="fa fa-edit"></i>
-                                Change Password
-                            </a>
-                            <a href="#" class="dropdown-item has-icon">
-                                <i class="fas fa-cog"></i>
-                                Settings
-                            </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="dropdown-title">Hello Publihser</div>
+                            <a href="profile.html" class="dropdown-item has-icon"><i class="far fa-user"></i> Profile</a>
+                            <a href="activitylog.html" class="dropdown-item has-icon"><i class="fas fa-list"></i> Activity Log</a>
+                            <a href="settings.html" class="dropdown-item has-icon"><i class="fas fa-file"></i> Manual</a>
                             <div class="dropdown-divider"></div>
-                            <a href="userlogin.html" class="dropdown-item has-icon text-danger">
-                                <i class="fas fa-sign-out-alt"></i>
-                                Logout
-                            </a>
+                            <a href="#" class="dropdown-item has-icon text-danger"><i class="fas fa-sign-out-alt"></i> Logout</a>
                         </div>
                     </li>
                 </ul>
             </nav>
+
+            <!-- Start main left sidebar menu -->
             <div class="main-sidebar sidebar-style-2">
                 <aside id="sidebar-wrapper">
                     <div class="sidebar-brand">
-                        <a href="usersdashboard.html">
-                            <img alt="image" src="assets/img/logo-icon.png" width="40" height="31"> <span class="logo-name">African Books</span>
-                        </a>
+                        <a href="dashboard.html"><img src="assets/img/logo.png" alt="logo" class="img-fluid" width="197" height="45" /></a>
                     </div>
+                    <div class="sidebar-brand sidebar-brand-sm">
+                        <a href="dashboard.html"><img src="assets/img/logo-icon.png" alt="logo" class="img-fluid" width="40" height="31"></a>
+                    </div>
+					<div class="mb-3"></div>
                     <ul class="sidebar-menu">
-                        <li class="menu-header">USERS DASHBOARD</li>
-                        <li class="dropdown">
-                            <a href="usersdashboard.html" class="nav-link"><i class="fa fa-desktop"></i><span>Dashboard</span></a>
+					    <li class="font-weight-bold">
+                            <a href="dashboard.html">
+						        <img src="assets/img/users/user-1.jpg" class="user-img-radious-style">&nbsp;
+							    <span>Yvonne Publishers</span>
+						    </a>
                         </li>
-                        <li class="dropdown">
-                            <a href="#" class="menu-toggle nav-link has-dropdown">
-                                <i class="fa fa-users"></i><span>User Accounts</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="useraccounts.html">View User Accounts</a></li>
-                                <li><a class="nav-link" href="useraccountsactivitylog.html">User Accounts Activity Log</a></li>
-                            </ul>
-                        </li>
+                        <li class="menu-header">Publishers Dashboard</li>
+						<li><a class="nav-link" href="dashboard.html"><i class="fas fa-home"></i> <span>Dashboard</span></a></li>
+						<li><a class="nav-link" href="myaccount.html"><i class="fas fa-user"></i> <span>My Account</span></a></li>
                         <li class="dropdown active">
-                            <a href="#" class="menu-toggle nav-link has-dropdown"><i class="fa fa-book"></i><span>Bookshelf</span></a>
+                            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-book"></i> <span>Bookshelf</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="addbook.html">Add Book</a></li>
+                                <li><a class="nav-link" href="addbook.html">Add Your Book</a></li>
                                 <li><a class="nav-link" href="books.html">View Books</a></li>
                                 <li><a class="nav-link" href="booksales.html">Book Sales</a></li>
-                                <li><a class="nav-link" href="unpublishrequests.html">Unpublish Requests</a></li>
+                                <li><a class="nav-link" href="bookreviews.html">Book Reviews</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown">
-                            <a href="#" class="menu-toggle nav-link has-dropdown"><i class="fa fa-gift"></i><span>Offers</span></a>
+						<li class="dropdown">
+                            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-gift"></i> <span>Offers</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="addoffer.html">Add Offer</a></li>
                                 <li><a class="nav-link" href="offers.html">View Offers</a></li>
                             </ul>
+                        </li>						
+						<li class="dropdown">
+                            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-money-bill"></i> <span>Payments</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="paymentinformation.html">Payment Information</a></li>
+                                <li><a class="nav-link" href="payments.html">Track Payments</a></li>
+                            </ul>
                         </li>
-                        <li class="dropdown">
-                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="users"></i><span>Authors</span></a>
+						<li class="dropdown">
+                            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-users"></i> <span>Authors</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="addauthor.html">Add Author</a></li>
 								<li><a class="nav-link" href="addclassicauthor.html">Add Classic Author</a></li>
@@ -202,32 +199,27 @@
                                 <li><a class="nav-link" href="authorsactivitylog.html">Authors Activity Log</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown">
-                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="users"></i><span>Publishers</span></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="publishers.html">View Publishers</a></li>
-                                <li><a class="nav-link" href="publishersactivitylog.html">Publishers Activity Log</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="subscribers.html" class="nav-link"><i class="fa fa-users"></i><span>Subscribers</span></a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="reviews.html" class="nav-link"><i class="fa fa-star"></i><span>Reviews</span></a>
-                        </li>
+                        <li><a class="nav-link" href="settings.html"><i class="fas fa-file"></i> <span>Manual</span></a></li>
                     </ul>
+                    <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
+                        <a href="index.html" class="btn btn-primary btn-lg btn-block btn-icon-split"><i class="fas fa-rocket"></i> Go to website</a>
+                    </div>
                 </aside>
             </div>
-            <!-- Main Content -->
+
+            <!-- Start app main Content -->
             <div class="main-content">
                 <section class="section">
-                    <div class="section-body">
+                    <div class="section-header">
+                        <h1>Add Your Book</h1>
+                    </div>
+					<div class="section-body">
+                        <label><i class="fa fa-info-circle"></i>&nbsp;The book price should be within the range of your selected royalty plan</label><br>
+                        <label><i class="fa fa-info-circle"></i>&nbsp;The book earning is determined by the royalty plan and the book price</label>
+						<div class="mb-4"></div>
                         <div class="row justify-content-center">
-                            <div class="col-12 col-md-6 col-lg-8">
+                            <div class="col-12">
                                 <div class="card">
-                                    <div class="card-header">
-                                        <h4 class="font-weight-bold">ADD BOOK</h4>
-                                    </div>
                                     <form method="post" class="card-body">
                                         <div class="form-group row">
                                             <div class="form-group col-sm-6 mb-3 mb-sm-0">
@@ -240,12 +232,6 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                <label>Book Author *</label>
-                                                <select class="form-control select2" name="bookauthor" required style="width:100%">
-                                                    <option>Select</option>
-                                                </select>
-                                            </div>
                                             <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                 <label>Book Genre *</label>
                                                 <select class="form-control select2" name="bookgenre" required style="width:100%">
@@ -313,9 +299,7 @@
                                                     </optgroup>
                                                 </select>
                                             </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <div class="form-group col-sm-3 mb-3 mb-sm-0">
+											<div class="form-group col-sm-3 mb-3 mb-sm-0">
                                                 <label>Book Edition</label>
                                                 <input type="text" class="form-control" name="bookedition">
                                             </div>
@@ -323,35 +307,20 @@
                                                 <label>Book Series</label>
                                                 <input type="text" class="form-control" name="bookseries">
                                             </div>
-                                            <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                <label>Book Region</label>
-                                                <select class="form-control selectric" name="bookregion">
-                                                    <option>Select</option>
-                                                    <option value="North-African">North-African</option>
-                                                    <option value="Central-African">Central-African</option>
-                                                    <option value="East-African">East-African</option>
-                                                    <option value="West-African">West-African</option>
-                                                    <option value="South-African">South-African</option>
-                                                    <option value="African Diaspora">African Diaspora</option>
-                                                    <option value="African-American">African-American</option>
-                                                    <option value="Afro-European">Afro-European</option>
-                                                    <option value="Expats Living in Africa">Expats Living in Africa</option>
-                                                </select>
-                                            </div>
                                         </div>
                                         <div class="form-group row">
                                             <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                 <label>Royalty Plan</label>
-                                                <select class="form-control selectric" name="royaltyplan" id="royaltyplan" required>
-                                                    <option>Select</option>
-                                                    <option value="Ujamaa (Wealth Building Plan - 70%)">Ujamaa (Wealth Building Plan - 70%) $2 to $4.15</option>
+												<select class="form-control selectric" name="royaltyplan" id="royaltyplan" required>
+												    <option>Select</option>
+												    <option value="Ujamaa (Wealth Building Plan - 70%)">Ujamaa (Wealth Building Plan - 70%) $2 to $4.15</option>
                                                     <option value="Uhuru (Freedom Plan - 55%)">Uhuru (Freedom Plan - 55%) $4.16 to 5.49</option>
                                                     <option value="Umoja (Unity Plan - 45%)">Umoja (Unity Plan - 45%) $5.50 to $6</option>
                                                     <option value="Ubuntu (Equality Plan- 35%)">Ubuntu (Equality Plan- 35%) $0.99 to $200</option>
-                                                </select>
+												</select>
                                             </div>
                                             <div class="form-group col-sm-3 mb-3 mb-sm-0">
-                                                <label>Book Price *</label>&nbsp;<i class="fa fa-info-circle" title="The book price should be within the range of your selected royalty plan"></i>
+											    <label>Book Price *</label>&nbsp;<i class="fa fa-info-circle" title="The book price should be within the range of your selected royalty plan"></i>
                                                 <div class="input-group mb-3">
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text">$</span>
@@ -359,8 +328,8 @@
                                                     <input type="text" class="form-control" id="bookprice" name="bookprice" value="">
                                                 </div>
                                             </div>
-                                            <div class="form-group col-sm-3 mb-3 mb-sm-0">
-                                                <label>Book Earning</label>&nbsp;<i class="fa fa-info-circle" title="The book earning is determined by the royalty plan and the book price"></i>
+											<div class="form-group col-sm-3 mb-3 mb-sm-0">
+											    <label>Book Earning</label>&nbsp;<i class="fa fa-info-circle" title="The book earning is determined by the royalty plan and the book price"></i>
                                                 <div class="input-group mb-3">
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text">$</span>
@@ -375,17 +344,32 @@
                                                 <input type="file" class="form-control" name="bookupload" required>
                                             </div>
                                             <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                <label>Book Cover *</label>
+                                                <label>Book Cover</label>
                                                 <input type="file" class="form-control" name="bookcover" required>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                            <div class="form-group col-sm-3 mb-3 mb-sm-0">
                                                 <label>Book Format *</label>
                                                 <select class="form-control selectric" name="bookformat" required>
                                                     <option>Select</option>
                                                     <option value="Ebook">Ebook</option>
                                                     <option value="Audiobook">Audiobook</option>
+                                                </select>
+                                            </div>
+											<div class="form-group col-sm-3 mb-3 mb-sm-0">
+                                                <label>Book Region</label>
+                                                <select class="form-control selectric" name="bookregion" required>
+                                                    <option>Select</option>
+                                                    <option value="North-African">North-African</option>
+                                                    <option value="Central-African">Central-African</option>
+                                                    <option value="East-African">East-African</option>
+                                                    <option value="West-African">West-African</option>
+                                                    <option value="South-African">South-African</option>
+                                                    <option value="African Diaspora">African Diaspora</option>
+                                                    <option value="African-American">African-American</option>
+                                                    <option value="Afro-European">Afro-European</option>
+                                                    <option value="Expats Living in Africa">Expats Living in Africa</option>
                                                 </select>
                                             </div>
                                             <div class="form-group col-sm-6 mb-3 mb-sm-0">
@@ -492,7 +476,7 @@
                                                 <input type="text" class="form-control" name="bookisbn" required>
                                             </div>
                                         </div>
-                                        <div class="form-group row">
+										<div class="form-group row">
                                             <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                 <label>Book Preview *</label>
                                                 <input type="file" class="form-control" name="bookpreview" required>
@@ -502,7 +486,7 @@
                                                 <input type="text" class="form-control" name="additionalcontributors">
                                             </div>
                                         </div>
-                                        <div class="form-group row">
+										<div class="form-group row">
                                             <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                 <label>Book Editor</label>
                                                 <input type="text" class="form-control" name="bookeditor">
@@ -512,7 +496,7 @@
                                                 <input type="text" class="form-control" name="bookillustrator">
                                             </div>
                                         </div>
-                                        <div class="form-group row">
+										<div class="form-group row">
                                             <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                 <label>Book Publisher</label>
                                                 <input type="text" class="form-control" name="bookpublisher">
@@ -542,135 +526,50 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="radio" name="publishingrights" id="choice3" value="I am the publisher of the work and have a legally binding agreement with the owner of the copyright to publish this work" required>
                                                     <label class="form-check-label" for="choice3">I am the publisher of the work and have a legally binding agreement with the owner of the copyright to publish this work</label>
-                                                </div>
+                                                </div>												
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
-                                                ADD BOOK
+                                                ADD YOUR BOOK
                                             </button>
                                         </div>
                                     </form>
                                 </div>
                             </div>
                         </div>
-                    </div>
+					</div>
                 </section>
-                <div class="settingSidebar">
-                    <a href="javascript:void(0)" class="settingPanelToggle">
-                        <i class="fa fa-spin fa-cog"></i>
-                    </a>
-                    <div class="settingSidebar-body ps-container ps-theme-default">
-                        <div class=" fade show active">
-                            <div class="setting-panel-header">
-                                Setting Panel
-                            </div>
-                            <div class="p-15 border-bottom">
-                                <h6 class="font-medium m-b-10">Select Layout</h6>
-                                <div class="selectgroup layout-color w-50">
-                                    <label class="selectgroup-item">
-                                        <input type="radio" name="value" value="1" class="selectgroup-input-radio select-layout" checked>
-                                        <span class="selectgroup-button">Light</span>
-                                    </label>
-                                    <label class="selectgroup-item">
-                                        <input type="radio" name="value" value="2" class="selectgroup-input-radio select-layout">
-                                        <span class="selectgroup-button">Dark</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="p-15 border-bottom">
-                                <h6 class="font-medium m-b-10">Sidebar Color</h6>
-                                <div class="selectgroup selectgroup-pills sidebar-color">
-                                    <label class="selectgroup-item">
-                                        <input type="radio" name="icon-input" value="1" class="selectgroup-input select-sidebar">
-                                        <span class="selectgroup-button selectgroup-button-icon" data-toggle="tooltip"
-                                              data-original-title="Light Sidebar"><i class="fas fa-sun"></i></span>
-                                    </label>
-                                    <label class="selectgroup-item">
-                                        <input type="radio" name="icon-input" value="2" class="selectgroup-input select-sidebar" checked>
-                                        <span class="selectgroup-button selectgroup-button-icon" data-toggle="tooltip"
-                                              data-original-title="Dark Sidebar"><i class="fas fa-moon"></i></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="p-15 border-bottom">
-                                <h6 class="font-medium m-b-10">Color Theme</h6>
-                                <div class="theme-setting-options">
-                                    <ul class="choose-theme list-unstyled mb-0">
-                                        <li title="white" class="active">
-                                            <div class="white"></div>
-                                        </li>
-                                        <li title="cyan">
-                                            <div class="cyan"></div>
-                                        </li>
-                                        <li title="black">
-                                            <div class="black"></div>
-                                        </li>
-                                        <li title="purple">
-                                            <div class="purple"></div>
-                                        </li>
-                                        <li title="orange">
-                                            <div class="orange"></div>
-                                        </li>
-                                        <li title="green">
-                                            <div class="green"></div>
-                                        </li>
-                                        <li title="red">
-                                            <div class="red"></div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="p-15 border-bottom">
-                                <div class="theme-setting-options">
-                                    <label class="m-b-0">
-                                        <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input"
-                                               id="mini_sidebar_setting">
-                                        <span class="custom-switch-indicator"></span>
-                                        <span class="control-label p-l-10">Mini Sidebar</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="p-15 border-bottom">
-                                <div class="theme-setting-options">
-                                    <label class="m-b-0">
-                                        <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input"
-                                               id="sticky_header_setting">
-                                        <span class="custom-switch-indicator"></span>
-                                        <span class="control-label p-l-10">Sticky Header</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="mt-4 mb-4 p-3 align-center rt-sidebar-last-ele">
-                                <a href="#" class="btn btn-icon icon-left btn-primary btn-restore-theme">
-                                    <i class="fas fa-undo"></i> Restore Default
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
+
+            <!-- Start app Footer part -->
             <!-- <footer class="main-footer">
                 <div class="footer-left">
-                    <a href="#">African Books</a>
+                    Copyright &copy;  <a href="afriacnbooks.com">AfricanBooks.com</a>
                 </div>
                 <div class="footer-right">
+
                 </div>
             </footer> -->
+			
         </div>
     </div>
-
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/bookearning.js"></script>
-    <script src="assets/js/app.min.js"></script>
+	
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/bookearning.js"></script>
+    <!-- General JS Scripts -->
+    <script src="assets/bundles/lib.vendor.bundle.js"></script>
+    <script src="assets/js/CodiePie.js"></script>
+	<script src="assets/modules/select2/dist/js/select2.full.min.js"></script>
+    <script src="assets/modules/jquery-selectric/jquery.selectric.min.js"></script>
     <!-- JS Libraies -->
-    <script src="assets/bundles/jquery-ui/jquery-ui.min.js"></script>
-    <script src="assets/bundles/select2/dist/js/select2.full.min.js"></script>
-    <script src="assets/bundles/jquery-selectric/jquery.selectric.min.js"></script>
+    <script src="assets/modules/summernote/summernote-bs4.js"></script>
+    <!-- Page Specific JS File -->
+    <script src="assets/js/page/index-0.js"></script>
     <!-- Template JS File -->
     <script src="assets/js/scripts.js"></script>
-    <!-- Custom JS File -->
     <script src="assets/js/custom.js"></script>
+	
 </body>
 
 </html>
