@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Add Your Book - African Books Publishers</title>
+    <title>Add Ebook - African Books Publishers</title>
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-title" content="African Books Publishers">
     <meta name="application-name" content="African Books Publishers">
@@ -170,7 +170,6 @@
                             <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-book"></i> <span>Bookshelf</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="addebook.html">Add Ebook</a></li>
-                                <li><a class="nav-link" href="addbook.html">Add Your Book</a></li>
                                 <li><a class="nav-link" href="ebooks.html">View Ebooks</a></li>
                                 <li><a class="nav-link" href="booksales.html">Book Sales</a></li>
                                 <li><a class="nav-link" href="bookreviews.html">Book Reviews</a></li>
@@ -211,10 +210,10 @@
             <div class="main-content">
                 <section class="section">
                     <div class="section-header">
-                        <h1>Add Your Book</h1>
+                        <h1>Add Ebook</h1>
                     </div>
 					<div class="section-body">
-                        <label><i class="fa fa-info-circle"></i>&nbsp;The book price should be within the range of your selected royalty plan</label><br>
+					    <label><i class="fa fa-info-circle"></i>&nbsp;The book price should be within the range of your selected royalty plan</label><br>
                         <label><i class="fa fa-info-circle"></i>&nbsp;The book earning is determined by the royalty plan and the book price</label>
 						<div class="mb-4"></div>
                         <div class="row justify-content-center">
@@ -232,6 +231,12 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
+                                            <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                <label>Book Author *</label>
+                                                <select class="form-control select2" name="bookauthor" required style="width:100%">
+                                                    <option>Select</option>
+											    </select>
+                                            </div>
                                             <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                 <label>Book Genre *</label>
                                                 <select class="form-control select2" name="bookgenre" required style="width:100%">
@@ -299,11 +304,13 @@
                                                     </optgroup>
                                                 </select>
                                             </div>
-											<div class="form-group col-sm-3 mb-3 mb-sm-0">
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                 <label>Book Edition</label>
                                                 <input type="text" class="form-control" name="bookedition">
                                             </div>
-                                            <div class="form-group col-sm-3 mb-3 mb-sm-0">
+                                            <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                 <label>Book Series</label>
                                                 <input type="text" class="form-control" name="bookseries">
                                             </div>
@@ -344,18 +351,14 @@
                                                 <input type="file" class="form-control" name="bookupload" required>
                                             </div>
                                             <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                <label>Book Cover</label>
+                                                <label>Book Cover *</label>
                                                 <input type="file" class="form-control" name="bookcover" required>
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <div class="form-group col-sm-3 mb-3 mb-sm-0">
-                                                <label>Book Format *</label>
-                                                <select class="form-control selectric" name="bookformat" required>
-                                                    <option>Select</option>
-                                                    <option value="Ebook">Ebook</option>
-                                                    <option value="Audiobook">Audiobook</option>
-                                                </select>
+                                                <label>Book Pages *</label>
+                                                <input type="text" class="form-control" name="bookpages" required>
                                             </div>
 											<div class="form-group col-sm-3 mb-3 mb-sm-0">
                                                 <label>Book Region</label>
@@ -511,7 +514,7 @@
                                                 <label>Book Synopsis *</label>
                                                 <textarea class="form-control" name="booksynopsis" required></textarea>
                                             </div>
-                                        </div>
+                                        </div>										
                                         <div class="form-group row">
                                             <div class="form-group col mb-3 mb-sm-0">
                                                 <label>Publishing Rights *</label><br>
@@ -531,7 +534,7 @@
                                         </div>
                                         <div class="form-group">
                                             <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
-                                                ADD YOUR BOOK
+                                                ADD BOOK
                                             </button>
                                         </div>
                                     </form>

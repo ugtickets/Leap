@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Books - African Books Publishers</title>
+    <title>Ebooks - African Books Authors</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="African Books Publishers">
-    <meta name="application-name" content="African Books Publishers">
+    <meta name="apple-mobile-web-app-title" content="African Books Authors">
+    <meta name="application-name" content="African Books Authors">
     <meta name="theme-color" content="#ffffff">
     <!-- General CSS Files -->
     <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
@@ -131,13 +131,13 @@
                     <li class="dropdown">
                         <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
                             <img alt="image" src="assets/img/users/user-1.jpg" class="rounded-circle mr-1">
-                            <div class="d-sm-none d-lg-inline-block">Yvonne Publishers</div>
+                            <div class="d-sm-none d-lg-inline-block">Yvonne Kusiima</div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <div class="dropdown-title">Hello Publihser</div>
+                            <div class="dropdown-title">Hello Author</div>
                             <a href="profile.html" class="dropdown-item has-icon"><i class="far fa-user"></i> Profile</a>
                             <a href="activitylog.html" class="dropdown-item has-icon"><i class="fas fa-list"></i> Activity Log</a>
-                            <a href="settings.html" class="dropdown-item has-icon"><i class="fas fa-file"></i> Manual</a>
+                            <a href="manual.html" class="dropdown-item has-icon"><i class="fas fa-file"></i> Manual</a>
                             <div class="dropdown-divider"></div>
                             <a href="#" class="dropdown-item has-icon text-danger"><i class="fas fa-sign-out-alt"></i> Logout</a>
                         </div>
@@ -159,45 +159,36 @@
                         <li class="font-weight-bold">
                             <a href="dashboard.html">
                                 <img src="assets/img/users/user-1.jpg" class="user-img-radious-style">&nbsp;
-                                <span>Yvonne Publishers</span>
+                                <span>Yvonne Kusiima</span>
                             </a>
                         </li>
-                        <li class="menu-header">Publishers Dashboard</li>
+                        <li class="menu-header">Authors Dashboard</li>
                         <li><a class="nav-link" href="dashboard.html"><i class="fas fa-home"></i> <span>Dashboard</span></a></li>
                         <li><a class="nav-link" href="myaccount.html"><i class="fas fa-user"></i> <span>My Account</span></a></li>
                         <li class="dropdown active">
                             <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-book"></i> <span>Bookshelf</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="addbook.html">Add Book</a></li>
-                                <li><a class="nav-link" href="books.html">View Books</a></li>
+                                <li><a class="nav-link" href="addebook.html">Add Ebook</a></li>
+                                <li><a class="nav-link" href="ebooks.html">View Ebooks</a></li>
                                 <li><a class="nav-link" href="booksales.html">Book Sales</a></li>
                                 <li><a class="nav-link" href="bookreviews.html">Book Reviews</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown">
+						<li class="dropdown">
                             <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-gift"></i> <span>Offers</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="addoffer.html">Add Offer</a></li>
                                 <li><a class="nav-link" href="offers.html">View Offers</a></li>
                             </ul>
-                        </li>						
-						<li class="dropdown">
+                        </li>
+                        <li class="dropdown">
                             <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-money-bill"></i> <span>Payments</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="paymentinformation.html">Payment Information</a></li>
                                 <li><a class="nav-link" href="payments.html">Track Payments</a></li>
                             </ul>
                         </li>
-						<li class="dropdown">
-                            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-users"></i> <span>Authors</span></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="addauthor.html">Add Author</a></li>
-								<li><a class="nav-link" href="addclassicauthor.html">Add Classic Author</a></li>
-                                <li><a class="nav-link" href="authors.html">View Authors</a></li>
-                                <li><a class="nav-link" href="authorsactivitylog.html">Authors Activity Log</a></li>
-                            </ul>
-                        </li>
-                        <li><a class="nav-link" href="settings.html"><i class="fas fa-file"></i> <span>Manual</span></a></li>
+                        <li><a class="nav-link" href="manual.html"><i class="fas fa-file"></i> <span>Manual</span></a></li>
                     </ul>
                     <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
                         <a href="index.html" class="btn btn-primary btn-lg btn-block btn-icon-split"><i class="fas fa-rocket"></i> Go to website</a>
@@ -213,21 +204,26 @@
                     </div>
 
                     <div class="section-body">
-                        <h2 class="section-title">Books</h2>
-                        <p class="section-lead">Find all your books here</p>
+                        <h2 class="section-title">Ebooks</h2>
+                        <p class="section-lead">Find all your Ebooks here</p>
 
                         <div class="row">
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-header">
-									    <input class="form-control" type="search" placeholder="Search for book" data-width="300">
+									    <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-search"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Search for book">
+                                        </div>
                                     </div>
                                     <div class="card-body">
                                         <div class="text-center">
-                                            <div class="row is-flex justify-content-center">
-                                                <div class="col-5 col-sm-3 col-md-2">
+                                            <div class="row is-flex">
+                                                <div class="col-6 col-sm-3 col-md-2">
                                                     <div class="app">
-                                                        <a href="book.html">
+                                                        <a href="ebook.html">
                                                             <img src="assets/img/books/seven-days-in-june-tia-williams.jpg">
                                                             <span>$152</span>
                                                             <span>Published</span>
@@ -241,7 +237,7 @@
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <div class="col-5 col-sm-3 col-md-2">
+                                                <div class="col-6 col-sm-3 col-md-2">
                                                     <div class="app">
                                                         <a href="#">
                                                             <img src="assets/img/books/the-long-take-robin-robertson.jpg">
@@ -257,7 +253,7 @@
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <div class="col-5 col-sm-3 col-md-2">
+                                                <div class="col-6 col-sm-3 col-md-2">
                                                     <div class="app">
                                                         <a href="#">
                                                             <img src="assets/img/books/ghost-story-peter-straub.jpg">
@@ -272,7 +268,7 @@
                                                             </span>
                                                     </div>
                                                 </div>
-                                                <div class="col-5 col-sm-3 col-md-2">
+                                                <div class="col-6 col-sm-3 col-md-2">
                                                     <div class="app">
                                                         <a href="#">
                                                             <img src="assets/img/books/city-of-ashes-cassandra-clare.jpg">
@@ -288,7 +284,7 @@
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <div class="col-5 col-sm-3 col-md-2">
+                                                <div class="col-6 col-sm-3 col-md-2">
                                                     <div class="app">
                                                         <a href="#">
                                                             <img src="assets/img/books/are-you-afraid-of-the-dark-sidney-sheldon.jpg">
@@ -304,7 +300,7 @@
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <div class="col-5 col-sm-3 col-md-2">
+                                                <div class="col-6 col-sm-3 col-md-2">
                                                     <div class="app">
                                                         <a href="#">
                                                             <img src="assets/img/books/the-fault-in-our-stars-john-green.jpg">
