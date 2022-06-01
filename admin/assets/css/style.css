@@ -4883,9 +4883,14 @@ h6 .badge {
         top: 4px;
         right: 0px;
         font-weight: 400;
-        padding: 3px 6px;
+        padding: .25em .4em;
+		font-size: 75%;
+		line-height: 1;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: baseline;
         background: #a61c21;
-        border-radius: 50%
+        border-radius: .35rem;		
     }
 
     .navbar .dropdown-list-toggle .notification-toggle .headerBadge2 {
@@ -4893,9 +4898,14 @@ h6 .badge {
         top: 4px;
         right: 0px;
         font-weight: 400;
-        padding: 3px 6px;
+        padding: .25em .4em;
+		font-size: 75%;
+		line-height: 1;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: baseline;
         background: #a61c21;
-        border-radius: 50%;		
+        border-radius: .35rem;		
     }
 
 .remove-caret:after {

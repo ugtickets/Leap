@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>User Profile - African Books Admin</title>
+    <title>View Audiobooks - African Books Admin</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-title" content="African Books Admin">
+    <meta name="apple-mobile-web-app-title" content="African Books Admin">
     <meta name="application-name" content="African Books Admin">
-    <meta name="theme-color" content="#ffffff">  
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="assets/bundles/datatables/datatables.min.css">
+    <link rel="stylesheet" href="assets/bundles/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
     <!-- General CSS Files -->
     <link rel="stylesheet" href="assets/css/app.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
@@ -17,9 +19,9 @@
     <!-- Custom style CSS -->
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="icon" href="assets/img/favicon.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-	<link rel="manifest" href="africanbooksadminmanifest.json">
-	<link href="assets/img/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="manifest" href="africanbooksadminmanifest.json">
+    <link href="assets/img/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
     <link href="assets/img/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
     <link href="assets/img/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
     <link href="assets/img/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
@@ -63,7 +65,7 @@
                     <li class="dropdown dropdown-list-toggle">
                         <a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg">
                             <i data-feather="bell" class="bell"></i>
-							<span class="badge headerBadge2">
+                            <span class="badge headerBadge2">
                                 4
                             </span>
                         </a>
@@ -78,45 +80,45 @@
                                 <a href="#" class="dropdown-item dropdown-item-unread">
                                     <span class="dropdown-item-icon bg-primary text-white">
                                         <i class="fas fa-code"></i>
-                                    </span> 
-									<span class="dropdown-item-desc">
-                                        Book update is available now! 
-										<span class="time">
+                                    </span>
+                                    <span class="dropdown-item-desc">
+                                        Book update is available now!
+                                        <span class="time">
                                             2 Min Ago
                                         </span>
                                     </span>
-                                </a> 
-								<a href="#" class="dropdown-item">
+                                </a>
+                                <a href="#" class="dropdown-item">
                                     <span class="dropdown-item-icon bg-info text-white">
                                         <i class="far fa-user"></i>
-                                    </span> 
-									<span class="dropdown-item-desc">
+                                    </span>
+                                    <span class="dropdown-item-desc">
                                         Error has been fixed
-										<span class="time">
+                                        <span class="time">
                                             10 Hours Ago
                                         </span>
                                     </span>
-                                </a> 
-								<a href="#" class="dropdown-item">
+                                </a>
+                                <a href="#" class="dropdown-item">
                                     <span class="dropdown-item-icon bg-success text-white">
                                         <i class="fas fa-check"></i>
-                                    </span> 
-									<span class="dropdown-item-desc">
+                                    </span>
+                                    <span class="dropdown-item-desc">
                                         Dashboard has been updated
-										<span class="time">
+                                        <span class="time">
                                             12 Hours Ago
                                         </span>
                                     </span>
-                                </a> 
-								<a href="#" class="dropdown-item">
+                                </a>
+                                <a href="#" class="dropdown-item">
                                     <span class="dropdown-item-icon bg-danger text-white">
                                         <i class="fas fa-exclamation-triangle"></i>
-                                    </span> 
-									<span class="dropdown-item-desc">
-                                        Low disk space. Delete some items 
-										<span class="time">17 Hours Ago</span>
                                     </span>
-                                </a> 
+                                    <span class="dropdown-item-desc">
+                                        Low disk space. Delete some items
+                                        <span class="time">17 Hours Ago</span>
+                                    </span>
+                                </a>
                             </div>
                             <div class="dropdown-footer text-center">
                                 <a href="#">View All <i class="fas fa-chevron-right"></i></a>
@@ -175,7 +177,7 @@
                                 <li><a class="nav-link" href="useraccountsactivitylog.html">User Accounts Activity Log</a></li>
                             </ul>
                         </li>
-						<li class="dropdown">
+                        <li class="dropdown active">
                             <a href="#" class="menu-toggle nav-link has-dropdown"><i class="fa fa-book"></i><span>Bookshelf</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="addebook.html">Add Ebook</a></li>
@@ -186,7 +188,7 @@
                                 <li><a class="nav-link" href="unpublishrequests.html">Unpublish Requests</a></li>
                             </ul>
                         </li>
-						<li class="dropdown">
+                        <li class="dropdown">
                             <a href="#" class="menu-toggle nav-link has-dropdown"><i class="fa fa-gift"></i><span>Offers</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="addoffer.html">Add Offer</a></li>
@@ -209,12 +211,12 @@
                                 <li><a class="nav-link" href="publishersactivitylog.html">Publishers Activity Log</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown">
+						<li class="dropdown">
                             <a href="subscribers.html" class="nav-link"><i class="fa fa-users"></i><span>Subscribers</span></a>
                         </li>
-                        <li class="dropdown">
+						<li class="dropdown">
                             <a href="reviews.html" class="nav-link"><i class="fa fa-star"></i><span>Reviews</span></a>
-                        </li>						
+                        </li>
                     </ul>
                 </aside>
             </div>
@@ -226,37 +228,36 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h4 class="font-weight-bold">USER PROFILE</h4>
+                                        <h4 class="font-weight-bold">AUDIOBOOKS</h4>
                                     </div>
                                     <div class="card-body">
-									    <div class="row">
-                                            <div class="col-lg-4">
-                                                <div class="form-group">
-												    <i class="fa fa-user fa-9x text-primary"></i>
-												</div>
-                                            </div>
-                                            <div class="col-lg-8">
-											    <div class="form-group row">
-                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
-											            <label>First Name:</label><br>
-														<label>Yvonne Kusiima</label>
-													</div>
-													<div class="form-group col-sm-6 mb-3 mb-sm-0">
-											            <label>Last Name:</label><br>
-														<label>Ngabirano</label>
-													</div>													
-												</div>
-                                                <div class="form-group row">
-												    <div class="form-group col-sm-6 mb-3 mb-sm-0">
-												        <label>User ID:</label><br>
-														<label>Yvonne00</label>
-												    </div>
-                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                        <label>Email Address:</label><br>
-														<label>yvonne@gmail.com</label>
-													</div>
-												</div>													
-                                            </div>											
+                                        <div class="table-responsive">
+                                            <table class="table table-striped text-center" id="table-1">
+                                                <thead>
+                                                    <tr>
+                                                        <th>BookCover</th>
+                                                        <th>BookTitle</th>
+                                                        <th>BookAuthor</th>
+                                                        <th>BookGenre</th>
+                                                        <th>BookStatus</th>
+                                                        <th>View</th>
+                                                        <th>Edit</th>
+                                                        <th>Delete</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><img alt="image" src="assets/img/books/seven-days-in-june-tia-williams.jpg" width="50"></td>
+                                                        <td>Seven Days in June</td>
+                                                        <td>Tia Williams</td>
+                                                        <td>Romance</td>
+                                                        <td>Unpublished</td>
+                                                        <td><a href="ebookdetails.html" class="btn btn-primary btn-block">View</a></td>
+                                                        <td><a href="editebookdetails.html" class="btn btn-primary btn-block">Edit</a></td>
+                                                        <td><a href="#" class="btn btn-primary btn-block">Delete</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
@@ -367,10 +368,14 @@
             </footer> -->
         </div>
     </div>
-    
-	<script src="assets/js/app.min.js"></script>
+    <!-- General JS Scripts -->
+    <script src="assets/js/app.min.js"></script>
     <!-- JS Libraies -->
+    <script src="assets/bundles/datatables/datatables.min.js"></script>
+    <script src="assets/bundles/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
     <script src="assets/bundles/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Page Specific JS File -->
+    <script src="assets/js/page/datatables.js"></script>
     <!-- Template JS File -->
     <script src="assets/js/scripts.js"></script>
     <!-- Custom JS File -->

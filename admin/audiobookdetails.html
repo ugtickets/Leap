@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Publisher Details - African Books Admin</title>
+    <title>Audiobook Details - African Books Admin</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="African Books Admin">
     <meta name="application-name" content="African Books Admin">
@@ -175,7 +175,7 @@
                                 <li><a class="nav-link" href="useraccountsactivitylog.html">User Accounts Activity Log</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown">
+                        <li class="dropdown active">
                             <a href="#" class="menu-toggle nav-link has-dropdown"><i class="fa fa-book"></i><span>Bookshelf</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="addebook.html">Add Ebook</a></li>
@@ -202,7 +202,7 @@
                                 <li><a class="nav-link" href="authorsactivitylog.html">Authors Activity Log</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown active">
+                        <li class="dropdown">
                             <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="users"></i><span>Publishers</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="publishers.html">View Publishers</a></li>
@@ -226,96 +226,284 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h4 class="font-weight-bold">PUBLISHER DETAILS</h4>
+                                        <h4 class="font-weight-bold">AUDIOBOOK DETAILS</h4>
                                     </div>
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col-lg-4">
                                                 <div class="form-group">
-                                                    <img src="assets/img/publishers/publisher-1.jpg" alt="image" class="user-img-radious-style img-fluid" width="218" height="218">
+                                                    <img src="assets/img/books/seven-days-in-june-tia-williams.jpg" alt="image" class="img-fluid">
+                                                </div>
+												<div class="form-group">
+                                                    <label>Book Upload:</label><br>
+                                                    <a href="#"><i class="fa fa-book"></i>&nbsp;View Book</a>
+                                                </div>
+												<div class="form-group">
+                                                    <label>Book Preview:</label><br>
+                                                    <a href="#"><i class="fa fa-file"></i>&nbsp;View Preview</a>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label>Ratings:</label><br>
+                                                    <label>Rating:</label><br>
                                                     <label>
-                                                        <i class="fa fa-star text-primary"></i>
-                                                        <i class="fa fa-star text-primary"></i>
-                                                        <i class="fa fa-star text-primary"></i>
-                                                        <i class="fa fa-star text-primary"></i>
-                                                        4
+                                                        <i class="icon-star rated-star"></i>
+                                                        <i class="icon-star rated-star"></i>
+                                                        <i class="icon-star rated-star"></i>
+                                                        <i class="icon-star unrated-star"></i>
+                                                        <i class="icon-star unrated-star"></i>
                                                     </label>
+                                                </div>
+												<div class="form-group">
+                                                    <label>Book Status</label><br>
+                                                    <label>Not Published</label>
+                                                </div>
+												<div class="form-group row">
+                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                        <a href="#" class="btn btn-primary btn-block">Publish</a>
+                                                    </div>
+                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                        <a href="#" class="btn btn-primary btn-block">Unpublish</a>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="col-lg-8">
                                                 <div class="form-group row">
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                        <label>Publisher Name:</label><br>
-                                                        <label>Yvonne Publishers</label>
+                                                        <label>Book Title:</label><br>
+                                                        <label>Seven Days in June</label>
                                                     </div>
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                        <label>Publisher TIN:</label><br>
-                                                        <label>1009898654</label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                        <label>Email Address:</label><br>
-                                                        <label>yvonnepub@gmail.com</label>
-                                                    </div>
-                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                        <label>Publisher Website:</label><br>
-                                                        <label>www.yvonnepub.com</label>
+                                                        <label>Book Subtitle</label><br>
+                                                        <label></label>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                        <label>Country:</label><br>
-                                                        <label>Uganda</label>
+                                                        <label>Book Author:</label><br>
+                                                        <label>Tia Williams</label>
                                                     </div>
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                        <label>Phone Number:</label><br>
-                                                        <label>0771167290</label>
+                                                        <label>Book Genre:</label><br>
+                                                        <label>Romance</label>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                        <label>Main Publishing Language:</label><br>
+                                                        <label>Book Edition:</label><br>
+                                                        <label></label>
+                                                    </div>
+                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                        <label>Book Series:</label><br>
+                                                        <label></label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                        <label>Royalty Plan:</label><br>
+                                                        <label>70% and 65%  - $2 to $4.15</label>
+                                                    </div>
+                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                        <label>Book Price:</label><br>
+                                                        <label>$152</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                        <label>Book Earning:</label><br>
+                                                        <label>$45</label>
+                                                    </div>
+													<div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                        <label>Book ID:</label><br>
+                                                        <label>AB385</label>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                        <label>Book Chapters:</label><br>
+                                                        <label>13</label>
+                                                    </div>
+                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                        <label>Book Language:</label><br>
                                                         <label>English</label>
                                                     </div>
-                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                        <label>Main Publishing Genre:</label><br>
-                                                        <label>Mystery</label>
-                                                    </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                        <label>Bookshelf:</label><br>
-                                                        <label>10 books</label>
+                                                        <label>Book Keywords:</label><br>
+                                                        <label>seven days in june</label>
                                                     </div>
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                        <label>Date Time Created:</label><br>
-                                                        <label>2020-02-01 14:53</label>
+                                                        <label>Book ISBN:</label><br>
+                                                        <label>978-3-16-148410-0</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+												    <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                        <label>Added By:</label><br>
+                                                        <label>userid</label>
+                                                    </div>
+                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                        <label>Date Time Added:</label><br>
+                                                        <label>2022-02-01 14:53</label>
+                                                    </div>                                                   
+                                                </div>
+												<div class="form-group row">
+                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                        <label>Additional Contributors:</label><br>
+                                                        <label></label>
+                                                    </div>
+													<div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                        <label>Added By Role:</label><br>
+                                                        <label>User</label>
+                                                    </div>
+                                                </div>
+												<div class="form-group row">
+                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                        <label>Book Narrator:</label><br>
+                                                        <label></label>
+                                                    </div>
+													<div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                        <label>Book Producer:</label><br>
+                                                        <label></label>
+                                                    </div>
+                                                </div>
+												<div class="form-group row">
+                                                    <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                        <label>Book Publisher:</label><br>
+                                                        <label></label>
+                                                    </div>
+													<div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                        <label>Co-Author:</label><br>
+                                                        <label></label>
+                                                    </div>
+                                                </div>
+												<div class="form-group row">
+												    <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                        <label>Book Table of Contents:</label><br>
+                                                        <a href="#"><i class="fa fa-file"></i>&nbsp;View Table of Contents</a>
+                                                    </div>
+													<div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                        <label>Book Region:</label><br>
+                                                        <label>North-African</label>
+                                                    </div>
+                                                </div>
+												<div class="form-group row">
+												    <div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                        <label>Year of Publication:</label><br>
+                                                        <label></label>
+                                                    </div>
+													<div class="form-group col-sm-6 mb-3 mb-sm-0">
+                                                        <label>Book Translator:</label><br>
+                                                        <label></label>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <div class="form-group col mb-3 mb-sm-0">
-                                                        <label>Description:</label><br>
-                                                        <label>Yvonne Publishers is a publishing company which is passionate about writing</label>
+                                                        <label>Book Synopsis:</label><br>
+                                                        <label>Shane Hall is a reclusive, enigmatic, award-winning literary author who, to everyone's surprise, shows up in New York. When Shane and Eva meet unexpectedly at a literary event, sparks fly, raising not only their past buried traumas, but the eyebrows of New York's Black literati.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="form-group col mb-3 mb-sm-0">
+                                                        <label>Publishing Rights:</label><br>
+                                                        <label>I own the copyright and hold the necessary publishing rights</label>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                        <a href="editpublisherdetails.html" class="btn btn-primary btn-block">
-                                                            EDIT
-                                                        </a>
+                                                        <a href="editebookdetails.html" class="btn btn-primary btn-block">EDIT</a>
                                                     </div>
                                                     <div class="form-group col-sm-6 mb-3 mb-sm-0">
-                                                        <a href="deletepublisher.html" class="btn btn-primary btn-block">
-                                                            DELETE
-                                                        </a>
+                                                        <a href="#" class="btn btn-primary btn-block">DELETE</a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="font-weight-bold">BOOK REVIEWS</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-unstyled list-unstyled-border list-unstyled-noborder">
+                                            <li class="media">
+                                                <img alt="image" class="mr-3 rounded-circle" width="70" src="assets/img/users/user-1.jpg">
+                                                <div class="media-body">
+                                                    <div class="media-title mb-1">Yvonne Kusiima&nbsp;<label class="text-time">yvonnekusiima00@gmail.com</label></div>
+                                                    <div class="text-time">
+                                                        2020-02-01 14:53&nbsp;&nbsp;
+                                                        <label>
+                                                            <i class="icon-star rated-star"></i>
+                                                            <i class="icon-star rated-star"></i>
+                                                            <i class="icon-star rated-star"></i>
+                                                            <i class="icon-star unrated-star"></i>
+                                                            <i class="icon-star unrated-star"></i>
+                                                        </label>
+                                                    </div>
+                                                    <div class="text-time text-primary">SEVEN DAYS IN JUNE - TIA WILLIAMS</div>
+                                                    <div class="media-description text-muted">
+                                                        <label class="media-title">Amazing book:</label>&nbsp;Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                    </div>
+                                                    <div class="media-links">
+                                                        <a href="#" class="text-danger">DELETE</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="media">
+                                                <img alt="image" class="mr-3 rounded-circle" width="70" src="assets/img/users/user-1.jpg">
+                                                <div class="media-body">
+                                                    <div class="media-title mb-1">Yvonne Kusiima&nbsp;<label class="text-time">yvonnekusiima00@gmail.com</label></div>
+                                                    <div class="text-time">
+                                                        2020-02-01 14:53&nbsp;&nbsp;
+                                                        <label>
+                                                            <i class="icon-star rated-star"></i>
+                                                            <i class="icon-star rated-star"></i>
+                                                            <i class="icon-star rated-star"></i>
+                                                            <i class="icon-star unrated-star"></i>
+                                                            <i class="icon-star unrated-star"></i>
+                                                        </label>
+                                                    </div>
+                                                    <div class="text-time text-primary">SEVEN DAYS IN JUNE - TIA WILLIAMS</div>
+                                                    <div class="media-description text-muted">
+                                                        <label class="media-title">Amazing book:</label>&nbsp;Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                    </div>
+                                                    <div class="media-links">
+                                                        <a href="#" class="text-danger">DELETE</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="media">
+                                                <img alt="image" class="mr-3 rounded-circle" width="70" src="assets/img/users/user-1.jpg">
+                                                <div class="media-body">
+                                                    <div class="media-title mb-1">Yvonne Kusiima&nbsp;<label class="text-time">yvonnekusiima00@gmail.com</label></div>
+                                                    <div class="text-time">
+                                                        2020-02-01 14:53&nbsp;&nbsp;
+                                                        <label>
+                                                            <i class="icon-star rated-star"></i>
+                                                            <i class="icon-star rated-star"></i>
+                                                            <i class="icon-star rated-star"></i>
+                                                            <i class="icon-star unrated-star"></i>
+                                                            <i class="icon-star unrated-star"></i>
+                                                        </label>
+                                                    </div>
+                                                    <div class="text-time text-primary">SEVEN DAYS IN JUNE - TIA WILLIAMS</div>
+                                                    <div class="media-description text-muted">
+                                                        <label class="media-title">Amazing book:</label>&nbsp;Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                    </div>
+                                                    <div class="media-links">
+                                                        <a href="#" class="text-danger">DELETE</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
