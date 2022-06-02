@@ -157,7 +157,7 @@
                                         <li><a href="communityguidelines.html">Community Guidelines</a></li>
                                         <li><a href="termsandconditions.html">Terms and Conditions</a></li>
                                         <li><a href="privacypolicy.html">Privacy Policy</a></li>
-										<li><a href="contentguidelines.html">Content Guidelines</a></li>
+                                        <li><a href="contentguidelines.html">Content Guidelines</a></li>
                                     </ul><!-- End .menu-vertical -->
                                 </nav><!-- End .side-nav -->
                             </div><!-- End .dropdown-menu -->
@@ -348,7 +348,7 @@
                                         <li><a href="#"><small class="font-weight-bold">HELLO READER</small></a></li>
                                         <div class="dropdown-divider"></div>
                                         <li><a href="profile.html"><i class="fa fa-user"></i>&nbsp;Profile</a></li>
-										<li><a href="activitylog.html"><i class="fa fa-list"></i>&nbsp;Activity Log</a></li>
+                                        <li><a href="activitylog.html"><i class="fa fa-list"></i>&nbsp;Activity Log</a></li>
                                         <li><a href="wishlist.html"><i class="fa fa-heart"></i>&nbsp;Wishlist</a></li>
                                         <li><a href="cart.html"><i class="fa fa-shopping-cart"></i>&nbsp;Cart</a></li>
                                         <li><a href="library.html"><i class="fa fa-book"></i>&nbsp;Library</a></li>
@@ -378,7 +378,7 @@
                             <div class="row">
                                 <div class="col-lg-9 summary">
                                     <h4>Billing Details</h4><!-- End .checkout-title -->
-									<hr>
+                                    <hr>
                                     <div class="form-group row">
                                         <div class="form-group col-sm-6">
                                             <label>First Name</label><br>
@@ -403,8 +403,8 @@
                                         </div><!-- End .col-sm-6 -->
                                     </div><!-- End .row -->
 
-									<hr>
-									
+                                    <hr>
+
                                     <div class="form-group">
                                         <label>Don't have an account ?</label><br>
                                         <a href="register.html" class="btn btn-outline-primary-2 btn-order">CREATE ACCOUNT<i class="icon-long-arrow-right"></i></a>
@@ -509,19 +509,19 @@
                                                         You'll be redirected to a payment gateway and authorize payment from your credit card to AfricanBooks.com
                                                     </div><!-- End .card-body -->
                                                 </div><!-- End .collapse -->
-                                            </div><!-- End .card -->																					
+                                            </div><!-- End .card -->
                                         </div><!-- End .accordion -->
-										
-										<div class="form-group row">
-										<div class="form-group col-sm-6 mb-3 mb-sm-0 checkout-discount">
-											<input type="text" class="form-control" name="discountcode" placeholder="Discount code">
-										</div><!-- End .check-out discount -->
-										
-										<div class="form-group col-sm-6 mb-3 mb-sm-0 checkout-discount">
-											<input type="text" class="form-control" name="offercode" placeholder="Offer code">
-										</div><!-- End .check-out discount -->
-										</div>
-										
+
+                                        <div class="form-group row">
+                                            <div class="form-group col-sm-6 mb-3 mb-sm-0 checkout-discount">
+                                                <input type="text" class="form-control" name="discountcode" placeholder="Discount code">
+                                            </div><!-- End .check-out discount -->
+
+                                            <div class="form-group col-sm-6 mb-3 mb-sm-0 checkout-discount">
+                                                <input type="text" class="form-control" name="offercode" placeholder="Offer code">
+                                            </div><!-- End .check-out discount -->
+                                        </div>
+
                                         <button type="submit" class="btn btn-outline-primary-2 btn-order btn-block">
                                             CHECKOUT
                                         </button>
@@ -831,8 +831,7 @@
     <script src="assets/js/demo-4.js"></script>
     <!-- Sweet Alert -->
     <script src="assets/vendor/sweetalert2/dist/sweetalert2.all.min.js"></script>
-    <script>
-        $('.js-removefromcart').each(function () {
+    <script>$('.js-removefromcart').each(function () {
             var booktitle = $(this).parent().parent().parent().find('.js-booktitle').html();
             var bookprice = $(this).parent().parent().parent().find('.js-bookprice').html();
             var bookauthor = $(this).parent().parent().parent().find('.js-bookauthor').html();
@@ -842,8 +841,7 @@
                     html: booktitle + '<br>' + bookauthor + '<br>' + bookprice + '<br> removed from cart.'
                 })
             });
-        });
-    </script>
+        });</script>
 </body>
 
 </html>
