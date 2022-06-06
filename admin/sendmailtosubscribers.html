@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Subscribers - African Books Admin</title>
+    <title>Send Mail to Subscribers - African Books Admin</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-title" content="African Books Admin">
     <meta name="application-name" content="African Books Admin">
     <meta name="theme-color" content="#ffffff">  
-	<link rel="stylesheet" href="assets/bundles/datatables/datatables.min.css">
-    <link rel="stylesheet" href="assets/bundles/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
     <!-- General CSS Files -->
     <link rel="stylesheet" href="assets/css/app.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
@@ -188,7 +186,7 @@
                                 <li><a class="nav-link" href="unpublishrequests.html">Unpublish Requests</a></li>
                             </ul>
                         </li>
-						<li class="dropdown">
+						<li class="dropdown active">
                             <a href="#" class="menu-toggle nav-link has-dropdown"><i class="fa fa-gift"></i><span>Offers</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="addoffer.html">Add Offer</a></li>
@@ -211,7 +209,7 @@
                                 <li><a class="nav-link" href="publishersactivitylog.html">Publishers Activity Log</a></li>
                             </ul>
                         </li>
-						<li class="dropdown active">
+                        <li class="dropdown">
                             <a href="subscribers.html" class="nav-link"><i class="fa fa-users"></i><span>Subscribers</span></a>
                         </li>
                         <li class="dropdown">
@@ -220,34 +218,35 @@
                     </ul>
                 </aside>
             </div>
-			<!-- Main Content -->
+            <!-- Main Content -->
             <div class="main-content">
                 <section class="section">
                     <div class="section-body">
-                        <div class="row">
-                            <div class="col-12">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-6 col-lg-6">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h4 class="font-weight-bold">SUBSCRIBERS</h4> <a href="sendmailtosubscribers.html" class="btn btn-primary">SEND MAIL</a>
+                                        <h4 class="font-weight-bold">SEND MAIL TO SUBSCRIBERS</h4>
                                     </div>
-                                    <div class="card-body">
-                                        <div class="table-responsive">
-                                            <table class="table table-striped text-center" id="table-1">
-                                                <thead>
-                                                    <tr>
-                                                        <th>EmailAddress</th>
-                                                        <th>DateTimeSubscribed</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>yvonnekusiima@gmail.com</td>
-                                                        <td>2020-02-01 14:53</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                    <form method="post" action="#" class="card-body">
+                                        <div class="form-group">
+                                            <label>Mail Title *</label>
+                                            <input type="text" class="form-control" name="mailtitle">
                                         </div>
-                                    </div>
+										<div class="form-group">
+                                            <label>Mail Details *</label>
+                                            <textarea class="form-control" name="maildetails"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Mail Image *</label>
+                                            <input type="file" class="form-control" name="mailimage">
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
+                                                SEND MAIL
+                                            </button>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -357,14 +356,9 @@
         </div>
     </div>
     
-	<!-- General JS Scripts -->
-    <script src="assets/js/app.min.js"></script>
+	<script src="assets/js/app.min.js"></script>
     <!-- JS Libraies -->
-    <script src="assets/bundles/datatables/datatables.min.js"></script>
-    <script src="assets/bundles/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
     <script src="assets/bundles/jquery-ui/jquery-ui.min.js"></script>
-    <!-- Page Specific JS File -->
-    <script src="assets/js/page/datatables.js"></script>
     <!-- Template JS File -->
     <script src="assets/js/scripts.js"></script>
     <!-- Custom JS File -->

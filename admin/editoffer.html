@@ -247,25 +247,31 @@
                                             <div class="col-lg-8">
 											    <div class="form-group">
                                                     <label>Offer Title *</label>
-                                                    <input type="text" class="form-control" name="offertitle" value="June Offer">
+                                                    <input type="text" class="form-control" name="offertitle" value="June Offer" required>
                                                 </div>
-												<div class="form-group">
-                                                    <label>Offer Percentage *</label>
-                                                    <input type="number" class="form-control" name="offerpercentage" value="10">
+												<div class="form-group row">
+										            <div class="form-group col-sm-4 mb-3 mb-sm-0">
+                                                        <label>Offer Percentage  *</label>
+                                                        <input type="number" class="form-control" name="offerpercenatge" value="10" required>
+											        </div>
+											        <div class="form-group col-sm-8 mb-3 mb-sm-0">
+                                                        <label>Book Title  *</label>
+                                                        <input type="text" class="form-control" name="booktitle" value="Seven Days in June" required>
+											        </div>
                                                 </div>
 												<div class="form-group row">
 										            <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                         <label>Start Date  *</label>
-                                                        <input type="date" class="form-control" name="startdate" value="">
+                                                        <input type="date" class="form-control" name="startdate" value="" required>
 											        </div>
 											        <div class="form-group col-sm-6 mb-3 mb-sm-0">
                                                         <label>End Date  *</label>
-                                                        <input type="date" class="form-control" name="enddate" value="">
+                                                        <input type="date" class="form-control" name="enddate" value="" required>
 											        </div>
                                                 </div>
 												<div class="form-group">
                                                     <label>Offer Details *</label>
-													<textarea class="form-control" name="offerdetails">Save $10 on Seven Days in June by Tia Williams</textarea>
+													<textarea class="form-control" name="offerdetails" required>Save $10 on Seven Days in June by Tia Williams</textarea>
                                                 </div>
 												<div class="form-group">
                                                     <label>Date Time Added *</label>
