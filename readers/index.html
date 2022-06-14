@@ -639,7 +639,8 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="bookinfo.html" class="js-booktitle" title="The Fault in Our Stars">The Fault in Our Stars</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $110
+                                            $110 
+											<input type="text" class="form-control d-none" name="bookprice" id="bookprice" value="110" readonly>
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -665,7 +666,8 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="Ghost Story">Ghost Story</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $140
+                                            $140 
+											<input type="text" class="form-control d-none" name="bookprice" id="bookprice" value="140" readonly>
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -692,6 +694,7 @@
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="The Mortal Instruments: City of Ashes">The Mortal Instruments: City of Ashes</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
                                             $170
+											<input type="text" class="form-control d-none" name="bookprice" id="bookprice" value="170" readonly>
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -718,6 +721,7 @@
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="Seven Days in June">Seven Days in June </a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
                                             $152
+											<input type="text" class="form-control d-none" name="bookprice" id="bookprice" value="152" readonly>
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -744,6 +748,7 @@
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="Are You Afraid of the Dark">Are You Afraid of the Dark</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
                                             $145
+											<input type="text" class="form-control d-none" name="bookprice" id="bookprice" value="145" readonly>
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -770,6 +775,7 @@
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="The Long Take">The Long Take</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
                                             $180
+											<input type="text" class="form-control d-none" name="bookprice" id="bookprice" value="180" readonly>
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -2209,7 +2215,7 @@
                         <div class="col-sm-6 col-lg-3">
                             <div class="widget widget-about">
                                 <img src="assets/images/logo.png" class="footer-logo" alt="image" width="197" height="45">
-                                <p><b>AfricanBooks.com</b> exists to provide you with amazing and interesting books for a great reading experience.</p>
+                                <p><b>AfricanBooks.com</b> exists to provide African writers with a platform to share digital book content with a global reading audience.</p>
 
                                 <div class="widget-call">
                                     <i class="icon-phone"></i>
@@ -2286,6 +2292,13 @@
                         Copyright &copy;
                         <script>document.write(new Date().getFullYear());</script> <a href="https://africanbooks.com" class="text-primary font-weight-bold">AfricanBooks.com</a>
                     </p><!-- End .footer-copyright -->
+					<div class="footer-payments">
+					    <span id="currencycode"></span>
+					    <input type="text" class="form-control d-none" name="usdtougx" id="usdtougx" value="3716.49" readonly>
+					    <input type="text" class="form-control d-none" name="usdtokes" id="usdtokes" value="117.89" readonly>
+					    <input type="text" class="form-control d-none" name="usdtongn" id="usdtongn" value="415.13" readonly>
+					    <input type="text" class="form-control d-none" name="usdtoghs" id="usdtoghs" value="7.98" readonly>
+					</div>
                 </div><!-- End .container -->
             </div><!-- End .footer-bottom -->
         </footer><!-- End .footer -->
@@ -2514,6 +2527,19 @@
             });
         });
     </script>
+	<script>
+	    $.getJSON("https://ipgeolocation.abstractapi.com/v1/?api_key=86efcbd97ba041df9ced2675cf793b67", function(data) {
+            $('#currencycode').html(data.currency.currency_code);
+			if(data.currency.currency_code == 'UGX')
+			{
+			    $('input[id="bookprice"]').each(function (value) {
+				    console.log(this.value * $('#usdtougx').val());
+					
+				    $('.js-bookprice').html('UGX ' + this.value * $('#usdtougx').val());
+			    });				
+			}
+        });
+	</script>
 
 </body>
 

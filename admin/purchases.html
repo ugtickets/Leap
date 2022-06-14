@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Publishers Activity Log - African Books Admin</title>
+    <title>Purchases - African Books Admin</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-title" content="African Books Admin">
     <meta name="application-name" content="African Books Admin">
@@ -204,7 +204,7 @@
                                 <li><a class="nav-link" href="authorsactivitylog.html">Authors Activity Log</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown active">
+                        <li class="dropdown">
                             <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="users"></i><span>Publishers</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="publishers.html">View Publishers</a></li>
@@ -213,20 +213,20 @@
                         </li>
                         <li class="dropdown">
                             <a href="subscribers.html" class="nav-link"><i class="fa fa-users"></i><span>Subscribers</span></a>
-                        </li>
+                        </li>	
                         <li class="dropdown">
                             <a href="reviews.html" class="nav-link"><i class="fa fa-star"></i><span>Reviews</span></a>
                         </li>
-                        <li class="dropdown">
+						<li class="dropdown active">
                             <a href="purchases.html" class="nav-link"><i class="far fa-credit-card"></i><span>Purchases</span></a>
                         </li>
 						<li class="dropdown">
                             <a href="libraries.html" class="nav-link"><i class="fas fa-book-reader"></i><span>Libraries</span></a>
-                        </li>						
+                        </li>
                     </ul>
                 </aside>
             </div>
-            <!-- Main Content -->
+			<!-- Main Content -->
             <div class="main-content">
                 <section class="section">
                     <div class="section-body">
@@ -234,25 +234,35 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h4 class="font-weight-bold">PUBLISHERS ACTIVITY LOG</h4>
+                                        <h4 class="font-weight-bold">PURCHASES</h4>
                                     </div>
                                     <div class="card-body">
                                         <div class="table-responsive">
                                             <table class="table table-striped text-center" id="table-1">
                                                 <thead>
                                                     <tr>
+                                                        <th>PurchaseID</th>
                                                         <th>EmailAddress</th>
+                                                        <th>BookTitle</th>
+                                                        <th>BookAuthor</th>
+                                                        <th>BookPrice</th>
+                                                        <th>AmountPaid</th>
+                                                        <th>DiscountApplied</th>
+                                                        <th>PaymentMethod</th>
                                                         <th>DateTimestamp</th>
-                                                        <th>Action</th>
-                                                        <th>IPAddress</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td>yvonne@gmail.com</td>
-                                                        <td>2020-01-02 14:53</td>
-                                                        <td>Logged in</td>
-                                                        <td>127.0.0.1</td>
+													    <td>P5731</td>
+													    <td>yvonnekusiima00@gmail.com</td>
+													    <td>Seven Days in June</td>
+													    <td>Tia Williams</td>
+                                                        <td>$5</td>
+														<td>$5</td>
+														<td>No</td>
+														<td>Card</td>
+                                                        <td>2020-02-01 14:53</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -366,8 +376,8 @@
             </footer> -->
         </div>
     </div>
-	
-    <!-- General JS Scripts -->
+    
+	<!-- General JS Scripts -->
     <script src="assets/js/app.min.js"></script>
     <!-- JS Libraies -->
     <script src="assets/bundles/datatables/datatables.min.js"></script>
