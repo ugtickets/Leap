@@ -707,7 +707,7 @@ textarea.form-control {
     }
 
 .card {
-    background-color: #fafbfe;
+    background-color: #fff;
     border-radius: 3px;
     border: 1px solid #dae1f4;
     position: relative;
@@ -3891,7 +3891,7 @@ body.dark-mode {
         }
 
             .main-sidebar .sidebar-menu li ul.dropdown-menu li a {
-                color: #1a287d;
+                color: #000;
                 height: 30px;
                 padding-left: 55px;
                 font-weight: 400;
