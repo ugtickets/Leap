@@ -4889,7 +4889,7 @@ h6 .badge {
 		text-align: center;
 		white-space: nowrap;
 		vertical-align: baseline;
-        background: #a61c21;
+        background: #d2232a;
         border-radius: .35rem;		
     }
 
@@ -4904,8 +4904,8 @@ h6 .badge {
 		text-align: center;
 		white-space: nowrap;
 		vertical-align: baseline;
-        background: #a61c21;
-        border-radius: .35rem;		
+        background: #d2232a;
+        border-radius: .50rem;		
     }
 
 .remove-caret:after {
