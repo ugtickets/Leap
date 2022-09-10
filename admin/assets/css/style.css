@@ -4890,7 +4890,7 @@ h6 .badge {
 		white-space: nowrap;
 		vertical-align: baseline;
         background: #d2232a;
-        border-radius: .35rem;		
+        border-radius: .50rem;		
     }
 
     .navbar .dropdown-list-toggle .notification-toggle .headerBadge2 {
@@ -6575,7 +6575,7 @@ body.layout-3 .main-footer {
                 color: #60686f;
                 height: 35px;
                 padding-left: 50px;
-                font-weight: 400
+                font-weight: 500
             }
 
                 .main-sidebar .sidebar-menu li ul.dropdown-menu li a:hover {

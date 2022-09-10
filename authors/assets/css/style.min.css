@@ -2603,7 +2603,7 @@ a.dropdown-item {
 body {
     background-color: #fff;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     font-family: 'Montserrat', 'Segoe UI', arial;   
 }
 
@@ -3894,7 +3894,7 @@ body.dark-mode {
                 color: #000;
                 height: 30px;
                 padding-left: 55px;
-                font-weight: 400;
+                font-weight: 500;
                 position: relative
             }
 
