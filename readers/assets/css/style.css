@@ -5657,16 +5657,19 @@ p {
 
     .page-header h1 {
         color: #333;
-        font: normal 400 3.2rem/1.1 "Montserrat",sans-serif;
-        letter-spacing: -.025em;
+		font-size: 2rem !important;
+		text-transform: uppercase;
+        /* font: normal 400 3.2rem/1.1 "Montserrat",sans-serif;
+        letter-spacing: -.025em; */
         margin-bottom: 0
     }
 
         .page-header h1 span {
             display: block;
             color: #d2232a;
-            font-size: 1.6rem;
-            margin-top: .8rem
+            font-size: 1.5rem;
+            margin-top: .8rem;
+			text-transform: none;
         }
 
     .page-header.page-header-big {
@@ -9475,7 +9478,7 @@ p {
     color: #777;
     background-color: #fafafa;
     border: 1px solid #ebebeb;
-    border-radius: 0;
+    border-radius: .25rem;
     margin-bottom: 2rem;
     transition: all 0.3s;
     box-shadow: none
@@ -10149,7 +10152,7 @@ small.form-text {
     color: #eaeaea
 }
 
-.modal-backdrop {
+/* .modal-backdrop {
     background-color: #333
 }
 
@@ -10187,6 +10190,237 @@ small.form-text {
 @media screen and (min-width: 768px) {
     .modal-dialog {
         max-width: 575px
+    }
+} */
+
+.modal-open {
+    overflow: hidden;
+}
+
+    .modal-open .modal {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+    pointer-events: none;
+}
+
+.modal.fade .modal-dialog {
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    -webkit-transform: translate(0, -50px);
+    transform: translate(0, -50px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .modal.fade .modal-dialog {
+        transition: none;
+    }
+}
+
+.modal.show .modal-dialog {
+    -webkit-transform: none;
+    transform: none;
+}
+
+.modal-dialog-scrollable {
+    display: -ms-flexbox;
+    display: flex;
+    max-height: calc(100% - 1rem);
+}
+
+    .modal-dialog-scrollable .modal-content {
+        max-height: calc(100vh - 1rem);
+        overflow: hidden;
+    }
+
+    .modal-dialog-scrollable .modal-header,
+    .modal-dialog-scrollable .modal-footer {
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+    }
+
+    .modal-dialog-scrollable .modal-body {
+        overflow-y: auto;
+    }
+
+.modal-dialog-centered {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: calc(100% - 1rem);
+}
+
+    .modal-dialog-centered::before {
+        display: block;
+        height: calc(100vh - 1rem);
+        content: "";
+    }
+
+    .modal-dialog-centered.modal-dialog-scrollable {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+        .modal-dialog-centered.modal-dialog-scrollable .modal-content {
+            max-height: none;
+        }
+
+        .modal-dialog-centered.modal-dialog-scrollable::before {
+            content: none;
+        }
+
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.4375rem;
+    outline: 0;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: #333;
+}
+
+    .modal-backdrop.fade {
+        opacity: 0;
+    }
+
+    .modal-backdrop.show {
+        opacity: 0.5;
+    }
+
+.modal-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.5rem 0.5rem;
+    border-bottom: 1px solid #e7eaf3;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem
+}
+
+    .modal-header .close {
+        padding: 1rem 1rem;
+        margin: -1rem -1rem -1rem auto;
+		font-size: 2.5rem;
+    }
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.modal-body {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+
+.modal-footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 1rem;
+    border-top: 1px solid #e7eaf3;
+    border-bottom-right-radius: 0.4375rem;
+    border-bottom-left-radius: 0.4375rem;
+}
+
+    .modal-footer > :not(:first-child) {
+        margin-left: .25rem;
+    }
+
+    .modal-footer > :not(:last-child) {
+        margin-right: .25rem;
+    }
+
+.modal-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 500px;
+        margin: 1.75rem auto;
+    }
+
+    .modal-dialog-scrollable {
+        max-height: calc(100% - 3.5rem);
+    }
+
+        .modal-dialog-scrollable .modal-content {
+            max-height: calc(100vh - 3.5rem);
+        }
+
+    .modal-dialog-centered {
+        min-height: calc(100% - 3.5rem);
+    }
+
+        .modal-dialog-centered::before {
+            height: calc(100vh - 3.5rem);
+        }
+
+    .modal-sm {
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 992px) {
+    .modal-lg,
+    .modal-xl {
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .modal-xl {
+        max-width: 1140px;
     }
 }
 
@@ -19103,10 +19337,10 @@ button:focus {
 }
 
 .section_padding {
-    padding: 130px 0px;
+    padding: 20px 0px;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+/* @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .section_padding {
         padding: 80px 0px;
     }
@@ -19128,7 +19362,7 @@ button:focus {
     .section_padding {
         padding: 70px 0px;
     }
-}
+} */
 
 /* activities */
 
@@ -19213,33 +19447,33 @@ button:focus {
     box-sizing: border-box;
     cursor: pointer;
     display: block;
-    min-height: 42px;
+    min-height: 40px;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
     -webkit-user-select: none;
     outline: none;
-    background-color: #fdfdff;
-    border-color: #e4e6fc
+    background-color: #fafafa;
+    border-color: #ebebeb
 }
 
 .select2-dropdown {
-    border-color: #e4e6fc !important
+    border-color: #ebebeb !important
 }
 
 .select2-container.select2-container--open .select2-selection--multiple {
     background-color: #fefeff;
-    border-color: #95a0f4
+    border-color: #d2232a
 }
 
 .select2-container.select2-container--focus .select2-selection--multiple, .select2-container.select2-container--focus .select2-selection--single {
     background-color: #fefeff;
-    border-color: #95a0f4
+    border-color: #d2232a
 }
 
 .select2-container.select2-container--open .select2-selection--single {
     background-color: #fefeff;
-    border-color: #95a0f4
+    border-color: #d2232a
 }
 
 .select2-results__option {
@@ -19251,8 +19485,8 @@ button:focus {
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
-    min-height: 42px;
-    line-height: 42px;
+    min-height: 40px;
+    line-height: 40px;
     padding-left: 20px;
     padding-right: 20px
 }
@@ -19262,7 +19496,7 @@ button:focus {
     top: 1px;
     right: 1px;
     width: 40px;
-    min-height: 42px
+    min-height: 40px
 }
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
@@ -19283,7 +19517,7 @@ button:focus {
 }
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice, .select2-container--default .select2-results__option[aria-selected="true"], .select2-container--default .select2-results__option--highlighted[aria-selected] {
-    background-color: #6777ef;
+    background-color: #d2232a;
     color: #fff
 }
 
@@ -19296,33 +19530,33 @@ button:focus {
 .selectric {
     background-color: #fafafa;
     border: 1px solid #ebebeb;
-    min-height: 42px;
-    border-radius: 0;
+    min-height: 40px;
+    border-radius: 3px;
     padding-left: 10px;
     padding-right: 10px
 }
 
-    /* .selectric:hover {
+    .selectric:hover {
         background-color: #fdfdff;
-        border-color: #e4e6fc
-    } */
+        border-color: #ebebeb
+    }
 
     .selectric:focus {
-        background-color: #fff;
-        border-color: #d2232a;
+        background-color: #fefeff;
+        border-color: #d2232a
     }
 
     .selectric .label {
         font-size: 13px;
         background-color: transparent;
         line-height: 44px;
-        min-height: 42px
+        min-height: 40px
     }
 
     .selectric .button {
         background-color: transparent;
         line-height: 44px;
-        min-height: 42px
+        min-height: 40px
     }
 
 .selectric-open .selectric {
@@ -19335,7 +19569,7 @@ button:focus {
 
 .selectric-items {
     box-shadow: 0 4px 25px 0 rgba(0,0,0,0.1);
-    border-radius: 0;
+    border-radius: 3px;
     background-color: #fff;
     border: none
 }
@@ -19350,7 +19584,7 @@ button:focus {
         }
 
         .selectric-items li.selected, .selectric-items li.highlighted {
-            background-color: #6777ef;
+            background-color: #d2232a;
             color: #fff
         }
 
@@ -19387,6 +19621,18 @@ button:focus {
     border-radius: 5px;
     height: 4px;
     width: 13px;
+    background-color: #d2232a;
+    display: inline;
+    float: left;
+    margin-top: 10px;
+    margin-right: 8px
+}
+
+.bullet-point {
+	content: ' ';
+    border-radius: 50%;
+    height: 7px;
+    width: 7px;
     background-color: #d2232a;
     display: inline;
     float: left;
@@ -19504,4 +19750,17 @@ button:focus {
     .profile-widget .profile-widget-items .profile-widget-item {
         border-top: 1px solid #f2f2f2
     }
+}
+
+.product-author {
+    line-height: 1.25;
+    letter-spacing: -.01em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.book-cover {
+    border-radius: 4px;
+	border: 1px solid rgba(0,0,0, 0.1);
 }
