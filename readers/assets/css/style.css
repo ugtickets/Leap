@@ -3297,7 +3297,8 @@ p {
 }
 
 .header-4 .header-bottom {
-    background-color: #fff
+    background-color: #fafafa;
+	border: 1px solid #d9d9d9;
 }
 
     .header-4 .header-bottom .container::before {
