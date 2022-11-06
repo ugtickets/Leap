@@ -1177,7 +1177,7 @@ a {
 }
 
 .owl-full .owl-nav [class*='owl-'] {
-    color: #d2232a
+    color: #000
 }
 
     .owl-full .owl-nav [class*='owl-']:hover, .owl-full .owl-nav [class*='owl-']:focus {

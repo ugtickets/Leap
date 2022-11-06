@@ -1,7 +1,7 @@
 ﻿@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900");
 
 html {
-    font-size: 62.5%;
+    font-size: 58%;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     font-size-adjust: 100%
@@ -291,8 +291,7 @@ blockquote {
     }
 
 .container {
-    width: 1188px;
-    max-width: 100%;
+    width: 100%;
     padding-left: 10px;
     padding-right: 10px
 }
@@ -1407,7 +1406,7 @@ blockquote {
     margin-right: 1.5rem
 }
 
-.header-intro-clearance .header-bottom .container::before {
+/* .header-intro-clearance .header-bottom .container::before {
     position: absolute;
     content: '';
     left: 28.5rem;
@@ -1416,9 +1415,9 @@ blockquote {
     top: 50%;
     background-color: #ccc;
     transform: translateY(-50%)
-}
+} */
 
-.header-intro-clearance .header-bottom .container::after {
+/* .header-intro-clearance .header-bottom .container::after {
     position: absolute;
     content: '';
     right: 28rem;
@@ -1427,7 +1426,7 @@ blockquote {
     top: 50%;
     background-color: #ccc;
     transform: translateY(-50%)
-}
+} */
 
 .header-intro-clearance .header-middle .header-right p {
     font-size: 1.1rem
@@ -1897,11 +1896,13 @@ blockquote {
 
         .menu.sf-arrows .sf-with-ul::after {
             font-family: 'icon0ab2';
+			content: '\f110';
             position: absolute;
             right: 0;
             top: 50%;
             display: block;
             font-size: 1rem;
+			font-weight: bold;
             line-height: 1;
             margin-top: -.5rem
         }
@@ -1921,7 +1922,7 @@ blockquote {
     }
 
     .menu ul {
-        min-width: 218px;
+        min-width: 230px;
         padding: 1.6rem 0 2rem
     }
 
@@ -2087,7 +2088,7 @@ blockquote {
     }
 
 .header-bottom .main-nav {
-    margin-left: 0
+    margin: auto
 }
 
 .header-bottom .menu .megamenu.megamenu-md {
@@ -5272,7 +5273,7 @@ p {
     font-weight: 500;
     font-size: 1.4rem;
     color: #777;
-    background-color: #fff
+    background-color: #f5f6f9
 }
 
     .footer a {
@@ -19614,6 +19615,10 @@ button:focus {
 
 .shadow-none {
     box-shadow: none !important;
+}
+
+.card-shadow {
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
 }
 
 .tc-point {
