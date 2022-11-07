@@ -14,7 +14,7 @@ html, body {
 body {
     font: 1.4rem/1.86 "Montserrat",sans-serif;
     color: #666;
-	font-weight: 500;
+    font-weight: 500;
     background-color: #fff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -176,7 +176,7 @@ h6, .h6 {
 a {
     color: #d2232a;
     text-decoration: none;
-	outline: none !important;
+    outline: none !important;
     transition: color 0.3s ease
 }
 
@@ -1805,7 +1805,7 @@ blockquote {
         .menu .megamenu.megamenu-sm {
             left: 0;
             right: auto;
-            width: 456px
+            width: 356px
         }
 
         .menu .megamenu.megamenu-md {
@@ -1897,13 +1897,13 @@ blockquote {
 
         .menu.sf-arrows .sf-with-ul::after {
             font-family: 'icon0ab2';
-			content: '\f110';
+            content: '\f110';
             position: absolute;
             right: 0;
             top: 50%;
             display: block;
             font-size: 1rem;
-			font-weight: bold;
+            font-weight: bold;
             line-height: 1;
             margin-top: -.5rem
         }
@@ -3299,7 +3299,7 @@ p {
 
 .header-4 .header-bottom {
     background-color: #fafafa;
-	border: 1px solid #d9d9d9;
+    border: 1px solid #d9d9d9;
 }
 
     .header-4 .header-bottom .container::before {
@@ -5310,11 +5310,11 @@ p {
 }
 
 .widget-about p {
-    max-width: 250px
+    width: auto
 }
 
 .container-fluid .widget-about p {
-    max-width: 540px
+    width: auto
 }
 
 .widget-about p:last-of-type {
@@ -5660,8 +5660,8 @@ p {
 
     .page-header h1 {
         color: #333;
-		font-size: 2rem !important;
-		text-transform: uppercase;
+        font-size: 2rem !important;
+        text-transform: uppercase;
         /* font: normal 400 3.2rem/1.1 "Montserrat",sans-serif;
         letter-spacing: -.025em; */
         margin-bottom: 0
@@ -5672,7 +5672,7 @@ p {
             color: #d2232a;
             font-size: 1.5rem;
             margin-top: .8rem;
-			text-transform: none;
+            text-transform: none;
         }
 
     .page-header.page-header-big {
@@ -9282,8 +9282,17 @@ p {
 
 .social-icons {
     display: flex;
-    align-items: center;
-    flex-flow: row wrap
+	align-items: center;
+    flex-flow: row;
+}
+
+@media (max-width:576px) {
+    .social-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row;
+    }
 }
 
 .social-icon {
@@ -10343,7 +10352,7 @@ small.form-text {
     .modal-header .close {
         padding: 1rem 1rem;
         margin: -1rem -1rem -1rem auto;
-		font-size: 2.5rem;
+        font-size: 2.5rem;
     }
 
 .modal-title {
@@ -11019,7 +11028,7 @@ button:focus {
 }
 
 .widget-about p {
-    max-width: 260px
+    width: auto
 }
 
 .cross-txt {
@@ -19333,10 +19342,10 @@ button:focus {
 }
 
 .username-container {
-	white-space: nowrap;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-	inline-size: 250px; 
+    inline-size: 250px;
 }
 
 .section_padding {
@@ -19620,11 +19629,11 @@ button:focus {
 }
 
 .card-shadow {
-	box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
 }
 
 .tc-point {
-	content: ' ';
+    content: ' ';
     border-radius: 5px;
     height: 4px;
     width: 13px;
@@ -19636,7 +19645,7 @@ button:focus {
 }
 
 .bullet-point {
-	content: ' ';
+    content: ' ';
     border-radius: 50%;
     height: 7px;
     width: 7px;
@@ -19650,29 +19659,29 @@ button:focus {
 /* unleash your potential */
 
 .site-btn {
-	display: inline-block;
-	border: none;
-	font-size: 14px;
-	font-weight: 600;
-	padding: 16px 13px;
-	border-radius: 0px;
-	text-transform: uppercase;
-	background: #d2232a;
-	color: #fff;
-	line-height: normal;
-	cursor: pointer;
-	text-align: center;
+    display: inline-block;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 16px 13px;
+    border-radius: 0px;
+    text-transform: uppercase;
+    background: #d2232a;
+    color: #fff;
+    line-height: normal;
+    cursor: pointer;
+    text-align: center;
 }
 
-.site-btn:hover {
-	color: #fff;
-}
+    .site-btn:hover {
+        color: #fff;
+    }
 
-.site-btn.sb-c2 {
-	background: #fff;
-	color: #d2232a;
-	font-weight: 600;
-}
+    .site-btn.sb-c2 {
+        background: #fff;
+        color: #d2232a;
+        font-weight: 600;
+    }
 
 /* profile widget */
 
@@ -19769,5 +19778,5 @@ button:focus {
 
 .book-cover {
     border-radius: 4px;
-	border: 1px solid rgba(0,0,0, 0.1);
+    border: 1px solid rgba(0,0,0, 0.1);
 }
