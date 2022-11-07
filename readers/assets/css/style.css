@@ -1805,13 +1805,13 @@ blockquote {
         .menu .megamenu.megamenu-sm {
             left: 0;
             right: auto;
-            width: 356px
+            width: 456px
         }
 
         .menu .megamenu.megamenu-md {
             left: -10rem;
             right: auto;
-            width: 502px
+            width: 602px
         }
 
         .menu .megamenu > ul, .menu .megamenu div > ul {
