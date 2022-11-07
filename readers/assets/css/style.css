@@ -1804,13 +1804,13 @@ blockquote {
         .menu .megamenu.megamenu-sm {
             left: 0;
             right: auto;
-            width: 456px
+            width: 356px
         }
 
         .menu .megamenu.megamenu-md {
             left: -10rem;
             right: auto;
-            width: 602px
+            width: 502px
         }
 
         .menu .megamenu > ul, .menu .megamenu div > ul {
@@ -5274,7 +5274,7 @@ p {
     font-weight: 500;
     font-size: 1.4rem;
     color: #777;
-    background-color: #fafafa
+    background-color: #fafafa;
 }
 
     .footer a {
@@ -19739,7 +19739,7 @@ button:focus {
     }
 
         .profile-widget .profile-widget-description .profile-widget-name {
-            font-size: 16px;
+            font-size: 14px;
             margin-bottom: 10px;
             font-weight: 600
         }

@@ -24,7 +24,7 @@
     align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
 	box-shadow: inset 0 0 0 1000px rgba(0,0,0, 0.5);
 }
 
@@ -597,7 +597,7 @@
     position: relative
 }
 
-    .widget-list a:before {
+    /* .widget-list a:before {
         content: '';
         display: block;
         position: absolute;
@@ -614,7 +614,7 @@
     .widget-list a:hover:before, .widget-list a:focus:before {
         transform-origin: left center;
         transform: scale(1, 1)
-    }
+    } */
 
 .widget-about p:last-of-type {
     margin-bottom: 1.2rem
