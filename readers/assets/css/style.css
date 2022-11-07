@@ -2107,7 +2107,7 @@ blockquote {
     padding-right: 3rem
 }
 
-.header-bottom .menu > li > a:before {
+/* .header-bottom .menu > li > a:before {
     content: '';
     display: block;
     position: absolute;
@@ -2124,7 +2124,7 @@ blockquote {
 .header-bottom .menu li:hover > a:before, .header-bottom .menu li.show > a:before, .header-bottom .menu li.active > a:before {
     transform-origin: left center;
     transform: scale(1, 1)
-}
+} */
 
 .header-bottom .menu.sf-arrows > li > .sf-with-ul::after {
     right: 1rem
@@ -5650,7 +5650,7 @@ p {
 }
 
 .page-header {
-    padding: 4.6rem 0 5rem;
+    padding: 3.6rem 0 4rem;
     background-color: #ebebeb;
     background-size: cover;
     background-position: center center;
