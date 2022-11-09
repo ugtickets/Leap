@@ -365,11 +365,11 @@
                             }
                         }
                     }'>
-                    <div class="intro-slide" style="background-image: url(assets/images/intro-bg.png); background-blend-mode: multiply">
+                    <div id="intro-slide" class="intro-slide" style="background-image: url(assets/images/intro-bg.png); background-blend-mode: multiply">
                         <div class="container intro-content">
                             <div class="row justify-content-end">
                                 <div class="col-auto col-sm-7 col-md-6 col-lg-5">
-                                    <img id="intro-bg" src="assets/images/slide1.jpg" class="img-fluid" width="150" height="250" style="filter: drop-shadow(6px 6px 21px rgba(0, 0, 0, 0.65));">
+                                    <img id="bookcover" src="assets/images/slide1.jpg" class="img-fluid" width="150" height="250" style="filter: drop-shadow(6px 6px 21px rgba(0, 0, 0, 0.65));">
                                 </div><!-- End .col-md-6 offset-md-6 -->
                             </div><!-- End .row -->
                         </div><!-- End .intro-content -->
@@ -2662,7 +2662,7 @@
 	<script src="assets/vendor/color-thief/dist/color-thief.umd.js"></script>
 	<script>
 	    const colorThief = new ColorThief();
-        const img = document.getElementById('intro-bg');
+        const img = document.getElementById('bookcover');
 		if (img.complete) 
 		{
 			colorThief.getColor(img);
@@ -2670,7 +2670,7 @@
 			r = colorThief.getColor(img)[0];
 			g = colorThief.getColor(img)[1];
 			b = colorThief.getColor(img)[2];
-			document.getElementById("block").style.backgroundColor = 'rgb(' + r + ',' + g + ','+ b + ')';
+			document.getElementById("intro-bg").style.backgroundColor = 'rgb(' + r + ',' + g + ','+ b + ')';
 		} 
 		else 
 		{
