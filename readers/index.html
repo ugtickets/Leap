@@ -365,7 +365,7 @@
                             }
                         }
                     }'>
-                    <div class="intro-slide" style="background-image: url(assets/images/slide1bg.jpg), url(assets/images/intro-bg.png); background-blend-mode: multiply">
+                    <div class="intro-slide" style="background-image: url(assets/images/intro-bg.png); background-blend-mode: multiply">
                         <div class="container intro-content">
                             <div class="row justify-content-end">
                                 <div class="col-auto col-sm-7 col-md-6 col-lg-5">
@@ -2667,6 +2667,10 @@
 		{
 			colorThief.getColor(img);
 			console.log(colorThief.getColor(img));
+			r = colorThief.getColor(img)[0];
+			g = colorThief.getColor(img)[1];
+			b = colorThief.getColor(img)[2];
+			document.getElementById("block").style.backgroundColor = 'rgb(' + r + ',' + g + ','+ b + ')';
 		} 
 		else 
 		{
