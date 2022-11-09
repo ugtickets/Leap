@@ -148,6 +148,7 @@ sup {
 a {
     color: #d2232a;
     text-decoration: none;
+	outline: none !important;
     background-color: transparent
 }
 

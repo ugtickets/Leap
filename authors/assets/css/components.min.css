@@ -871,11 +871,11 @@ tr:first-child > td > .fc-day-grid-event {
     -webkit-user-select: none;
     outline: none;
     background-color: #fdfdff;
-    border-color: #e4e6fc
+    border-color: #ced4da
 }
 
 .select2-dropdown {
-    border-color: #e4e6fc !important
+    border-color: #ced4da !important
 }
 
 .select2-container.select2-container--open .select2-selection--multiple {
@@ -944,7 +944,7 @@ tr:first-child > td > .fc-day-grid-event {
 
 .selectric {
     background-color: #fdfdff;
-    border-color: #e4e6fc;
+    border-color: #ced4da;
     min-height: 42px;
     border-radius: 3px;
     padding-left: 10px;
@@ -953,7 +953,7 @@ tr:first-child > td > .fc-day-grid-event {
 
     .selectric:hover {
         background-color: #fdfdff;
-        border-color: #e4e6fc
+        border-color: #ced4da
     }
 
     .selectric:focus {

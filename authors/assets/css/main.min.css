@@ -229,7 +229,8 @@ h5 {
 }
 
 a {
-    color: inherit
+    color: inherit;
+	outline: none !important;
 }
 
     a:active, a:focus, a:hover {

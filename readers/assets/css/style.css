@@ -12434,7 +12434,7 @@ button:focus {
 .details-action-wrapper {
     display: flex;
     align-items: center;
-    margin-left: 4rem
+    /* margin-left: 4rem */
 }
 
     .details-action-wrapper .btn-product {
@@ -19779,4 +19779,18 @@ button:focus {
 .book-cover {
     border-radius: 4px;
     border: 1px solid rgba(0,0,0, 0.1);
+}
+
+.text-overflow-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+@media (max-width:576px) {
+    .items-sm-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;       
+    }
 }
