@@ -369,15 +369,15 @@
                         <div class="container intro-content">
                             <div class="row justify-content-end">
                                 <div class="col-auto col-sm-7 col-md-6 col-lg-5">
-                                    <img src="assets/images/slide1.jpg" class="img-fluid" width="150" height="250" style="filter: drop-shadow(6px 6px 21px rgba(0, 0, 0, 0.65));">
+                                    <img id="intro-bg" src="assets/images/slide1.jpg" class="img-fluid" width="150" height="250" style="filter: drop-shadow(6px 6px 21px rgba(0, 0, 0, 0.65));">
                                 </div><!-- End .col-md-6 offset-md-6 -->
                             </div><!-- End .row -->
                         </div><!-- End .intro-content -->
                         <div class="container intro-content">
                             <div class="row justify-content-before">
                                 <div class="col-auto col-sm-7 col-md-6 col-lg-5">
-                                    <div class="intro-subtitle text-third h6" style="text-transform:uppercase">PETER STRAUB</div><!-- End .h3 intro-subtitle -->
-                                    <h5 class="text-white">Ghost Story</h5><!-- End .intro-title -->
+                                    <div class="intro-subtitle text-third h6" style="text-transform:uppercase">JEROME K. JEROME</div><!-- End .h3 intro-subtitle -->
+                                    <h5 class="text-white">Three Men In A Boat</h5><!-- End .intro-title -->
                                     <div class="intro-price">
                                         <span class="text-third h5">
                                             $170
@@ -2659,7 +2659,21 @@
         });
     </script> -->
 	
+	<script src="assets/vendor/color-thief/dist/color-thief.umd.js"></script>
 	<script>
+	    const colorThief = new ColorThief();
+        const img = document.getElementById('intro-bg');
+		if (img.complete) 
+		{
+			colorThief.getColor(img);
+			console.log(colorThief.getColor(img));
+		} 
+		else 
+		{
+			image.addEventListener('load', function() {
+			colorThief.getColor(img);
+		});
+    }
 
 </body>
 
