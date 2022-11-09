@@ -409,7 +409,8 @@ img.molla-lz {
     -webkit-transition: all .4s;
     transition: all .4s;
     visibility: hidden;
-    opacity: 0
+    opacity: 0;
+	border-bottom: 1px solid #d9d9d9;
 }
 
 .mmenu-active .mobile-menu-overlay {

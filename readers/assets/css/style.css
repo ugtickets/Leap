@@ -3299,7 +3299,8 @@ p {
 
 .header-4 .header-bottom {
     background-color: #fafafa;
-    border: 1px solid #d9d9d9;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
 }
 
     .header-4 .header-bottom .container::before {
@@ -5719,6 +5720,7 @@ p {
 
 .breadcrumb-nav {
     margin-bottom: 4rem;
+	background: #fafafa;
     border-bottom: 0.1rem solid rgba(235,235,235,0.55)
 }
 
@@ -7190,7 +7192,7 @@ p {
     }
 
 .product-title {
-    font-weight: 500;
+    font-weight: bold;
     font-size: 1.5rem;
     line-height: 1.25;
     letter-spacing: -.01em;
@@ -7210,7 +7212,7 @@ p {
         }
 
 .product-cat {
-    color: #777;
+    color: #000;
     font-weight: 500;
     font-size: 1.3rem;
     line-height: 1.2;
@@ -7230,7 +7232,7 @@ p {
     display: flex;
     align-items: center;
     flex-flow: wrap;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 1.6rem;
     line-height: 1.25;
     color: #d2232a;
@@ -8579,10 +8581,10 @@ p {
     }
 
     .product.product-sm .product-cat {
-        color: #cccccc;
+        color: #000;
         font-weight: 500;
         font-size: 1.3rem;
-        text-transform: uppercase;
+        text-transform: none;
         margin-bottom: .2rem
     }
 
@@ -13535,9 +13537,9 @@ button:focus {
 }
 
 .banner-sidebar-title {
-    color: #777;
+    color: #000;
     text-align: center;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.3rem;
     line-height: 1;
     letter-spacing: -.01em;
