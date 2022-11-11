@@ -6274,15 +6274,15 @@ p {
     }
 
 .nav.nav-pills .nav-link {
-    color: #777;
-    font-weight: 500;
+    color: #333;
+    font-weight: 700;
     font-size: 1.4rem;
     line-height: 1.5;
     letter-spacing: -.01em;
     padding: .45rem 1rem;
     border-radius: 0;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
     border: none;
     border-bottom: .1rem solid transparent;
     background-color: transparent;
@@ -7194,6 +7194,7 @@ p {
 .product-title {
     font-weight: bold;
     font-size: 1.5rem;
+	text-transform: capitalize;
     line-height: 1.25;
     letter-spacing: -.01em;
     color: #333333;
@@ -19775,7 +19776,12 @@ button:focus {
     letter-spacing: -.01em;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
+	text-transform: capitalize !important;
+}
+
+.js-bookauthor {
+	text-transform: capitalize !important;
 }
 
 .book-cover {
@@ -19795,4 +19801,17 @@ button:focus {
         align-items: center;
         justify-content: center;       
     }
+}
+
+.product-title-book-info {
+    font-weight: bold;
+    font-size: 2.4rem;
+	text-transform: capitalize;
+    line-height: 1.25;
+    letter-spacing: -.01em;
+    color: #333333;
+    margin-bottom: .2rem;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis
 }
