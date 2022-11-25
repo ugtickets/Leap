@@ -809,7 +809,7 @@ blockquote {
         z-index: 1001;
         border: none;
         margin: 1px 0 0;
-        padding: 2.2rem 3rem 2.5rem;
+        padding: 1.2rem 3rem 1.5rem;
         border-radius: 0;
         border: none;
         box-shadow: 5px 10px 16px rgba(51,51,51,0.05),-5px 10px 16px rgba(51,51,51,0.05);
@@ -907,7 +907,8 @@ blockquote {
 .compare-actions {
     display: flex;
     align-items: center;
-    margin-top: 2rem
+	padding: .5rem 0
+    /* margin-top: 2rem */
 }
 
     .compare-actions .action-link {
