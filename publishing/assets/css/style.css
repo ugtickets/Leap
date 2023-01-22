@@ -19394,13 +19394,20 @@ button:focus {
 	font-size: 14px;
 	font-weight: 600;
 	padding: 16px 13px;
-	border-radius: 0px;
+	border-radius: .2rem;
 	text-transform: uppercase;
 	background: #d2232a;
 	color: #fff;
 	line-height: normal;
 	cursor: pointer;
 	text-align: center;
+}
+
+.btn-lg {
+    font-weight: 500;
+    font-size: 1.5rem;
+    min-width: 170px;
+    padding: 1.1rem 2rem
 }
 
 .site-btn:hover {

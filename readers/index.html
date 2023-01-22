@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/skin-demo-4.css">
     <link rel="stylesheet" href="assets/css/demo-4.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/iphone-mockup.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
     <link rel="stylesheet" href="assets/fonts/InriaSerif/inria-serif-font.css">
     <!-- Splash Screen -->
@@ -353,107 +355,76 @@
         </header><!-- End .header -->
 
         <main class="main">
-            <div class="intro-slider-container mb-5">
-                <div class="intro-slider owl-carousel owl-theme owl-nav-inside owl-light" data-toggle="owl"
-                     data-owl-options='{
-                        "dots": true,
-                        "nav": false,
-                        "responsive": {
-                            "1200": {
-                                "nav": true,
-                                "dots": false
-                            }
-                        }
-                    }'>
-                    <div id="intro-slide" class="intro-slide" style="background-image: url(assets/images/slide1bg.jpg); background-blend-mode: multiply">
-                        <div class="container intro-content">
-                            <div class="row justify-content-end">
-                                <div class="col-auto col-sm-7 col-md-6 col-lg-5">
-                                    <img id="bookcover" src="assets/images/slide1.jpg" class="img-fluid" width="150" height="250" style="filter: drop-shadow(6px 6px 21px rgba(0, 0, 0, 0.65));">
-                                </div><!-- End .col-md-6 offset-md-6 -->
-                            </div><!-- End .row -->
-                        </div><!-- End .intro-content -->
-                        <div class="container intro-content">
-                            <div class="row justify-content-before">
-                                <div class="col-auto col-sm-7 col-md-6 col-lg-5">
-                                    <div class="intro-subtitle text-third h6" style="text-transform:uppercase">JEROME K. JEROME</div><!-- End .h3 intro-subtitle -->
-                                    <h5 class="text-white">Three Men In A Boat</h5><!-- End .intro-title -->
-                                    <div class="intro-price">
-                                        <span class="text-third h5">
-                                            $170
-                                        </span>
-                                    </div><!-- End .intro-price -->
-                                    <a href="#" class="btn btn-primary">
+            <div class="intro-slider swiper pb-5">
+                <div class="swiper-wrapper pb-5">
+                    <div class="swiper-slide slide-1" style="background: #ccac00; height: 400px; margin-top: 87px">
+                        <div class="container">
+                            <div class="row" style="margin-top: -87px">
+                                <div class="col-auto col-sm-6 col-lg-5 text-right" style="margin-top: 200px">
+                                    <h4 class="font-weight-bold">Now Available on AfricanBooks.com:</h4>
+                                    <h4 class="font-weight-bold">Are You Afraid Of The Dark</h4>
+                                    <h5 class="font-weight-bold">Sidney Sheldon</h5>
+                                    <a href="#" class="btn bg-white btn-round mt-4">
                                         <span>View Book</span>
-                                        <i class="icon-long-arrow-right"></i>
                                     </a>
-                                </div><!-- End .col-md-6 offset-md-6 -->
-                            </div><!-- End .row -->
-                        </div><!-- End .intro-content -->
-                    </div><!-- End .intro-slide -->
-
-                    <div class="intro-slide" style="background-image: url(assets/images/books/seven-days-in-june-tia-williams.jpg), url(assets/images/intro-bg.png); background-blend-mode: multiply">
-                        <div class="container intro-content">
-                            <div class="row justify-content-end">
-                                <div class="col-auto col-sm-7 col-md-6 col-lg-5">
-                                    <img src="assets/images/books/seven-days-in-june-tia-williams.jpg" class="img-fluid" width="150" height="250" style="filter: drop-shadow(6px 6px 21px rgba(0, 0, 0, 0.65));">
-                                </div><!-- End .col-md-6 offset-md-6 -->
-                            </div><!-- End .row -->
-                        </div><!-- End .intro-content -->
-                        <div class="container intro-content">
-                            <div class="row justify-content-before">
-                                <div class="col-auto col-sm-7 col-md-6 col-lg-5">
-                                    <div class="intro-subtitle text-third h6" style="text-transform:uppercase">TIA WILLIAMS</div><!-- End .h3 intro-subtitle -->
-                                    <h5 class="text-white">Seven Days in June</h5><!-- End .intro-title -->
-                                    <div class="intro-price">
-                                        <span class="text-third h5">
-                                            $152
-                                        </span>
-                                    </div><!-- End .intro-price -->
-                                    <a href="#" class="btn btn-primary">
+                                    <a href="#" class="btn btn-outline btn-round mt-4 ml-3">
+                                        <span>Buy $3.99</span>
+                                    </a>
+                                </div>
+                                <div class="iphone-x col-auto" style="background-image: url('assets/images/books/are-you-afraid-of-the-dark-sidney-sheldon.jpg');">
+                                    <i>Speaker</i>
+                                    <b>Camera</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-2" style="background: #ccac00; height: 400px; margin-top: 100px">
+                        <div class="container">
+                            <div class="row" style="margin-top: -100px">
+                                <div class="col-auto col-sm-6 col-lg-5 text-right" style="margin-top: 200px">
+                                    <h4 class="font-weight-bold">Now Available on AfricanBooks.com:</h4>
+                                    <h4 class="font-weight-bold">Seven Days in June</h4>
+                                    <h5 class="font-weight-bold">Tia Williams</h5>
+                                    <a href="#" class="btn bg-white btn-round mt-4">
                                         <span>View Book</span>
-                                        <i class="icon-long-arrow-right"></i>
                                     </a>
-                                </div><!-- End .col-md-6 offset-md-6 -->
-                            </div><!-- End .row -->
-                        </div><!-- End .intro-content -->
-                    </div><!-- End .intro-slide -->
-
-                    <div class="intro-slide" style="background-image: url(assets/images/african-background.png);">
-                        <div class="container intro-content">
-                            <div class="row justify-content-end">
-                                <div class="col-auto col-sm-7 col-md-6 col-lg-5">
-                                    <img src="assets/images/books/the-long-take-robin-robertson.jpg" class="img-fluid" width="150" height="250" style="filter: drop-shadow(6px 6px 21px rgba(0, 0, 0, 0.65));">
-                                </div><!-- End .col-md-6 offset-md-6 -->
-                            </div><!-- End .row -->
-                        </div><!-- End .intro-content -->
-                        <div class="container intro-content">
-                            <div class="row justify-content-before">
-                                <div class="col-auto col-sm-7 col-md-6 col-lg-5">
-                                    <div class="intro-subtitle text-third h6" style="text-transform:uppercase">ROBIN ROBERTSON</div><!-- End .h3 intro-subtitle -->
-                                    <h5 class="text-white">The Long Take</h5><!-- End .intro-title -->
-                                    <div class="intro-price">
-                                        <span class="text-third h5">
-                                            $180
-                                        </span>
-                                    </div><!-- End .intro-price -->
-                                    <a href="#" class="btn btn-primary">
+                                    <a href="#" class="btn btn-outline btn-round mt-4 ml-3">
+                                        <span>Buy $3.99</span>
+                                    </a>
+                                </div>
+                                <div class="iphone-x col-auto" style="background-image: url('assets/images/books/seven-days-in-june-tia-williams.jpg');">
+                                    <i>Speaker</i>
+                                    <b>Camera</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-3" style="background: #ccac00; height: 400px; margin-top: 100px">
+                        <div class="container">
+                            <div class="row" style="margin-top: -100px">
+                                <div class="col-auto col-sm-6 col-lg-5 text-right" style="margin-top: 200px">
+                                    <h4 class="font-weight-bold">Now Available on AfricanBooks.com:</h4>
+                                    <h4 class="font-weight-bold">The Fault In Our Stars</h4>
+                                    <h5 class="font-weight-bold">John Green</h5>
+                                    <a href="#" class="btn bg-white btn-round mt-4">
                                         <span>View Book</span>
-                                        <i class="icon-long-arrow-right"></i>
                                     </a>
-                                </div><!-- End .col-md-6 offset-md-6 -->
-                            </div><!-- End .row -->
-                        </div><!-- End .intro-content -->
-                    </div><!-- End .intro-slide -->
+                                    <a href="#" class="btn btn-outline btn-round mt-4 ml-3">
+                                        <span>Buy $4.99</span>
+                                    </a>
+                                </div>
+                                <div class="iphone-x col-auto" style="background-image: url('assets/images/books/the-fault-in-our-stars-john-green.jpg');">
+                                    <i>Speaker</i>
+                                    <b>Camera</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                </div><!-- End .intro-slider owl-carousel owl-simple -->
-
-                <span class="slider-loader"></span><!-- End .slider-loader -->
-            </div><!-- End .intro-slider-container -->
-
-            <div class="container">
+            <div class="container pt-5">
                 <h2 class="title text-center mb-4" style="font-family: Inria Serif">Featured Categories</h2><!-- End .title text-center -->
-
                 <div class="cat-blocks-container">
                     <div class="row">
                         <div class="col-6 col-sm-4 col-lg-2" style="background: rgba(224, 224, 226, 0.12)">
@@ -2606,6 +2577,7 @@
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/demo-4.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/currencyconversion.js"></script>
     <!-- Sweet Alert -->
     <script src="assets/vendor/sweetalert2/dist/sweetalert2.all.min.js"></script>
@@ -2658,27 +2630,25 @@
             }
         });
     </script> -->
-	
-	<script src="assets/vendor/color-thief/dist/color-thief.umd.js"></script>
-	<script>
-	    const colorThief = new ColorThief();
+
+    <script src="assets/vendor/color-thief/dist/color-thief.umd.js"></script>
+    <script>
+        const colorThief = new ColorThief();
         const img = document.getElementById('bookcover');
-		if (img.complete) 
-		{
-			colorThief.getColor(img);
-			console.log(colorThief.getColor(img));
-			r = colorThief.getColor(img)[0];
-			g = colorThief.getColor(img)[1];
-			b = colorThief.getColor(img)[2];
-			document.getElementById("intro-bg").style.backgroundColor = 'rgb(' + r + ',' + g + ','+ b + ')';
-		} 
-		else 
-		{
-			image.addEventListener('load', function() {
-			    colorThief.getColor(img);
-		    });
+        if (img.complete) {
+            colorThief.getColor(img);
+            console.log(colorThief.getColor(img));
+            r = colorThief.getColor(img)[0];
+            g = colorThief.getColor(img)[1];
+            b = colorThief.getColor(img)[2];
+            document.getElementById("intro-bg").style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
         }
-	</script>
+        else {
+            image.addEventListener('load', function () {
+                colorThief.getColor(img);
+            });
+        }
+    </script>
 
 </body>
 
