@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\authors"
+    "\\readers",
+    "\\readers\\assets"
   ],
   "PreviewInSolutionExplorer": false
 }
