@@ -1,7 +1,7 @@
 ﻿@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900");
 
 html {
-    font-size: 60%;
+    font-size: 58%;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     font-size-adjust: 100%
@@ -14,7 +14,7 @@ html, body {
 body {
     font: 1.4rem/1.86 "Montserrat",sans-serif;
     color: #666;
-	font-weight: 500;
+    font-weight: 500;
     background-color: #fff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -176,7 +176,7 @@ h6, .h6 {
 a {
     color: #d2232a;
     text-decoration: none;
-	outline: none !important;
+    outline: none !important;
     transition: color 0.3s ease
 }
 
@@ -272,8 +272,12 @@ blockquote {
 }
 
 .row {
-    margin-left: -10px;
-    margin-right: -10px
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px
 }
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
@@ -809,7 +813,7 @@ blockquote {
         z-index: 1001;
         border: none;
         margin: 1px 0 0;
-        padding: 2.2rem 3rem 2.5rem;
+        padding: 1.2rem 3rem 1.5rem;
         border-radius: 0;
         border: none;
         box-shadow: 5px 10px 16px rgba(51,51,51,0.05),-5px 10px 16px rgba(51,51,51,0.05);
@@ -907,7 +911,8 @@ blockquote {
 .compare-actions {
     display: flex;
     align-items: center;
-    margin-top: 2rem
+	padding: .5rem 0
+    /* margin-top: 2rem */
 }
 
     .compare-actions .action-link {
@@ -1407,7 +1412,7 @@ blockquote {
     margin-right: 1.5rem
 }
 
-.header-intro-clearance .header-bottom .container::before {
+/* .header-intro-clearance .header-bottom .container::before {
     position: absolute;
     content: '';
     left: 28.5rem;
@@ -1416,7 +1421,7 @@ blockquote {
     top: 50%;
     background-color: #ccc;
     transform: translateY(-50%)
-}
+} */
 
 /* .header-intro-clearance .header-bottom .container::after {
     position: absolute;
@@ -1662,6 +1667,10 @@ blockquote {
     .header-search {
         display: none
     }
+	
+	.header-search-2 {
+        display: block
+    }
 
     .header-search-extended {
         margin-right: 0
@@ -1805,7 +1814,7 @@ blockquote {
         .menu .megamenu.megamenu-sm {
             left: 0;
             right: auto;
-            width: 456px
+            width: 356px
         }
 
         .menu .megamenu.megamenu-md {
@@ -1897,13 +1906,13 @@ blockquote {
 
         .menu.sf-arrows .sf-with-ul::after {
             font-family: 'icon0ab2';
-			content: '\f110';
+            content: '\f110';
             position: absolute;
             right: 0;
             top: 50%;
             display: block;
             font-size: 1rem;
-			font-weight: bold;
+            font-weight: bold;
             line-height: 1;
             margin-top: -.5rem
         }
@@ -1923,7 +1932,7 @@ blockquote {
     }
 
     .menu ul {
-        min-width: 240px;
+        min-width: 230px;
         padding: 1.6rem 0 2rem
     }
 
@@ -2545,7 +2554,7 @@ blockquote {
     box-shadow: 0.1rem 0 0.6rem 0 rgba(51,51,51,0.5);
     will-change: transform;
     visibility: hidden;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.5;
     transition: all 0.4s ease
 }
@@ -3299,7 +3308,8 @@ p {
 
 .header-4 .header-bottom {
     background-color: #fafafa;
-	border: 1px solid #d9d9d9;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
 }
 
     .header-4 .header-bottom .container::before {
@@ -5274,12 +5284,16 @@ p {
     width: 100%;
     font-weight: 500;
     font-size: 1.4rem;
-    color: #777;
-    background-color: #fafafa
+    color: #fff;
+    background: #008575;
 }
 
     .footer a {
         color: inherit
+    }
+	
+	.footer p {
+        color: #fff
     }
 
         .footer a:hover, .footer a:focus {
@@ -5291,7 +5305,7 @@ p {
     }
 
     .footer .widget-title {
-        color: #333333;
+        color: #fff;
         font-weight: 500;
         font-size: 1.6rem;
         letter-spacing: -.01em;
@@ -5301,7 +5315,7 @@ p {
 
 .footer-middle {
     padding: 6.7rem 0 2.2rem;
-    border-top: .1rem solid #ebebeb
+    border-top: .1rem solid #ebebeb;
 }
 
 .footer-logo {
@@ -5311,6 +5325,10 @@ p {
 
 .widget-about p {
     width: auto
+}
+
+.last-widget{
+	border-left: 1px solid #4B4B55;
 }
 
 .container-fluid .widget-about p {
@@ -5372,7 +5390,7 @@ p {
         top: 0;
         left: 10px;
         right: 10px;
-        background-color: #ebebeb
+        background-color: #fff
     }
 
 .footer-copyright {
@@ -5651,20 +5669,29 @@ p {
 }
 
 .page-header {
-    padding: 3.6rem 0 4rem;
+    padding: 10rem 0 10rem;
     background-color: #ebebeb;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat
 }
 
-    .page-header h1 {
+.page-header-lg {
+    padding: 20rem 0 20rem !important;
+    background-color: #ebebeb;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat
+}
+
+    .page-header h1, .page-header-lg h1 {
         color: #333;
-		font-size: 2rem !important;
-		text-transform: uppercase;
+        font-size: 5rem !important;
+        text-transform: none;
         /* font: normal 400 3.2rem/1.1 "Montserrat",sans-serif;
         letter-spacing: -.025em; */
-        margin-bottom: 0
+        margin-bottom: 0;
+		font-weight: bold
     }
 
         .page-header h1 span {
@@ -5672,7 +5699,7 @@ p {
             color: #d2232a;
             font-size: 1.5rem;
             margin-top: .8rem;
-			text-transform: none;
+            text-transform: none;
         }
 
     .page-header.page-header-big {
@@ -5719,6 +5746,7 @@ p {
 
 .breadcrumb-nav {
     margin-bottom: 4rem;
+	background: #fafafa;
     border-bottom: 0.1rem solid rgba(235,235,235,0.55)
 }
 
@@ -6047,10 +6075,17 @@ p {
 }
 
 .card {
-    border-radius: 0;
-    margin-bottom: 0;
-    border: none;
-    border-top: .1rem solid #ebebeb
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+	border-radius: 0;
 }
 
     .card:last-child {
@@ -6272,15 +6307,15 @@ p {
     }
 
 .nav.nav-pills .nav-link {
-    color: #777;
-    font-weight: 500;
+    color: #333;
+    font-weight: 700;
     font-size: 1.4rem;
     line-height: 1.5;
     letter-spacing: -.01em;
     padding: .45rem 1rem;
     border-radius: 0;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
     border: none;
     border-bottom: .1rem solid transparent;
     background-color: transparent;
@@ -6696,6 +6731,13 @@ p {
         background-color: #333;
         border-color: #333
     }
+	
+	.btn-dark-outline {
+		color: #333;
+        background: transparent;
+        border-color: #333;
+        box-shadow: none
+	}
 
 .btn-outline {
     color: #d2232a;
@@ -7190,8 +7232,9 @@ p {
     }
 
 .product-title {
-    font-weight: 500;
+    font-weight: bold;
     font-size: 1.5rem;
+	text-transform: capitalize;
     line-height: 1.25;
     letter-spacing: -.01em;
     color: #333333;
@@ -7210,7 +7253,7 @@ p {
         }
 
 .product-cat {
-    color: #777;
+    color: #000;
     font-weight: 500;
     font-size: 1.3rem;
     line-height: 1.2;
@@ -7230,7 +7273,7 @@ p {
     display: flex;
     align-items: center;
     flex-flow: wrap;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 1.6rem;
     line-height: 1.25;
     color: #d2232a;
@@ -8579,10 +8622,10 @@ p {
     }
 
     .product.product-sm .product-cat {
-        color: #cccccc;
+        color: #000;
         font-weight: 500;
         font-size: 1.3rem;
-        text-transform: uppercase;
+        text-transform: none;
         margin-bottom: .2rem
     }
 
@@ -9282,8 +9325,8 @@ p {
 
 .social-icons {
     display: flex;
-    align-items: center;
-    flex-flow: row wrap
+	align-items: center;
+    flex-flow: row;
 }
 
 @media (max-width:576px) {
@@ -9305,8 +9348,8 @@ p {
     color: #777;
     margin: 0;
     background-color: transparent;
-    border: .1rem solid #e1e2e6;
-    border-radius: 50%;
+    /* border: .1rem solid #e1e2e6;
+    border-radius: 50%; */
     text-decoration: none;
     opacity: 1;
     transition: all .35s ease
@@ -9531,14 +9574,33 @@ textarea.form-control {
     border-bottom-left-radius: 30px
 }
 
-.input-group-round > .input-group-append > .btn {
+.input-group-round > .input-group-append > .input-group-prepend > .btn {
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px
 }
 
+.input-group-text-search {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: .375rem .75rem;
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #fafafa;
+    border: 1px solid #ebebeb;
+    border-top-right-radius: 30px !important;
+    border-bottom-right-radius: 30px !important
+}
+
 label {
-    color: #666;
-    font-weight: 500;
+    color: #333;
+    font-weight: 600;
     font-size: 1.4rem;
     margin: 0 0 1.1rem
 }
@@ -9815,6 +9877,11 @@ small.form-text {
 
     .cta-heading .cta-title {
         margin-bottom: .5rem
+    }
+	
+	.cta-heading .icon-email {
+        max-width: 40px;
+        margin-right: 15px;
     }
 
 .cta-text {
@@ -10352,7 +10419,7 @@ small.form-text {
     .modal-header .close {
         padding: 1rem 1rem;
         margin: -1rem -1rem -1rem auto;
-		font-size: 2.5rem;
+        font-size: 2.5rem;
     }
 
 .modal-title {
@@ -12434,7 +12501,7 @@ button:focus {
 .details-action-wrapper {
     display: flex;
     align-items: center;
-    margin-left: 4rem
+    /* margin-left: 4rem */
 }
 
     .details-action-wrapper .btn-product {
@@ -13535,9 +13602,9 @@ button:focus {
 }
 
 .banner-sidebar-title {
-    color: #777;
+    color: #000;
     text-align: center;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.3rem;
     line-height: 1;
     letter-spacing: -.01em;
@@ -19342,10 +19409,10 @@ button:focus {
 }
 
 .username-container {
-	white-space: nowrap;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-	inline-size: 250px; 
+    inline-size: 250px;
 }
 
 .section_padding {
@@ -19629,11 +19696,11 @@ button:focus {
 }
 
 .card-shadow {
-	box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
 }
 
 .tc-point {
-	content: ' ';
+    content: ' ';
     border-radius: 5px;
     height: 4px;
     width: 13px;
@@ -19645,7 +19712,7 @@ button:focus {
 }
 
 .bullet-point {
-	content: ' ';
+    content: ' ';
     border-radius: 50%;
     height: 7px;
     width: 7px;
@@ -19659,29 +19726,29 @@ button:focus {
 /* unleash your potential */
 
 .site-btn {
-	display: inline-block;
-	border: none;
-	font-size: 14px;
-	font-weight: 600;
-	padding: 16px 13px;
-	border-radius: 0px;
-	text-transform: uppercase;
-	background: #d2232a;
-	color: #fff;
-	line-height: normal;
-	cursor: pointer;
-	text-align: center;
+    display: inline-block;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 16px 13px;
+    border-radius: 0px;
+    text-transform: uppercase;
+    background: #d2232a;
+    color: #fff;
+    line-height: normal;
+    cursor: pointer;
+    text-align: center;
 }
 
-.site-btn:hover {
-	color: #fff;
-}
+    .site-btn:hover {
+        color: #fff;
+    }
 
-.site-btn.sb-c2 {
-	background: #fff;
-	color: #d2232a;
-	font-weight: 600;
-}
+    .site-btn.sb-c2 {
+        background: #fff;
+        color: #d2232a;
+        font-weight: 600;
+    }
 
 /* profile widget */
 
@@ -19749,7 +19816,7 @@ button:focus {
     }
 
         .profile-widget .profile-widget-description .profile-widget-name {
-            font-size: 16px;
+            font-size: 14px;
             margin-bottom: 10px;
             font-weight: 600
         }
@@ -19773,10 +19840,71 @@ button:focus {
     letter-spacing: -.01em;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
+	text-transform: capitalize !important;
+}
+
+.js-bookauthor {
+	text-transform: capitalize !important;
 }
 
 .book-cover {
     border-radius: 4px;
-	border: 1px solid rgba(0,0,0, 0.1);
+    border: 1px solid rgba(0,0,0, 0.1);
+}
+
+.text-overflow-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+@media (max-width:576px) {
+    .items-sm-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;       
+    }
+	
+	.justify-content-center-sm {
+		-ms-flex-pack: center !important;
+        justify-content: center !important
+	}
+}
+
+.product-title-book-info {
+    font-weight: bold;
+    font-size: 2.4rem;
+	text-transform: capitalize;
+    line-height: 1.25;
+    letter-spacing: -.01em;
+    color: #333333;
+    margin-bottom: .2rem;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.section-header {
+	background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    position: relative;
+    margin-bottom: 30px;
+    padding: 20px;
+    display: flex;
+    align-items: center
+ }
+ 
+.open-account-num {
+	font-weight: bold;
+	color: #fff;
+	background: #d2232a;
+	width: 50px; 
+	height: 50px; 
+	padding: 13px; 
+	border-radius: 50px; 
+	position: absolute; 
+	left: 65px; 
+	top: -25px;
 }

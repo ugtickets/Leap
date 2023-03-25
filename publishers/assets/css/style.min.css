@@ -122,8 +122,8 @@ p, ul:not(.list-unstyled), ol {
 }
 
 .form-control:focus, .input-group-text:focus, .custom-select:focus, .custom-file-label:focus {
-    background-color: #;
-    border-color: #
+    background-color: #fff;
+    border-color: #d2232a;
 }
 
 .input-group-text, select.form-control:not([size]):not([multiple]), .form-control:not(.form-control-sm):not(.form-control-lg) {
@@ -877,7 +877,7 @@ textarea.form-control {
     }
 
     .card.card-progress:not(.remove-spinner):after {
-        background-image: url("http://puffintheme.com/craft/codiepie/dist/assets/img/spinner.svg");
+        background-image: url("../img/spinner.svg");
         background-size: 80px;
         background-repeat: no-repeat;
         background-position: center
@@ -967,7 +967,7 @@ textarea.form-control {
 
     .card.card-statistic-1, .card.card-statistic-2 {
         display: inline-block;
-        width: 100%
+        width: 100%;
     }
 
         .card.card-statistic-1 .card-icon, .card.card-statistic-2 .card-icon {
@@ -1301,7 +1301,7 @@ table tr:hover .table-links {
         height: 100%;
         background-color: rgba(255,255,255,0.5);
         z-index: 999;
-        background-image: url("http://puffintheme.com/craft/codiepie/dist/assets/img/spinner.svg");
+        background-image: url("../img/spinner.svg");
         background-size: 80px;
         background-repeat: no-repeat;
         background-position: center;
@@ -1811,7 +1811,7 @@ h6 .badge {
 
 .btn-progress {
     position: relative;
-    background-image: url("http://puffintheme.com/craft/codiepie/dist/assets/img/spinner-white.svg");
+    background-image: url("../img/spinner-white.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 30px;
@@ -3881,7 +3881,7 @@ body.dark-mode {
             }
 
         .main-sidebar .sidebar-menu li ul.dropdown-menu {
-            padding: 0;
+            padding: 10px;
             margin: 0;
             display: none;
             position: static;
@@ -3892,7 +3892,8 @@ body.dark-mode {
         }
 
             .main-sidebar .sidebar-menu li ul.dropdown-menu li a {
-                color: #000;
+                color: #60656b;
+				font-size: 13px;
                 height: 30px;
                 padding-left: 55px;
                 font-weight: 500;
@@ -4038,13 +4039,13 @@ body:not(.sidebar-mini) .sidebar-style-3 {
         background-color: rgba(255,255,255,0.07)
     }
 
-> body:not(.sidebar-mini) .sidebar-style-3 .sidebar-menu li.active > a {
+body:not(.sidebar-mini) .sidebar-style-3 .sidebar-menu li.active > a {
     padding-left: 16px;
     background-color: rgba(255,255,255,0.07);
     position: relative
 }
 
-    > body:not(.sidebar-mini) .sidebar-style-3 .sidebar-menu li.active > a:before {
+    body:not(.sidebar-mini) .sidebar-style-3 .sidebar-menu li.active > a:before {
         background-color: #d2232a;
         content: '';
         position: absolute;
@@ -4158,15 +4159,15 @@ body:not(.sidebar-mini) .sidebar-style-3 {
 }
 
 @font-face {
-    font-family: 'simple-Line-Icons';
-    src: url("http://puffintheme.com/craft/codiepie/fonts/simple-Line-Icons.eot");
-    src: url("http://puffintheme.com/craft/codiepie/fonts/simple-Line-Icons.eot") format("embedded-opentype"),url("http://puffintheme.com/craft/codiepie/fonts/simple-Line-Icons.woff") format("woff"),url("http://puffintheme.com/craft/codiepie/fonts/simple-Line-Icons.ttf") format("truetype"),url("http://puffintheme.com/craft/codiepie/fonts/simple-Line-Icons.svg#Simple-Line-Icons") format("svg");
-    font-weight: normal;
-    font-style: normal
+    font-family: 'simple-line-icons';
+  src: url('../fonts/simple-line-icons/Simple-Line-Icons.eot?v=2.4.0');
+  src: url('../fonts/simple-line-icons/Simple-Line-Icons.eot?v=2.4.0#iefix') format('embedded-opentype'), url('../fonts/simple-line-icons/Simple-Line-Icons.woff2?v=2.4.0') format('woff2'), url('../fonts/simple-line-icons/Simple-Line-Icons.ttf?v=2.4.0') format('truetype'), url('../fonts/simple-line-icons/Simple-Line-Icons.woff?v=2.4.0') format('woff'), url('../fonts/simple-line-icons/Simple-Line-Icons.svg?v=2.4.0#simple-line-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 [data-icon]:before {
-    font-family: 'simple-Line-Icons';
+    font-family: 'simple-line-icons';
     content: attr(data-icon);
     speak: none;
     font-weight: normal;
@@ -4179,14 +4180,15 @@ body:not(.sidebar-mini) .sidebar-style-3 {
 }
 
 .icon-user-female, .icon-user-follow, .icon-user-following, .icon-user-unfollow, .icon-trophy, .icon-screen-smartphone, .icon-screen-desktop, .icon-plane, .icon-notebook, .icon-moustache, .icon-mouse, .icon-magnet, .icon-energy, .icon-emoticon-smile, .icon-disc, .icon-cursor-move, .icon-crop, .icon-credit-card, .icon-chemistry, .icon-user, .icon-speedometer, .icon-social-youtube, .icon-social-twitter, .icon-social-tumblr, .icon-social-facebook, .icon-social-dropbox, .icon-social-dribbble, .icon-shield, .icon-screen-tablet, .icon-magic-wand, .icon-hourglass, .icon-graduation, .icon-ghost, .icon-game-controller, .icon-fire, .icon-eyeglasses, .icon-envelope-open, .icon-envelope-letter, .icon-bell, .icon-badge, .icon-anchor, .icon-wallet, .icon-vector, .icon-speech, .icon-puzzle, .icon-printer, .icon-present, .icon-playlist, .icon-pin, .icon-picture, .icon-map, .icon-layers, .icon-handbag, .icon-globe-alt, .icon-globe, .icon-frame, .icon-folder-alt, .icon-film, .icon-feed, .icon-earphones-alt, .icon-earphones, .icon-drop, .icon-drawer, .icon-docs, .icon-directions, .icon-direction, .icon-diamond, .icon-cup, .icon-compass, .icon-call-out, .icon-call-in, .icon-call-end, .icon-calculator, .icon-bubbles, .icon-briefcase, .icon-book-open, .icon-basket-loaded, .icon-basket, .icon-bag, .icon-action-undo, .icon-action-redo, .icon-wrench, .icon-umbrella, .icon-trash, .icon-tag, .icon-support, .icon-size-fullscreen, .icon-size-actual, .icon-shuffle, .icon-share-alt, .icon-share, .icon-rocket, .icon-question, .icon-pie-chart, .icon-pencil, .icon-note, .icon-music-tone-alt, .icon-music-tone, .icon-microphone, .icon-loop, .icon-logout, .icon-login, .icon-list, .icon-like, .icon-home, .icon-grid, .icon-graph, .icon-equalizer, .icon-dislike, .icon-cursor, .icon-control-start, .icon-control-rewind, .icon-control-play, .icon-control-pause, .icon-control-forward, .icon-control-end, .icon-calendar, .icon-bulb, .icon-bar-chart, .icon-arrow-up, .icon-arrow-right, .icon-arrow-left, .icon-arrow-down, .icon-ban, .icon-bubble, .icon-camcorder, .icon-camera, .icon-check, .icon-clock, .icon-close, .icon-cloud-download, .icon-cloud-upload, .icon-doc, .icon-envelope, .icon-eye, .icon-flag, .icon-folder, .icon-heart, .icon-info, .icon-key, .icon-link, .icon-lock, .icon-lock-open, .icon-magnifier, .icon-magnifier-add, .icon-magnifier-remove, .icon-paper-clip, .icon-paper-plane, .icon-plus, .icon-pointer, .icon-power, .icon-refresh, .icon-reload, .icon-settings, .icon-star, .icon-symbol-female, .icon-symbol-male, .icon-target, .icon-volume-1, .icon-volume-2, .icon-volume-off, .icon-users {
-    font-family: 'Simple-Line-Icons';
+    font-family: 'simple-line-icons';
     speak: none;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-    -webkit-font-smoothing: antialiased
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
     .icon-user-female:before {
@@ -4838,13 +4840,13 @@ body:not(.sidebar-mini) .sidebar-style-3 {
     }
 
 @font-face {
-    font-family: "feather";
-    src: url("http://puffintheme.com/craft/codiepie/fonts/feather-webfont.eot?t=1501841394106");
-    src: url("http://puffintheme.com/craft/codiepie/fonts/feather-webfont.eot?t=1501841394106#iefix") format("embedded-opentype"),url("http://puffintheme.com/craft/codiepie/fonts/feather-webfont.woff?t=1501841394106") format("woff"),url("http://puffintheme.com/craft/codiepie/fonts/feather-webfont.ttf?t=1501841394106") format("truetype"),url("http://puffintheme.com/craft/codiepie/fonts/feather-webfont.svg?t=1501841394106#feather") format("svg")
+    font-family: "feather-icons";
+    src: url("../fonts/feather-webfont/dist/feather-webfont.eot?t=1501841394106");
+    src: url("../fonts/feather-webfont/dist/feather-webfont.eot?t=1501841394106#iefix") format("embedded-opentype"),url("../fonts/feather-webfont/dist/feather-webfont.woff?t=1501841394106") format("woff"),url("../fonts/feather-webfont/dist/feather-webfont.ttf?t=1501841394106") format("truetype"),url("../fonts/feather-webfont/dist/feather-webfont.svg?t=1501841394106#feather") format("svg")
 }
 
 .fe {
-    font-family: 'feather' !important;
+    font-family: 'feather-icons' !important;
     speak: none;
     font-style: normal;
     font-weight: normal;

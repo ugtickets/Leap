@@ -468,24 +468,25 @@
 
     .owl-full .owl-nav [class*='owl-'] {
         position: absolute;
-        top: 0;
+        top: 170px;
         z-index: 99;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 30px;
-        height: 100%;
+        width: 40px;
+        height: 40px;
         margin: 0;
-        color: #c96;
+        color: #000;
         font-size: 20px;
         line-height: 1;
         padding: 0;
         text-align: center;
         border: none;
-        background: rgba(255,255,255,0.75);
+        background: #fff;
         cursor: pointer;
-        border-radius: 0;
-        transition: all 0.3s ease
+        border-radius: 50px;
+        transition: all 0.3s ease;
+		box-shadow: 0 5px 20px rgba(0,0,0,0.20)
     }
 
         .owl-full .owl-nav [class*='owl-'] i {
@@ -508,10 +509,7 @@
             left: 100%;
             top: 0;
             border-radius: 20px 0 0 20px;
-            background-size: contain;
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-image: url("../../../images/nav-prev-shadow.png")
+            background-image: #fff
         }
 
     .owl-full .owl-nav .disabled {
@@ -531,7 +529,6 @@
         .owl-full .owl-nav .owl-next:before {
             left: auto;
             right: 100%;
-            background-image: url("../../../images/nav-next-shadow.png")
         }
 
 .owl-full.carousel-with-shadow .owl-stage-outer {
@@ -542,7 +539,7 @@
 }
 
 .owl-full.carousel-with-shadow .owl-nav [class*='owl-'] {
-    height: calc( 100% - 20px )
+    /* height: calc( 100% - 20px ) */
 }
 
 .owl-full .owl-nav.disabled + .owl-dots {

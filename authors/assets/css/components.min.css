@@ -336,7 +336,7 @@
                 }
 
         .chat-box .chat-content .chat-item.chat-typing .chat-details .chat-text {
-            background-image: url("http://puffintheme.com/craft/codiepie/dist/assets/img/typing.svg");
+            background-image: url("../img/typing.svg");
             height: 40px;
             width: 60px;
             background-position: center;
@@ -425,7 +425,7 @@ table.dataTable {
 div.dataTables_wrapper div.dataTables_processing {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     font-size: 0 !important;
-    background-image: url("http://puffintheme.com/craft/codiepie/dist/assets/img/spinner.svg") !important;
+    background-image: url("../img/spinner.svg") !important;
     background-color: #fff;
     background-size: 100%;
     width: 50px !important;
@@ -1940,7 +1940,7 @@ tr:first-child > td > .fc-day-grid-event {
     }
 
     .pricing .pricing-title {
-        font-size: 10px;
+        font-size: 15px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 2.5px;
@@ -1957,20 +1957,21 @@ tr:first-child > td > .fc-day-grid-event {
 
         .pricing .pricing-price div:first-child {
             font-weight: 600;
-            font-size: 50px
+            font-size: 30px
         }
 
     .pricing .pricing-details {
         text-align: left;
-        display: inline-block
+        display: inline-block;
+		font-size: 13px
     }
 
         .pricing .pricing-details .pricing-item {
             display: flex;
             margin-bottom: 15px
         }
-
-            .pricing .pricing-details .pricing-item .pricing-item-icon {
+		
+			.pricing .pricing-details .pricing-item .pricing-item-icon {
                 width: 20px;
                 height: 20px;
                 line-height: 20px;
@@ -1982,7 +1983,7 @@ tr:first-child > td > .fc-day-grid-event {
             }
 
                 .pricing .pricing-details .pricing-item .pricing-item-icon i {
-                    font-size: 11px
+                    font-size: 11px;
                 }
 
     .pricing .pricing-cta {
