@@ -1,0 +1,277 @@
+<div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>Bank Payout</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label><i class="fa fa-info-circle"></i>&nbsp;Minimum threshold is $25.</label>
+                                    </div>
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li class="nav-item"><a class="nav-link active" id="uganda-tab" data-toggle="tab" href="#uganda" role="tab" aria-controls="uganda" aria-selected="true">Uganda</a></li>
+                                        <li class="nav-item"><a class="nav-link" id="ghana-tab" data-toggle="tab" href="#ghana" role="tab" aria-controls="ghana" aria-selected="false">Ghana</a></li>
+                                        <li class="nav-item"><a class="nav-link" id="tanzania-tab" data-toggle="tab" href="#tanzania" role="tab" aria-controls="tanzania" aria-selected="false">Tanzania</a></li>
+                                    </ul>
+
+                                    <div class="tab-content tab-bordered">
+                                        <!-- Uganda -->
+                                        <div class="tab-pane fade show active" id="uganda" role="tabpanel" aria-labelledby="uganda-tab">
+                                            <form method="post" action="{{ route('flutterwavebankpayout') }}">
+                                                @csrf
+                                                <input type="hidden" id="name" name="name" value="{{ session()->get('firstname') }} {{ session()->get('lastname') }}">
+                                                <div class="row">
+                                                    <div class="col-sm-6 mb-3">
+                                                        <label>Banks *</label>
+                                                        <select class="form-control select2" name="bankname" required style="width:100%">
+                                                            <option>Select</option>
+                                                            @foreach($ugandabanks as $ugandabank)
+                                                            <option value="{{ $ugandabank['name'] }}">{{ $ugandabank['name'] }}</option>
+                                                            @endforeach
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-sm-6 mb-3">
+                                                        <label>Branches *</label>
+                                                        <select class="form-control select2" name="bankbranch" required style="width:100%">
+                                                            <option>Select</option>
+                                                            @foreach($ugandabanks as $ugandabank)
+                                                            @php 
+                                                            $bankid = $ugandabank['id'];
+                                                            $bankbranches = \App\Providers\ViewServiceProvider::bankbranches($bankid);
+                                                            @endphp                                      
+                                                            <optgroup label="{{ $ugandabank['name'] }}">
+                                                                @foreach($bankbranches as $branches)
+                                                                <option value="">{{ $branches['branch_name'] }}</option>
+                                                                @endforeach
+                                                            </optgroup>                                                            
+                                                            @endforeach
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-3 mb-3">
+                                                        <label>Amount *</label>
+                                                        <div class="input-group mb-3">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text">$</span>
+                                                            </div>
+                                                            <input type="number" min="25" class="form-control" id="amount" name="amount" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-3 mb-3">
+                                                        <label>Account Currency *</label>
+                                                        <select class="form-control selectric" name="accountcurrency" required style="width:100%">
+                                                            <option>Select</option>
+                                                            <option value="UGX">UGX</option>
+                                                            <option value="USD">USD</option>
+                                                            <option value="EUR">EUR</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-sm-6 mb-3">
+                                                        <label>Account Number *</label>
+                                                        <input type="tel" class="form-control" name="accountnumber" required>
+                                                    </div>
+                                                </div>
+                                                <input type="text" class="form-control d-none" name="earning" value="{{ $totalearning }}" readonly>
+                                                <div class="text-right mt-3">
+                                                    <button type="submit" class="btn btn-primary">Proceed</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <!-- Ghana -->
+                                        <div class="tab-pane fade" id="ghana" role="tabpanel" aria-labelledby="ghana-tab">
+                                            <form method="post" action="{{ route('flutterwavebankpayout') }}">
+                                                @csrf
+                                                <input type="hidden" id="name" name="name" value="{{ session()->get('firstname') }} {{ session()->get('lastname') }}">
+                                                <div class="row">
+                                                    <div class="col-sm-6 mb-3">
+                                                        <label>Banks *</label>
+                                                        <select class="form-control select2" name="bankname" required style="width:100%">
+                                                            <option>Select</option>
+                                                            @foreach($ghanabanks as $ghanabank)
+                                                            <option value="{{ $ghanabank['name'] }}">{{ $ghanabank['name'] }}</option>
+                                                            @endforeach
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-sm-6 mb-3">
+                                                        <label>Branches *</label>
+                                                        <select class="form-control select2" name="bankbranch" required style="width:100%">
+                                                            <option>Select</option>                                                           
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-3 mb-3">
+                                                        <label>Amount *</label>
+                                                        <div class="input-group mb-3">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text">$</span>
+                                                            </div>
+                                                            <input type="number" min="25" class="form-control" id="amount" name="amount" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-3 mb-3">
+                                                        <label>Account Currency *</label>
+                                                        <select class="form-control selectric" name="accountcurrency" required style="width:100%">
+                                                            <option>Select</option>
+                                                            <option value="GHS">GHS</option>
+                                                            <option value="USD">USD</option>
+                                                            <option value="EUR">EUR</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-sm-6 mb-3">
+                                                        <label>Account Number *</label>
+                                                        <input type="tel" class="form-control" name="accountnumber" required>
+                                                    </div>
+                                                </div>
+                                                <input type="text" class="form-control d-none" name="earning" value="{{ $totalearning }}" readonly>
+                                                <div class="text-right mt-3">
+                                                    <button type="submit" class="btn btn-primary">Proceed</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <!-- Tanzania -->
+                                        <div class="tab-pane fade" id="tanzania" role="tabpanel" aria-labelledby="tanzania-tab">
+                                            <form method="post" action="{{ route('flutterwavebankpayout') }}">
+                                                @csrf
+                                                <input type="hidden" id="name" name="name" value="{{ session()->get('firstname') }} {{ session()->get('lastname') }}">
+                                                <div class="row">
+                                                    <div class="col-sm-6 mb-3">
+                                                        <label>Banks *</label>
+                                                        <select class="form-control select2" name="bankname" required style="width:100%">
+                                                            <option>Select</option>
+                                                            @foreach($tanzaniabanks as $tanzaniabank)
+                                                            <option value="{{ $tanzaniabank['name'] }}">{{ $tanzaniabank['name'] }}</option>
+                                                            @endforeach
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-sm-6 mb-3">
+                                                        <label>Branches *</label>
+                                                        <select class="form-control select2" name="bankbranch" required style="width:100%">
+                                                            <option>Select</option>                                                           
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-3 mb-3">
+                                                        <label>Amount *</label>
+                                                        <div class="input-group mb-3">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text">$</span>
+                                                            </div>
+                                                            <input type="number" min="25" class="form-control" id="amount" name="amount" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-3 mb-3">
+                                                        <label>Account Currency *</label>
+                                                        <select class="form-control selectric" name="accountcurrency" required style="width:100%">
+                                                            <option>Select</option>
+                                                            <option value="TZS">TZS</option>
+                                                            <option value="USD">USD</option>
+                                                            <option value="EUR">EUR</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-sm-6 mb-3">
+                                                        <label>Account Number *</label>
+                                                        <input type="tel" class="form-control" name="accountnumber" required>
+                                                    </div>
+                                                </div>
+                                                <input type="text" class="form-control d-none" name="earning" value="{{ $totalearning }}" readonly>
+                                                <div class="text-right mt-3">
+                                                    <button type="submit" class="btn btn-primary">Proceed</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>Bank Payout</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label><i class="fa fa-info-circle"></i>&nbsp;Minimum threshold is $25.</label>
+                                    </div>
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li class="nav-item"><a class="nav-link active" id="uganda-tab" data-toggle="tab" href="#uganda" role="tab" aria-controls="uganda" aria-selected="true">Uganda</a></li>
+                                        <li class="nav-item"><a class="nav-link" id="ghana-tab" data-toggle="tab" href="#ghana" role="tab" aria-controls="ghana" aria-selected="false">Ghana</a></li>
+                                        <li class="nav-item"><a class="nav-link" id="tanzania-tab" data-toggle="tab" href="#tanzania" role="tab" aria-controls="tanzania" aria-selected="false">Tanzania</a></li>
+                                    </ul>
+                                    <div class="tab-content tab-bordered">
+                                        <div class="tab-pane fade show active" id="uganda" role="tabpanel" aria-labelledby="uganda-tab">
+                                            <form method="post" action="{{ route('flutterwavebankpayout') }}" class="pt-2 pb-2">
+                                                @csrf
+                                                <input type="hidden" id="name" name="name" value="{{ session()->get('firstname') }} {{ session()->get('lastname') }}">
+                                                <div class="row">
+                                                    <div class="col-sm-6 mb-3">
+                                                        <label>Banks *</label>
+                                                        <select class="form-control select2" id="ugandabanks" name="bankname" required style="width:100%"></select>
+                                                    </div>
+                                                    <div class="col-sm-6 mb-3">
+                                                        <label>Branches *</label>
+                                                        <select class="form-control select2" id="ugandabankbranches" name="bankbranch" required style="width:100%"></select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6 mb-3">
+                                                        <label>Account Currency *</label>
+                                                        <input type="text" class="form-control" name="currency" value="UGX" required readonly>
+                                                    </div>
+                                                    <div class="col-sm-6 mb-3">
+                                                        <label>Account Number *</label>
+                                                        <input type="tel" class="form-control" name="accountnumber" required>
+                                                    </div>
+                                                </div>
+                                                <input type="hidden" name="earning" value="{{ $totalearning }}" readonly>
+                                                <div class="text-right mt-3">
+                                                    <button type="submit" class="btn btn-primary">Proceed</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    
+                                    <div class="tab-pane fade" id="ghana" role="tabpanel" aria-labelledby="ghana-tab">
+
+                                    </div>
+                                    <div class="tab-pane fade" id="tanzania" role="tabpanel" aria-labelledby="tanzania-tab">
+
+                                    </div>
+									</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>

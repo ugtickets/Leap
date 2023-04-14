@@ -1313,11 +1313,12 @@ table tr:hover .table-links {
 }
 
 .nav-tabs .nav-item .nav-link {
-    color: #d2232a
+    color: #000
 }
 
     .nav-tabs .nav-item .nav-link.active {
-        color: #000
+        color: #d2232a;
+		font-weight: 600;
     }
 
 .tab-content > .tab-pane {
@@ -3830,7 +3831,7 @@ body.dark-mode {
             width: 100%;
             color: #000000;
             text-decoration: none;
-            font-size: 15px
+            font-size: 14px
         }
 
             .main-sidebar .sidebar-menu li a .badge {
@@ -8149,3 +8150,9 @@ body:not(.sidebar-mini) .sidebar-style-3 .sidebar-menu li.active > a {
         text-transform: none;
         margin-bottom: 0
     }
+	
+.text-overflow-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}

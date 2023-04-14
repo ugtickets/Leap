@@ -272,8 +272,12 @@ blockquote {
 }
 
 .row {
-    margin-left: -10px;
-    margin-right: -10px
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px
 }
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
@@ -1543,13 +1547,20 @@ blockquote {
     right: -.3rem
 }
 
-.header-intro-clearance .cart-dropdown, .header-intro-clearance .wishlist, .header-intro-clearance .account {
+.header-intro-clearance .cart-dropdown, .header-intro-clearance .wishlist, .header-intro-clearance .account, .header-intro-clearance .currency {
     padding-left: 3rem
 }
 
     .header-intro-clearance .cart-dropdown .dropdown-toggle, .header-intro-clearance .wishlist .dropdown-toggle, .header-intro-clearance .account .dropdown-toggle {
         color: #333
     }
+	
+	.header-intro-clearance .currency .currencies {
+		border: none;
+		outline: none;
+		width: 100%;
+		font-weight: 600;
+	}
 
 @media screen and (min-width: 992px) {
     .mobile-menu-toggler {
@@ -5276,12 +5287,16 @@ p {
     width: 100%;
     font-weight: 500;
     font-size: 1.4rem;
-    color: #777;
-    background-color: #fafafa;
+    color: #fff;
+    background: #008575;
 }
 
     .footer a {
         color: inherit
+    }
+	
+	.footer p {
+        color: #fff
     }
 
         .footer a:hover, .footer a:focus {
@@ -5293,7 +5308,7 @@ p {
     }
 
     .footer .widget-title {
-        color: #333333;
+        color: #fff;
         font-weight: 500;
         font-size: 1.6rem;
         letter-spacing: -.01em;
@@ -5311,8 +5326,16 @@ p {
     margin-top: -.8rem
 }
 
+.widget-about{
+    padding-left: 30px
+}
+
 .widget-about p {
     width: auto
+}
+
+.last-widget{
+	border-left: 1px solid #4B4B55;
 }
 
 .container-fluid .widget-about p {
@@ -5374,7 +5397,7 @@ p {
         top: 0;
         left: 10px;
         right: 10px;
-        background-color: #ebebeb
+        background-color: #4B4B55
     }
 
 .footer-copyright {
@@ -6050,10 +6073,17 @@ p {
 }
 
 .card {
-    border-radius: 0;
-    margin-bottom: 0;
-    border: none;
-    border-top: .1rem solid #ebebeb
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+	border-radius: 0;
 }
 
     .card:last-child {
@@ -6699,6 +6729,13 @@ p {
         background-color: #333;
         border-color: #333
     }
+	
+	.btn-dark-outline {
+		color: #333;
+        background: transparent;
+        border-color: #333;
+        box-shadow: none
+	}
 
 .btn-outline {
     color: #d2232a;
@@ -9309,8 +9346,8 @@ p {
     color: #777;
     margin: 0;
     background-color: transparent;
-    border: .1rem solid #e1e2e6;
-    border-radius: 50%;
+    /* border: .1rem solid #e1e2e6;
+    border-radius: 50%; */
     text-decoration: none;
     opacity: 1;
     transition: all .35s ease
@@ -9541,8 +9578,8 @@ textarea.form-control {
 }
 
 label {
-    color: #666;
-    font-weight: 500;
+    color: #333;
+    font-weight: 600;
     font-size: 1.4rem;
     margin: 0 0 1.1rem
 }
@@ -9788,7 +9825,6 @@ small.form-text {
 
 .cta-title {
     font-weight: 500;
-    font-size: 2rem;
     line-height: 1.2;
     letter-spacing: -.03em;
     margin-bottom: 0
@@ -9819,6 +9855,11 @@ small.form-text {
 
     .cta-heading .cta-title {
         margin-bottom: .5rem
+    }
+	
+	.cta-heading .icon-email {
+        max-width: 40px;
+        margin-right: 15px;
     }
 
 .cta-text {
@@ -15244,7 +15285,7 @@ button:focus {
     margin-bottom: .2rem
 }
 
-.checkout .form-control {
+/* .checkout .form-control {
     margin-bottom: 1.3rem
 }
 
@@ -15255,7 +15296,7 @@ button:focus {
     .checkout .form-control:not(:focus) {
         background-color: #f9f9f9
     }
-
+ */
 .checkout textarea.form-control {
     min-height: 150px
 }
@@ -15432,7 +15473,7 @@ button:focus {
                 width: 1.6rem;
                 height: 1.6rem;
                 border-radius: 50%;
-                border: 0.1rem solid #d2232a;
+                border: 2px solid #d2232a;
                 right: auto;
                 left: 0;
                 top: .7rem;
@@ -15446,7 +15487,7 @@ button:focus {
                 width: .6rem;
                 height: .6rem;
                 position: absolute;
-                left: .5rem;
+                left: .515rem;
                 top: 1.2rem;
                 border-radius: 50%;
                 background-color: #d2232a;
@@ -15456,7 +15497,7 @@ button:focus {
             }
 
             .accordion-summary .card-title a.collapsed:before {
-                border-color: #dadada
+                border: 2px solid #999
             }
 
             .accordion-summary .card-title a.collapsed:after {

@@ -101,3 +101,18 @@ function mtnmomopayment(){
 		});
 	});
 }
+
+$.ajax({
+	url: 'https://api.flutterwave.com/v3/banks/UG',
+	type: 'GET',
+	beforeSend: function(xhr) {
+		xhr.setRequestHeader('Authorization', "FLWSECK-d45bb64a5a0abb46b318bd1f6d1a9f9c-X");
+		xhr.setRequestHeader('Accept', '*/*');
+		xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+		xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+		xhr.setRequestHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+	},
+	success: function (ugandabanks){
+		console.log(ugandabanks);
+	}
+});

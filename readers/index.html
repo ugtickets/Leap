@@ -97,7 +97,7 @@
                                                 <a href="#" class="js-bookauthor" style="text-transform:uppercase">John Green</a>
                                             </h4>
                                             <span class="cart-product-info">
-                                                <span class="js-bookprice">$110</span>
+                                                <span class="js-bookprice">$4.99</span>
                                             </span>
                                         </div><!-- End .product-cart-details -->
                                         <figure class="product-image-container">
@@ -116,7 +116,7 @@
                                                 <a href="#" class="js-bookauthor" style="text-transform:uppercase">Robin Robertson</a>
                                             </h4>
                                             <span class="cart-product-info">
-                                                <span class="js-bookprice">$180</span>
+                                                <span class="js-bookprice">$2.85</span>
                                             </span>
                                         </div><!-- End .product-cart-details -->
                                         <figure class="product-image-container">
@@ -129,7 +129,7 @@
                                 </div><!-- End .cart-product -->
                                 <div class="dropdown-cart-total">
                                     <span>Total</span>
-                                    <span class="cart-total-price">$290</span>
+                                    <span class="cart-total-price">$7.84</span>
                                 </div><!-- End .dropdown-cart-total -->
                                 <div class="dropdown-cart-action">
                                     <a href="cart.html" class="btn btn-primary">View Cart</a>
@@ -137,6 +137,20 @@
                                 </div><!-- End .dropdown-cart-total -->
                             </div><!-- End .dropdown-menu -->
                         </div><!-- End .cart-dropdown -->
+                        <div class="currency">
+                            <select class="currencies" id="currency" name="currency">
+                                <option value="USD">USD</option>
+                                <option value="UGX">UGX</option>
+                                <option value="KES">KES</option>
+                                <option value="TZS">TZS</option>
+                                <option value="RWF">RWF</option>
+                                <option value="ZMW">ZMW</option>
+                                <option value="GHS">GHS</option>
+                                <option value="NGN">NGN</option>
+                                <option value="XAF">XAF</option>
+                                <option value="XOF">XOF</option>
+                            </select>
+                        </div>
                     </div><!-- End .header-right -->
                 </div><!-- End .container -->
             </div><!-- End .header-middle -->
@@ -619,13 +633,13 @@
                                         </div><!-- End .product-action -->
                                     </figure><!-- End .product-media -->
                                     <div class="product-body">
+                                        <h3 class="product-title"><a href="bookinfo.html" class="js-booktitle" title="The Fault in Our Stars">The Fault in Our Stars</a></h3><!-- End .product-title -->
                                         <div class="product-cat">
                                             <a href="authorinfo.html" style="text-transform:uppercase" class="js-bookauthor">John Green</a>
                                         </div><!-- End .product-cat -->
-                                        <h3 class="product-title"><a href="bookinfo.html" class="js-booktitle" title="The Fault in Our Stars">The Fault in Our Stars</a></h3><!-- End .product-title -->
-                                        <div class="product-price js-bookprice">
-                                            $110
-                                            <input type="text" class="bookprice d-none" name="productamount" id="bookprice" value="110" readonly>
+                                        <div class="product-price">
+                                            $<span id="js-bookprice">4.99</span>
+                                            <input type="text" class="bookprice d-none" name="productamount" id="bookprice" value="4.99" readonly>
                                             <span class="currencyamount"></span>
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
@@ -647,13 +661,13 @@
                                         </div><!-- End .product-action -->
                                     </figure><!-- End .product-media -->
                                     <div class="product-body">
+                                        <h3 class="product-title"><a href="#" class="js-booktitle" title="Ghost Story">Ghost Story</a></h3><!-- End .product-title -->
                                         <div class="product-cat">
                                             <a href="#" class="js-bookauthor">Peter Straub</a>
                                         </div><!-- End .product-cat -->
-                                        <h3 class="product-title"><a href="#" class="js-booktitle" title="Ghost Story">Ghost Story</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $140
-                                            <input type="text" class="bookprice d-none" name="productamount" id="bookprice" value="140" readonly>
+                                            $3.25
+                                            <input type="text" class="bookprice d-none" name="productamount" id="bookprice" value="3.25" readonly>
                                             <span class="currencyamount"></span>
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
@@ -675,13 +689,13 @@
                                         </div><!-- End .product-action -->
                                     </figure><!-- End .product-media -->
                                     <div class="product-body">
+                                        <h3 class="product-title"><a href="#" class="js-booktitle" title="The Mortal Instruments: City of Ashes">The Mortal Instruments: City of Ashes</a></h3><!-- End .product-title -->
                                         <div class="product-cat product-author">
                                             <a href="#" class="js-bookauthor">Cassandra Clare</a>
                                         </div><!-- End .product-cat -->
-                                        <h3 class="product-title"><a href="#" class="js-booktitle" title="The Mortal Instruments: City of Ashes">The Mortal Instruments: City of Ashes</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $170
-                                            <input type="text" class="bookprice d-none" name="productamount" id="bookprice" value="170" readonly>
+                                            $2.91
+                                            <input type="text" class="bookprice d-none" name="productamount" id="bookprice" value="2.91" readonly>
                                             <span class="currencyamount"></span>
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
@@ -703,13 +717,13 @@
                                         </div><!-- End .product-action -->
                                     </figure><!-- End .product-media -->
                                     <div class="product-body">
+                                        <h3 class="product-title"><a href="#" class="js-booktitle" title="Seven Days in June">Seven Days in June </a></h3><!-- End .product-title -->
                                         <div class="product-cat">
                                             <a href="#" class="js-bookauthor">Tia Williams</a>
                                         </div><!-- End .product-cat -->
-                                        <h3 class="product-title"><a href="#" class="js-booktitle" title="Seven Days in June">Seven Days in June </a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $152
-                                            <input type="text" class="bookprice d-none" name="productamount" id="bookprice" value="152" readonly>
+                                            $2.50
+                                            <input type="text" class="bookprice d-none" name="productamount" id="bookprice" value="2.50" readonly>
                                             <span class="currencyamount"></span>
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
@@ -731,13 +745,13 @@
                                         </div><!-- End .product-action -->
                                     </figure><!-- End .product-media -->
                                     <div class="product-body">
+                                        <h3 class="product-title"><a href="#" class="js-booktitle" title="Are You Afraid of the Dark">Are You Afraid of the Dark</a></h3><!-- End .product-title -->
                                         <div class="product-cat">
                                             <a href="#" class="js-bookauthor">Sidney Sheldon</a>
                                         </div><!-- End .product-cat -->
-                                        <h3 class="product-title"><a href="#" class="js-booktitle" title="Are You Afraid of the Dark">Are You Afraid of the Dark</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $145
-                                            <input type="text" class="bookprice d-none" name="productamount" id="bookprice" value="145" readonly>
+                                            $3.72
+                                            <input type="text" class="bookprice d-none" name="productamount" id="bookprice" value="3.72" readonly>
                                             <span class="currencyamount"></span>
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
@@ -759,13 +773,13 @@
                                         </div><!-- End .product-action -->
                                     </figure><!-- End .product-media -->
                                     <div class="product-body">
+                                        <h3 class="product-title"><a href="#" class="js-booktitle" title="The Long Take">The Long Take</a></h3><!-- End .product-title -->
                                         <div class="product-cat">
                                             <a href="#" class="js-bookauthor">Robin Robertson</a>
                                         </div><!-- End .product-cat -->
-                                        <h3 class="product-title"><a href="#" class="js-booktitle" title="The Long Take">The Long Take</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $180
-                                            <input type="text" class="bookprice d-none" name="productamount" id="bookprice" value="180" readonly>
+                                            $2.85
+                                            <input type="text" class="bookprice d-none" name="productamount" id="bookprice" value="2.85" readonly>
                                             <span class="currencyamount"></span>
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
@@ -820,7 +834,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="bookinfo.html" class="js-booktitle" title="The Fault in Our Stars">The Fault in Our Stars</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $110
+                                            $4.99
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -846,7 +860,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="Ghost Story">Ghost Story</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $140
+                                            $3.25
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -872,7 +886,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="The Mortal Instruments: City of Ashes">The Mortal Instruments: City of Ashes</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $170
+                                            $2.91
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -898,7 +912,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="Seven Days in June">Seven Days in June </a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $152
+                                            $2.50
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -924,7 +938,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="Are You Afraid of the Dark">Are You Afraid of the Dark</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $145
+                                            $3.72
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -950,7 +964,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="The Long Take">The Long Take</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $180
+                                            $2.85
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1004,7 +1018,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="bookinfo.html" class="js-booktitle" title="The Fault in Our Stars">The Fault in Our Stars</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $110
+                                            $4.99
                                         </div><!-- End .product-price -->
                                         <div class="product-cat">
                                             <a href="#">Romance</a>
@@ -1028,7 +1042,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="Ghost Story">Ghost Story</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $140
+                                            $3.25
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1054,7 +1068,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="The Mortal Instruments: City of Ashes">The Mortal Instruments: City of Ashes</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $170
+                                            $2.91
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1080,7 +1094,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="Seven Days in June">Seven Days in June </a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $152
+                                            $2.50
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1106,7 +1120,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="Are You Afraid of the Dark">Are You Afraid of the Dark</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $145
+                                            $3.72
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1132,7 +1146,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="The Long Take">The Long Take</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $180
+                                            $2.85
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1186,7 +1200,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="bookinfo.html" class="js-booktitle" title="The Fault in Our Stars">The Fault in Our Stars</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $110
+                                            $4.99
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1212,7 +1226,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="Ghost Story">Ghost Story</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $140
+                                            $3.25
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1238,7 +1252,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="The Mortal Instruments: City of Ashes">The Mortal Instruments: City of Ashes</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $170
+                                            $2.91
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1264,7 +1278,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="Seven Days in June">Seven Days in June </a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $152
+                                            $2.50
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1290,7 +1304,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="Are You Afraid of the Dark">Are You Afraid of the Dark</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $145
+                                            $3.72
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1316,7 +1330,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="The Long Take">The Long Take</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $180
+                                            $2.85
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1370,7 +1384,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="bookinfo.html" class="js-booktitle" title="The Fault in Our Stars">The Fault in Our Stars</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $110
+                                            $4.99
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1396,7 +1410,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="Ghost Story">Ghost Story</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $140
+                                            $3.25
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1422,7 +1436,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="The Mortal Instruments: City of Ashes">The Mortal Instruments: City of Ashes</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $170
+                                            $2.91
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1448,7 +1462,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="Seven Days in June">Seven Days in June </a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $152
+                                            $2.50
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1474,7 +1488,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="Are You Afraid of the Dark">Are You Afraid of the Dark</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $145
+                                            $3.72
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1500,7 +1514,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="The Long Take">The Long Take</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $180
+                                            $2.85
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1554,7 +1568,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="bookinfo.html" class="js-booktitle" title="The Fault in Our Stars">The Fault in Our Stars</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $110
+                                            $4.99
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1580,7 +1594,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="Ghost Story">Ghost Story</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $140
+                                            $3.25
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1606,7 +1620,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="The Mortal Instruments: City of Ashes">The Mortal Instruments: City of Ashes</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $170
+                                            $2.91
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1632,7 +1646,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="Seven Days in June">Seven Days in June </a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $152
+                                            $2.50
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1658,7 +1672,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="Are You Afraid of the Dark">Are You Afraid of the Dark</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $145
+                                            $3.72
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1684,7 +1698,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="The Long Take">The Long Take</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $180
+                                            $2.85
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1711,7 +1725,7 @@
                                 <div class="cta-text text-right text-white">
                                     <p>Get Today's Deal <br><strong>The Long Take <br>ROBIN ROBERTSON</strong></p>
                                 </div><!-- End .cta-text -->
-                                <a href="#" class="btn btn-primary"><span>Purchase Now $180</span><i class="icon-long-arrow-right"></i></a>
+                                <a href="#" class="btn btn-primary"><span>Purchase Now $2.85</span><i class="icon-long-arrow-right"></i></a>
                             </div><!-- End .cta-content -->
                         </div><!-- End .col-md-12 -->
                     </div><!-- End .row -->
@@ -1771,7 +1785,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="bookinfo.html" class="js-booktitle" title="The Fault in Our Stars">The Fault in Our Stars</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $110
+                                            $4.99
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1797,7 +1811,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="Ghost Story">Ghost Story</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $140
+                                            $3.25
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1823,7 +1837,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="The Mortal Instruments: City of Ashes">The Mortal Instruments: City of Ashes</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $170
+                                            $2.91
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1849,7 +1863,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="Seven Days in June">Seven Days in June </a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $152
+                                            $2.50
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1875,7 +1889,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="Are You Afraid of the Dark">Are You Afraid of the Dark</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $145
+                                            $3.72
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1901,7 +1915,7 @@
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="#" class="js-booktitle" title="The Long Take">The Long Take</a></h3><!-- End .product-title -->
                                         <div class="product-price js-bookprice">
-                                            $180
+                                            $2.85
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -1969,7 +1983,7 @@
                                 </div><!-- End .product-cat -->
                                 <h3 class="product-title"><a href="bookinfo.html" class="js-booktitle" title="The Fault in Our Stars">The Fault in Our Stars</a></h3><!-- End .product-title -->
                                 <div class="product-price js-bookprice">
-                                    $110
+                                    $4.99
                                 </div><!-- End .product-price -->
                                 <div class="ratings-container">
                                     <div class="ratings">
@@ -1995,7 +2009,7 @@
                                 </div><!-- End .product-cat -->
                                 <h3 class="product-title"><a href="#" class="js-booktitle" title="Ghost Story">Ghost Story</a></h3><!-- End .product-title -->
                                 <div class="product-price js-bookprice">
-                                    $140
+                                    $3.25
                                 </div><!-- End .product-price -->
                                 <div class="ratings-container">
                                     <div class="ratings">
@@ -2021,7 +2035,7 @@
                                 </div><!-- End .product-cat -->
                                 <h3 class="product-title"><a href="#" class="js-booktitle" title="The Mortal Instruments: City of Ashes">The Mortal Instruments: City of Ashes</a></h3><!-- End .product-title -->
                                 <div class="product-price js-bookprice">
-                                    $170
+                                    $2.91
                                 </div><!-- End .product-price -->
                                 <div class="ratings-container">
                                     <div class="ratings">
@@ -2047,7 +2061,7 @@
                                 </div><!-- End .product-cat -->
                                 <h3 class="product-title"><a href="#" class="js-booktitle" title="Seven Days in June">Seven Days in June </a></h3><!-- End .product-title -->
                                 <div class="product-price js-bookprice">
-                                    $152
+                                    $2.50
                                 </div><!-- End .product-price -->
                                 <div class="ratings-container">
                                     <div class="ratings">
@@ -2073,7 +2087,7 @@
                                 </div><!-- End .product-cat -->
                                 <h3 class="product-title"><a href="#" class="js-booktitle" title="Are You Afraid of the Dark">Are You Afraid of the Dark</a></h3><!-- End .product-title -->
                                 <div class="product-price js-bookprice">
-                                    $145
+                                    $3.72
                                 </div><!-- End .product-price -->
                                 <div class="ratings-container">
                                     <div class="ratings">
@@ -2099,7 +2113,7 @@
                                 </div><!-- End .product-cat -->
                                 <h3 class="product-title"><a href="#" class="js-booktitle" title="The Long Take">The Long Take</a></h3><!-- End .product-title -->
                                 <div class="product-price js-bookprice">
-                                    $180
+                                    $2.85
                                 </div><!-- End .product-price -->
                                 <div class="ratings-container">
                                     <div class="ratings">
@@ -2156,7 +2170,7 @@
                                         </div>
                                         <div class="row justify-content-center pt-2">
                                             <div class="col">
-                                                <h3 class="font-weight-bold text-primary">$152</h3>
+                                                <h3 class="font-weight-bold text-primary">$2.50</h3>
                                             </div>
                                             <div class="col">
                                                 <a href="#" class="btn btn-primary btn-round">
@@ -2574,12 +2588,12 @@
     <script src="assets/js/jquery.plugin.min.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/jquery.countdown.min.js"></script>
-    <script src="assets/js/currencyconversion.js"></script>
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/demo-4.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/currencyconversion.js"></script>
+    <script src="assets/js/checkout.js"></script>
     <!-- Sweet Alert -->
     <script src="assets/vendor/sweetalert2/dist/sweetalert2.all.min.js"></script>
     <script>
@@ -2647,6 +2661,32 @@
         else {
             image.addEventListener('load', function () {
                 colorThief.getColor(img);
+            });
+        }
+    </script>
+
+    <!-- Color Thief -->
+    <script src="assets/vendor/color-thief/dist/color-thief.umd.js"></script>
+    <script>
+        const colorThief = new ColorThief();
+        const img = document.getElementById('intro-bg');
+        //img.crossOrigin = 'Anonymous';
+        if (img.complete) {
+            colorThief.getColor(img);
+            console.log(colorThief.getColor(img));
+            r = colorThief.getColor(img)[0];
+            g = colorThief.getColor(img)[1];
+            b = colorThief.getColor(img)[2];
+            document.getElementById("intro-slide").style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+        }
+        else {
+            image.addEventListener('load', function () {
+                colorThief.getColor(img);
+                console.log(colorThief.getColor(img));
+                r = colorThief.getColor(img)[0];
+                g = colorThief.getColor(img)[1];
+                b = colorThief.getColor(img)[2];
+                document.getElementById("intro-slide").style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
             });
         }
     </script>
