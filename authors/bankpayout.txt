@@ -196,7 +196,48 @@
 					
 					
 					
-					
+					//nigeria banks
+            View::composer('*', function($view)
+            {
+                $nigeriabanks = Http::withHeaders(['Authorization' => 'FLWSECK-d45bb64a5a0abb46b318bd1f6d1a9f9c-X'])->get('https://api.flutterwave.com/v3/banks/UG');
+                //$nigeriabanks = Flutterwave::banks()->nigeria()['data'];
+                $view->with('nigeriabanks', $nigeriabanks);
+            });
+
+             //ghana banks
+            View::composer('*', function($view)
+            {
+                $ghanabanks = Flutterwave::banks()->ghana()['data'];
+                $view->with('ghanabanks', $ghanabanks);
+            });
+
+            //kenya banks
+            View::composer('*', function($view)
+            {
+                $kenyabanks = Flutterwave::banks()->kenya()['data'];
+                $view->with('kenyabanks', $kenyabanks);
+            });
+
+            //uganda banks
+            View::composer('*', function($view)
+            {
+                $ugandabanks = Flutterwave::banks()->uganda()['data'];
+                $view->with('ugandabanks', $ugandabanks);
+            });
+
+            //southafrica banks
+            View::composer('*', function($view)
+            {
+                $southafricabanks = Flutterwave::banks()->southAfrica()['data'];
+                $view->with('southafricabanks', $southafricabanks);
+            });
+
+            //tanzania banks
+            View::composer('*', function($view)
+            {
+                $tanzaniabanks = Flutterwave::banks()->tanzania()['data'];
+                $view->with('tanzaniabanks', $tanzaniabanks);
+            });
 					
 					
 					
